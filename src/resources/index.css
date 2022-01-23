@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'patrick_hand_scregular';
+  src: url('./fonts/patrickhandsc-regular-webfont.woff2') format('woff2'),
+  url('./fonts/patrickhandsc-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('./fonts/roboto-regular-webfont.woff2') format('woff2'),
+  url('./fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  background: white !important;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  font-family: 'robotoregular', sans-serif;
+  height: 100vh;
+
+  font-size: 12px;
+}
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+a,
+a:hover,
+a:active {
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+svg {
+  transition: fill 0.2s ease;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+}
+
+.rotateOnHover {
+  display: block;
+}
+.rotateOnHover:hover,
+.rotateOnHover:active {
+  -webkit-animation: spin 0.8s ease-in;
+  -moz-animation: spin 0.8s ease-in;
+  animation: spin 0.8s ease-in;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+[data-reach-dialog-overlay] {
+  background: rgba(33, 30, 28, 0.8);
+}
