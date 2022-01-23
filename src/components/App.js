@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {BrowserRouter, Routes, Route, Link, Outlet} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import Layout from './Layout';
 
 export default function App() {
@@ -18,7 +18,10 @@ export default function App() {
             <Route path="shop" element={<Shop />}>
               <Route path="originalArtShop" element={<OriginalArtShop />} />
               <Route path="artPrintShop" element={<ArtPrintShop />} />
-              <Route path="cardsAndBookmarksShop" element={<CardsAndBookmarksShop />} />
+              <Route
+                path="cardsAndBookmarksShop"
+                element={<CardsAndBookmarksShop />}
+              />
               <Route path="clothingShop" element={<ClothingShop />} />
               <Route path="stickersShop" element={<StickersShop />} />
               <Route path="notebooksShop" element={<NotebooksShop />} />
@@ -31,7 +34,7 @@ export default function App() {
       </div>
     </BrowserRouter>
   );
-};
+}
 
 function Home() {
   return (
@@ -50,7 +53,9 @@ function Art() {
         <Link to="adultColoring">Adult Colouring</Link>
         <Link to="fantasyArt">Fantasy Art</Link>
       </div>
-      <div><Outlet /></div>
+      <div>
+        <Outlet />
+      </div>
     </div>
   );
 }
