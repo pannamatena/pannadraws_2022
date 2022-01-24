@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
 import { Home } from '../roots/home';
 import { About } from '../roots/about';
@@ -20,7 +20,7 @@ import {
 export default function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className="appContainer">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
