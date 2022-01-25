@@ -374,6 +374,7 @@ export const arrow = () => (
 
 export const menu = () => (
   <div
+    className="menuIcon"
     style={{
       height: '100%',
       width: '100%',
@@ -383,8 +384,8 @@ export const menu = () => (
       justifyContent: 'space-between',
     }}
   >
-    <div style={{ height: '3px', width: '100%' }} />
-    <div style={{ height: '3px', width: '100%' }} />
-    <div style={{ height: '3px', width: '100%' }} />
+    <div style={{ height: '6px', width: '100%' }} />
+    <div style={{ height: '6px', width: '100%' }} />
+    <div style={{ height: '6px', width: '100%' }} />
   </div>
 );

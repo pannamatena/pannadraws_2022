@@ -7,7 +7,9 @@ const style = {
   layout: css`
     background: ${colours.c3};
   `,
-  pageContent: css``,
+  pageContent: css`
+    height: 3000px;
+  `,
   header: css`
     background: ${colours.c3};
     display: flex;
@@ -18,25 +20,21 @@ const style = {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 800;
     width: 100%;
     transition: padding 0.3s ease-out;
-
-    padding: 10px;
-    @media ${breakPoints.tabletPortrait} {
-      padding: 15px;
-    }
-    @media ${breakPoints.desktopSmall} {
-      padding: 20px;
-    }
   `,
   headerLeft: css``,
   headerRight: css`
     flex: 1;
-    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+
+    display: none;
+    @media ${breakPoints.tabletPortrait} {
+      display: flex;
+    }
   `,
   logoContainer: css`
     display: flex;
@@ -46,33 +44,23 @@ const style = {
   `,
   logoImg: css`
     display: inline-block;
+    transition: all 0.3s ease-out;
 
     svg {
-      transition: all 0.3s ease-out;
-      width: 50px;
-      height: 50px;
-      @media ${breakPoints.desktopSmall} {
-        width: 66px;
-        height: 61px;
-      }
+      width: 100%;
+      height: 100%;
     }
   `,
   logoText: css`
     display: none;
-    @media ${breakPoints.tabletPortrait} {
+    transition: all 0.3s ease-out;
+    @media ${breakPoints.tabletLandscape} {
       display: inline-block;
     }
 
     svg {
-      transition: all 0.3s ease-out;
-      @media ${breakPoints.tabletPortrait} {
-        width: 80px;
-        height: 50px;
-      }
-      @media ${breakPoints.desktopSmall} {
-        width: 110px;
-        height: 61px;
-      }
+      width: 100%;
+      height: 100%;
     }
   `,
   mainMenu: css`
@@ -91,13 +79,19 @@ const style = {
         @media ${breakPoints.desktopSmall} {
           margin-right: 20px;
         }
+
+        &:last-child {
+          margin: 0;
+        }
+
         a {
           color: ${colours.c2};
           text-transform: uppercase;
           display: inline-block;
 
           :hover,
-          :active {
+          :active,
+          &.active {
             color: ${colours.c1};
           }
 
@@ -151,6 +145,48 @@ const style = {
       :active {
         svg {
           fill: ${colours.c1};
+        }
+      }
+    }
+  `,
+  mobileMenuContent: css`
+    //display: block;
+    display: none;
+    @media ${breakPoints.tabletPortrait} {
+      display: none;
+    }
+  `,
+  mainMenuMobile: css``,
+  socialMenuMobile: css``,
+  mobileMenuOpener: css`
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    display: flex;
+    @media ${breakPoints.tabletPortrait} {
+      display: none;
+    }
+
+    button {
+      display: block;
+      width: 30px;
+      height: 25px;
+      background: transparent;
+
+      &:hover,
+      &:active {
+        cursor: pointer;
+      }
+
+      .menuIcon {
+        div {
+          background: ${colours.c2};
+
+          &:hover {
+            background: ${colours.c2_h};
+          }
         }
       }
     }
