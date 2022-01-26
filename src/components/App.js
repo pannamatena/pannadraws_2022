@@ -24,13 +24,16 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="art" element={<Art />}>
+            <Route path="art">
+              <Route index element={<Art />} />
               <Route path="animalArt" element={<AnimalArt />} />
               <Route path="adultColoring" element={<AdultColoring />} />
               <Route path="fantasyArt" element={<FantasyArt />} />
+              <Route path="*" element={<NoMatch />} />
             </Route>
             <Route path="commissionArt" element={<CommissionArt />} />
-            <Route path="shop" element={<Shop />}>
+            <Route path="shop">
+              <Route index element={<Shop />} />
               <Route path="originalArtShop" element={<OriginalArtShop />} />
               <Route path="artPrintShop" element={<ArtPrintShop />} />
               <Route
@@ -40,6 +43,7 @@ export default function App() {
               <Route path="clothingShop" element={<ClothingShop />} />
               <Route path="stickersShop" element={<StickersShop />} />
               <Route path="notebooksShop" element={<NotebooksShop />} />
+              <Route path="*" element={<NoMatch />} />
             </Route>
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />

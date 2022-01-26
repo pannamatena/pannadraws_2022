@@ -82,9 +82,24 @@ export default function Layout() {
             <ul>
               <li>
                 <NavLink to="/art">Art</NavLink>
+                <div css={style.subMenu}>
+                  <NavLink to="/art/animalArt">Birds & Wildlife</NavLink>
+                  <NavLink to="/art/adultColoring">Adult Colouring</NavLink>
+                  <NavLink to="/art/fantasyArt">Fantasy Art</NavLink>
+                </div>
               </li>
               <li>
                 <NavLink to="/shop">Shop</NavLink>
+                <div css={style.subMenu}>
+                  <NavLink to="/shop/originalArtShop">Original Art</NavLink>
+                  <NavLink to="/shop/artPrintShop">Art Prints</NavLink>
+                  <NavLink to="/shop/cardsAndBookmarksShop">
+                    Cards & Bookmarks
+                  </NavLink>
+                  <NavLink to="/shop/clothingShop">Clothing</NavLink>
+                  <NavLink to="/shop/stickersShop">Stickers</NavLink>
+                  <NavLink to="/shop/notebooksShop">Notebooks</NavLink>
+                </div>
               </li>
               <li>
                 <NavLink to="/commissionArt">Commission Art</NavLink>

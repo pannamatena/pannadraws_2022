@@ -24,21 +24,21 @@ const style = {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
-    align-items: center;
+    align-items: flex-start;
     font-family: ${fonts.f1};
     position: fixed;
     top: 0;
     left: 0;
     z-index: 800;
     width: 100%;
-    transition: padding 0.3s ease-out;
+    transition: all 0.3s ease-out;
   `,
   headerLeft: css``,
   headerRight: css`
     flex: 1;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
 
     display: none;
     @media ${breakPoints.tabletPortrait} {
@@ -77,9 +77,10 @@ const style = {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
-      align-items: center;
+      align-items: flex-start;
       li {
         display: block;
+        position: relative;
 
         margin-right: 10px;
         @media ${breakPoints.tabletPortrait} {
@@ -97,6 +98,7 @@ const style = {
           color: ${colours.c2};
           text-transform: uppercase;
           display: inline-block;
+          white-space: nowrap;
 
           :hover,
           :active,
@@ -115,7 +117,38 @@ const style = {
             font-size: 2em;
           }
         }
+
+        & > div {
+          height: 0;
+          padding: 0;
+          border-width: 0;
+        }
+
+        &:hover {
+          & > div {
+            height: 235px;
+            border-width: 2px;
+            padding: 0 2px;
+          }
+        }
       }
+    }
+  `,
+  subMenu: css`
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: ${colours.c3};
+    transition: height 0.3s ease-out;
+    border-top: 2px solid ${colours.c1};
+
+    display: none;
+    @media ${breakPoints.tabletPortrait} {
+      display: flex;
     }
   `,
   socialMenu: css`

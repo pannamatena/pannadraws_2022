@@ -1,17 +1,7 @@
-import { Link, Outlet } from 'react-router-dom';
-
 export function Art() {
   return (
     <div>
       <h2>Art</h2>
-      <div>
-        <Link to="animalArt">All Birds & Wildlife Art</Link>
-        <Link to="adultColoring">Adult Colouring</Link>
-        <Link to="fantasyArt">Fantasy Art</Link>
-      </div>
-      <div>
-        <Outlet />
-      </div>
     </div>
   );
 }
