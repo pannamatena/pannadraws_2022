@@ -41,7 +41,7 @@ const style = {
     align-items: flex-start;
 
     display: none;
-    @media ${breakPoints.tabletPortrait} {
+    @media ${breakPoints.desktopSmall} {
       display: flex;
     }
   `,
@@ -121,14 +121,12 @@ const style = {
         & > div {
           height: 0;
           padding: 0;
-          border-width: 0;
         }
 
         &:hover {
           & > div {
             height: 235px;
-            border-width: 2px;
-            padding: 0 2px;
+            padding: 5px 0 2px;
           }
         }
       }
@@ -137,18 +135,41 @@ const style = {
   subMenu: css`
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     overflow: hidden;
     position: absolute;
     top: 30px;
-    left: 0;
+    left: 50%;
     background: ${colours.c3};
     transition: height 0.3s ease-out;
-    border-top: 2px solid ${colours.c1};
+    transform: translateX(-50%);
 
     display: none;
     @media ${breakPoints.tabletPortrait} {
       display: flex;
+    }
+
+    a:first-child {
+      border-top: 2px solid ${colours.c1};
+      position: relative;
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 0 2px;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid ${colours.c1};
+      }
     }
   `,
   socialMenu: css`
@@ -207,7 +228,7 @@ const style = {
     align-items: center;
 
     display: flex;
-    @media ${breakPoints.tabletPortrait} {
+    @media ${breakPoints.desktopSmall} {
       display: none;
     }
 
