@@ -123,7 +123,14 @@ export default function Layout() {
           </div>
         </div>
         <div css={style.mobileMenuOpener}>
-          <button>{menu()}</button>
+          <button
+            css={css`
+              width: ${topPos > 0 ? '25' : '30'}px;
+              height: ${topPos > 0 ? '20' : '25'}px;
+            `}
+          >
+            {menu()}
+          </button>
         </div>
       </div>
 
@@ -173,7 +180,18 @@ export default function Layout() {
         </div>
       </div>
 
-      <div css={style.pageContent}>
+      <div
+        css={css`
+          ${style.pageContent};
+          padding-top: ${topPos > 0 ? '59' : '74'}px;
+          @media ${breakPoints.tabletPortrait} {
+            padding-top: ${topPos > 0 ? '60' : '85'}px;
+          }
+          @media ${breakPoints.desktopSmall} {
+            padding-top: ${topPos > 0 ? '76' : '106'}px;
+          }
+        `}
+      >
         <Outlet />
       </div>
     </div>

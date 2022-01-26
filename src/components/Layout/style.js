@@ -9,6 +9,15 @@ const style = {
   `,
   pageContent: css`
     height: 3000px;
+    transition: padding 0.3s ease-out;
+
+    padding: 10px;
+    @media ${breakPoints.tabletPortrait} {
+      padding: 15px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      padding: 20px;
+    }
   `,
   header: css`
     background: ${colours.c3};
@@ -171,9 +180,8 @@ const style = {
 
     button {
       display: block;
-      width: 30px;
-      height: 25px;
       background: transparent;
+      transition: all 0.3s ease-out;
 
       &:hover,
       &:active {
