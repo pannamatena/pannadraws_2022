@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import {
   logo,
   logoText,
@@ -12,9 +12,12 @@ import {
 } from '../../resources/icons';
 import { breakPoints } from '../../resources/breakpoints';
 import style from './style';
+import DesktopMenu from '../DesktopMenu';
+import MobileMenu from '../MobileMenu';
 
 export default function Layout() {
   const [topPos, setTopPos] = useState(0);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const setTopScrollVal = () => {
     const scrollY = window ? window.scrollY : 0;
@@ -78,40 +81,7 @@ export default function Layout() {
           </div>
         </div>
         <div css={style.headerRight}>
-          <nav css={style.mainMenu}>
-            <ul>
-              <li>
-                <NavLink to="/art">Art</NavLink>
-                <div css={style.subMenu}>
-                  <NavLink to="/art/animalArt">Birds & Wildlife</NavLink>
-                  <NavLink to="/art/adultColoring">Adult Colouring</NavLink>
-                  <NavLink to="/art/fantasyArt">Fantasy Art</NavLink>
-                </div>
-              </li>
-              <li>
-                <NavLink to="/shop">Shop</NavLink>
-                <div css={style.subMenu}>
-                  <NavLink to="/shop/originalArtShop">Original Art</NavLink>
-                  <NavLink to="/shop/artPrintShop">Art Prints</NavLink>
-                  <NavLink to="/shop/cardsAndBookmarksShop">
-                    Cards & Bookmarks
-                  </NavLink>
-                  <NavLink to="/shop/clothingShop">Clothing</NavLink>
-                  <NavLink to="/shop/stickersShop">Stickers</NavLink>
-                  <NavLink to="/shop/notebooksShop">Notebooks</NavLink>
-                </div>
-              </li>
-              <li>
-                <NavLink to="/commissionArt">Commission Art</NavLink>
-              </li>
-              <li>
-                <NavLink to="/about">About</NavLink>
-              </li>
-              <li>
-                <NavLink to="/contact">Contact</NavLink>
-              </li>
-            </ul>
-          </nav>
+          <DesktopMenu />
           <div css={style.socialMenu}>
             <ul>
               <li>
@@ -143,57 +113,17 @@ export default function Layout() {
               width: ${topPos > 0 ? '25' : '30'}px;
               height: ${topPos > 0 ? '20' : '25'}px;
             `}
+            onClick={() => setIsMobileMenuOpen(true)}
           >
             {menu()}
           </button>
         </div>
       </div>
 
-      <div css={style.mobileMenuContent}>
-        <nav css={style.mainMenuMobile}>
-          <ul>
-            <li>
-              <NavLink to="/art">Art</NavLink>
-            </li>
-            <li>
-              <NavLink to="/shop">Shop</NavLink>
-            </li>
-            <li>
-              <NavLink to="/commissionArt">Commission Art</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
-          </ul>
-        </nav>
-        <div css={style.socialMenuMobile}>
-          <ul>
-            <li>
-              <a
-                href="https://www.facebook.com/pannadraws"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="PannaDraws on Facebook"
-              >
-                {facebook()}
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/pannamatena/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="PannaDraws on Instagram"
-              >
-                {instagram()}
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+      />
 
       <div
         css={css`
