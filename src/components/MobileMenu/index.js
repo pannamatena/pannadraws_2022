@@ -7,7 +7,15 @@ import { facebook, instagram, close } from '../../resources/icons';
 import { breakPoints } from '../../resources/breakpoints';
 
 export default function MobileMenu(props) {
-  //const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [openSubmenu, setOpenSubmenu] = useState(null);
+
+  const triggerSubmenu = (subMenuId) => {
+    if (openSubmenu === subMenuId) {
+      setOpenSubmenu(null);
+    } else {
+      setOpenSubmenu(subMenuId);
+    }
+  };
 
   return (
     <div
@@ -25,20 +33,53 @@ export default function MobileMenu(props) {
       <nav css={style.mainMenu}>
         <ul>
           <li>
-            <NavLink to="/art" onClick={() => props.onClose()}>
+            <span
+              className="fakeLink"
+              onClick={() => triggerSubmenu('subMenu_art')}
+            >
               Art
-            </NavLink>
-            {/*<div id="subMenu_art" css={style.subMenu}>
-              <NavLink to="/art/animalArt">Birds & Wildlife</NavLink>
-              <NavLink to="/art/adultColoring">Adult Colouring</NavLink>
-              <NavLink to="/art/fantasyArt">Fantasy Art</NavLink>
-            </div>*/}
+            </span>
+            <div
+              id="subMenu_art"
+              css={css`
+                ${style.subMenu};
+                padding-top: ${openSubmenu === 'subMenu_art' ? '5px' : '0'};
+                height: ${openSubmenu === 'subMenu_art' ? '110px' : '0'};
+                @media ${breakPoints.tabletPortrait} {
+                  height: ${openSubmenu === 'subMenu_art' ? '130px' : '0'};
+                }
+              `}
+              onClick={() => props.onClose()}
+            >
+              <NavLink to="/art/animalArt" onClick={() => props.onClose()}>
+                Birds & Wildlife
+              </NavLink>
+              <NavLink to="/art/adultColoring" onClick={() => props.onClose()}>
+                Adult Colouring
+              </NavLink>
+              <NavLink to="/art/fantasyArt" onClick={() => props.onClose()}>
+                Fantasy Art
+              </NavLink>
+            </div>
           </li>
           <li>
-            <NavLink to="/shop" onClick={() => props.onClose()}>
+            <span
+              className="fakeLink"
+              onClick={() => triggerSubmenu('subMenu_shop')}
+            >
               Shop
-            </NavLink>
-            {/*<div id="subMenu_shop" css={style.subMenu}>
+            </span>
+            <div
+              id="subMenu_shop"
+              css={css`
+                ${style.subMenu};
+                padding-top: ${openSubmenu === 'subMenu_shop' ? '5px' : '0'};
+                height: ${openSubmenu === 'subMenu_shop' ? '203px' : '0'};
+                @media ${breakPoints.tabletPortrait} {
+                  height: ${openSubmenu === 'subMenu_shop' ? '245px' : '0'};
+                }
+              `}
+            >
               <NavLink to="/shop/originalArtShop">Original Art</NavLink>
               <NavLink to="/shop/artPrintShop">Art Prints</NavLink>
               <NavLink to="/shop/cardsAndBookmarksShop">
@@ -47,7 +88,7 @@ export default function MobileMenu(props) {
               <NavLink to="/shop/clothingShop">Clothing</NavLink>
               <NavLink to="/shop/stickersShop">Stickers</NavLink>
               <NavLink to="/shop/notebooksShop">Notebooks</NavLink>
-            </div>*/}
+            </div>
           </li>
           <li>
             <NavLink to="/commissionArt" onClick={() => props.onClose()}>

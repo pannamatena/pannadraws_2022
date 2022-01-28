@@ -28,7 +28,8 @@ const style = {
           margin: 0;
         }
 
-        a {
+        a,
+        .fakeLink {
           color: ${colours.c2};
           text-transform: uppercase;
           display: inline-block;
@@ -52,12 +53,19 @@ const style = {
           }
         }
 
+        .fakeLink {
+          &:hover {
+            color: ${colours.c2};
+          }
+        }
+
         & > div {
           height: 0;
           padding: 0;
         }
 
         &:hover {
+          cursor: pointer;
           & > div {
             height: 235px;
             padding: 5px 0 2px;

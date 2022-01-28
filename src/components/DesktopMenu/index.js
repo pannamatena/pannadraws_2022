@@ -9,7 +9,7 @@ export default function DesktopMenu() {
     <nav css={style.mainMenu}>
       <ul>
         <li>
-          <NavLink to="/art">Art</NavLink>
+          <span className="fakeLink">Art</span>
           <div css={style.subMenu}>
             <NavLink to="/art/animalArt">Birds & Wildlife</NavLink>
             <NavLink to="/art/adultColoring">Adult Colouring</NavLink>
@@ -17,7 +17,7 @@ export default function DesktopMenu() {
           </div>
         </li>
         <li>
-          <NavLink to="/shop">Shop</NavLink>
+          <span className="fakeLink">Shop</span>
           <div css={style.subMenu}>
             <NavLink to="/shop/originalArtShop">Original Art</NavLink>
             <NavLink to="/shop/artPrintShop">Art Prints</NavLink>

@@ -64,7 +64,8 @@ const style = {
         justify-content: flex-start;
         align-items: center;
 
-        a {
+        a,
+        .fakeLink {
           color: ${colours.c2};
           text-transform: uppercase;
           display: inline-block;
@@ -81,6 +82,13 @@ const style = {
             font-size: 3.1em;
           }
         }
+
+        .fakeLink {
+          &:hover,
+          &:active {
+            color: ${colours.c2};
+          }
+        }
       }
     }
   `,
@@ -90,30 +98,36 @@ const style = {
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
-    transition: height 0.3s ease-out;
+    transition: all 0.3s ease-out;
     width: 100%;
-    padding-top: 5px;
 
-    a:first-child {
-      border-top: 2px solid ${colours.c1};
-      position: relative;
-      display: block;
-      width: 100%;
-      text-align: center;
-      padding: 0 2px;
+    a {
+      font-size: 1.9em !important;
+      @media ${breakPoints.tabletPortrait} {
+        font-size: 2em !important;
+      }
 
-      &:before {
-        content: '';
+      &:first-child {
+        border-top: 2px solid ${colours.c1};
+        position: relative;
         display: block;
-        position: absolute;
-        top: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-bottom: 5px solid ${colours.c1};
+        width: 100%;
+        text-align: center;
+        padding: 0 2px;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-bottom: 5px solid ${colours.c1};
+        }
       }
     }
   `,
