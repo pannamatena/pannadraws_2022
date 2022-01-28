@@ -12,23 +12,16 @@ const style = {
     align-items: center;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    right: 0;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
     background: ${colours.c3};
     z-index: 800;
-
-    padding: 10px;
-    @media ${breakPoints.tabletPortrait} {
-      padding: 15px;
-    }
   `,
   closeBtn: css`
     display: block;
     background: transparent;
     position: absolute;
-    width: 30px;
-    height: 25px;
 
     top: 10px;
     right: 10px;

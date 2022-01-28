@@ -21,13 +21,25 @@ export default function MobileMenu(props) {
     <div
       css={css`
         ${style.mobileMenuContent};
-        display: ${props.isOpen ? 'flex' : 'none'};
+        width: ${props.isOpen ? '100vw' : '0'};
+        height: ${props.isOpen ? '100vh' : '0'};
+        padding: ${props.isOpen ? '10px' : '0'};
+        @media ${breakPoints.tabletPortrait} {
+          padding: ${props.isOpen ? '15px' : '0'};
+        }
         @media ${breakPoints.desktopSmall} {
           display: none;
         }
       `}
     >
-      <button css={style.closeBtn} onClick={() => props.onClose()}>
+      <button
+        css={css`
+          ${style.closeBtn};
+          width: ${props.isOpen ? '30px' : '0'};
+          height: ${props.isOpen ? '25px' : '0'};
+        `}
+        onClick={() => props.onClose()}
+      >
         {close()}
       </button>
       <nav css={style.mainMenu}>
