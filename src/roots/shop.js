@@ -1,13 +1,5 @@
 import * as React from 'react';
 
-export function Shop() {
-  return (
-    <div>
-      <h2>Shop</h2>
-    </div>
-  );
-}
-
 export function OriginalArtShop() {
   return (
     <div>

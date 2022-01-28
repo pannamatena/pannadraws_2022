@@ -1,11 +1,3 @@
-export function Art() {
-  return (
-    <div>
-      <h2>Art</h2>
-    </div>
-  );
-}
-
 export function AnimalArt() {
   return (
     <div>
