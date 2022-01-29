@@ -7,7 +7,6 @@ const style = {
     background: ${colours.c3};
   `,
   pageContent: css`
-    height: 3000px;
     transition: padding 0.3s ease-out;
 
     padding: 10px;

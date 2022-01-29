@@ -80,15 +80,18 @@ const style = {
     align-items: center;
     overflow: hidden;
     position: absolute;
-    top: 30px;
     left: 50%;
     background: ${colours.c3};
     transition: height 0.3s ease-out;
     transform: translateX(-50%);
 
     display: none;
+    top: 30px;
     @media ${breakPoints.tabletPortrait} {
       display: flex;
+    }
+    @media ${breakPoints.desktopLarge} {
+      top: 40px;
     }
 
     a:first-child {
