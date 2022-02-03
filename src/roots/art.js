@@ -1,12 +1,12 @@
-import MasonryLayout from '../components/MasonryLayout';
-import { imgData_2021 as imgDataAnimalArt_2021 } from '../resources/pictures/2021/imgData_animalArt_2021';
+import Gallery from '../components/Gallery';
+import imgDataAnimalArt_2021 from '../resources/pictures/2021/imgData_animalArt_2021';
 
 export function AnimalArt() {
   return (
     <div>
       <h2>All Birds & Wildlife Art</h2>
 
-      <MasonryLayout imgData={imgDataAnimalArt_2021} />
+      <Gallery imgData={imgDataAnimalArt_2021} />
       {/*<Link to="/irish_raptors/">Irish Raptors</Link>
       <Link to="/feathers_of_tales/">Feathers of Tales</Link>*/}
     </div>
