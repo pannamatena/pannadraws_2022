@@ -6,7 +6,7 @@ import { About } from '../roots/about';
 import { Contact } from '../roots/contact';
 import { NoMatch } from '../roots/noMatch';
 import { CommissionArt } from '../roots/commissionArt';
-import { AnimalArt, AdultColoring, FantasyArt } from '../roots/art';
+import { AnimalArt, ArtPage, AdultColoring, FantasyArt } from '../roots/art';
 import {
   OriginalArtShop,
   ArtPrintShop,
@@ -25,7 +25,9 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="art">
               <Route index element={<NoMatch />} />
-              <Route path="animalArt" element={<AnimalArt />} />
+              <Route path="animalArt" element={<AnimalArt />}>
+                <Route path=":imgTitle" element={<ArtPage />} />
+              </Route>
               <Route path="adultColoring" element={<AdultColoring />} />
               <Route path="fantasyArt" element={<FantasyArt />} />
               <Route path="*" element={<NoMatch />} />
