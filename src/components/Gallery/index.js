@@ -4,12 +4,12 @@ import Img from 'react-cool-img';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
-const createImgList = (imgMap) => {
+const createThumbList = (imgMap) => {
   return Object.keys(imgMap).map((img) => ({
-    src: imgMap[img].src,
+    src: imgMap[img].imgs.thumb.src,
     alt: `${imgMap[img].title} - ${imgMap[img].description}`,
-    width: imgMap[img].width,
-    height: imgMap[img].height,
+    width: imgMap[img].imgs.thumb.width,
+    height: imgMap[img].imgs.thumb.height,
   }));
 };
 
@@ -21,7 +21,7 @@ export default function Gallery(props) {
   const [imgList, setImgList] = useState([]);
 
   useEffect(() => {
-    setImgList(createImgList(props.imgData));
+    setImgList(createThumbList(props.imgData));
   }, [props.imgData]);
 
   return (

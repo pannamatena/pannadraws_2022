@@ -1,9 +1,18 @@
 const imgData_2021 = {
   the_five_ladies: {
     title: 'The Five Ladies',
-    src: require('./the_five_ladies_2021_web.jpg'),
-    width: 1500,
-    height: 983,
+    imgs: {
+      full: {
+        src: require('./the_five_ladies_2021_web.jpg'),
+        width: 1500,
+        height: 983,
+      },
+      thumb: {
+        src: require('./the_five_ladies_2021_thumb.jpg'),
+        width: 750,
+        height: 491,
+      },
+    },
     year: '2021',
     description:
       'Ink and watercolour on Arches HP 300gsm watercolour paper. 580 x 380 mm, 2021.',
@@ -22,9 +31,18 @@ const imgData_2021 = {
   },
   swan_and_dipper_ii: {
     title: 'Swan and Dipper II - Dipper',
-    src: require('./swan_and_dipper_ii_2021_web.jpg'),
-    width: 938,
-    height: 1500,
+    imgs: {
+      full: {
+        src: require('./swan_and_dipper_ii_2021_web.jpg'),
+        width: 938,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./swan_and_dipper_ii_2021_thumb.jpg'),
+        width: 468,
+        height: 748,
+      },
+    },
     year: '2021',
     description:
       'Ink and watercolour on cold-pressed watercolour paper. 150 x 240 mm, 2021.',
@@ -43,9 +61,18 @@ const imgData_2021 = {
   },
   swan_and_dipper_i: {
     title: 'Swan and Dipper I - Mute Swan',
-    src: require('./swan_and_dipper_i_2021_web.jpg'),
-    width: 937,
-    height: 1500,
+    imgs: {
+      full: {
+        src: require('./swan_and_dipper_i_2021_web.jpg'),
+        width: 937,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./swan_and_dipper_i_2021_thumb.jpg'),
+        width: 468,
+        height: 749,
+      },
+    },
     year: '2021',
     description:
       'Ink and watercolour on cold-pressed watercolour paper. 150 x 240 mm, 2021.',
@@ -64,9 +91,18 @@ const imgData_2021 = {
   },
   wicklows_eldest: {
     title: "Wicklow's Eldest",
-    src: require('./wicklows_eldest_2021_web.jpg'),
-    width: 800,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./wicklows_eldest_2021_web.jpg'),
+        width: 800,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./wicklows_eldest_2021_thumb.jpg'),
+        width: 400,
+        height: 500,
+      },
+    },
     year: '2021',
     description:
       'Ink, watercolour, gauche and acrylics on acrylic paper. 405 x 508 mm, 2021.',
@@ -85,9 +121,18 @@ const imgData_2021 = {
   },
   winter_birds_2021: {
     title: 'Winter Birds 2021',
-    src: require('./winter_birds_2021_2021_web.jpg'),
-    width: 1000,
-    height: 1200,
+    imgs: {
+      full: {
+        src: require('./winter_birds_2021_2021_web.jpg'),
+        width: 1000,
+        height: 1200,
+      },
+      thumb: {
+        src: require('./winter_birds_2021_2021_web.jpg'),
+        width: 1000,
+        height: 1200,
+      },
+    },
     year: '2021',
     description:
       'Ink and watercolour on watercolour paper. 210 x 210 mm each, 2021.',
@@ -114,9 +159,18 @@ const imgData_2021 = {
   },
   black_swan: {
     title: 'Black Swan',
-    src: require('./black_swan_2021_web.jpg'),
-    width: 707,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./black_swan_2021_web.jpg'),
+        width: 707,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./black_swan_2021_thumb.jpg'),
+        width: 353,
+        height: 499,
+      },
+    },
     year: '2021',
     description:
       'Ink and watercolour on cold-pressed watercolour paper. 297 x 420 mm, 2021.',
@@ -135,9 +189,18 @@ const imgData_2021 = {
   },
   flamingo: {
     title: 'Flamingo',
-    src: require('./flamingo_2021_web.jpg'),
-    width: 1000,
-    height: 707,
+    imgs: {
+      full: {
+        src: require('./flamingo_2021_web.jpg'),
+        width: 1000,
+        height: 707,
+      },
+      thumb: {
+        src: require('./flamingo_2021_thumb.jpg'),
+        width: 600,
+        height: 424,
+      },
+    },
     year: '2021',
     description:
       'Ink and watercolour on Arches HP 300gsm paper. 420 x 297 mm, 2021.',
@@ -156,9 +219,18 @@ const imgData_2021 = {
   },
   queen_of_hearts: {
     title: 'Queen of Hearts',
-    src: require('./queen_of_hearts_2021_web.jpg'),
-    width: 707,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./queen_of_hearts_2021_web.jpg'),
+        width: 707,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./queen_of_hearts_2021_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
     year: '2021',
     description:
       'Ink and watercolour on Arches HP 300gsm paper. 380 x 580 mm, 2021.',
@@ -177,9 +249,18 @@ const imgData_2021 = {
   },
   wood_screecher: {
     title: 'Wood Screecher',
-    src: require('./wood_screecher_2021_web.jpg'),
-    width: 707,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./wood_screecher_2021_web.jpg'),
+        width: 707,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./wood_screecher_2021_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
     year: '2021',
     description:
       'Ink and watercolour on hot-pressed watercolour paper. 297 x 420 mm, 2021.',
@@ -198,9 +279,18 @@ const imgData_2021 = {
   },
   domesticated_nomad: {
     title: 'Domesticated Nomad',
-    src: require('./domesticated_nomad_2021_web.jpg'),
-    width: 725,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./domesticated_nomad_2021_web.jpg'),
+        width: 725,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./domesticated_nomad_2021_thumb.jpg'),
+        width: 435,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on Fabriano HP 640g. 280 x 380 mm, 2021.',
     price: 130,
@@ -218,9 +308,18 @@ const imgData_2021 = {
   },
   kingfisher: {
     title: 'Kingfisher',
-    src: require('./kingfisher_2021_web.jpg'),
-    width: 707,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./kingfisher_2021_web.jpg'),
+        width: 707,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./kingfisher_2021_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 297 x 420 mm, 2021.',
     price: 145,
@@ -238,9 +337,18 @@ const imgData_2021 = {
   },
   hoodie: {
     title: 'Hoodie',
-    src: require('./hoodie_2021_web.jpg'),
-    width: 661,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./hoodie_2021_web.jpg'),
+        width: 661,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./hoodie_2021_thumb.jpg'),
+        width: 397,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 380 x 580 mm, 2021.',
     price: 265,
@@ -258,9 +366,18 @@ const imgData_2021 = {
   },
   before_the_explosion: {
     title: 'Before the Explosion',
-    src: require('./before_the_explosion_2021_web.jpg'),
-    width: 1500,
-    height: 763,
+    imgs: {
+      full: {
+        src: require('./before_the_explosion_2021_web.jpg'),
+        width: 1500,
+        height: 763,
+      },
+      thumb: {
+        src: require('./before_the_explosion_2021_thumb.jpg'),
+        width: 900,
+        height: 458,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 568 x 290 mm, 2021.',
     price: 220,
@@ -278,9 +395,18 @@ const imgData_2021 = {
   },
   thirsty_chough: {
     title: 'Thirsty Chough',
-    src: require('./thirsty_chough_2021_web.jpg'),
-    width: 1000,
-    height: 707,
+    imgs: {
+      full: {
+        src: require('./thirsty_chough_2021_web.jpg'),
+        width: 1000,
+        height: 707,
+      },
+      thumb: {
+        src: require('./thirsty_chough_2021_thumb.jpg'),
+        width: 600,
+        height: 424,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 380 x 280 mm, 2021.',
     price: 100,
@@ -298,9 +424,18 @@ const imgData_2021 = {
   },
   ivy_gentleman: {
     title: 'Ivy Gentleman',
-    src: require('./ivy_gentleman_2021_web.jpg'),
-    width: 1000,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./ivy_gentleman_2021_web.jpg'),
+        width: 1000,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./ivy_gentleman_2021_thumb.jpg'),
+        width: 600,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 285 x 285 mm, 2021.',
     price: 125,
@@ -326,9 +461,18 @@ const imgData_2021 = {
   },
   red_kite: {
     title: 'Red Kite',
-    src: require('./red_kite_2021_web.jpg'),
-    width: 674,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./red_kite_2021_web.jpg'),
+        width: 674,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./red_kite_2021_thumb.jpg'),
+        width: 404,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 190 x 280 mm, 2021. Framed.',
     price: 183,
@@ -346,9 +490,18 @@ const imgData_2021 = {
   },
   greyhead: {
     title: 'Greyhead',
-    src: require('./greyhead_2021_web.jpg'),
-    width: 707,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./greyhead_2021_web.jpg'),
+        width: 707,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./greyhead_2021_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 420 x 594 mm, 2021.',
     price: 250,
@@ -366,9 +519,18 @@ const imgData_2021 = {
   },
   kestrel: {
     title: 'Kestrel',
-    src: require('./kestrel_2021_web.jpg'),
-    width: 674,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./kestrel_2021_web.jpg'),
+        width: 674,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./kestrel_2021_thumb.jpg'),
+        width: 404,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 190 x 280 mm, 2021. Framed.',
     price: 183,
@@ -386,9 +548,18 @@ const imgData_2021 = {
   },
   caladrius: {
     title: 'Caladrius',
-    src: require('./caladrius_2021_web.jpg'),
-    width: 1000,
-    height: 704,
+    imgs: {
+      full: {
+        src: require('./caladrius_2021_web.jpg'),
+        width: 1000,
+        height: 704,
+      },
+      thumb: {
+        src: require('./caladrius_2021_thumb.jpg'),
+        width: 600,
+        height: 422,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 594 x 420 mm, 2021.',
     price: 220,
@@ -405,9 +576,18 @@ const imgData_2021 = {
   },
   sunny_december_day: {
     title: 'Sunny December Day',
-    src: require('./sunny_december_day_2021_web.jpg'),
-    width: 1000,
-    height: 736,
+    imgs: {
+      full: {
+        src: require('./sunny_december_day_2021_web.jpg'),
+        width: 1000,
+        height: 736,
+      },
+      thumb: {
+        src: require('./sunny_december_day_2021_thumb.jpg'),
+        width: 600,
+        height: 442,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 380 x 280 mm, 2021.',
     price: 120,
@@ -424,9 +604,18 @@ const imgData_2021 = {
   },
   musket: {
     title: 'Musket',
-    src: require('./musket_2021_web.jpg'),
-    width: 673,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./musket_2021_web.jpg'),
+        width: 673,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./musket_2021_thumb.jpg'),
+        width: 404,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 190 x 280 mm, 2021. Framed.',
     price: 183,
@@ -444,9 +633,18 @@ const imgData_2021 = {
   },
   hawk_of_st_annes: {
     title: "Hawk of St Anne's",
-    src: require('./hawk_of_st_annes_2021_web.jpg'),
-    width: 697,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./hawk_of_st_annes_2021_web.jpg'),
+        width: 697,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./hawk_of_st_annes_2021_thumb.jpg'),
+        width: 418,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 210 x 297 mm, 2021.',
     price: 120,
@@ -463,9 +661,18 @@ const imgData_2021 = {
   },
   the_birdfeeder: {
     title: 'The Birdfeeder',
-    src: require('./the_birdfeeder_2021_web.jpg'),
-    width: 705,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./the_birdfeeder_2021_web.jpg'),
+        width: 705,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./the_birdfeeder_2021_thumb.jpg'),
+        width: 423,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 210 x 297 mm, 2021.',
     price: 90,
@@ -482,9 +689,18 @@ const imgData_2021 = {
   },
   bone_raven: {
     title: 'Bone Raven',
-    src: require('./bone_raven_2021_web.jpg'),
-    width: 707,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./bone_raven_2021_web.jpg'),
+        width: 707,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./bone_raven_2021_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 420 x 594 mm, 2021.',
     price: 250,
@@ -509,9 +725,18 @@ const imgData_2021 = {
   },
   peregrine: {
     title: 'Peregrine',
-    src: require('./peregrine_2021_web.jpg'),
-    width: 772,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./peregrine_2021_web.jpg'),
+        width: 772,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./peregrine_2021_thumb.jpg'),
+        width: 463,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 216 x 278 mm, 2021. Framed.',
     price: 85,
@@ -528,9 +753,18 @@ const imgData_2021 = {
   },
   bistre_doe: {
     title: 'Bistre Doe',
-    src: require('./bistre_doe_2021_web.jpg'),
-    width: 800,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./bistre_doe_2021_web.jpg'),
+        width: 800,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./bistre_doe_2021_thumb.jpg'),
+        width: 480,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 405 x 508 mm, 2021.',
     price: 215,
@@ -547,9 +781,18 @@ const imgData_2021 = {
   },
   the_hug: {
     title: 'The Hug',
-    src: require('./the_hug_2021_web.jpg'),
-    width: 1000,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./the_hug_2021_web.jpg'),
+        width: 1500,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./the_hug_2021_thumb.jpg'),
+        width: 600,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 112 x 278 mm, 2021.',
     price: 55,
@@ -574,9 +817,18 @@ const imgData_2021 = {
   },
   low_tide_tale: {
     title: 'Low Tide Tale',
-    src: require('./low_tide_tale_2021_web.jpg'),
-    width: 792,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./low_tide_tale_2021_web.jpg'),
+        width: 792,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./low_tide_tale_2021_thumb.jpg'),
+        width: 475,
+        height: 600,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on paper. 195 x 255 mm, 2021.',
     price: 75,
@@ -601,9 +853,18 @@ const imgData_2021 = {
   },
   spear: {
     title: 'Spear',
-    src: require('./spear_2021_web.jpg'),
-    width: 1000,
-    height: 800,
+    imgs: {
+      full: {
+        src: require('./spear_2021_web.jpg'),
+        width: 1000,
+        height: 800,
+      },
+      thumb: {
+        src: require('./spear_2021_thumb.jpg'),
+        width: 600,
+        height: 480,
+      },
+    },
     year: '2021',
     description: 'Ink and watercolour on acrylic paper. 508 x 405 mm, 2021.',
     price: 200,
@@ -620,9 +881,18 @@ const imgData_2021 = {
   },
   buttercups: {
     title: 'Buttercups',
-    src: require('./buttercups_2021_web.jpg'),
-    width: 714,
-    height: 1000,
+    imgs: {
+      full: {
+        src: require('./buttercups_2021_web.jpg'),
+        width: 714,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./buttercups_2021_thumb.jpg'),
+        width: 428,
+        height: 600,
+      },
+    },
     year: '2021',
     description:
       'Ink and watercolour on watercolour paper. 210 x 297 mm, 2021.',
