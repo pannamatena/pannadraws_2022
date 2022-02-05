@@ -1,5 +1,6 @@
 import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
+import { fonts } from '../../resources/fonts';
 import { breakPoints } from '../../resources/breakpoints';
 
 const style = {
@@ -139,6 +140,84 @@ const style = {
           }
         }
       }
+    }
+  `,
+  footerContainer: css`
+    color: ${colours.c3};
+    background: ${colours.c2};
+    font-family: ${fonts.f2};
+    font-size: 0.9em;
+
+    padding: 10px 10px 67px;
+    @media ${breakPoints.tabletPortrait} {
+      padding: 15px 15px 60px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      padding: 20px 20px 62px;
+    }
+
+    a {
+      color: ${colours.c1};
+      font-family: ${fonts.f1};
+      font-size: 1em;
+      text-transform: uppercase;
+    }
+  `,
+  footerSocial: css`
+    padding: 5px 0 10px 0;
+    @media ${breakPoints.tabletPortrait} {
+      padding: 5px 0 15px 0;
+    }
+    @media ${breakPoints.desktopSmall} {
+      padding: 5px 0 20px 0;
+    }
+    @media ${breakPoints.desktopLarge} {
+      padding-top: 10px;
+    }
+
+    span {
+      :after {
+        content: '|';
+        display: inline-block;
+
+        padding: 0 10px;
+        @media ${breakPoints.tabletPortrait} {
+          padding: 0 15px;
+        }
+        @media ${breakPoints.desktopSmall} {
+          padding: 0 20px;
+        }
+      }
+
+      :first-of-type {
+        a {
+          padding-left: 0;
+        }
+      }
+
+      :last-child {
+        :after {
+          display: none;
+        }
+      }
+    }
+
+    a {
+      color: ${colours.c3};
+      padding: 0;
+
+      :hover,
+      :active {
+        color: ${colours.c1};
+      }
+    }
+  `,
+  cookiePP: css`
+    color: ${colours.c1};
+    font-weight: bold;
+
+    &:hover {
+      color: ${colours.c1_h};
     }
   `,
 };

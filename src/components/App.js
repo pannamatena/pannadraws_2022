@@ -4,6 +4,8 @@ import Layout from './Layout';
 import { Home } from '../roots/home';
 import { About } from '../roots/about';
 import { Contact } from '../roots/contact';
+import { PrivacyPolicy } from '../roots/privacyPolicy';
+import { ReturnPolicy } from '../roots/returnPolicy';
 import { NoMatch } from '../roots/noMatch';
 import { CommissionArt } from '../roots/commissionArt';
 import { AnimalArt, ArtPage, AdultColoring, FantasyArt } from '../roots/art';
@@ -48,6 +50,8 @@ export default function App() {
             </Route>
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="return_policy" element={<ReturnPolicy />} />
+            <Route path="privacy_policy" element={<PrivacyPolicy />} />
             <Route path="*" element={<NoMatch />} />
           </Route>
         </Routes>

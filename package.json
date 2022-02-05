@@ -8,6 +8,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",
+    "react-cookie-consent": "^7.2.1",
     "react-cool-img": "^1.2.12",
     "react-dom": "^17.0.2",
     "react-photo-album": "^1.5.4",

@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import { Link, Outlet } from 'react-router-dom';
+import CookieConsent from 'react-cookie-consent';
+import { colours } from '../../resources/colors';
+import { fonts } from '../../resources/fonts';
 import {
   logo,
   logoText,
@@ -34,6 +37,26 @@ export default function Layout() {
 
   return (
     <div css={style.layout}>
+      <CookieConsent
+        location="bottom"
+        buttonText="Accept"
+        cookieName="PannaDraws Cookie Consent"
+        style={{ background: colours.c2, fontSize: '1em' }}
+        buttonStyle={{
+          color: colours.c3,
+          fontSize: '1em',
+          background: colours.c1,
+          fontFamily: fonts.f1,
+          textTransform: 'uppercase',
+        }}
+      >
+        This site uses cookies to enhance user experience. To learn more about
+        how PannaDraws uses cookies please read my{' '}
+        <Link css={style.cookiePP} to="/privacy_policy">
+          Privacy Policy
+        </Link>
+        .
+      </CookieConsent>
       <div
         css={css`
           ${style.header};
@@ -129,15 +152,54 @@ export default function Layout() {
         css={css`
           ${style.pageContent};
           padding-top: ${topPos > 0 ? '59' : '74'}px;
+          min-height: calc(100vh - ${topPos > 0 ? '59' : '74'}px - 100px);
           @media ${breakPoints.tabletPortrait} {
             padding-top: ${topPos > 0 ? '60' : '85'}px;
+            min-height: calc(100vh - ${topPos > 0 ? '60' : '85'}px - 70px);
           }
           @media ${breakPoints.desktopSmall} {
             padding-top: ${topPos > 0 ? '76' : '106'}px;
+            min-height: calc(100vh - ${topPos > 0 ? '76' : '106'}px - 50px);
           }
         `}
       >
         <Outlet />
+      </div>
+
+      <div css={style.footerContainer}>
+        <p>All prices are indicated in EUR. Shipping costs are not included.</p>
+        <p>
+          Artwork and content &copy; {new Date().getFullYear()} Panna Zsamba
+        </p>
+        <div css={style.footerSocial}>
+          <span>
+            <a
+              href="https://www.facebook.com/pannadraws"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="PannaDraws on Facebook"
+            >
+              Facebook
+            </a>
+          </span>
+          <span>
+            <a
+              href="https://www.instagram.com/pannamatena/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="PannaDraws on Instagram"
+            >
+              Instagram
+            </a>
+          </span>
+          <span>
+            <Link to="/return_policy">Return policy</Link>
+          </span>
+          <span>
+            <Link to="/privacy_policy">Privacy policy</Link>
+          </span>
+          {/*<span><Link to="/faq">FAQ</Link></span>*/}
+        </div>
       </div>
     </div>
   );
