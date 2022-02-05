@@ -16,32 +16,36 @@ const createThumbList = (imgMap) => {
   }));
 };
 
-function GalleryTile({ imageProps: { alt, style, title, ...restImageProps } }) {
-  return (
-    <Link
-      to={`/art/animalArt/${title}`}
-      css={css`
-        ${galleryStyle.galleryTile};
-        width: ${style?.width};
-      `}
-    >
-      <Img
-        lazy
-        cache
-        alt={alt}
-        {...restImageProps}
-        style={{ ...style, width: '100%', padding: 0 }}
-      />
-    </Link>
-  );
-}
-
 export default function Gallery(props) {
   const [imgList, setImgList] = useState([]);
 
   useEffect(() => {
     setImgList(createThumbList(props.imgData));
   }, [props.imgData]);
+
+  function GalleryTile({
+    imageProps: { alt, style, title, ...restImageProps },
+  }) {
+    const imgId = title.split('-');
+    return (
+      <Link
+        to={`/art/animalArt/${title}`}
+        state={{ imgData: props.imgData[imgId[0]] }}
+        css={css`
+          ${galleryStyle.galleryTile};
+          width: ${style?.width};
+        `}
+      >
+        <Img
+          lazy
+          cache
+          alt={alt}
+          {...restImageProps}
+          style={{ ...style, width: '100%', padding: 0 }}
+        />
+      </Link>
+    );
+  }
 
   return (
     <PhotoAlbum

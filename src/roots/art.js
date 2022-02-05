@@ -1,11 +1,12 @@
 import { Outlet, useParams } from 'react-router-dom';
 import Gallery from '../components/Gallery';
+import ArtPageComp from '../components/ArtPage';
 import imgDataAnimalArt_2021 from '../resources/pictures/2021/imgData_animalArt_2021';
 
 export function AnimalArt() {
   let params = useParams();
   return (
-    <div>
+    <>
       {params.imgTitle ? (
         <Outlet />
       ) : (
@@ -17,17 +18,13 @@ export function AnimalArt() {
 
       {/*<Link to="/irish_raptors/">Irish Raptors</Link>
       <Link to="/feathers_of_tales/">Feathers of Tales</Link>*/}
-    </div>
+    </>
   );
 }
 
 export function ArtPage() {
   let params = useParams();
-  return (
-    <div>
-      <h2>This is {params.imgTitle}</h2>
-    </div>
-  );
+  return <ArtPageComp imgTitle={params.imgTitle} />;
 }
 
 export function AdultColoring() {
