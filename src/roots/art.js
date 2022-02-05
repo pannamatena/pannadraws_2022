@@ -2,6 +2,7 @@ import { Outlet, useParams } from 'react-router-dom';
 import Gallery from '../components/Gallery';
 import ArtPageComp from '../components/ArtPage';
 import imgDataAnimalArt_2021 from '../resources/pictures/2021/imgData_animalArt_2021';
+import imgDataAnimalArt_2020 from '../resources/pictures/2020/imgData_animalArt_2020';
 
 export function AnimalArt() {
   let params = useParams();
@@ -12,7 +13,10 @@ export function AnimalArt() {
       ) : (
         <>
           <h2>All Birds & Wildlife Art</h2>
+          <h3>2021</h3>
           <Gallery imgData={imgDataAnimalArt_2021} />
+          <h3>2020</h3>
+          <Gallery imgData={imgDataAnimalArt_2020} />
         </>
       )}
 

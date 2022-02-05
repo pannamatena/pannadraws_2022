@@ -36,9 +36,12 @@ const style = {
           white-space: nowrap;
 
           :hover,
-          :active,
-          &.active {
+          :active {
             color: ${colours.c1};
+          }
+
+          &.active {
+            border-bottom: 2px solid ${colours.c1};
           }
 
           font-size: 1.3em;

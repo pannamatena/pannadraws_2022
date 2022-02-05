@@ -17,6 +17,59 @@ const style = {
     @media ${breakPoints.desktopSmall} {
       padding: 20px;
     }
+
+    h1 {
+      font-family: ${fonts.f1};
+      text-transform: uppercase;
+
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      @media ${breakPoints.tabletPortrait} {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+      }
+      @media ${breakPoints.desktopSmall} {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+      @media ${breakPoints.desktopLarge} {
+        font-size: 2em;
+      }
+    }
+
+    h2 {
+      font-family: ${fonts.f1};
+      text-transform: uppercase;
+
+      font-size: 1.3em;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      @media ${breakPoints.tabletPortrait} {
+        font-size: 1.4em;
+      }
+      @media ${breakPoints.desktopSmall} {
+        font-size: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+      @media ${breakPoints.desktopLarge} {
+        font-size: 2em;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      font-size: 1.2em;
+
+      margin-bottom: 10px;
+      @media ${breakPoints.tabletPortrait} {
+        margin-bottom: 15px;
+      }
+      @media ${breakPoints.desktopSmall} {
+        margin-bottom: 20px;
+      }
+    }
   `,
   header: css`
     background: ${colours.c3};
