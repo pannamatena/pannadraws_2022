@@ -12,15 +12,23 @@ export default function ArtPage(props) {
   const imgData = location.state.imgData;
 
   return (
-    <div css={style.layout}>
-      <button onClick={() => navigate(-1)}>Back</button>
-      <h2>This is {props.imgTitle}</h2>
-      <Img
-        lazy
-        cache
-        alt={`${imgData.title}. ${imgData.description}`}
-        src={imgData.imgs.full.src}
-      />
+    <div className="artPage">
+      <button css={style.backBtn} onClick={() => navigate(-1)}>
+        Back
+      </button>
+      <div css={style.layout}>
+        <div css={style.imgContainer}>
+          <Img
+            lazy
+            cache
+            alt={`${imgData.title}. ${imgData.description}`}
+            src={imgData.imgs.full.src}
+          />
+        </div>
+        <div css={style.imgDataContainer}>
+          <h1>{imgData.title}</h1>
+        </div>
+      </div>
     </div>
   );
 }

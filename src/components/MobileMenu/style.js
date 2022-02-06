@@ -70,9 +70,9 @@ const style = {
             color: ${colours.c1};
           }
 
-          font-size: 3em;
+          font-size: 36px;
           @media ${breakPoints.tabletPortrait} {
-            font-size: 3.1em;
+            font-size: 42px;
           }
         }
 
@@ -95,9 +95,9 @@ const style = {
     width: 100%;
 
     a {
-      font-size: 1.9em !important;
+      font-size: 22px !important;
       @media ${breakPoints.tabletPortrait} {
-        font-size: 2em !important;
+        font-size: 28px !important;
       }
 
       &:first-child {

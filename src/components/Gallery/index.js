@@ -37,9 +37,12 @@ export default function Gallery(props) {
           width: ${style?.width};
         `}
       >
-        <div className="hoverContainer" css={galleryStyle.hoverContainer}>
-          <h3>{currentImgData.title}</h3>
+        <div className="hoverContainer">
+          <h3 css={galleryStyle.hoverContainerImgTitle}>
+            {currentImgData.title}
+          </h3>
           <p>{currentImgData.description}</p>
+          <p css={galleryStyle.clickForMore}>Click for more info</p>
         </div>
         {currentImgData.original === 'SOLD' && (
           <span

@@ -1,6 +1,12 @@
 import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
-import { fonts } from '../../resources/fonts';
+import {
+  fonts,
+  largeHeadFontSize,
+  mediumHeadFontSize,
+  smallHeadFontSize,
+  textSize,
+} from '../../resources/fonts';
 import { breakPoints } from '../../resources/breakpoints';
 
 const style = {
@@ -22,18 +28,13 @@ const style = {
       font-family: ${fonts.f1};
       text-transform: uppercase;
 
-      font-size: 1.3em;
+      ${largeHeadFontSize};
       margin-bottom: 10px;
       @media ${breakPoints.tabletPortrait} {
-        font-size: 1.4em;
         margin-bottom: 15px;
       }
       @media ${breakPoints.desktopSmall} {
-        font-size: 1.5em;
         margin-bottom: 20px;
-      }
-      @media ${breakPoints.desktopLarge} {
-        font-size: 2em;
       }
     }
 
@@ -41,19 +42,12 @@ const style = {
       font-family: ${fonts.f1};
       text-transform: uppercase;
 
-      font-size: 1.3em;
+      ${mediumHeadFontSize};
       margin-bottom: 10px;
-      @media ${breakPoints.tabletPortrait} {
-        font-size: 1.4em;
-      }
       @media ${breakPoints.desktopSmall} {
-        font-size: 1.5em;
-        margin-top: 30px;
         margin-bottom: 15px;
       }
       @media ${breakPoints.desktopLarge} {
-        font-size: 2em;
-        margin-top: 40px;
         margin-bottom: 20px;
       }
     }
@@ -63,7 +57,7 @@ const style = {
       text-transform: uppercase;
       border-bottom: 2px solid ${colours.c1};
 
-      font-size: 1.3em;
+      ${smallHeadFontSize};
       margin-bottom: 10px;
       @media ${breakPoints.desktopSmall} {
         margin-bottom: 15px;
@@ -78,8 +72,7 @@ const style = {
     }
 
     p {
-      font-size: 1.2em;
-
+      ${textSize};
       margin-bottom: 10px;
       @media ${breakPoints.tabletPortrait} {
         margin-bottom: 15px;
@@ -217,7 +210,7 @@ const style = {
     color: ${colours.c3};
     background: ${colours.c2};
     font-family: ${fonts.f2};
-    font-size: 0.9em;
+    font-size: 12px;
 
     padding: 10px 10px 67px;
     @media ${breakPoints.tabletPortrait} {
@@ -230,7 +223,7 @@ const style = {
     a {
       color: ${colours.c1};
       font-family: ${fonts.f1};
-      font-size: 1em;
+      font-size: 14px;
       text-transform: uppercase;
     }
   `,

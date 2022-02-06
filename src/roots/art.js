@@ -14,7 +14,7 @@ export function AnimalArt() {
         <Outlet />
       ) : (
         <>
-          <h2>All Birds & Wildlife Art</h2>
+          <h1>All Birds & Wildlife Art</h1>
           <h3 className="galleryTitle">2021</h3>
           <Gallery imgData={imgDataAnimalArt_2021} />
           <h3 className="galleryTitle">2020</h3>

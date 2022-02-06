@@ -49,13 +49,28 @@ const style = {
       }
     }
   `,
-  hoverContainer: css`
-    h3 {
-      font-family: ${fonts.f1};
+  hoverContainerImgTitle: css`
+    font-family: ${fonts.f1} !important;
+    font-size: 18px;
+    @media ${breakPoints.desktopSmall} {
+      font-size: 20px;
     }
+  `,
+  clickForMore: css`
+    font-size: 1.2em;
+    font-family: ${fonts.f1};
+    text-transform: uppercase;
+    color: ${colours.c1};
 
-    p {
-      font-size: 1em;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid ${colours.c1};
+      margin-left: 5px;
     }
   `,
   label: css`

@@ -44,15 +44,11 @@ const style = {
             border-bottom: 2px solid ${colours.c1};
           }
 
-          font-size: 1.3em;
-          @media ${breakPoints.tabletPortrait} {
-            font-size: 1.4em;
-          }
           @media ${breakPoints.desktopSmall} {
-            font-size: 1.5em;
+            font-size: 22px;
           }
           @media ${breakPoints.desktopLarge} {
-            font-size: 2em;
+            font-size: 32px;
           }
         }
 
