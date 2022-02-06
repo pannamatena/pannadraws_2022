@@ -27,15 +27,51 @@ export default function Gallery(props) {
     imageProps: { alt, style, title, ...restImageProps },
   }) {
     const imgId = title.split('-');
+    const currentImgData = props.imgData[imgId[0]];
     return (
       <Link
         to={`/art/animalArt/${title}`}
-        state={{ imgData: props.imgData[imgId[0]] }}
+        state={{ imgData: currentImgData }}
         css={css`
           ${galleryStyle.galleryTile};
           width: ${style?.width};
         `}
       >
+        <div className="hoverContainer" css={galleryStyle.hoverContainer}>
+          <h3>{currentImgData.title}</h3>
+          <p>{currentImgData.description}</p>
+        </div>
+        {currentImgData.original === 'SOLD' && (
+          <span
+            css={css`
+              ${galleryStyle.label};
+              ${galleryStyle.labelSold}
+            `}
+          >
+            Sold
+          </span>
+        )}
+        {currentImgData.prints === 'AVAILABLE' && (
+          <span
+            css={css`
+              ${galleryStyle.label};
+              ${galleryStyle.labelPrintsAvailable}
+            `}
+          >
+            Prints Available!
+          </span>
+        )}
+        {currentImgData.ship === 'FREE_IRL' &&
+          currentImgData.original !== 'SOLD' && (
+            <span
+              css={css`
+                ${galleryStyle.label};
+                ${galleryStyle.labelFreeShipROI}
+              `}
+            >
+              FREE shipping to Ireland!
+            </span>
+          )}
         <Img
           lazy
           cache
@@ -48,13 +84,15 @@ export default function Gallery(props) {
   }
 
   return (
-    <PhotoAlbum
-      layout="rows"
-      photos={imgList}
-      renderPhoto={GalleryTile}
-      padding={0}
-      spacing={3}
-      targetRowHeight={500}
-    />
+    <div css={galleryStyle.galleryContainer}>
+      <PhotoAlbum
+        layout="rows"
+        photos={imgList}
+        renderPhoto={GalleryTile}
+        padding={0}
+        spacing={3}
+        targetRowHeight={500}
+      />
+    </div>
   );
 }

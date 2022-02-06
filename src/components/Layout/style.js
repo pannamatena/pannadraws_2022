@@ -42,7 +42,6 @@ const style = {
       text-transform: uppercase;
 
       font-size: 1.3em;
-      margin-top: 20px;
       margin-bottom: 10px;
       @media ${breakPoints.tabletPortrait} {
         font-size: 1.4em;
@@ -56,6 +55,25 @@ const style = {
         font-size: 2em;
         margin-top: 40px;
         margin-bottom: 20px;
+      }
+    }
+
+    h3 {
+      font-family: ${fonts.f2};
+      text-transform: uppercase;
+      border-bottom: 2px solid ${colours.c1};
+
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      @media ${breakPoints.desktopSmall} {
+        margin-bottom: 15px;
+      }
+      @media ${breakPoints.desktopLarge} {
+        margin-bottom: 20px;
+      }
+
+      &.galleryTitle {
+        margin-bottom: 5px;
       }
     }
 

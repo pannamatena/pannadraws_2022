@@ -8,4 +8,5 @@ export const colours = {
   c2_h: '#0F0E0D',
   c_success: '#407E1F',
   c_error: '#d40707',
+  c2_transparent: 'rgba(33,30,28,.8)',
 };
