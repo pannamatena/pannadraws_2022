@@ -5,6 +5,10 @@ import { css } from '@emotion/react';
 import Img from 'react-cool-img';
 import style from './style';
 
+function createMarkup(story) {
+  return { __html: story };
+}
+
 export default function ArtPage(props) {
   let navigate = useNavigate();
   let location = useLocation();
@@ -27,6 +31,9 @@ export default function ArtPage(props) {
         </div>
         <div css={style.imgDataContainer}>
           <h1>{imgData.title}</h1>
+          <span css={style.year}>{imgData.year}</span>
+          <p>{imgData.description}</p>
+          <p dangerouslySetInnerHTML={createMarkup(imgData.story)} />
         </div>
       </div>
     </div>

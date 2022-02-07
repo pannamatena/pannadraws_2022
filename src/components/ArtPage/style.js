@@ -6,10 +6,19 @@ import { fonts, largeHeadFontSize } from '../../resources/fonts';
 const style = {
   layout: css`
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
 
+    flex-direction: column;
+    margin-top: 10px;
+    @media ${breakPoints.tabletPortrait} {
+      margin-top: 15px;
+    }
     @media ${breakPoints.tabletLandscape} {
       flex-direction: row;
+    }
+    @media ${breakPoints.desktopSmall} {
+      margin-top: 20px;
     }
   `,
   backBtn: css`
@@ -36,7 +45,7 @@ const style = {
     }
   `,
   imgContainer: css`
-    background: ${colours.c4};
+    background: ${colours.c5};
     display: inline-block;
 
     padding: 2px;
@@ -44,7 +53,32 @@ const style = {
       padding: 5px;
     }
   `,
-  imgDataContainer: css``,
+  imgDataContainer: css`
+    max-width: 600px;
+    padding: 0 10px 10px;
+    @media ${breakPoints.tabletPortrait} {
+      padding: 0 15px 15px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      padding: 0 20px 20px;
+    }
+
+    h1 {
+      margin-bottom: 0;
+    }
+  `,
+  year: css`
+    color: ${colours.c4};
+    display: block;
+
+    margin-bottom: 10px;
+    @media ${breakPoints.tabletPortrait} {
+      margin-bottom: 15px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      margin-bottom: 20px;
+    }
+  `,
 };
 
 export default style;
