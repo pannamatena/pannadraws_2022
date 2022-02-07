@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { css } from '@emotion/react';
 import Img from 'react-cool-img';
 import style from './style';
+import ArtActionBox from '../ArtActionBox';
 
 function createMarkup(story) {
   return { __html: story };
@@ -34,6 +35,7 @@ export default function ArtPage(props) {
           <span css={style.year}>{imgData.year}</span>
           <p>{imgData.description}</p>
           <p dangerouslySetInnerHTML={createMarkup(imgData.story)} />
+          <ArtActionBox imgData={imgData} />
         </div>
       </div>
     </div>
