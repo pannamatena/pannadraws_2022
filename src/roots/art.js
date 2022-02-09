@@ -5,6 +5,7 @@ import Gallery from '../components/Gallery';
 import ArtPageComp from '../components/ArtPage';
 import imgDataAnimalArt_2021 from '../resources/pictures/2021/imgData_animalArt_2021';
 import imgDataAnimalArt_2020 from '../resources/pictures/2020/imgData_animalArt_2020';
+import imgDataFantasyArt_2020 from '../resources/pictures/2020/imgData_fantasyArt_2020';
 
 export function AnimalArt() {
   let params = useParams();
@@ -42,9 +43,21 @@ export function AdultColoring() {
 }
 
 export function FantasyArt() {
+  let params = useParams();
   return (
-    <div>
-      <h2>Fantasy Art</h2>
-    </div>
+    <>
+      {params.imgTitle ? (
+        <Outlet />
+      ) : (
+        <>
+          <h1>Fantasy Art</h1>
+          <h3 className="galleryTitle">2020</h3>
+          <Gallery imgData={imgDataFantasyArt_2020} />
+        </>
+      )}
+
+      {/*<Link to="/irish_raptors/">Irish Raptors</Link>
+      <Link to="/feathers_of_tales/">Feathers of Tales</Link>*/}
+    </>
   );
 }
