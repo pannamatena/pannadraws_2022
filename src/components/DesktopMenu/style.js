@@ -91,7 +91,7 @@ const style = {
       ${smallHeadFontSize};
       margin: 0 20px;
 
-      &:first-child {
+      &:first-of-type {
         border-top: 2px solid ${colours.c1};
         position: relative;
         display: block;

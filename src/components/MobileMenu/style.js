@@ -100,7 +100,7 @@ const style = {
         font-size: 28px !important;
       }
 
-      &:first-child {
+      &:first-of-type {
         border-top: 2px solid ${colours.c1};
         position: relative;
         display: block;
@@ -132,7 +132,7 @@ const style = {
       justify-content: center;
 
       li {
-        &:first-child {
+        &:first-of-type {
           a {
             margin: 0;
           }
