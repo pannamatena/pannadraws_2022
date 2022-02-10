@@ -1,7 +1,11 @@
 import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts } from '../../resources/fonts';
+import {
+  fonts,
+  largeHeadFontSize,
+  smallHeadFontSize,
+} from '../../resources/fonts';
 
 const style = {
   mainMenu: css`
@@ -16,10 +20,6 @@ const style = {
         display: block;
         position: relative;
 
-        margin-right: 10px;
-        @media ${breakPoints.tabletPortrait} {
-          margin-right: 15px;
-        }
         @media ${breakPoints.desktopSmall} {
           margin-right: 20px;
         }
@@ -34,6 +34,7 @@ const style = {
           text-transform: uppercase;
           display: inline-block;
           white-space: nowrap;
+          ${largeHeadFontSize};
 
           :hover,
           :active {
@@ -42,13 +43,6 @@ const style = {
 
           &.active {
             border-bottom: 2px solid ${colours.c1};
-          }
-
-          @media ${breakPoints.desktopSmall} {
-            font-size: 22px;
-          }
-          @media ${breakPoints.desktopLarge} {
-            font-size: 32px;
           }
         }
 
@@ -86,33 +80,38 @@ const style = {
 
     display: none;
     top: 30px;
-    @media ${breakPoints.tabletPortrait} {
+    @media ${breakPoints.desktopSmall} {
       display: flex;
     }
     @media ${breakPoints.desktopLarge} {
       top: 40px;
     }
 
-    a:first-child {
-      border-top: 2px solid ${colours.c1};
-      position: relative;
-      display: block;
-      width: 100%;
-      text-align: center;
-      padding: 0 2px;
+    a.subMenuLink {
+      ${smallHeadFontSize};
+      margin: 0 20px;
 
-      &:before {
-        content: '';
+      &:first-child {
+        border-top: 2px solid ${colours.c1};
+        position: relative;
         display: block;
-        position: absolute;
-        top: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-bottom: 5px solid ${colours.c1};
+        width: 100%;
+        text-align: center;
+        padding-top: 2px;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-bottom: 5px solid ${colours.c1};
+        }
       }
     }
   `,

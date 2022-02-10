@@ -11,22 +11,38 @@ export default function DesktopMenu() {
         <li>
           <span className="fakeLink">Art</span>
           <div css={style.subMenu}>
-            <NavLink to="/art/animalArt">Birds & Wildlife</NavLink>
-            <NavLink to="/art/adultColoring">Adult Colouring</NavLink>
-            <NavLink to="/art/fantasyArt">Fantasy Art</NavLink>
+            <NavLink className="subMenuLink" to="/art/animalArt">
+              Birds & Wildlife
+            </NavLink>
+            <NavLink className="subMenuLink" to="/art/adultColoring">
+              Adult Colouring
+            </NavLink>
+            <NavLink className="subMenuLink" to="/art/fantasyArt">
+              Fantasy Art
+            </NavLink>
           </div>
         </li>
         <li>
           <span className="fakeLink">Shop</span>
           <div css={style.subMenu}>
-            <NavLink to="/shop/originalArtShop">Original Art</NavLink>
-            <NavLink to="/shop/artPrintShop">Art Prints</NavLink>
-            <NavLink to="/shop/cardsAndBookmarksShop">
+            <NavLink className="subMenuLink" to="/shop/originalArtShop">
+              Original Art
+            </NavLink>
+            <NavLink className="subMenuLink" to="/shop/artPrintShop">
+              Art Prints
+            </NavLink>
+            <NavLink className="subMenuLink" to="/shop/cardsAndBookmarksShop">
               Cards & Bookmarks
             </NavLink>
-            <NavLink to="/shop/clothingShop">Clothing</NavLink>
-            <NavLink to="/shop/stickersShop">Stickers</NavLink>
-            <NavLink to="/shop/notebooksShop">Notebooks</NavLink>
+            <NavLink className="subMenuLink" to="/shop/clothingShop">
+              Clothing
+            </NavLink>
+            <NavLink className="subMenuLink" to="/shop/stickersShop">
+              Stickers
+            </NavLink>
+            <NavLink className="subMenuLink" to="/shop/notebooksShop">
+              Notebooks
+            </NavLink>
           </div>
         </li>
         <li>
