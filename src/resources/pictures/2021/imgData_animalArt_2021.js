@@ -107,7 +107,7 @@ const imgData_2021 = {
     description:
       'Ink, watercolour, gauche and acrylics on acrylic paper. 405 x 508 mm, 2021.',
     price: 206,
-    original: 'AVAILABLE',
+    original: 'SOLD',
     prints: 'NOTYET',
     printPrice: 0,
     buyUrl: 'https://www.etsy.com/ie/listing/1097952734/',

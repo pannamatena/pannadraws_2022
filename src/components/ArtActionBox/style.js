@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts, largeHeadFontSize } from '../../resources/fonts';
+import { fonts, largeHeadFontSize, textSize } from '../../resources/fonts';
 
 const style = {
   artActionBox: css`
@@ -15,16 +15,31 @@ const style = {
     }
   `,
   originalContainer: css`
-    border-bottom: 1px solid ${colours.c2};
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    @media ${breakPoints.tabletPortrait} {
-      padding-bottom: 15px;
-      margin-bottom: 15px;
+    a {
+      display: block;
+      border-bottom: 1px solid ${colours.c2};
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      @media ${breakPoints.tabletPortrait} {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+      @media ${breakPoints.desktopSmall} {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+
+      &:last-of-type {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
     }
-    @media ${breakPoints.desktopSmall} {
-      padding-bottom: 20px;
-      margin-bottom: 20px;
+
+    h4 {
+      font-family: ${fonts.f1};
+      text-transform: uppercase;
+      ${textSize};
     }
   `,
   mainActionLink: css`
@@ -81,8 +96,13 @@ const style = {
     }
   `,
   originalPrice: css`
-    display: block;
+    display: inline-block;
     ${largeHeadFontSize};
+  `,
+  coloringPriceTag: css`
+    & > span {
+      padding-left: 5px;
+    }
   `,
   sold: css`
     color: ${colours.c4};
