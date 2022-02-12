@@ -1,9 +1,12 @@
 import * as React from 'react';
+import TextPage from '../components/TextPage';
 
 export function About() {
   return (
     <div>
-      <h2>About</h2>
+      <TextPage>
+        <h1>About</h1>
+      </TextPage>
     </div>
   );
 }

@@ -1,6 +1,4 @@
 import { Outlet, useParams } from 'react-router-dom';
-/** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
 import Gallery from '../components/Gallery';
 import ListGallery from '../components/ListGallery';
 import ArtPageComp from '../components/ArtPage';

@@ -79,7 +79,6 @@ const style = {
       margin-bottom: 20px;
     }
   `,
-  imgActionBox: css``,
 };
 
 export default style;
