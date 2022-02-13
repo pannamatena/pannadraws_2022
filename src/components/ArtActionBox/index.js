@@ -5,7 +5,7 @@ import { arrow } from '../../resources/icons';
 import style from './style';
 
 function getPriceTag(imgData, mediaType) {
-  if (imgData.type === 'adult_colouring') {
+  if (imgData.type === 'adult-colouring') {
     return (
       <span css={style.coloringPriceTag}>
         From
@@ -32,7 +32,7 @@ function getOriginalActionLink(imgData) {
     return null;
   }
 
-  if (imgData.type === 'adult_colouring') {
+  if (imgData.type === 'adult-colouring') {
     return (
       <>
         {imgData.printedUrl && (
@@ -96,7 +96,7 @@ function getOriginalActionLink(imgData) {
 }
 
 function getPrintActionLink(imgData) {
-  if (!imgData.prints || imgData.type === 'adult_colouring') {
+  if (!imgData.prints || imgData.type === 'adult-colouring') {
     return null;
   }
 

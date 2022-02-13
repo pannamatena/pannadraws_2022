@@ -917,7 +917,7 @@ const imgData_2021 = {
       },
       {
         name: 'Greeting cards',
-        url: 'https://www.etsy.com/ie/listing/943508801/d',
+        url: 'https://www.etsy.com/ie/listing/943508801/',
         price: 3.5,
         discount: 0,
         shop: 'cardsAndBookmarksShop',
