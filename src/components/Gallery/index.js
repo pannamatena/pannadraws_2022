@@ -20,6 +20,7 @@ const createThumbList = (imgMap) => {
 export default function Gallery({
   imgData,
   imgRoot,
+  itemType,
   galleryType = 'IMAGETILES',
 }) {
   const [imgList, setImgList] = useState([]);
@@ -29,11 +30,55 @@ export default function Gallery({
     setImgList(createThumbList(imgData));
   }, [imgData]);
 
+  const getPrice = (currentImgData) => {
+    switch (itemType) {
+      case 'ORIGINAL': {
+        return <span css={galleryStyle.priceTag}>€{currentImgData.price}</span>;
+      }
+      case 'PRINT': {
+        return (
+          <div>
+            <span css={galleryStyle.priceFrom}>From</span>
+            <span css={galleryStyle.priceTag}>
+              €{currentImgData.printPrice}
+            </span>
+          </div>
+        );
+      }
+      case 'COLOURING': {
+        return (
+          <div>
+            {currentImgData.digitalPrice && (
+              <>
+                <span css={galleryStyle.priceFrom}>Downloadable from</span>
+                <span css={galleryStyle.priceTag}>
+                  €{currentImgData.digitalPrice.toFixed(2)}
+                </span>
+              </>
+            )}
+            {currentImgData.printedPrice && (
+              <>
+                <span css={galleryStyle.priceFrom}>Printed from</span>
+                <span css={galleryStyle.priceTag}>
+                  €{currentImgData.printedPrice.toFixed(2)}
+                </span>
+              </>
+            )}
+          </div>
+        );
+      }
+      default: {
+        return null;
+      }
+    }
+  };
+
   function GalleryTile({
     imageProps: { alt, style, title, ...restImageProps },
   }) {
     const imgId = title.split('-');
     const currentImgData = imgData[imgId[0]];
+
     return (
       <Link
         to={`/${imgRoot}/${title}`}
@@ -51,7 +96,7 @@ export default function Gallery({
           <p>{currentImgData.description}</p>
           <p css={galleryStyle.clickForMore}>Click for more info</p>
         </div>
-        {currentImgData.original === 'SOLD' && (
+        {currentImgData.original === 'SOLD' && !isInfoType && (
           <span
             css={css`
               ${galleryStyle.label};
@@ -61,7 +106,7 @@ export default function Gallery({
             Sold
           </span>
         )}
-        {currentImgData.prints === 'AVAILABLE' && (
+        {currentImgData.prints === 'AVAILABLE' && !isInfoType && (
           <span
             css={css`
               ${galleryStyle.label};
@@ -92,7 +137,7 @@ export default function Gallery({
         {isInfoType && (
           <div css={galleryStyle.imgInfoBox}>
             <div css={galleryStyle.priceLine}>
-              <span css={galleryStyle.priceTag}>€{currentImgData.price}</span>
+              {getPrice(currentImgData)}
               <span css={galleryStyle.clickForMore}>Click for more info</span>
             </div>
           </div>

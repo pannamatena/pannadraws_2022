@@ -61,6 +61,17 @@ const style = {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  `,
+  priceFrom: css`
+    margin-top: 5px;
+    margin-bottom: -5px;
   `,
   priceTag: css`
     ${largeHeadFontSize};

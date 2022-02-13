@@ -12,6 +12,7 @@ import { AnimalArt, ArtPage, AdultColoring, FantasyArt } from '../roots/art';
 import {
   OriginalArtShop,
   ArtPrintShop,
+  ColouringShop,
   CardsAndBookmarksShop,
   ClothingShop,
   StickersShop,
@@ -42,7 +43,12 @@ export default function App() {
               <Route path="originalArtShop" element={<OriginalArtShop />}>
                 <Route path=":imgTitle" element={<ArtPage />} />
               </Route>
-              <Route path="artPrintShop" element={<ArtPrintShop />} />
+              <Route path="artPrintShop" element={<ArtPrintShop />}>
+                <Route path=":imgTitle" element={<ArtPage />} />
+              </Route>
+              <Route path="colouringShop" element={<ColouringShop />}>
+                <Route path=":imgTitle" element={<ArtPage />} />
+              </Route>
               <Route
                 path="cardsAndBookmarksShop"
                 element={<CardsAndBookmarksShop />}

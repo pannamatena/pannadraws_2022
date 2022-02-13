@@ -94,6 +94,7 @@ export default function MobileMenu(props) {
             >
               <NavLink to="/shop/originalArtShop">Original Art</NavLink>
               <NavLink to="/shop/artPrintShop">Art Prints</NavLink>
+              <NavLink to="/shop/colouringShop">Colouring Pages</NavLink>
               <NavLink to="/shop/cardsAndBookmarksShop">
                 Cards & Bookmarks
               </NavLink>

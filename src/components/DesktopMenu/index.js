@@ -31,6 +31,9 @@ export default function DesktopMenu() {
             <NavLink className="subMenuLink" to="/shop/artPrintShop">
               Art Prints
             </NavLink>
+            <NavLink className="subMenuLink" to="/shop/colouringShop">
+              Coloring Pages
+            </NavLink>
             <NavLink className="subMenuLink" to="/shop/cardsAndBookmarksShop">
               Cards & Bookmarks
             </NavLink>

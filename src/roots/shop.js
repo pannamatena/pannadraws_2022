@@ -29,6 +29,7 @@ export function OriginalArtShop() {
           <Gallery
             imgData={availableOriginals}
             imgRoot="shop/originalArtShop"
+            itemType="ORIGINAL"
             galleryType="INFOTILES"
           />
         </>
@@ -38,10 +39,53 @@ export function OriginalArtShop() {
 }
 
 export function ArtPrintShop() {
+  let params = useParams();
+  const availablePrints = getAvailableItems(
+    Object.assign(
+      {},
+      imgDataAnimalArt_2021,
+      imgDataAnimalArt_2020,
+      imgDataFantasyArt_2020
+    ),
+    'prints'
+  );
   return (
-    <div>
-      <h2>Art Prints for sale</h2>
-    </div>
+    <>
+      {params.imgTitle ? (
+        <Outlet />
+      ) : (
+        <>
+          <h1>Art Prints</h1>
+          <Gallery
+            imgData={availablePrints}
+            imgRoot="shop/artPrintShop"
+            itemType="PRINT"
+            galleryType="INFOTILES"
+          />
+        </>
+      )}
+    </>
+  );
+}
+
+export function ColouringShop() {
+  let params = useParams();
+  return (
+    <>
+      {params.imgTitle ? (
+        <Outlet />
+      ) : (
+        <>
+          <h1>Adult colouring pages</h1>
+          <Gallery
+            imgData={imgData_adultColoring_2021}
+            imgRoot="shop/colouringShop"
+            itemType="COLOURING"
+            galleryType="INFOTILES"
+          />
+        </>
+      )}
+    </>
   );
 }
 
