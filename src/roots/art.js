@@ -17,9 +17,9 @@ export function AnimalArt() {
         <>
           <h1>All Birds & Wildlife Art</h1>
           <h3 className="galleryTitle">2021</h3>
-          <Gallery imgData={imgDataAnimalArt_2021} />
+          <Gallery imgData={imgDataAnimalArt_2021} imgRoot="art/animalArt" />
           <h3 className="galleryTitle">2020</h3>
-          <Gallery imgData={imgDataAnimalArt_2020} />
+          <Gallery imgData={imgDataAnimalArt_2020} imgRoot="art/animalArt" />
         </>
       )}
 
@@ -60,7 +60,7 @@ export function FantasyArt() {
         <>
           <h1>Fantasy Art</h1>
           <h3 className="galleryTitle">2020</h3>
-          <Gallery imgData={imgDataFantasyArt_2020} />
+          <Gallery imgData={imgDataFantasyArt_2020} imgRoot="art/fantasyArt" />
         </>
       )}
     </>

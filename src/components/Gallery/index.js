@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import galleryStyle from './style';
+import style from '../ArtActionBox/style';
 
 const createThumbList = (imgMap) => {
   return Object.keys(imgMap).map((img) => ({
@@ -16,24 +17,30 @@ const createThumbList = (imgMap) => {
   }));
 };
 
-export default function Gallery(props) {
+export default function Gallery({
+  imgData,
+  imgRoot,
+  galleryType = 'IMAGETILES',
+}) {
   const [imgList, setImgList] = useState([]);
+  const isInfoType = galleryType === 'INFOTILES';
 
   useEffect(() => {
-    setImgList(createThumbList(props.imgData));
-  }, [props.imgData]);
+    setImgList(createThumbList(imgData));
+  }, [imgData]);
 
   function GalleryTile({
     imageProps: { alt, style, title, ...restImageProps },
   }) {
     const imgId = title.split('-');
-    const currentImgData = props.imgData[imgId[0]];
+    const currentImgData = imgData[imgId[0]];
     return (
       <Link
-        to={`/art/animalArt/${title}`}
+        to={`/${imgRoot}/${title}`}
         state={{ imgData: currentImgData }}
         css={css`
           ${galleryStyle.galleryTile};
+          ${isInfoType ? galleryStyle.galleryInfoTile : ''};
           width: ${style?.width};
         `}
       >
@@ -82,6 +89,14 @@ export default function Gallery(props) {
           {...restImageProps}
           style={{ ...style, width: '100%', padding: 0 }}
         />
+        {isInfoType && (
+          <div css={galleryStyle.imgInfoBox}>
+            <div css={galleryStyle.priceLine}>
+              <span css={galleryStyle.priceTag}>€{currentImgData.price}</span>
+              <span css={galleryStyle.clickForMore}>Click for more info</span>
+            </div>
+          </div>
+        )}
       </Link>
     );
   }
@@ -92,8 +107,8 @@ export default function Gallery(props) {
         layout="rows"
         photos={imgList}
         renderPhoto={GalleryTile}
-        padding={0}
-        spacing={3}
+        padding={isInfoType ? 10 : 0}
+        spacing={isInfoType ? 5 : 3}
         targetRowHeight={500}
       />
     </div>

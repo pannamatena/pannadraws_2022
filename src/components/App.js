@@ -31,13 +31,17 @@ export default function App() {
                 <Route path=":imgTitle" element={<ArtPage />} />
               </Route>
               <Route path="adultColoring" element={<AdultColoring />} />
-              <Route path="fantasyArt" element={<FantasyArt />} />
+              <Route path="fantasyArt" element={<FantasyArt />}>
+                <Route path=":imgTitle" element={<ArtPage />} />
+              </Route>
               <Route path="*" element={<NoMatch />} />
             </Route>
             <Route path="commissionArt" element={<CommissionArt />} />
             <Route path="shop">
               <Route index element={<NoMatch />} />
-              <Route path="originalArtShop" element={<OriginalArtShop />} />
+              <Route path="originalArtShop" element={<OriginalArtShop />}>
+                <Route path=":imgTitle" element={<ArtPage />} />
+              </Route>
               <Route path="artPrintShop" element={<ArtPrintShop />} />
               <Route
                 path="cardsAndBookmarksShop"

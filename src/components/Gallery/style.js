@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts } from '../../resources/fonts';
+import { fonts, largeHeadFontSize, textSize } from '../../resources/fonts';
 
 const style = {
   galleryContainer: css`
@@ -49,6 +49,23 @@ const style = {
       }
     }
   `,
+  galleryInfoTile: css`
+    background: ${colours.c5};
+    padding: 10px;
+  `,
+  imgInfoBox: css`
+    color: ${colours.c2};
+  `,
+  priceLine: css`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  `,
+  priceTag: css`
+    ${largeHeadFontSize};
+  `,
+
   hoverContainerImgTitle: css`
     font-family: ${fonts.f1} !important;
     font-size: 18px;
