@@ -17,6 +17,7 @@ import {
   ClothingShop,
   StickersShop,
   NotebooksShop,
+  ShopPage,
 } from '../roots/shop';
 
 export default function App() {
@@ -52,7 +53,9 @@ export default function App() {
               <Route
                 path="cardsAndBookmarksShop"
                 element={<CardsAndBookmarksShop />}
-              />
+              >
+                <Route path=":imgTitle" element={<ShopPage />} />
+              </Route>
               <Route path="clothingShop" element={<ClothingShop />} />
               <Route path="stickersShop" element={<StickersShop />} />
               <Route path="notebooksShop" element={<NotebooksShop />} />

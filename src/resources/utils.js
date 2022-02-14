@@ -9,3 +9,12 @@ export function getAvailableItems(source, typeProp) {
     return availableItemMap;
   }, {});
 }
+
+export function getMerchTypeItems(source, merchType) {
+  return Object.keys(source).reduce((merchTypeMap, currentItemId) => {
+    if (source[currentItemId].type === merchType) {
+      merchTypeMap[currentItemId] = source[currentItemId];
+    }
+    return merchTypeMap;
+  }, {});
+}

@@ -2,11 +2,12 @@ import React from 'react';
 import { Outlet, useParams } from 'react-router-dom';
 import Gallery from '../components/Gallery';
 import ArtPageComp from '../components/ArtPage';
-import { getAvailableItems } from '../resources/utils';
+import { getAvailableItems, getMerchTypeItems } from '../resources/utils';
 import imgDataAnimalArt_2021 from '../resources/pictures/2021/imgData_animalArt_2021';
 import imgDataAnimalArt_2020 from '../resources/pictures/2020/imgData_animalArt_2020';
 import imgDataFantasyArt_2020 from '../resources/pictures/2020/imgData_fantasyArt_2020';
 import imgData_adultColoring_2021 from '../resources/pictures/adult_coloring/imgData_adultColoring_2021';
+import imgData_merchandinse from '../resources/pictures/merchandise/imgData_merchandise';
 
 export function OriginalArtShop() {
   let params = useParams();
@@ -90,10 +91,26 @@ export function ColouringShop() {
 }
 
 export function CardsAndBookmarksShop() {
+  let params = useParams();
+  const cards = getMerchTypeItems(imgData_merchandinse, 'greeting-cards');
+  const bookmarks = getMerchTypeItems(imgData_merchandinse, 'bookmark-set');
+  const magnets = getMerchTypeItems(imgData_merchandinse, 'magnets');
   return (
-    <div>
-      <h2>Cards and Bookmarks</h2>
-    </div>
+    <>
+      {params.imgTitle ? (
+        <Outlet />
+      ) : (
+        <>
+          <h1>Cards and Bookmarks</h1>
+          <Gallery
+            imgData={Object.assign({}, cards, bookmarks, magnets)}
+            imgRoot="shop/colouringShop"
+            itemType="COLOURING"
+            galleryType="INFOTILES"
+          />
+        </>
+      )}
+    </>
   );
 }
 

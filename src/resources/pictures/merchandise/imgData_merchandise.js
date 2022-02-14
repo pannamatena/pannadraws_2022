@@ -44,7 +44,7 @@ const imgData_merchandinse = {
     discount: 0,
     type: 'clothing',
   },
-  bone_raven: {
+  bone_raven_womens_tee: {
     title: "Bone Raven Women's short sleeved tee",
     imgs: {
       full: {
@@ -89,7 +89,7 @@ const imgData_merchandinse = {
     discount: 0,
     type: 'bookmark-set',
   },
-  low_tide_tale: {
+  low_tide_tale_greeting_card: {
     title: 'Low Tide Tale greeting card',
     imgs: {
       full: {
