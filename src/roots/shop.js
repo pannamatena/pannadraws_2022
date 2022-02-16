@@ -137,18 +137,47 @@ export function ClothingShop() {
 }
 
 export function StickersShop() {
+  let params = useParams();
+  const stickers = getMerchTypeItems(imgData_merchandinse, 'stickers');
+  const magnets = getMerchTypeItems(imgData_merchandinse, 'magnets');
   return (
-    <div>
-      <h2>Stickers and Magnets</h2>
-    </div>
+    <>
+      {params.imgTitle ? (
+        <Outlet />
+      ) : (
+        <>
+          <h1>Stickers and Magnets</h1>
+          <Gallery
+            imgData={Object.assign({}, stickers, magnets)}
+            imgRoot="shop/stickersShop"
+            itemType="STICKERS"
+            galleryType="INFOTILES"
+          />
+        </>
+      )}
+    </>
   );
 }
 
 export function NotebooksShop() {
+  let params = useParams();
+  const notebooks = getMerchTypeItems(imgData_merchandinse, 'notebooks');
   return (
-    <div>
-      <h2>Notebooks</h2>
-    </div>
+    <>
+      {params.imgTitle ? (
+        <Outlet />
+      ) : (
+        <>
+          <h1>Notebooks</h1>
+          <Gallery
+            imgData={notebooks}
+            imgRoot="shop/stickersShop"
+            itemType="NOTEBOOKS"
+            galleryType="INFOTILES"
+          />
+        </>
+      )}
+    </>
   );
 }
 

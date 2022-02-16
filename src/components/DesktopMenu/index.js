@@ -41,7 +41,7 @@ export default function DesktopMenu() {
               Clothing
             </NavLink>
             <NavLink className="subMenuLink" to="/shop/stickersShop">
-              Stickers
+              Stickers & Magnets
             </NavLink>
             <NavLink className="subMenuLink" to="/shop/notebooksShop">
               Notebooks
