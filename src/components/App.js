@@ -42,13 +42,13 @@ export default function App() {
             <Route path="shop">
               <Route index element={<NoMatch />} />
               <Route path="originalArtShop" element={<OriginalArtShop />}>
-                <Route path=":imgTitle" element={<ArtPage />} />
+                <Route path=":imgTitle" element={<ShopPage />} />
               </Route>
               <Route path="artPrintShop" element={<ArtPrintShop />}>
-                <Route path=":imgTitle" element={<ArtPage />} />
+                <Route path=":imgTitle" element={<ShopPage />} />
               </Route>
               <Route path="colouringShop" element={<ColouringShop />}>
-                <Route path=":imgTitle" element={<ArtPage />} />
+                <Route path=":imgTitle" element={<ShopPage />} />
               </Route>
               <Route
                 path="cardsAndBookmarksShop"
@@ -56,9 +56,15 @@ export default function App() {
               >
                 <Route path=":imgTitle" element={<ShopPage />} />
               </Route>
-              <Route path="clothingShop" element={<ClothingShop />} />
-              <Route path="stickersShop" element={<StickersShop />} />
-              <Route path="notebooksShop" element={<NotebooksShop />} />
+              <Route path="clothingShop" element={<ClothingShop />}>
+                <Route path=":imgTitle" element={<ShopPage />} />
+              </Route>
+              <Route path="stickersShop" element={<StickersShop />}>
+                <Route path=":imgTitle" element={<ShopPage />} />
+              </Route>
+              <Route path="notebooksShop" element={<NotebooksShop />}>
+                <Route path=":imgTitle" element={<ShopPage />} />
+              </Route>
               <Route path="*" element={<NoMatch />} />
             </Route>
             <Route path="about" element={<About />} />

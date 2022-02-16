@@ -4,8 +4,8 @@ const imgData_merchandinse = {
     imgs: {
       full: {
         src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        width: 1000,
+        height: 1333,
       },
       thumb: {
         src: require('./winter_birds_2021_2021_thumb.jpg'),
@@ -25,14 +25,14 @@ const imgData_merchandinse = {
     title: "Ivy Gentleman Women's short sleeved tee",
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./ivy_gentleman_tshirt_2021_web.jpg'),
+        width: 1000,
+        height: 1001,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./ivy_gentleman_tshirt_2021_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 601,
       },
     },
     year: '2021',
@@ -48,14 +48,14 @@ const imgData_merchandinse = {
     title: "Bone Raven Women's short sleeved tee",
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./bone_raven_tshirt_2021_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./bone_raven_tshirt_2021_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2021',
@@ -70,14 +70,14 @@ const imgData_merchandinse = {
     title: 'Swans of Ireland bookmark set',
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./swans_of_ireland_2021_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./swans_of_ireland_2021_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2021',
@@ -93,14 +93,14 @@ const imgData_merchandinse = {
     title: 'Low Tide Tale greeting card',
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./low_tide_tale_2021_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./low_tide_tale_2021_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2021',
@@ -115,14 +115,14 @@ const imgData_merchandinse = {
     title: 'Buttercups unisex tee',
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./buttercups_tshirt_2021_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./buttercups_tshirt_2021_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2021',
@@ -137,14 +137,14 @@ const imgData_merchandinse = {
     title: 'Birds in Love greeting cards',
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./birds_in_love_greeting_cards_2021_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./birds_in_love_greeting_cards_2021_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2021',
@@ -160,14 +160,14 @@ const imgData_merchandinse = {
     title: 'Birds in Love postcard set',
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./birds_in_love_postcards_2021_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./birds_in_love_postcards_2021_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2021',
@@ -182,14 +182,14 @@ const imgData_merchandinse = {
     title: 'Sandworts unisex tee',
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./sandworts_tshirt_2020_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./sandworts_tshirt_2020_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2020',
@@ -204,14 +204,14 @@ const imgData_merchandinse = {
     title: 'Cuckooflowers unisex tee',
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./cuckooflowers_tshirt_2020_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./cuckooflowers_tshirt_2020_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2020',
@@ -222,18 +222,41 @@ const imgData_merchandinse = {
     discount: 0,
     type: 'clothing',
   },
-  alfalfa_border_collie_tshirt: {
+  alfalfa_womens_tshirt: {
     title: "Alfalfa women's short sleeved t-shirt",
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./alfalfa_tshirt_2020_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./alfalfa_tshirt_2020_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
+      },
+    },
+    year: '2020',
+    description:
+      "Women's short sleeved t-shirt with a blue merle border collie print.",
+    /* prettier-ignore */
+    price: 32.00,
+    buyUrl: 'https://www.etsy.com/ie/listing/906857911/',
+    discount: 0,
+    type: 'clothing',
+  },
+  alfalfa_mens_tshirt: {
+    title: "Alfalfa women's short sleeved t-shirt",
+    imgs: {
+      full: {
+        src: require('./alfalfa_mens_tshirt_2020_web.jpg'),
+        width: 1000,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./alfalfa_mens_tshirt_2020_thumb.jpg'),
+        width: 600,
+        height: 600,
       },
     },
     year: '2020',
@@ -249,14 +272,14 @@ const imgData_merchandinse = {
     title: 'Christmas Tits 2020 greeting card set',
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./christmas_tits_greeting_cards_2020_web.jpg'),
+        width: 1000,
+        height: 1393,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./christmas_tits_greeting_cards_2020_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 836,
       },
     },
     year: '2020',
@@ -272,12 +295,12 @@ const imgData_merchandinse = {
     title: 'Christmas Robins 2020 greeting card set',
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./christmas_robins_greeting_cards_2020_web.jpg'),
+        width: 1000,
+        height: 1333,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./christmas_robins_greeting_cards_2020_thumb.jpg'),
         width: 600,
         height: 800,
       },
@@ -295,14 +318,14 @@ const imgData_merchandinse = {
     title: "Rascals artist's sketchbook",
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./rascals_notebook_2020_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./rascals_notebook_2020_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2020',
@@ -318,14 +341,14 @@ const imgData_merchandinse = {
     title: "Rascals women's tee",
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./rascals_womens_tshirt_2020_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./rascals_womens_tshirt_2020_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2020',
@@ -340,14 +363,14 @@ const imgData_merchandinse = {
     title: "Rascals men's tee",
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./rascals_mens_tshirt_2020_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./rascals_mens_tshirt_2020_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2020',
@@ -362,14 +385,14 @@ const imgData_merchandinse = {
     title: "Farewell women's tee",
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
+        src: require('./farewell_womens_tshirt_2020_web.jpg'),
+        width: 1000,
         height: 2000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./farewell_womens_tshirt_2020_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2020',
@@ -384,14 +407,14 @@ const imgData_merchandinse = {
     title: "Farewell men's tee",
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./farewell_mens_tshirt_2020_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./farewell_mens_tshirt_2020_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2020',
@@ -406,14 +429,14 @@ const imgData_merchandinse = {
     title: 'Farewell hardcover notebook',
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./farewell_notebook_2020_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./farewell_notebook_2020_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2020',
@@ -429,14 +452,14 @@ const imgData_merchandinse = {
     title: 'Sparrowhawk spiral notebook',
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./sparrowhawk_notebook_2020_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./sparrowhawk_notebook_2020_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2020',
@@ -451,14 +474,14 @@ const imgData_merchandinse = {
     title: 'Sparrowhawk fridge magnet',
     imgs: {
       full: {
-        src: require('./winter_birds_2021_2021_web.jpg'),
-        width: 1500,
-        height: 2000,
+        src: require('./sparrowhawk_magnet_2020_web.jpg'),
+        width: 1000,
+        height: 1000,
       },
       thumb: {
-        src: require('./winter_birds_2021_2021_thumb.jpg'),
+        src: require('./sparrowhawk_magnet_2020_thumb.jpg'),
         width: 600,
-        height: 800,
+        height: 600,
       },
     },
     year: '2020',

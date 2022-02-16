@@ -115,10 +115,24 @@ export function CardsAndBookmarksShop() {
 }
 
 export function ClothingShop() {
+  let params = useParams();
+  const clothing = getMerchTypeItems(imgData_merchandinse, 'clothing');
   return (
-    <div>
-      <h2>Clothing</h2>
-    </div>
+    <>
+      {params.imgTitle ? (
+        <Outlet />
+      ) : (
+        <>
+          <h1>T-shirts and tops</h1>
+          <Gallery
+            imgData={clothing}
+            imgRoot="shop/clothingShop"
+            itemType="CLOTHING"
+            galleryType="INFOTILES"
+          />
+        </>
+      )}
+    </>
   );
 }
 
