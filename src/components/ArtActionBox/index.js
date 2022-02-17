@@ -32,7 +32,7 @@ function getOriginalActionLink(imgData) {
     return null;
   }
 
-  if (imgData.type === 'adult-colouring') {
+  if (imgData.type === 'adult_colouring') {
     return (
       <>
         {imgData.printedUrl && (
@@ -96,7 +96,7 @@ function getOriginalActionLink(imgData) {
 }
 
 function getPrintActionLink(imgData) {
-  if (!imgData.prints || imgData.type === 'adult-colouring') {
+  if (!imgData.prints || imgData.type === 'adult_colouring') {
     return null;
   }
 

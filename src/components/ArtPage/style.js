@@ -52,6 +52,10 @@ const style = {
     @media ${breakPoints.tabletPortrait} {
       padding: 5px;
     }
+
+    img {
+      width: 100%;
+    }
   `,
   imgDataContainer: css`
     max-width: 600px;
