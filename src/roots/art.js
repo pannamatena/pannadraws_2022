@@ -1,4 +1,5 @@
 import { Outlet, useParams } from 'react-router-dom';
+import { getDataSource } from '../resources/utils';
 import Gallery from '../components/Gallery';
 import ListGallery from '../components/ListGallery';
 import ArtPageComp from '../components/ArtPage';
@@ -31,7 +32,8 @@ export function AnimalArt() {
 
 export function ArtPage() {
   let params = useParams();
-  return <ArtPageComp imgTitle={params.imgTitle} />;
+  const dataSource = getDataSource(params);
+  return <ArtPageComp imgId={params.imgTitle} dataSource={dataSource} />;
 }
 
 export function AdultColoring() {

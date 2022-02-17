@@ -79,10 +79,14 @@ export default function Gallery({
     const imgId = title.split('-');
     const currentImgData = imgData[imgId[0]];
 
+    const imgUrlAttributes = title.split('-');
+    const imgType = imgUrlAttributes[2];
+    const imgYear = imgUrlAttributes[1];
+    const imgTitle = imgUrlAttributes[0];
+
     return (
       <Link
-        to={`/${imgRoot}/${title}`}
-        state={{ imgData: currentImgData }}
+        to={`/${imgRoot}/${imgType}/${imgYear}/${imgTitle}`}
         css={css`
           ${galleryStyle.galleryTile};
           ${isInfoType ? galleryStyle.galleryInfoTile : ''};

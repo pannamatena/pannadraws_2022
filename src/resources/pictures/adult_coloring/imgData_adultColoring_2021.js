@@ -24,7 +24,7 @@ const imgData_adultColoring_2021 = {
     printedUrl: 'https://www.etsy.com/ie/listing/1049820219/',
     discount: 0,
     discountPrint: 0,
-    type: 'adult-colouring',
+    type: 'adult_colouring',
     story:
       "Colour the mysterious unicorns of the world!<br /><br />Come and bring these magical creatures to life with colours! This colouring page set challenges you with 3 beautiful scenes with unicorns, all ready to get some magic with your help.<br /><br />There's a printed and a digital, print-at-home version available.<br /><br />Original artwork was created using acrylic inks on mixed media paper.",
   },
@@ -60,7 +60,7 @@ const imgData_adultColoring_2021 = {
         price: 11.3,
       },
     ],
-    type: 'adult-colouring',
+    type: 'adult_colouring',
     story:
       "The adventure continues! Follow the path of the 4 elements in this new set of dragon coloring pages.<br /><br />Come along on a new journey with mighty dragons born from the four fundamental elements of the world: Air, Water, Earth and Fire!<br /><br />Each element summons its dragon and bird pair:<br /><br />1. Air - Great black-backed gulls<br />2. Water - Whooper swans<br />3. Earth - Ring-necked pheasants<br />4. Fire - Carrion crows<br /><br />There's a printed and a digital, print-at-home version available.<br /><br />Original artwork was created using acrylic inks on mixed media paper.",
   },
@@ -88,7 +88,7 @@ const imgData_adultColoring_2021 = {
     printedUrl: '',
     discount: 0,
     discountPrint: 0,
-    type: 'adult-colouring',
+    type: 'adult_colouring',
     story:
       'When leaves are turning yellow and red the swallows are about to leave us once again. These lightning-fast little fellows are true markers of summers days, which we also have to say farewell to when they leave.<br /><br />This design was inspired by these times, when seasons are changing as well as our bird neighbours: winter visitors are arriving, and our summer friends are taking their leaves. The design was made to become a tshirt pattern, but I made it available as an adult colouring page as well.',
   },
@@ -129,7 +129,7 @@ const imgData_adultColoring_2021 = {
         price: 4.5,
       },
     ],
-    type: 'adult-colouring',
+    type: 'adult_colouring',
     story:
       "A Draconic Colouring Adventure!<br /><br />Mighty fire-breathers, mystical Eastern spirits and swift water serpents come together for a dance in this set of colouring pages. Are they fighting? Or is there more to it? Give their dragon dance a mood by colouring the enchanted scenes!<br /><br />There's a printed and a digital, print-at-home version available.<br /><br />Original artwork was created using acrylic inks on mixed media paper.",
   },
@@ -157,7 +157,7 @@ const imgData_adultColoring_2021 = {
     printedUrl: 'https://www.etsy.com/ie/listing/865606853/',
     discount: 0,
     discountPrint: 0,
-    type: 'adult-colouring',
+    type: 'adult_colouring',
     story:
       "Why stop at a book-sized colouring page? Let's colour this giant poster featuring a heron, trouts, splashes of water and a willow tree, inspired by the Irish riversides. The poster is available in 3 sizes: 21×30cm (about A4 size), 30 x 40 cm (about A3 size), and 50 x 70 cm (about A2 size).<br /><br />Paper weight is 192 g/m², which is a decent paper weight for most medium. The poster is suitable for coloured pencils, markers, watercolour pencils, watercolour markers and even watercolour paints if applied with a moderate amount of water. The surface is a smooth matte finish.<br /><br />The artwork was inspired my walks along the beautiful Irish rivers: the Boyne, the Barrow, the Avonmore, and the Royal Canal. Grey herons are common residents along these waters and it's always a pleasure to see them hunting for fish. I wanted to capture this essence of the riverside in this picture, a connection to water that is very different from one to the sea.",
   },

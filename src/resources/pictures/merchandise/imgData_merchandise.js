@@ -19,7 +19,8 @@ const imgData_merchandinse = {
     price: 3.50,
     buyUrl: 'https://www.etsy.com/ie/listing/1114482253/',
     discount: 0,
-    type: 'greeting-cards',
+    type: 'merchandise',
+    subType: 'greeting_cards',
   },
   ivy_gentleman_tshirt: {
     title: "Ivy Gentleman Women's short sleeved tee",
@@ -42,7 +43,8 @@ const imgData_merchandinse = {
     price: 30.50,
     buyUrl: 'https://www.etsy.com/ie/listing/1007951583/',
     discount: 0,
-    type: 'clothing',
+    type: 'merchandise',
+    subType: 'clothing',
   },
   bone_raven_womens_tee: {
     title: "Bone Raven Women's short sleeved tee",
@@ -64,7 +66,8 @@ const imgData_merchandinse = {
     price: 32.50,
     buyUrl: 'https://www.etsy.com/ie/listing/995282674/',
     discount: 0,
-    type: 'clothing',
+    type: 'merchandise',
+    subType: 'clothing',
   },
   swans_of_ireland_bookmark_set: {
     title: 'Swans of Ireland bookmark set',
@@ -87,7 +90,8 @@ const imgData_merchandinse = {
     price: 4.50,
     buyUrl: 'https://www.etsy.com/ie/listing/964814293/',
     discount: 0,
-    type: 'bookmark-set',
+    type: 'merchandise',
+    subType: 'bookmark_set',
   },
   low_tide_tale_greeting_card: {
     title: 'Low Tide Tale greeting card',
@@ -109,7 +113,8 @@ const imgData_merchandinse = {
     price: 3.50,
     buyUrl: 'https://www.etsy.com/ie/listing/953617477/',
     discount: 0,
-    type: 'greeting-cards',
+    type: 'merchandise',
+    subType: 'greeting_cards',
   },
   buttercups_unisex_tshirt: {
     title: 'Buttercups unisex tee',
@@ -131,7 +136,8 @@ const imgData_merchandinse = {
     price: 32,
     buyUrl: 'https://www.etsy.com/ie/listing/941546699/',
     discount: 0,
-    type: 'clothing',
+    type: 'merchandise',
+    subType: 'clothing',
   },
   birds_in_love_greeting_cards: {
     title: 'Birds in Love greeting cards',
@@ -154,7 +160,8 @@ const imgData_merchandinse = {
     price: 3.50,
     buyUrl: 'https://www.etsy.com/ie/listing/943508801/',
     discount: 0,
-    type: 'greeting-cards',
+    type: 'merchandise',
+    subType: 'greeting_cards',
   },
   birds_in_love_postcards: {
     title: 'Birds in Love postcard set',
@@ -176,7 +183,8 @@ const imgData_merchandinse = {
     price: 5.00,
     buyUrl: 'https://www.etsy.com/ie/listing/928314268/',
     discount: 0,
-    type: 'greeting-cards',
+    type: 'merchandise',
+    subType: 'greeting_cards',
   },
   sandworts_unisex_tshirt: {
     title: 'Sandworts unisex tee',
@@ -198,7 +206,8 @@ const imgData_merchandinse = {
     price: 32.50,
     buyUrl: 'https://www.etsy.com/ie/listing/941546297/',
     discount: 0,
-    type: 'clothing',
+    type: 'merchandise',
+    subType: 'clothing',
   },
   cuckooflowers_unisex_tshirt: {
     title: 'Cuckooflowers unisex tee',
@@ -220,7 +229,8 @@ const imgData_merchandinse = {
     price: 34.50,
     buyUrl: 'https://www.etsy.com/ie/listing/941545811/',
     discount: 0,
-    type: 'clothing',
+    type: 'merchandise',
+    subType: 'clothing',
   },
   alfalfa_womens_tshirt: {
     title: "Alfalfa women's short sleeved t-shirt",
@@ -243,7 +253,8 @@ const imgData_merchandinse = {
     price: 32.00,
     buyUrl: 'https://www.etsy.com/ie/listing/906857911/',
     discount: 0,
-    type: 'clothing',
+    type: 'merchandise',
+    subType: 'clothing',
   },
   alfalfa_mens_tshirt: {
     title: "Alfalfa women's short sleeved t-shirt",
@@ -266,7 +277,8 @@ const imgData_merchandinse = {
     price: 32.00,
     buyUrl: 'https://www.etsy.com/ie/listing/906857911/',
     discount: 0,
-    type: 'clothing',
+    type: 'merchandise',
+    subType: 'clothing',
   },
   christmas_tits_2020_greeting_cards: {
     title: 'Christmas Tits 2020 greeting card set',
@@ -289,7 +301,8 @@ const imgData_merchandinse = {
     price: 8.00,
     buyUrl: 'https://www.etsy.com/ie/listing/1113158071/',
     discount: 0,
-    type: 'greeting-cards',
+    type: 'merchandise',
+    subType: 'greeting_cards',
   },
   christmas_robins_2020_greeting_cards: {
     title: 'Christmas Robins 2020 greeting card set',
@@ -312,7 +325,8 @@ const imgData_merchandinse = {
     price: 8.00,
     buyUrl: 'https://www.etsy.com/ie/listing/1112573263/',
     discount: 0,
-    type: 'greeting-cards',
+    type: 'merchandise',
+    subType: 'greeting_cards',
   },
   rascals_artist_sketchbook: {
     title: "Rascals artist's sketchbook",
@@ -335,7 +349,8 @@ const imgData_merchandinse = {
     price: 23.00,
     buyUrl: 'https://www.etsy.com/ie/listing/888840913/',
     discount: 0,
-    type: 'notebooks',
+    type: 'merchandise',
+    subType: 'notebooks',
   },
   rascals_womens_tshirt: {
     title: "Rascals women's tee",
@@ -357,7 +372,8 @@ const imgData_merchandinse = {
     price: 32.00,
     buyUrl: 'https://www.etsy.com/ie/listing/1021281161/',
     discount: 0,
-    type: 'clothing',
+    type: 'merchandise',
+    subType: 'clothing',
   },
   rascals_mens_tshirt: {
     title: "Rascals men's tee",
@@ -379,7 +395,8 @@ const imgData_merchandinse = {
     price: 31.50,
     buyUrl: 'https://www.etsy.com/ie/listing/875381994/',
     discount: 0,
-    type: 'clothing',
+    type: 'merchandise',
+    subType: 'clothing',
   },
   farewell_womens_tshirt: {
     title: "Farewell women's tee",
@@ -401,7 +418,8 @@ const imgData_merchandinse = {
     price: 28.00,
     buyUrl: 'https://www.etsy.com/ie/listing/864817848/',
     discount: 0,
-    type: 'clothing',
+    type: 'merchandise',
+    subType: 'clothing',
   },
   farewell_mens_tshirt: {
     title: "Farewell men's tee",
@@ -423,7 +441,8 @@ const imgData_merchandinse = {
     price: 28.50,
     buyUrl: 'https://www.etsy.com/ie/listing/875079870/',
     discount: 0,
-    type: 'clothing',
+    type: 'merchandise',
+    subType: 'clothing',
   },
   farewell_hardcover_notebook: {
     title: 'Farewell hardcover notebook',
@@ -446,7 +465,8 @@ const imgData_merchandinse = {
     price: 14.95,
     buyUrl: 'https://www.etsy.com/ie/listing/895826951/',
     discount: 0,
-    type: 'notebooks',
+    type: 'merchandise',
+    subType: 'notebooks',
   },
   sparrowhawk_spiral_notebook: {
     title: 'Sparrowhawk spiral notebook',
@@ -468,7 +488,8 @@ const imgData_merchandinse = {
     price: 20.95,
     buyUrl: 'https://www.etsy.com/ie/listing/911212429/',
     discount: 0,
-    type: 'notebooks',
+    type: 'merchandise',
+    subType: 'notebooks',
   },
   sparrowhawk_fridge_magnet: {
     title: 'Sparrowhawk fridge magnet',
@@ -490,7 +511,8 @@ const imgData_merchandinse = {
     price: 5.15,
     buyUrl: 'https://www.etsy.com/ie/listing/882191122/',
     discount: 0,
-    type: 'magnets',
+    type: 'merchandise',
+    subType: 'magnets',
   },
 };
 

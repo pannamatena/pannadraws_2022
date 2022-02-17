@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet, useParams } from 'react-router-dom';
+import { getDataSource } from '../resources/utils';
 import Gallery from '../components/Gallery';
 import ArtPageComp from '../components/ArtPage';
 import { getAvailableItems, getMerchTypeItems } from '../resources/utils';
@@ -183,5 +184,6 @@ export function NotebooksShop() {
 
 export function ShopPage() {
   let params = useParams();
-  return <ArtPageComp imgTitle={params.imgTitle} />;
+  const dataSource = getDataSource(params);
+  return <ArtPageComp imgId={params.imgTitle} dataSource={dataSource} />;
 }

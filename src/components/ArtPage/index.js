@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import Img from 'react-cool-img';
@@ -10,11 +10,12 @@ function createMarkup(story) {
   return { __html: story };
 }
 
-export default function ArtPage(props) {
+export default function ArtPage({ imgId, dataSource }) {
   let navigate = useNavigate();
-  let location = useLocation();
 
-  const imgData = location.state.imgData;
+  console.log(dataSource);
+  console.log(imgId);
+  const imgData = dataSource[imgId];
 
   return (
     <div className="artPage">
