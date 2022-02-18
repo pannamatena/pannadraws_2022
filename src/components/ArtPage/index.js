@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import Img from 'react-cool-img';
@@ -12,14 +12,15 @@ function createMarkup(story) {
 
 export default function ArtPage({ imgId, dataSource }) {
   let navigate = useNavigate();
+  let location = useLocation();
+  const locationElements = location.pathname.split('/');
+  const prevLocation = `/${locationElements[1]}/${locationElements[2]}`;
 
-  console.log(dataSource);
-  console.log(imgId);
   const imgData = dataSource[imgId];
 
   return (
     <div className="artPage">
-      <button css={style.backBtn} onClick={() => navigate(-1)}>
+      <button css={style.backBtn} onClick={() => navigate(prevLocation)}>
         Back
       </button>
       <div css={style.layout}>

@@ -93,9 +93,8 @@ export function ColouringShop() {
 
 export function CardsAndBookmarksShop() {
   let params = useParams();
-  const cards = getMerchTypeItems(imgData_merchandinse, 'greeting-cards');
-  const bookmarks = getMerchTypeItems(imgData_merchandinse, 'bookmark-set');
-  const magnets = getMerchTypeItems(imgData_merchandinse, 'magnets');
+  const cards = getMerchTypeItems(imgData_merchandinse, 'greeting_cards');
+  const bookmarks = getMerchTypeItems(imgData_merchandinse, 'bookmark_set');
   return (
     <>
       {params.imgTitle ? (
@@ -104,7 +103,7 @@ export function CardsAndBookmarksShop() {
         <>
           <h1>Cards and Bookmarks</h1>
           <Gallery
-            imgData={Object.assign({}, cards, bookmarks, magnets)}
+            imgData={Object.assign({}, cards, bookmarks)}
             imgRoot="shop/colouringShop"
             itemType="COLOURING"
             galleryType="INFOTILES"

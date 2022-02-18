@@ -17,6 +17,12 @@ export function getAvailableItems(source, typeProp) {
 
 export function getMerchTypeItems(source, merchType) {
   return Object.keys(source).reduce((merchTypeMap, currentItemId) => {
+    if (
+      source[currentItemId].type === 'merchandise' &&
+      source[currentItemId].subType === merchType
+    ) {
+      merchTypeMap[currentItemId] = source[currentItemId];
+    }
     if (source[currentItemId].type === merchType) {
       merchTypeMap[currentItemId] = source[currentItemId];
     }

@@ -60,7 +60,7 @@ const style = {
         &:hover {
           cursor: pointer;
           & > div {
-            height: 235px;
+            height: 255px;
             padding: 5px 0 2px;
           }
         }
