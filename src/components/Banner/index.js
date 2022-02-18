@@ -3,7 +3,7 @@ import React from 'react';
 import { css } from '@emotion/react';
 import Img from 'react-cool-img';
 import style from './style';
-import MainImg from '../../resources/images/pannadraws_main_test.jpg';
+import MainImg from '../../resources/images/pannadraws_website_main_img.jpg';
 
 export default function Banner() {
   return (
@@ -12,7 +12,7 @@ export default function Banner() {
         src={MainImg}
         alt="Dragon and unicorn under cherry blossoms - ink drawing by PannaDraws"
       />
-      <h2>Fantasy and Animal Fine Art</h2>
+      <span>the art of Panna Zsamba</span>
     </div>
   );
 }

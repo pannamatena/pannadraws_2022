@@ -72,34 +72,46 @@ export default function Layout() {
         <div css={style.headerLeft}>
           <div css={style.logoContainer}>
             <Link to="/">
-              <div
-                css={css`
-                  ${style.logoImg};
-                  width: ${topPos > 0 ? '35' : '50'}px;
-                  height: ${topPos > 0 ? '35' : '50'}px;
-                  @media ${breakPoints.desktopSmall} {
-                    width: ${topPos > 0 ? '46' : '66'}px;
-                    height: ${topPos > 0 ? '41' : '61'}px;
-                  }
-                `}
-              >
-                {logo()}
-              </div>
-              <div
-                css={css`
-                  ${style.logoText};
-                  @media ${breakPoints.tabletPortrait} {
-                    width: ${topPos > 0 ? '66' : '80'}px;
+              <div css={style.logo}>
+                <div
+                  css={css`
+                    ${style.logoImg};
+                    width: ${topPos > 0 ? '35' : '50'}px;
                     height: ${topPos > 0 ? '35' : '50'}px;
-                  }
-                  @media ${breakPoints.desktopSmall} {
-                    width: ${topPos > 0 ? '80' : '110'}px;
-                    height: ${topPos > 0 ? '41' : '61'}px;
+                    @media ${breakPoints.desktopSmall} {
+                      width: ${topPos > 0 ? '46' : '66'}px;
+                      height: ${topPos > 0 ? '41' : '61'}px;
+                    }
+                  `}
+                >
+                  {logo()}
+                </div>
+                <div
+                  css={css`
+                    ${style.logoText};
+                    @media ${breakPoints.tabletPortrait} {
+                      width: ${topPos > 0 ? '66' : '80'}px;
+                      height: ${topPos > 0 ? '35' : '50'}px;
+                    }
+                    @media ${breakPoints.desktopSmall} {
+                      width: ${topPos > 0 ? '80' : '110'}px;
+                      height: ${topPos > 0 ? '41' : '61'}px;
+                    }
+                  `}
+                >
+                  {logoText()}
+                </div>
+              </div>
+              <h2
+                css={css`
+                  display: none;
+                  @media ${breakPoints.tabletLandscape} {
+                    display: ${topPos > 0 ? 'none' : 'block'};
                   }
                 `}
               >
-                {logoText()}
-              </div>
+                fantasy and animal fine art
+              </h2>
             </Link>
           </div>
         </div>
@@ -152,14 +164,20 @@ export default function Layout() {
         css={css`
           ${style.pageContent};
           padding-top: ${topPos > 0 ? '59' : '74'}px;
-          min-height: calc(100vh - ${topPos > 0 ? '59' : '74'}px - 100px);
+          padding-bottom: 144px;
           @media ${breakPoints.tabletPortrait} {
             padding-top: ${topPos > 0 ? '60' : '85'}px;
-            min-height: calc(100vh - ${topPos > 0 ? '60' : '85'}px - 70px);
+            padding-bottom: 144px;
+          }
+          @media ${breakPoints.tabletLandscape} {
+            padding-top: ${topPos > 0 ? '60' : '104'}px;
           }
           @media ${breakPoints.desktopSmall} {
-            padding-top: ${topPos > 0 ? '76' : '106'}px;
-            min-height: calc(100vh - ${topPos > 0 ? '76' : '106'}px - 50px);
+            padding-top: ${topPos > 0 ? '76' : '125'}px;
+            padding-bottom: 159px;
+          }
+          @media ${breakPoints.desktopLarge} {
+            padding-bottom: 164px;
           }
         `}
       >

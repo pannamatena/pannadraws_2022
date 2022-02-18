@@ -12,6 +12,9 @@ import { breakPoints } from '../../resources/breakpoints';
 const style = {
   layout: css`
     background: ${colours.c3};
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
   `,
   pageContent: css`
     transition: padding 0.3s ease-out;
@@ -87,7 +90,7 @@ const style = {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
-    align-items: flex-start;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -108,6 +111,23 @@ const style = {
     }
   `,
   logoContainer: css`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    h2 {
+      font-size: 14px;
+      color: ${colours.c2};
+      padding-left: 5px;
+      padding-top: 5px;
+    }
+  `,
+  logo: css`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -211,6 +231,10 @@ const style = {
     background: ${colours.c2};
     font-family: ${fonts.f2};
     font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 
     padding: 10px 10px 67px;
     @media ${breakPoints.tabletPortrait} {
