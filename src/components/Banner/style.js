@@ -1,18 +1,16 @@
 import { css } from '@emotion/react';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts } from '../../resources/fonts';
+import { fonts, smallHeadFontSize } from '../../resources/fonts';
+import { colours } from '../../resources/colors';
 
 const style = {
   container: css`
     width: 100vw;
     position: relative;
 
-    min-height: 435px;
-    @media ${breakPoints.tabletPortrait} {
-      min-height: 727px;
-    }
+    min-height: 727px;
     @media ${breakPoints.tabletLandscape} {
-      min-height: 581px;
+      min-height: 730px;
     }
     @media ${breakPoints.desktopSmall} {
       min-height: 872px;
@@ -30,19 +28,22 @@ const style = {
       left: 50%;
       z-index: 500;
 
-      width: 300px;
-      transform: translateX(-20%);
+      width: 500px;
+      transform: translateX(-50%);
       @media ${breakPoints.tabletPortrait} {
-        width: 500px;
+        transform: translateX(-30%);
       }
       @media ${breakPoints.tabletLandscape} {
-        width: 400px;
+        width: 500px;
+        transform: translateX(-13%);
       }
       @media ${breakPoints.desktopSmall} {
         width: 600px;
+        transform: translateX(-10%);
       }
       @media ${breakPoints.desktopLarge} {
         width: 800px;
+        transform: translateX(-20%);
       }
       @media ${breakPoints.desktopXLarge} {
         width: 1000px;
@@ -51,29 +52,90 @@ const style = {
 
     span {
       font-family: ${fonts.f2};
-      //text-transform: lowercase;
       font-weight: normal;
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      left: 8%;
-      z-index: 501;
-
-      /*font-size: 2em;
-      //transform: translate(-50%, -50%);
+      display: block;
+      ${smallHeadFontSize};
       @media ${breakPoints.tabletPortrait} {
-        //transform: translate(-70%, -50%);
+        text-align: right;
+      }
+    }
+
+    h2.headline {
+      font-family: ${fonts.f2};
+      margin-bottom: 0;
+      line-height: 1;
+      white-space: nowrap;
+
+      font-size: 22px;
+      @media ${breakPoints.tabletPortrait} {
+        font-size: 24px;
       }
       @media ${breakPoints.desktopSmall} {
-        font-size: 2.5em;
+        font-size: 38px;
       }
       @media ${breakPoints.desktopLarge} {
-        font-size: 4em;
+        font-size: 50px;
       }
       @media ${breakPoints.desktopXLarge} {
-        font-size: 5em;
-      }*/
+        font-size: 54px;
+      }
+
+      &--second {
+        text-indent: 5px;
+        @media ${breakPoints.tabletLandscape} {
+          text-indent: 20px;
+        }
+      }
+
+      &--third {
+        color: ${colours.c1};
+        text-indent: 10px;
+        @media ${breakPoints.tabletLandscape} {
+          text-indent: 40px;
+        }
+      }
     }
+  `,
+  headlineContainer: css`
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 501;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    top: 15%;
+    left: 15%;
+    width: 100%;
+    background: ${colours.c3_transparent};
+    padding: 10px 0;
+    justify-content: flex-start;
+    @media ${breakPoints.tabletPortrait} {
+      top: 12%;
+      left: 0;
+      width: 50%;
+      background: transparent;
+      padding: 0;
+      justify-content: center;
+    }
+    @media ${breakPoints.tabletLandscape} {
+      top: 28%;
+      left: 20px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      top: 26%;
+      left: 0;
+    }
+    @media ${breakPoints.desktopLarge} {
+      top: 30%;
+    }
+    @media ${breakPoints.desktopXLarge} {
+      top: 25%;
+      left: 5%;
+    }
+  `,
+  headlineContainerInner: css`
+    display: inline-block;
   `,
 };
 

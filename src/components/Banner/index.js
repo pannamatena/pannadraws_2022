@@ -12,7 +12,14 @@ export default function Banner() {
         src={MainImg}
         alt="Dragon and unicorn under cherry blossoms - ink drawing by PannaDraws"
       />
-      <span>the art of Panna Zsamba</span>
+      <div css={style.headlineContainer}>
+        <div css={style.headlineContainerInner}>
+          <h2 className="headline headline--first">Irish wilderness.</h2>
+          <h2 className="headline headline--second">Magical creatures.</h2>
+          <h2 className="headline headline--third">enchanted watercolour.</h2>
+          <span>the art of Panna Zsamba</span>
+        </div>
+      </div>
     </div>
   );
 }
