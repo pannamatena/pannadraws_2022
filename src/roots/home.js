@@ -1,12 +1,19 @@
 import * as React from 'react';
 import Banner from '../components/Banner';
-import Newsletter from '../components/Newsletter';
+import SegmentedLayout from '../components/SegmentedLayout';
+import Newsletter, { NewsletterDescription } from '../components/Newsletter';
+import { colours } from '../resources/colors';
 
 export function Home() {
   return (
     <div>
       <Banner />
-      <Newsletter />
+      <SegmentedLayout
+        type="narrow"
+        contentLeft={<NewsletterDescription />}
+        contentRight={<Newsletter />}
+        rightBackground={colours.c5}
+      />
     </div>
   );
 }

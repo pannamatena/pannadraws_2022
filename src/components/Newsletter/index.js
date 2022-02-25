@@ -1,118 +1,102 @@
 import React, { useState } from 'react';
 /** @jsxImportSource @emotion/react */
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import { css } from '@emotion/react';
 import { Link } from 'react-router-dom';
 import style from './style';
 import Checkbox from '../Checkbox';
+import { validateEmail } from '../../resources/utils';
 import { close, check } from '../../resources/icons';
+import { colours } from '../../resources/colors';
 
-export default function Newsletter() {
-  const [firstNameVal, setFirstNameVal] = useState('');
-  const [lastNameVal, setLastNameVal] = useState('');
-  const [emailVal, setEmailVal] = useState('');
+function NewsletterForm({ status, message, onValidated }) {
   const [consentVal, setConsentVal] = useState('');
-  const [subResult, setSubResult] = useState('');
+  const [emailIsWrong, setEmailIsWrong] = useState(false);
+  let email, firstName, lastName;
 
-  const createMarkup = (story) => {
-    return { __html: story };
-  };
-
-  const handleFirstNameChange = (value) => {
-    setFirstNameVal(value);
-  };
-  const handleLastNameChange = (value) => {
-    setLastNameVal(value);
-  };
-  const handleEmailChange = (value) => {
-    setEmailVal(value);
-  };
   const handleCheckboxChange = (event) => {
     setConsentVal(event.target.checked);
   };
 
-  const resetForm = () => {
-    setFirstNameVal('');
-    setLastNameVal('');
-    setEmailVal('');
-    setConsentVal('');
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const onSubmitClick = () => {
+    console.log('onSubmitClick');
+    console.log(validateEmail(email.value));
+    if (!validateEmail(email.value)) {
+      setEmailIsWrong(true);
+    }
+    return (
+      email &&
+      firstName &&
+      lastName &&
+      validateEmail(email.value) &&
+      onValidated({
+        EMAIL: email.value,
+        FNAME: firstName.value,
+        LNAME: lastName.value,
+      })
+    );
   };
 
   const getResultMsg = () => {
-    if (!subResult.result) {
-      return null;
+    switch (status) {
+      case 'sending': {
+        return (
+          <div css={style.sendingMsg}>
+            <span>Sending...</span>
+          </div>
+        );
+      }
+      case 'error': {
+        return (
+          <div css={style.errorMsg}>
+            <i>{close()}</i>
+            <span>Please fill all fields.</span>
+          </div>
+        );
+      }
+      case 'success': {
+        return (
+          <div css={style.successMsg}>
+            <i>{check()}</i>
+            <span>
+              Thank you! A confirmation email has been sent to the address
+              you've given.
+            </span>
+          </div>
+        );
+      }
+      default: {
+        return null;
+      }
     }
-
-    return subResult.result === 'success' ? (
-      <span css={style.successSub}>
-        <i>{check()}</i>
-        {subResult.msg}
-      </span>
-    ) : (
-      <span css={style.errorSub}>
-        <i>{close()}</i>
-        <span dangerouslySetInnerHTML={createMarkup(subResult.msg)} />
-      </span>
-    );
   };
 
   return (
     <div css={style.newsletterSignup}>
-      <div css={style.newsletterDetails}>
-        <h2>Sign up for PannaDraw's newsletter...</h2>
-        <p>and get:</p>
-        <ul>
-          <li>free art printable on signup</li>
-          <li>max 1 email per month</li>
-          <li>news and exclusive insights of my studio work</li>
-          <li>special offers only for subscribers</li>
-          <li>art freebies every month</li>
-        </ul>
-      </div>
-      <form
-        css={style.newsletterForm}
-        name="newsletter"
-        onSubmit={handleSubmit}
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="bot-field" />
+      <div css={style.newsletterForm}>
+        <h2>Sign up to my email list!</h2>
         <div css={style.newsletterSplitFormRow}>
           <div>
             <label htmlFor="first_name">First Name</label>
-            <input
-              type="text"
-              name="first_name"
-              id="first_name"
-              value={firstNameVal}
-              onChange={(e) => handleFirstNameChange(e.target.value)}
-              required
-            />
+            <input ref={(node) => (firstName = node)} type="text" required />
           </div>
           <div>
             <label htmlFor="last_name">Last Name</label>
-            <input
-              type="text"
-              name="last_name"
-              id="last_name"
-              value={lastNameVal}
-              onChange={(e) => handleLastNameChange(e.target.value)}
-              required
-            />
+            <input ref={(node) => (lastName = node)} type="text" required />
           </div>
         </div>
         <div css={style.newsletterFormRow}>
           <label htmlFor="email">Email</label>
           <input
+            ref={(node) => (email = node)}
+            css={css`
+              background: ${emailIsWrong
+                ? colours.c_error
+                : colours.c2} !important;
+            `}
             type="email"
-            name="email"
-            id="email"
-            value={emailVal}
-            onChange={(e) => handleEmailChange(e.target.value)}
             required
+            onChange={() => setEmailIsWrong(false)}
           />
         </div>
         <div css={style.newsletterFormRow}>
@@ -120,12 +104,12 @@ export default function Newsletter() {
             <Checkbox checked={consentVal} onChange={handleCheckboxChange} />
             <span>I would like to get monthly emails from PannaDraws.</span>
           </label>
-          <p css={style.infoText}>
+          <p className="infoText">
             You can unsubscribe at any time by clicking the link in the footer
             of my emails. All personal data is handled according to the{' '}
             <Link to="/privacy_policy">Privacy Policy</Link>.
           </p>
-          <p css={style.infoText}>
+          <p className="infoText">
             I use Mailchimp as my marketing platform. By clicking below to
             subscribe, you acknowledge that your information will be transferred
             to Mailchimp for processing. See{' '}
@@ -140,10 +124,52 @@ export default function Newsletter() {
           </p>
         </div>
         {getResultMsg()}
+        {emailIsWrong && (
+          <div css={style.errorMsg}>
+            <i>{close()}</i>
+            <span>Please provide a valid email address.</span>
+          </div>
+        )}
         <div css={style.newsletterFormActions}>
-          <input css={style.submitBtn} type="submit" value="Sign Me Up!" />
+          <button
+            css={style.submitBtn}
+            onClick={onSubmitClick}
+            disabled={!consentVal}
+          >
+            Sign Me Up!
+          </button>
         </div>
-      </form>
+      </div>
     </div>
+  );
+}
+
+export function NewsletterDescription() {
+  return (
+    <div css={style.newsletterDetails}>
+      <ul>
+        <li>free art printable on signup</li>
+        <li>monthly emails with behind-the-scenes and exclusive content</li>
+        <li>special offers only for subscribers</li>
+        <li>art freebies every month</li>
+      </ul>
+    </div>
+  );
+}
+
+export default function Newsletter() {
+  return (
+    <MailchimpSubscribe
+      url={process.env.REACT_APP_MAILCHIMP_KEY}
+      render={({ subscribe, status, message }) => (
+        <NewsletterForm
+          status={status}
+          message={message}
+          onValidated={(formData) => {
+            subscribe(formData);
+          }}
+        />
+      )}
+    />
   );
 }

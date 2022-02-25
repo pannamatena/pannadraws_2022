@@ -22,6 +22,14 @@ const style = {
       min-height: 1453px;
     }
 
+    margin-bottom: 10px;
+    @media ${breakPoints.desktopSmall} {
+      margin-bottom: 15px;
+    }
+    @media ${breakPoints.desktopLarge} {
+      margin-bottom: 20px;
+    }
+
     img {
       position: absolute;
       top: 0;
@@ -50,7 +58,7 @@ const style = {
       }
     }
 
-    span {
+    span.headline {
       font-family: ${fonts.f2};
       font-weight: normal;
       display: block;
@@ -136,6 +144,13 @@ const style = {
   `,
   headlineContainerInner: css`
     display: inline-block;
+  `,
+  bouncyText: css`
+    position: absolute;
+    z-index: 600;
+    left: 40%;
+    top: 0;
+    height: 150px;
   `,
 };
 

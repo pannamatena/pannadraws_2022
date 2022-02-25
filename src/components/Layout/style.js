@@ -84,6 +84,40 @@ const style = {
         margin-bottom: 20px;
       }
     }
+
+    ul {
+      margin-bottom: 10px;
+      @media ${breakPoints.tabletPortrait} {
+        margin-bottom: 15px;
+      }
+      @media ${breakPoints.desktopSmall} {
+        margin-bottom: 20px;
+      }
+
+      li {
+        position: relative;
+        padding-left: 10px;
+        padding-bottom: 10px;
+
+        &:before {
+          display: block;
+          content: '';
+          width: 5px;
+          height: 5px;
+          background: ${colours.c1};
+          border-radius: 15px;
+          position: absolute;
+          left: 0;
+          top: 6px;
+          @media ${breakPoints.tabletPortrait} {
+            top: 8px;
+          }
+          @media ${breakPoints.desktopLarge} {
+            top: 9px;
+          }
+        }
+      }
+    }
   `,
   header: css`
     background: ${colours.c3};

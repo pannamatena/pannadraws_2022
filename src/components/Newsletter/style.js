@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts } from '../../resources/fonts';
+import { fonts, smallHeadFontSize, textSize } from '../../resources/fonts';
 import { colours } from '../../resources/colors';
 
 const style = {
@@ -10,7 +10,6 @@ const style = {
     justify-content: center;
 
     flex-direction: column;
-    padding: 10px;
     @media ${breakPoints.tabletLandscape} {
       flex-direction: row;
     }
@@ -46,44 +45,53 @@ const style = {
       }
     }
 
-    ul {
-      margin-bottom: 10px;
-
-      li {
-        padding-left: 10px;
-        position: relative;
-
-        padding-bottom: 10px;
-
-        &:before {
-          display: block;
-          content: '';
-          width: 5px;
-          height: 5px;
-          background: ${colours.c1};
-          border-radius: 15px;
-          position: absolute;
-          left: 0;
-          top: 8px;
-        }
-      }
+    p.infoText {
+      font-size: 14px;
+      margin-bottom: 5px;
     }
   `,
-  newsletterDetails: css``,
-  newsletterForm: css`
-    background: rgba(236, 235, 235, 0.8);
-
+  newsletterDetails: css`
+    position: relative;
+    background: ${colours.c5};
+    border-radius: 50rem;
+    max-width: 400px;
+    transform: rotate(-2deg);
     padding: 10px;
     @media ${breakPoints.tabletPortrait} {
       padding: 15px;
     }
+    @media ${breakPoints.desktopSmall} {
+      padding: 20px 50px;
+    }
+
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 100%;
+      right: 15%;
+
+      transform: skewX(20deg) rotate(-5deg) translateY(-3px);
+      border-width: 50px 0 0 50px;
+      border-style: solid;
+      border-color: ${colours.c5} transparent;
+    }
+
+    ul {
+      margin-bottom: 0;
+
+      li:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+  `,
+  newsletterForm: css`
+    background: rgba(236, 235, 235, 0.8);
+
     @media ${breakPoints.tabletLandscape} {
-      margin-left: 30px;
       max-width: 300px;
     }
     @media ${breakPoints.desktopSmall} {
-      padding: 20px;
-      margin-left: 50px;
       max-width: 500px;
     }
   `,
@@ -100,7 +108,7 @@ const style = {
     div {
       flex: 1;
 
-      &:first-child {
+      &:first-of-type {
         margin-right: 5px;
       }
       &:last-child {
@@ -123,6 +131,11 @@ const style = {
       background: ${colours.c1_h};
       cursor: pointer;
     }
+
+    &:disabled {
+      cursor: default;
+      background: ${colours.c4};
+    }
   `,
   checkbox: css`
     display: flex !important;
@@ -140,16 +153,26 @@ const style = {
       }
     }
   `,
-  infoText: css`
-    font-size: 0.7em;
-  `,
   newsletterFormActions: css`
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
   `,
-  successSub: css`
+  sendingMsg: css`
+    color: ${colours.c4};
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  `,
+  successMsg: css`
+    font-weight: bold;
+    color: ${colours.c_success};
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     i {
       display: block;
       width: 30px;
@@ -171,7 +194,13 @@ const style = {
       }
     }
   `,
-  errorSub: css`
+  errorMsg: css`
+    font-weight: bold;
+    color: ${colours.c_error};
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     i {
       display: block;
       width: 30px;
