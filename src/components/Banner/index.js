@@ -33,7 +33,7 @@ export default function Banner() {
           top: ${viewPortHeight - 270}px;
         `}
       >
-        <BouncyText text="Fancy a freebie?" />
+        <BouncyText content={<span>Fancy a freebie?</span>} />
       </div>
     </div>
   );

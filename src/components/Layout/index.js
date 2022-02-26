@@ -17,15 +17,23 @@ import { breakPoints } from '../../resources/breakpoints';
 import style from './style';
 import DesktopMenu from '../DesktopMenu';
 import MobileMenu from '../MobileMenu';
+import NewsletterModal from '../NewsletterModal';
 
 export default function Layout() {
   const [topPos, setTopPos] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isNewsletterModalOpen, setIsNewsletterModalOpen] = useState(false);
 
   const setTopScrollVal = () => {
     const scrollY = window ? window.scrollY : 0;
     setTopPos(scrollY);
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsNewsletterModalOpen(true);
+    }, 5000);
+  }, []);
 
   useEffect(() => {
     setTopScrollVal();
@@ -182,6 +190,10 @@ export default function Layout() {
         `}
       >
         <Outlet />
+        <NewsletterModal
+          isOpen={isNewsletterModalOpen}
+          onClose={() => setIsNewsletterModalOpen(false)}
+        />
       </div>
 
       <div css={style.footerContainer}>
