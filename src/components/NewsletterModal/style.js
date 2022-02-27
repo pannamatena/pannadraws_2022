@@ -10,20 +10,6 @@ const style = {
     @media ${breakPoints.tabletLandscape} {
       flex-direction: row;
     }
-
-    h2 {
-      font-family: ${fonts.f1};
-      text-transform: uppercase;
-
-      ${mediumHeadFontSize};
-      margin-bottom: 10px;
-      @media ${breakPoints.desktopSmall} {
-        margin-bottom: 15px;
-      }
-      @media ${breakPoints.desktopLarge} {
-        margin-bottom: 20px;
-      }
-    }
   `,
   form: css`
     background: ${colours.c5};
@@ -43,7 +29,13 @@ const style = {
     }
   `,
   details: css`
-    width: auto;
+    padding: 10px;
+    @media ${breakPoints.tabletPortrait} {
+      padding: 15px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      padding: 20px;
+    }
   `,
 };
 

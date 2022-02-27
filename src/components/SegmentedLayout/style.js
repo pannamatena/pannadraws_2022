@@ -11,10 +11,10 @@ const style = {
     justify-content: center;
 
     margin: 0 -10px 0;
-    @media ${breakPoints.desktopSmall} {
+    @media ${breakPoints.tabletPortrait} {
       margin: 0 -15px 0;
     }
-    @media ${breakPoints.desktopLarge} {
+    @media ${breakPoints.desktopSmall} {
       margin: 0 -20px 0;
     }
   `,

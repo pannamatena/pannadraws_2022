@@ -18,6 +18,9 @@ const style = {
     background: ${colours.c3};
     z-index: 800;
   `,
+  mobileMenuScrollContainer: css`
+    overflow: auto;
+  `,
   closeBtn: css`
     display: block;
     background: transparent;

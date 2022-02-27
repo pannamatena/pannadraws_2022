@@ -14,11 +14,12 @@ export default function NewsletterModal({ isOpen, onClose }) {
         </div>
 
         <div css={style.details}>
+          <h3>Why sign up?</h3>
           <ul>
-            <li>free art printable on signup</li>
-            <li>monthly emails with behind-the-scenes and exclusive content</li>
-            <li>special offers only for subscribers</li>
-            <li>art freebies every month</li>
+            <li>Get a FREE art printable on signup</li>
+            <li>Monthly emails with behind-the-scenes and exclusive content</li>
+            <li>Special offers only for subscribers</li>
+            <li>Art freebies every month!</li>
           </ul>
         </div>
       </div>

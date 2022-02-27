@@ -27,14 +27,14 @@ export default function Banner() {
           <span className="headline">the art of Panna Zsamba</span>
         </div>
       </div>
-      <div
+      {/*<div
         css={css`
           ${style.bouncyText};
-          top: ${viewPortHeight - 270}px;
+          top: ${viewPortHeight}px;
         `}
       >
         <BouncyText content={<span>Fancy a freebie?</span>} />
-      </div>
+      </div>*/}
     </div>
   );
 }

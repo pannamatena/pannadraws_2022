@@ -56,9 +56,10 @@ const style = {
     border-radius: 50rem;
     max-width: 400px;
     transform: rotate(-2deg);
-    padding: 10px;
+
+    padding: 10px 30px;
     @media ${breakPoints.tabletPortrait} {
-      padding: 15px;
+      padding: 15px 30px;
     }
     @media ${breakPoints.desktopSmall} {
       padding: 20px 50px;
@@ -69,12 +70,17 @@ const style = {
       content: '';
       position: absolute;
       top: 100%;
-      right: 15%;
 
       transform: skewX(20deg) rotate(-5deg) translateY(-3px);
-      border-width: 50px 0 0 50px;
       border-style: solid;
       border-color: ${colours.c5} transparent;
+
+      border-width: 25px 0 0 25px;
+      right: 30%;
+      @media ${breakPoints.tabletPortrait} {
+        border-width: 50px 0 0 50px;
+        right: 15%;
+      }
     }
 
     ul {
