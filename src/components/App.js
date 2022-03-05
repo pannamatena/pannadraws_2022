@@ -6,6 +6,7 @@ import { About } from '../roots/about';
 import { Contact } from '../roots/contact';
 import { PrivacyPolicy } from '../roots/privacyPolicy';
 import { ReturnPolicy } from '../roots/returnPolicy';
+import { FormSuccess, FormError } from '../roots/formResponses';
 import { NoMatch } from '../roots/noMatch';
 import { CommissionArt } from '../roots/commissionArt';
 import { AnimalArt, ArtPage, AdultColoring, FantasyArt } from '../roots/art';
@@ -98,6 +99,8 @@ export default function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="return_policy" element={<ReturnPolicy />} />
             <Route path="privacy_policy" element={<PrivacyPolicy />} />
+            <Route path="form_success" element={<FormSuccess />} />
+            <Route path="form_error" element={<FormError />} />
             <Route path="*" element={<NoMatch />} />
           </Route>
         </Routes>
