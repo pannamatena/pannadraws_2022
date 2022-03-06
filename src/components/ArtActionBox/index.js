@@ -1,6 +1,7 @@
 import React from 'react';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import { Link } from 'react-router-dom';
 import { arrow } from '../../resources/icons';
 import style from './style';
 
@@ -89,8 +90,24 @@ function getOriginalActionLink(imgData) {
         </>
       );
     }
-    default: {
+    case 'SOLD': {
       return <p css={style.sold}>Original is sold.</p>;
+    }
+    default: {
+      return (
+        <>
+          {getPriceTag(imgData)}
+          <Link
+            css={style.mainActionLink}
+            to="/contact/"
+            state={{
+              msgSubj: `Purchase inquiry: ${imgData.title}, ${imgData.year}`,
+            }}
+          >
+            Message me to buy
+          </Link>
+        </>
+      );
     }
   }
 }
@@ -124,6 +141,30 @@ function getPrintActionLink(imgData) {
   }
 }
 
+function getMerchItems(merchItems) {
+  return merchItems.map((item) => {
+    return (
+      <div css={style.merchItem} key={item.url}>
+        <a
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={`${item.name} by PannaDraws on Etsy`}
+        >
+          {item.name} {arrow()}
+        </a>
+        <span>(from € {item.price} + shipping)</span>
+      </div>
+    );
+  });
+}
+
+function getMerch(imgData) {
+  return imgData.merch && imgData.merch.length > 0 ? (
+    <div css={style.merchContainer}>{getMerchItems(imgData.merch)}</div>
+  ) : null;
+}
+
 export default function ArtActionBox({ imgData }) {
   return (
     <div className="artActionBox" css={style.artActionBox}>
@@ -134,6 +175,7 @@ export default function ArtActionBox({ imgData }) {
         )}
       </div>
       {getPrintActionLink(imgData)}
+      {getMerch(imgData)}
     </div>
   );
 }

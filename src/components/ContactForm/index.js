@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import Checkbox from '../../components/Checkbox';
 import style from './style';
 
-export default function ContactForm() {
-  const [subjectVal, setSubjectVal] = useState('');
+export default function ContactForm(props) {
+  let location = useLocation();
+  const [subjectVal, setSubjectVal] = useState(location.state.msgSubj || '');
   const [consentVal, setConsentVal] = useState(false);
 
   const handleSubjectChange = (event) => {

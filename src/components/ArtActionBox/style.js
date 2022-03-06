@@ -117,6 +117,53 @@ const style = {
     color: ${colours.c3};
     font-size: 0.8em;
   `,
+  merchContainer: css`
+    border-top: 1px solid ${colours.c4};
+
+    margin-top: 10px;
+    padding-top: 5px;
+    @media ${breakPoints.tabletPortrait} {
+      margin-top: 15px;
+      padding-top: 10px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      margin-top: 20px;
+      padding-top: 15px;
+    }
+  `,
+  merchItem: css`
+    margin-bottom: 5px;
+
+    a {
+      display: block;
+      color: ${colours.c2};
+      transition: color 0.2s ease;
+      font-family: ${fonts.f1};
+      text-transform: uppercase;
+      ${textSize}
+
+      svg {
+        width: 10px;
+        height: 10px;
+        transform: rotate(-45deg);
+        fill: ${colours.c2};
+        transition: fill 0.3s ease-out;
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: ${colours.c1};
+
+        svg {
+          fill: ${colours.c1};
+        }
+      }
+    }
+
+    > span {
+      display: block;
+    }
+  `,
 };
 
 export default style;
