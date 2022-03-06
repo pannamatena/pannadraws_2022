@@ -155,10 +155,14 @@ const style = {
     }
 
     h2 {
-      font-size: 14px;
       color: ${colours.c2};
       padding-left: 5px;
       padding-top: 5px;
+
+      font-size: 12px;
+      @media ${breakPoints.desktopSmall} {
+        font-size: 14px;
+      }
     }
   `,
   logo: css`

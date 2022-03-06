@@ -4,6 +4,11 @@ import React, { useState, useEffect } from 'react';
 import { css } from '@emotion/react';
 import { Link, Outlet } from 'react-router-dom';
 import CookieConsent from 'react-cookie-consent';
+import {
+  writeStorage,
+  useLocalStorage,
+  deleteFromStorage,
+} from '@rehooks/local-storage';
 import { colours } from '../../resources/colors';
 import { fonts } from '../../resources/fonts';
 import {
@@ -20,6 +25,7 @@ import MobileMenu from '../MobileMenu';
 import NewsletterModal from '../NewsletterModal';
 
 export default function Layout() {
+  const [isModalDismissed] = useLocalStorage('newsLetterModalDismissed');
   const [topPos, setTopPos] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isNewsletterModalOpen, setIsNewsletterModalOpen] = useState(false);
@@ -30,9 +36,21 @@ export default function Layout() {
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsNewsletterModalOpen(true);
-    }, 5000);
+    const now = +new Date();
+    if (
+      isModalDismissed &&
+      now - isModalDismissed > 1 * 30 * 24 * 3600 * 1000
+    ) {
+      deleteFromStorage('newsLetterModalDismissed');
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isModalDismissed) {
+      setTimeout(() => {
+        setIsNewsletterModalOpen(true);
+      }, 5000);
+    }
   }, []);
 
   useEffect(() => {
@@ -192,7 +210,10 @@ export default function Layout() {
         <Outlet />
         <NewsletterModal
           isOpen={isNewsletterModalOpen}
-          onClose={() => setIsNewsletterModalOpen(false)}
+          onClose={() => {
+            writeStorage('newsLetterModalDismissed', +new Date());
+            setIsNewsletterModalOpen(false);
+          }}
         />
       </div>
 

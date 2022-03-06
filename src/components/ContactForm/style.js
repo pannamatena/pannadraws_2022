@@ -8,6 +8,14 @@ const style = {
     display: block;
     width: 100%;
 
+    margin-bottom: 10px;
+    @media ${breakPoints.tabletPortrait} {
+      margin-bottom: 15px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      margin-bottom: 20px;
+    }
+
     a {
       color: ${colours.c1};
 
@@ -137,6 +145,11 @@ const style = {
     &:active {
       background: ${colours.c1_h};
       cursor: pointer;
+    }
+
+    &:disabled {
+      cursor: default;
+      background: ${colours.c4};
     }
   `,
   checkbox: css`

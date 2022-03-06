@@ -72,7 +72,12 @@ export default function ContactForm() {
           </p>
         </div>
         <div css={style.contactFormActions}>
-          <input css={style.submitBtn} type="submit" value="Send Message" />
+          <input
+            css={style.submitBtn}
+            type="submit"
+            value="Send Message"
+            disabled={!consentVal}
+          />
         </div>
       </form>
     </div>

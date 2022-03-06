@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Img from 'react-cool-img';
 import TextPage from '../components/TextPage';
 
 export function FormSuccess() {
