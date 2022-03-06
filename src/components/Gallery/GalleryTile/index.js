@@ -54,7 +54,6 @@ export default function GalleryTile({
   isInfoType,
   allProps,
 }) {
-  console.log('tile', allProps);
   const { alt, style, title, ...restImageProps } = allProps.imageProps;
   const imgId = title.split('-');
   const currentImgData = imgData[imgId[0]];
