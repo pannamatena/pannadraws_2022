@@ -48,6 +48,12 @@ const style = {
         }
       }
     }
+
+    &.merchandiseTile {
+      &:hover {
+        cursor: default;
+      }
+    }
   `,
   galleryInfoTile: css`
     background: ${colours.c5};
@@ -55,6 +61,13 @@ const style = {
   `,
   imgInfoBox: css`
     color: ${colours.c2};
+
+    &.merchInfoBox {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
   `,
   priceLine: css`
     display: flex;
@@ -168,6 +181,45 @@ const style = {
       font-size: 0.7em;
       max-width: 70px;
       left: 20px;
+    }
+  `,
+  merchPrice: css`
+    display: block;
+    ${largeHeadFontSize};
+  `,
+  merchPriceTag: css`
+    & > span {
+      margin-top: -5px;
+    }
+  `,
+  mainActionLink: css`
+    display: block;
+    color: ${colours.c1};
+    transition: color 0.2s ease;
+    font-family: ${fonts.f1};
+    font-size: 1.2em;
+    text-transform: uppercase;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    span {
+      svg {
+        width: 10px;
+        height: 10px;
+        transform: rotate(-45deg);
+        fill: ${colours.c1};
+        transition: fill 0.3s ease-out;
+        margin-left: 3px;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: ${colours.c1_h} svg {
+        fill: ${colours.c1_h};
+      }
     }
   `,
 };

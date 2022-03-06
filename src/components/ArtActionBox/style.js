@@ -6,6 +6,7 @@ import { fonts, largeHeadFontSize, textSize } from '../../resources/fonts';
 const style = {
   artActionBox: css`
     background: ${colours.c5};
+    color: ${colours.c2};
     padding: 10px;
     @media ${breakPoints.tabletPortrait} {
       padding: 15px;

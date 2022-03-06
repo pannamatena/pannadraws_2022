@@ -36,7 +36,7 @@ export function getDataSource(params) {
       if (params.imgType === 'animal_watercolour_painting') {
         return imgDataAnimalArt_2021;
       }
-      //params.imgType === 'adult_colouring')
+      //params.imgType === 'adult_colouring'
       return imgData_adultColoring_2021;
     }
     case '2020': {
@@ -45,6 +45,9 @@ export function getDataSource(params) {
         params.imgType === 'animal_coloured_pencil_drawing'
       ) {
         return imgDataAnimalArt_2020;
+      }
+      if (params.imgType === 'adult_colouring') {
+        return imgData_adultColoring_2021;
       }
       //params.imgType === 'fantasy_watercolour_painting')
       return imgDataFantasyArt_2020;

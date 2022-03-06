@@ -6,7 +6,7 @@ import { arrow } from '../../resources/icons';
 import style from './style';
 
 function getPriceTag(imgData, mediaType) {
-  if (imgData.type === 'adult-colouring') {
+  if (imgData.type === 'adult_colouring') {
     return (
       <span css={style.coloringPriceTag}>
         From

@@ -21,7 +21,7 @@ const imgData_adultColoring_2021 = {
     original: 'AVAILABLE',
     prints: 'NOTYET',
     digitalUrl: 'https://www.etsy.com/ie/listing/1079458108/',
-    printedUrl: 'https://www.etsy.com/ie/listing/1049820219/',
+    printedUrl: 'https://www.etsy.com/ie/listing/1097502745/',
     discount: 0,
     discountPrint: 0,
     type: 'adult_colouring',
@@ -53,13 +53,6 @@ const imgData_adultColoring_2021 = {
     printedUrl: 'https://www.etsy.com/ie/listing/1035856004/',
     discount: 0,
     discountPrint: 0,
-    merch: [
-      {
-        name: 'Printed version',
-        url: 'https://www.etsy.com/ie/listing/1035856004/',
-        price: 11.3,
-      },
-    ],
     type: 'adult_colouring',
     story:
       "The adventure continues! Follow the path of the 4 elements in this new set of dragon coloring pages.<br /><br />Come along on a new journey with mighty dragons born from the four fundamental elements of the world: Air, Water, Earth and Fire!<br /><br />Each element summons its dragon and bird pair:<br /><br />1. Air - Great black-backed gulls<br />2. Water - Whooper swans<br />3. Earth - Ring-necked pheasants<br />4. Fire - Carrion crows<br /><br />There's a printed and a digital, print-at-home version available.<br /><br />Original artwork was created using acrylic inks on mixed media paper.",
@@ -118,11 +111,6 @@ const imgData_adultColoring_2021 = {
     discount: 0,
     discountPrint: 0,
     merch: [
-      {
-        name: 'Printed version',
-        url: 'https://www.etsy.com/ie/listing/1049820219/',
-        price: 9,
-      },
       {
         name: 'Bookmark Set',
         url: 'https://www.etsy.com/ie/listing/904511925/',
