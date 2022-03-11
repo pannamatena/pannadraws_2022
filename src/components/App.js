@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ReactPixel from 'react-facebook-pixel';
 import Layout from './Layout';
 import { Home } from '../roots/home';
 import { About } from '../roots/about';
@@ -23,6 +24,12 @@ import {
 import GA from '../GoogleAnalytics';
 
 export default function App() {
+  const advancedMatching = { em: '' };
+  const options = {
+    autoConfig: true,
+    debug: false,
+  };
+  ReactPixel.init('3024697907551904', advancedMatching, options);
   return (
     <BrowserRouter>
       {GA.init() && <GA.RouteTracker />}

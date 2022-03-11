@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Img from 'react-cool-img';
+import ReactPixel from 'react-facebook-pixel';
 import TextPage from '../components/TextPage';
 import Image_me from '../resources/images/me.jpg';
 import Image_me_at_work from '../resources/images/me_at_work.jpg';
@@ -9,6 +10,7 @@ import Image_my_workspace from '../resources/images/my_workspace.jpg';
 export function About() {
   return (
     <div>
+      {ReactPixel.pageView()}
       <TextPage>
         <h1>About</h1>
         <h2>I paint because I can't sit on my butt!</h2>

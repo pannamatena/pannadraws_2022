@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPixel from 'react-facebook-pixel';
 import { Outlet, useParams } from 'react-router-dom';
 import { getDataSource } from '../resources/utils';
 import Gallery from '../components/Gallery';
@@ -27,6 +28,7 @@ export function OriginalArtShop() {
         <Outlet />
       ) : (
         <>
+          {ReactPixel.pageView()}
           <h1>Original paintings for sale</h1>
           <Gallery
             imgData={availableOriginals}
@@ -57,6 +59,7 @@ export function ArtPrintShop() {
         <Outlet />
       ) : (
         <>
+          {ReactPixel.pageView()}
           <h1>Art Prints</h1>
           <Gallery
             imgData={availablePrints}
@@ -78,6 +81,7 @@ export function ColouringShop() {
         <Outlet />
       ) : (
         <>
+          {ReactPixel.pageView()}
           <h1>Adult colouring pages</h1>
           <Gallery
             imgData={imgData_adultColoring_2021}
@@ -101,6 +105,7 @@ export function CardsAndBookmarksShop() {
         <Outlet />
       ) : (
         <>
+          {ReactPixel.pageView()}
           <h1>Cards and Bookmarks</h1>
           <Gallery
             imgData={Object.assign({}, cards, bookmarks)}
@@ -123,6 +128,7 @@ export function ClothingShop() {
         <Outlet />
       ) : (
         <>
+          {ReactPixel.pageView()}
           <h1>T-shirts and tops</h1>
           <Gallery
             imgData={clothing}
@@ -146,6 +152,7 @@ export function StickersShop() {
         <Outlet />
       ) : (
         <>
+          {ReactPixel.pageView()}
           <h1>Stickers and Magnets</h1>
           <Gallery
             imgData={Object.assign({}, stickers, magnets)}
@@ -168,6 +175,7 @@ export function NotebooksShop() {
         <Outlet />
       ) : (
         <>
+          {ReactPixel.pageView()}
           <h1>Notebooks</h1>
           <Gallery
             imgData={notebooks}
@@ -182,6 +190,9 @@ export function NotebooksShop() {
 }
 
 export function ShopPage() {
+  {
+    ReactPixel.pageView();
+  }
   let params = useParams();
   const dataSource = getDataSource(params);
   return <ArtPageComp imgId={params.imgTitle} dataSource={dataSource} />;

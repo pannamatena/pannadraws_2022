@@ -1,4 +1,5 @@
 import { Outlet, useParams } from 'react-router-dom';
+import ReactPixel from 'react-facebook-pixel';
 import { getDataSource } from '../resources/utils';
 import Gallery from '../components/Gallery';
 import ListGallery from '../components/ListGallery';
@@ -16,6 +17,7 @@ export function AnimalArt() {
         <Outlet />
       ) : (
         <>
+          {ReactPixel.pageView()}
           <h1>All Birds & Wildlife Art</h1>
           <h3 className="galleryTitle">2021</h3>
           <Gallery imgData={imgDataAnimalArt_2021} imgRoot="art/animalArt" />
@@ -31,6 +33,9 @@ export function AnimalArt() {
 }
 
 export function ArtPage() {
+  {
+    ReactPixel.pageView();
+  }
   let params = useParams();
   const dataSource = getDataSource(params);
   return <ArtPageComp imgId={params.imgTitle} dataSource={dataSource} />;
@@ -44,6 +49,7 @@ export function AdultColoring() {
         <Outlet />
       ) : (
         <>
+          {ReactPixel.pageView()}
           <h1>Adult Colouring</h1>
           <ListGallery imgData={imgData_adultColoring_2021} />
         </>
@@ -60,6 +66,7 @@ export function FantasyArt() {
         <Outlet />
       ) : (
         <>
+          {ReactPixel.pageView()}
           <h1>Fantasy Art</h1>
           <h3 className="galleryTitle">2020</h3>
           <Gallery imgData={imgDataFantasyArt_2020} imgRoot="art/fantasyArt" />
