@@ -20,10 +20,12 @@ import {
   NotebooksShop,
   ShopPage,
 } from '../roots/shop';
+import GA from '../GoogleAnalytics';
 
 export default function App() {
   return (
     <BrowserRouter>
+      {GA.init() && <GA.RouteTracker />}
       <div className="appContainer">
         <Routes>
           <Route path="/" element={<Layout />}>
