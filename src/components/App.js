@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ReactPixel from 'react-facebook-pixel';
+import ReactGA from 'react-ga';
 import Layout from './Layout';
 import { Home } from '../roots/home';
 import { About } from '../roots/about';
@@ -21,7 +22,6 @@ import {
   NotebooksShop,
   ShopPage,
 } from '../roots/shop';
-import GA from '../GoogleAnalytics';
 
 export default function App() {
   const advancedMatching = { em: '' };
@@ -32,7 +32,10 @@ export default function App() {
   ReactPixel.init('3024697907551904', advancedMatching, options);
   return (
     <BrowserRouter>
-      {GA.init() && <GA.RouteTracker />}
+      {ReactGA.initialize('UA-222723169-1', {
+        debug: true,
+        titleCase: false,
+      })}
       <div className="appContainer">
         <Routes>
           <Route path="/" element={<Layout />}>
