@@ -74,6 +74,20 @@ const style = {
       }
     }
 
+    h4 {
+      font-family: ${fonts.f2};
+      text-transform: uppercase;
+
+      ${textSize};
+      margin-bottom: 10px;
+      @media ${breakPoints.desktopSmall} {
+        margin-bottom: 15px;
+      }
+      @media ${breakPoints.desktopLarge} {
+        margin-bottom: 20px;
+      }
+    }
+
     p {
       ${textSize};
       margin-bottom: 10px;

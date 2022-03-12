@@ -11,6 +11,19 @@ const style = {
       max-width: 1000px;
     }
 
+    a {
+      color: ${colours.c1};
+
+      &:hover,
+      &:active {
+        color: ${colours.c1_h};
+      }
+
+      &:visited {
+        color: ${colours.c1};
+      }
+    }
+
     .imgBlock {
       display: flex;
 
