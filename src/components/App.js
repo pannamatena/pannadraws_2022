@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import ReactPixel from 'react-facebook-pixel';
 import ReactGA from 'react-ga';
 import Layout from './Layout';
@@ -23,15 +23,26 @@ import {
   ShopPage,
 } from '../roots/shop';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 export default function App() {
   const advancedMatching = { em: '' };
   const options = {
     autoConfig: true,
     debug: false,
   };
-  ReactPixel.init('3024697907551904', advancedMatching, options);
   return (
     <BrowserRouter>
+      <ScrollToTop />
+      {ReactPixel.init('3024697907551904', advancedMatching, options)}
       {ReactGA.initialize('UA-222723169-1', {
         debug: true,
         titleCase: false,
