@@ -60,8 +60,20 @@ const style = {
         &:hover {
           cursor: pointer;
           & > div {
-            height: 255px;
             padding: 5px 0 2px;
+            &.artMenu {
+              height: 100px;
+              @media ${breakPoints.desktopLarge} {
+                height: 100px;
+              }
+            }
+
+            &.shopMenu {
+              height: 221px;
+              @media ${breakPoints.desktopLarge} {
+                height: 255px;
+              }
+            }
           }
         }
       }
