@@ -23,7 +23,10 @@ export function ReturnPolicy() {
           </a>
           .
         </p>
-        <p>PannaDraws accepts returns within 14 days of delivery.</p>
+        <p>
+          PannaDraws accepts returns within 14 days of delivery, except for
+          custom items made to order.
+        </p>
         <p>
           If you purchased your item through my Etsy shop and would like to
           initiate a return, please see the following link:{' '}

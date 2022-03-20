@@ -1,6 +1,7 @@
 import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
 import { breakPoints } from '../../resources/breakpoints';
+import { fonts, textSize } from '../../resources/fonts';
 
 const style = {
   layout: css`
@@ -9,6 +10,31 @@ const style = {
     max-width: 800px;
     @media ${breakPoints.desktopSmall} {
       max-width: 1000px;
+    }
+
+    p.highlighted {
+      background: ${colours.c5};
+      padding: 10px;
+      @media ${breakPoints.tabletPortrait} {
+        padding: 15px;
+      }
+      @media ${breakPoints.desktopSmall} {
+        padding: 20px;
+      }
+    }
+
+    div.highlighted {
+      background: ${colours.c5};
+      padding: 10px;
+      margin-bottom: 10px;
+      @media ${breakPoints.tabletPortrait} {
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+      @media ${breakPoints.desktopSmall} {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
     }
 
     a {
@@ -67,6 +93,58 @@ const style = {
         @media ${breakPoints.tabletPortrait} {
           transform: rotate(2deg);
         }
+      }
+    }
+
+    .callToActionContainer {
+      margin-top: 10px;
+      @media ${breakPoints.tabletPortrait} {
+        margin-top: 15px;
+      }
+      @media ${breakPoints.desktopSmall} {
+        margin-top: 20px;
+      }
+
+      &--center {
+        text-align: center;
+      }
+    }
+
+    .btnCallToAction {
+      ${textSize};
+      display: inline-block;
+      background: ${colours.c1};
+      color: ${colours.c3} !important;
+      font-family: ${fonts.f1};
+      text-transform: uppercase;
+
+      padding: 10px;
+      @media ${breakPoints.tabletPortrait} {
+        padding: 15px;
+      }
+      @media ${breakPoints.desktopSmall} {
+        padding: 20px;
+      }
+
+      &:hover,
+      &:active {
+        background: ${colours.c1_h};
+        cursor: pointer;
+      }
+
+      &:disabled {
+        cursor: default;
+        background: ${colours.c4};
+      }
+    }
+
+    .anchor {
+      padding-top: 75px !important;
+      @media ${breakPoints.tabletPortrait} {
+        padding-top: 95px !important;
+      }
+      @media ${breakPoints.desktopSmall} {
+        padding-top: 110px !important;
       }
     }
   `,

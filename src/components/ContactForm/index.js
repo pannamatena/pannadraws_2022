@@ -7,7 +7,9 @@ import style from './style';
 
 export default function ContactForm(props) {
   let location = useLocation();
-  const [subjectVal, setSubjectVal] = useState(location.state?.msgSubj || '');
+  const [subjectVal, setSubjectVal] = useState(
+    location.state?.msgSubj || props.msgSubj || ''
+  );
   const [consentVal, setConsentVal] = useState(false);
 
   const handleSubjectChange = (event) => {
