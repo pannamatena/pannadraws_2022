@@ -6,6 +6,7 @@ import Image_me from '../resources/images/me.jpg';
 import Image_me_at_work from '../resources/images/me_at_work.jpg';
 import Image_me_hunting from '../resources/images/me_hunting.jpg';
 import Image_my_workspace from '../resources/images/my_workspace.jpg';
+import { Link } from 'react-router-dom';
 
 export function About() {
   return (
@@ -13,21 +14,25 @@ export function About() {
       {ReactPixel.pageView()}
       <TextPage>
         <h1>About</h1>
-        <h2>I paint because I can't sit on my butt!</h2>
+        <h2 className="quoteHighlight">
+          It says "fantasy and animal" art, but in truth all my subjects are
+          magical.
+        </h2>
         <p>
-          Panna is a self-taught watercolour artist based in Dublin, Ireland.
+          I'm Panna, a self-taught watercolour artist based in Dublin, Ireland.
         </p>
         <p>
-          She was born and raised in Budapest, Hungary. Childhood adventures at
-          Lake Balaton or the river Danube all left a mark on her as she learnt
-          how to observe nature, learn the call of birds and other animals,
-          recognise plants and herbs.
+          I was born and raised in Budapest, Hungary but childhood adventures at
+          Lake Balaton or along the river Danube made me feel at home in the
+          wild while I went fishing with my dad, or sneaked away to catch water
+          snakes and bring them out from the reeds in a boquet to my mom's
+          greatest horror... I've always liked getting first-hand experience
+          with animals.
         </p>
         <p>
-          In 2009 she graduated from college where with a major in English
-          Literature and Culture, writing her thesis on "Dragons in Celtic
-          Mythology and Literature" and marking officially her interest in
-          myths, folklore and the supernatural.
+          But there was something else that fascinated me just as much: stories
+          of dragons and magical beasts, myths and legends of old times.
+          Secretly I always imagined all that magic was true, just hidden.
         </p>
         <div className="imgBlock">
           <div className="imgContainer imgContainer--rotateLeft">
@@ -52,19 +57,18 @@ export function About() {
         </div>
 
         <p>
-          Through her teenage years Panna was mostly interested in digital art,
-          but as the years went by she found her love for the traditional. She
-          believes painting with traditional media is more challenging for her
-          as it doesn't offer the option to go back and fix mistakes later. That
-          is, there's no undo!
+          All my school textbooks were full of doodles of birds, horses, stags
+          and of course dragons, unicorns and gryphons. I always had a
+          sketchbook with me, and now maybe it's safe to admit I had it open
+          during most classes...
         </p>
         <p>
-          She decided to turn this passion into business in 2019, just before
-          the pandemic started, making her face new challenges in the changed
-          situation. The lockdown made it possible for her to connect with
-          nature even more, as social events were forbidden, and for someone who
-          can't stay idle for long the only option remaining was getting out
-          into the wild.
+          I decided to turn this passion into business in 2019, just before the
+          pandemic started. The lockdown left me only one option to escape the
+          monotony of everyday life: I got out to the Irish wilderness. I had to
+          realise there I'm never really isolated when I'm in the wild,
+          surrounded by life. And I wanted to share what I see with others, to
+          show that this magic is there for everyone.
         </p>
         <div className="imgContainer imgContainer--rotateLeft">
           <Img
@@ -76,12 +80,12 @@ export function About() {
           <span>Panna sketching "The Robin"</span>
         </div>
         <p>
-          This extra time in the wilderness of Ireland enabled her to discover
-          more about the connection of humans, the natural and the supernatural
-          world, which forms the core of her work. Folklore and myth all emerge
-          from the research of this connection, the drive to explain humanity's
-          place in this universe, and Panna's art is one way to find answers to
-          this ultimate question: how do we see this world, and ourselves in it?
+          But how do I show what I see? That nature is beautiful, but terrible.
+          It's brutal, ruthless and dark, but it's also romantic, clever, and
+          full of wonders. This is what drove my style: it's feminine, but
+          tough, and even the prettiest thing has something gloomy lurking
+          there. Just like me, or you, or anyone: it's not black or white, it's
+          both. Yin and Yang.
         </p>
         <div className="imgContainer imgContainer--rotateRight">
           <Img
@@ -92,6 +96,37 @@ export function About() {
           />
           <span>Panna on the hunt for good reference photos</span>
         </div>
+        <p>
+          I keep discovering and creating as there's so much to show! Recently I
+          started exploring the wild ancestry in domesticated animals and pets,
+          but I also often return to the subject of wild birds and mythical
+          beasts.
+        </p>
+        <p>
+          Now that the world is open again there are new opportunities for me to
+          find this magic out there and turn it into my muse. If you would like
+          to be part of this adventure follow me on{' '}
+          <a
+            href="https://www.facebook.com/pannadraws"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="PannaDraws on Facebook"
+          >
+            Facebook
+          </a>{' '}
+          or{' '}
+          <a
+            href="https://www.instagram.com/pannamatena/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="PannaDraws on Instagram"
+          >
+            Instagram
+          </a>
+          , or <Link to="/">sign up to my email list</Link>!
+          <br />
+          Let's explore what's beyond the obvious!
+        </p>
       </TextPage>
     </div>
   );

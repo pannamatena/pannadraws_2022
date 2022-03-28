@@ -26,20 +26,23 @@ export function CommissionArt() {
         <h2>How does it work?</h2>
         <p>
           If you've never commissioned art before it might look like an
-          impossible process. "How do I explain my idea or wish to the artist,
-          who's a stranger to me?" "How can I make sure I get what I wanted,
-          looking exactly how I wanted it?" Or "I'm not even sure how I want it,
-          I'm not artist!" "What if I don't like it, I don't want to be rude and
-          say so!"
+          impossible process. "How do I explain my idea or wish to the artist?"
+          "How can I make sure I get what I wanted, looking exactly how I wanted
+          it?" Or "I'm not even sure how I want it to look!" "What if I don't
+          like it?"
         </p>
         <p>
-          If you have any questions either like the ones above, or different
-          ones, have a look at the FAQ below:
+          These are common concerns but I'd like to answer every question you
+          might have. Have a look at the Frequently Asked Questions below!
         </p>
         <h3>What to Know about Commissioning Artwork?</h3>
         <div className="faqContainer">
           <Faq />
         </div>
+        <p>
+          Still have questions? Let me know and I'll get back to you in 1-2
+          business days!
+        </p>
         <div id="contact_form" className="anchor">
           <div className="highlighted">
             <h4>Tell me about your painting!</h4>

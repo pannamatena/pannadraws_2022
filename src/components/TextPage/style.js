@@ -147,6 +147,21 @@ const style = {
         padding-top: 110px !important;
       }
     }
+
+    .quoteHighlight {
+      position: relative;
+      padding-left: 20px;
+      &:before {
+        content: '"';
+        display: block;
+        font-size: 50px;
+        line-height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: ${colours.c4};
+      }
+    }
   `,
 };
 
