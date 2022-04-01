@@ -3,15 +3,15 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import ReactPixel from 'react-facebook-pixel';
 import ReactGA from 'react-ga';
 import Layout from './Layout';
-import { Home } from '../roots/home';
-import { About } from '../roots/about';
-import { Contact } from '../roots/contact';
-import { PrivacyPolicy } from '../roots/privacyPolicy';
-import { ReturnPolicy } from '../roots/returnPolicy';
-import { FormSuccess, FormError } from '../roots/formResponses';
-import { NoMatch } from '../roots/noMatch';
-import { CommissionArt } from '../roots/commissionArt';
-import { AnimalArt, ArtPage, AdultColoring, FantasyArt } from '../roots/art';
+import { Home } from '../routes/home';
+import { About } from '../routes/about';
+import { Contact } from '../routes/contact';
+import { PrivacyPolicy } from '../routes/privacyPolicy';
+import { ReturnPolicy } from '../routes/returnPolicy';
+import { FormSuccess, FormError } from '../routes/formResponses';
+import { NoMatch } from '../routes/noMatch';
+import { CommissionArt } from '../routes/commissionArt';
+import { AnimalArt, ArtPage, AdultColoring, FantasyArt } from '../routes/art';
 import {
   OriginalArtShop,
   ArtPrintShop,
@@ -21,7 +21,7 @@ import {
   StickersShop,
   NotebooksShop,
   ShopPage,
-} from '../roots/shop';
+} from '../routes/shop';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
