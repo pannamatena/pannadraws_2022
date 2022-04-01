@@ -62,14 +62,14 @@ const style = {
           & > div {
             padding: 5px 0 2px;
             &.artMenu {
-              height: 100px;
+              height: 110px;
               @media ${breakPoints.desktopLarge} {
-                height: 100px;
+                height: 120px;
               }
             }
 
             &.shopMenu {
-              height: 221px;
+              height: 225px;
               @media ${breakPoints.desktopLarge} {
                 height: 255px;
               }
