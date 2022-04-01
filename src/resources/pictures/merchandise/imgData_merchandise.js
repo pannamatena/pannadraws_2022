@@ -1,4 +1,50 @@
 const imgData_merchandinse = {
+  birds_of_ireland_2021_stickers: {
+    title: '"Birds of Ireland" sticker sheet',
+    imgs: {
+      full: {
+        src: require('./birds_of_ireland_2021_web.jpg'),
+        width: 1125,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./birds_of_ireland_2021_thumb.jpg'),
+        width: 450,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description: 'A set of 6 vinyl Irish bird stickers. ',
+    /* prettier-ignore */
+    price: 5.50,
+    buyUrl: 'https://www.etsy.com/ie/listing/1104312816/',
+    discount: 0,
+    type: 'merchandise',
+    subType: 'stickers',
+  },
+  affection_greeting_card: {
+    title: '"Affection" Stag and Doe Greeting Card',
+    imgs: {
+      full: {
+        src: require('./affection_greeting_card_web.jpg'),
+        width: 1125,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./affection_greeting_card_thumb.jpg'),
+        width: 450,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description: 'Greeting card with the artwork "Affection" printed on it.',
+    /* prettier-ignore */
+    price: 4.90,
+    buyUrl: 'https://www.etsy.com/ie/listing/1159323797/',
+    discount: 0,
+    type: 'merchandise',
+    subType: 'greeting_cards',
+  },
   winter_birds_greeting_cards: {
     title: 'Winter Birds Christmas Cards',
     imgs: {
@@ -68,6 +114,30 @@ const imgData_merchandinse = {
     discount: 0,
     type: 'merchandise',
     subType: 'clothing',
+  },
+  dragon_dance_1_bookmark_set: {
+    title: 'Dragon Dance bookmark set',
+    imgs: {
+      full: {
+        src: require('./dragon_dance_1_bookmark_set_web.jpg'),
+        width: 1000,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./dragon_dance_1_bookmark_set_thumb.jpg'),
+        width: 600,
+        height: 600,
+      },
+    },
+    year: '2020',
+    description:
+      'A set of 3 handmade paper bookmarks with dragon prints, feather charms and tassels.',
+    /* prettier-ignore */
+    price: 4.50,
+    buyUrl: 'https://www.etsy.com/ie/listing/904511925/',
+    discount: 0,
+    type: 'merchandise',
+    subType: 'bookmark_set',
   },
   swans_of_ireland_bookmark_set: {
     title: 'Swans of Ireland bookmark set',

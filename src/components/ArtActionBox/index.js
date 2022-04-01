@@ -154,7 +154,10 @@ function getMerchItems(merchItems) {
         >
           {item.name} {arrow()}
         </a>
-        <span>(from € {formatPrice(item.price)} + shipping)</span>
+        <span>
+          (from € {formatPrice(item.price)}
+          {!item.digital && ' + shipping'})
+        </span>
       </div>
     );
   });

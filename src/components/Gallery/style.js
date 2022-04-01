@@ -19,6 +19,7 @@ const style = {
     align-items: center;
     position: relative;
     overflow: hidden;
+    max-width: 800px;
 
     .hoverContainer {
       position: absolute;

@@ -1,4 +1,63 @@
 const imgData_adultColoring_2021 = {
+  acer_palmatum_coloring: {
+    title: 'Acer Palmatum - Japanese Cranes',
+    imgs: {
+      full: {
+        src: require('./acer_palmatum_coloring_2022_web.jpg'),
+        width: 1125,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./acer_palmatum_coloring_2022_thumb.jpg'),
+        width: 450,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description:
+      'A Japanese themed colouring page with cranes and the Japanese maple.',
+    digitalPrice: 4.37,
+    /* prettier-ignore */
+    printedPrice: 5.40,
+    original: 'AVAILABLE',
+    prints: 'NOTYET',
+    digitalUrl: 'https://www.etsy.com/ie/listing/1184420586/',
+    printedUrl: 'https://www.etsy.com/ie/listing/1159317277/',
+    discount: 0,
+    discountPrint: 0,
+    type: 'adult_colouring',
+    story:
+      'This Japanese themed artwork offers beautiful details of the noble Japanese cranes and the iconic maple tree of Japanese gardens.<br /><br />There are printed and digital versions available.<br /><br />Original artwork was created using micron pens on mixed media paper.',
+  },
+  dragon_dance_iii: {
+    title: 'Dragon Dance III',
+    imgs: {
+      full: {
+        src: require('./dragon_dance_3_2022_web.jpg'),
+        width: 1125,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./dragon_dance_3_2022_thumb.jpg'),
+        width: 450,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description: 'A set of 3 dragon colouring pages.',
+    digitalPrice: null,
+    /* prettier-ignore */
+    printedPrice: 9.00,
+    original: 'AVAILABLE',
+    prints: 'NOTYET',
+    digitalUrl: '',
+    printedUrl: 'https://www.etsy.com/ie/listing/1165809882/',
+    discount: 0,
+    discountPrint: 0,
+    type: 'adult_colouring',
+    story:
+      'In this third colouring adventure the dragons of Japan and China will take you to the wonders of the Far East! Challenge yourself with cherry blossoms, bring to life the iconic Japanese cranes, and try a variety of colours on the koi fish with these pages.<br /><br />This oriental edition of Dragon Dance is the most detailed to date, a real treat for those who love adult colouring!<br /><br />Original artwork was created using acrylic inks on mixed media paper.',
+  },
   unicorns_colouring: {
     title: 'Unicorns',
     imgs: {
@@ -14,7 +73,7 @@ const imgData_adultColoring_2021 = {
       },
     },
     year: '2021',
-    description: 'A set of 3 printable colouring pages.',
+    description: 'A set of 3 digital or printed unicorn colouring pages.',
     digitalPrice: 8.61,
     /* prettier-ignore */
     printedPrice: 9.00,
@@ -43,7 +102,7 @@ const imgData_adultColoring_2021 = {
       },
     },
     year: '2021',
-    description: 'A set of 4 printable colouring pages.',
+    description: 'A set of 4 digital or printed dragon colouring pages.',
     digitalPrice: 11.44,
     /* prettier-ignore */
     printedPrice: 11.30,
@@ -56,6 +115,35 @@ const imgData_adultColoring_2021 = {
     type: 'adult_colouring',
     story:
       "The adventure continues! Follow the path of the 4 elements in this new set of dragon coloring pages.<br /><br />Come along on a new journey with mighty dragons born from the four fundamental elements of the world: Air, Water, Earth and Fire!<br /><br />Each element summons its dragon and bird pair:<br /><br />1. Air - Great black-backed gulls<br />2. Water - Whooper swans<br />3. Earth - Ring-necked pheasants<br />4. Fire - Carrion crows<br /><br />There's a printed and a digital, print-at-home version available.<br /><br />Original artwork was created using acrylic inks on mixed media paper.",
+  },
+  rascals_coloring: {
+    title: 'Rascals',
+    imgs: {
+      full: {
+        src: require('./rascals_coloring_2020_web.jpg'),
+        width: 707,
+        height: 1000,
+      },
+      thumb: {
+        src: require('./rascals_coloring_2020_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2020',
+    description: 'A printable colouring page with starlings and brambles.',
+    /* prettier-ignore */
+    digitalPrice: 4.31,
+    printedPrice: null,
+    original: 'AVAILABLE',
+    prints: 'NOTYET',
+    digitalUrl: 'https://www.etsy.com/ie/listing/859944744/',
+    printedUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'adult_colouring',
+    story:
+      'This artwork was drawn at the end of summer when blackberries are ripe. And the cheeky little birds are always there to get them!',
   },
   farewell_colouring: {
     title: 'Farewell',
@@ -73,7 +161,8 @@ const imgData_adultColoring_2021 = {
     },
     year: '2020',
     description: 'An autumn-themed printable colouring page.',
-    digitalPrice: 1,
+    /* prettier-ignore */
+    digitalPrice: 4.31,
     printedPrice: null,
     original: 'AVAILABLE',
     prints: 'NOTYET',
@@ -100,7 +189,7 @@ const imgData_adultColoring_2021 = {
       },
     },
     year: '2020',
-    description: 'A set of 3 printable colouring pages.',
+    description: 'A set of 3 digital or printed dragon colouring pages.',
     digitalPrice: 8.61,
     /* prettier-ignore */
     printedPrice: 9.00,
