@@ -742,7 +742,7 @@ const imgData_2021 = {
     year: '2021',
     description: 'Ink and watercolour on paper. 216 x 278 mm, 2021. Framed.',
     price: 85,
-    original: 'HAMBLY',
+    original: 'MSG',
     prints: 'NOTYET',
     printPrice: 0,
     buyUrl: '',
@@ -770,7 +770,7 @@ const imgData_2021 = {
     year: '2021',
     description: 'Ink and watercolour on paper. 405 x 508 mm, 2021.',
     price: 215,
-    original: 'HAMBLY',
+    original: 'MSG',
     prints: 'NOTYET',
     printPrice: 0,
     buyUrl: '',
@@ -835,7 +835,7 @@ const imgData_2021 = {
     year: '2021',
     description: 'Ink and watercolour on paper. 195 x 255 mm, 2021.',
     price: 75,
-    original: 'HAMBLY',
+    original: 'MSG',
     prints: 'NOTYET',
     merch: [
       {

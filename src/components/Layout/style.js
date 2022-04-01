@@ -20,11 +20,14 @@ const style = {
     transition: padding 0.3s ease-out;
 
     padding: 10px;
+    margin-bottom: 10px;
     @media ${breakPoints.tabletPortrait} {
       padding: 15px;
+      margin-bottom: 15px;
     }
     @media ${breakPoints.desktopSmall} {
       padding: 20px;
+      margin-bottom: 20px;
     }
 
     h1 {

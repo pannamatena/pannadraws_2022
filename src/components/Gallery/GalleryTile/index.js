@@ -5,6 +5,7 @@ import Img from 'react-cool-img';
 import { Link } from 'react-router-dom';
 import galleryStyle from '../style';
 import { arrow } from '../../../resources/icons';
+import { formatPrice } from '../../../resources/utils';
 
 const getPrice = (currentImgData, itemType) => {
   switch (itemType) {
@@ -26,7 +27,7 @@ const getPrice = (currentImgData, itemType) => {
             <>
               <span css={galleryStyle.priceFrom}>Downloadable from</span>
               <span css={galleryStyle.priceTag}>
-                €{currentImgData.digitalPrice.toFixed(2)}
+                €{formatPrice(currentImgData.digitalPrice)}
               </span>
             </>
           )}
@@ -34,7 +35,7 @@ const getPrice = (currentImgData, itemType) => {
             <>
               <span css={galleryStyle.priceFrom}>Printed from</span>
               <span css={galleryStyle.priceTag}>
-                €{currentImgData.printedPrice.toFixed(2)}
+                €{formatPrice(currentImgData.printedPrice)}
               </span>
             </>
           )}
@@ -115,7 +116,7 @@ export default function GalleryTile({
           <span css={galleryStyle.merchPriceTag}>
             From{' '}
             <span css={galleryStyle.merchPrice}>
-              €{currentImgData.price.toFixed(2)}
+              €{formatPrice(currentImgData.price)}
             </span>
           </span>
           <a

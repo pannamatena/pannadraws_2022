@@ -3,13 +3,13 @@ import imgData_adultColoring_2021 from './pictures/adult_coloring/imgData_adultC
 import imgDataAnimalArt_2020 from './pictures/2020/imgData_animalArt_2020';
 import imgDataFantasyArt_2020 from './pictures/2020/imgData_fantasyArt_2020';
 
-export function getAvailableItems(source, typeProp) {
-  if (source.type === 'adult_colouring') {
-    return source;
-  }
-  return Object.keys(source).reduce((availableItemMap, currentItemId) => {
-    if (source[currentItemId][typeProp] === 'AVAILABLE') {
-      availableItemMap[currentItemId] = source[currentItemId];
+export function getAvailableItems(sourceMap, typeProp) {
+  return Object.keys(sourceMap).reduce((availableItemMap, currentItemId) => {
+    if (
+      sourceMap[currentItemId][typeProp] === 'AVAILABLE' ||
+      sourceMap[currentItemId][typeProp] === 'MSG'
+    ) {
+      availableItemMap[currentItemId] = sourceMap[currentItemId];
     }
     return availableItemMap;
   }, {});
@@ -62,4 +62,8 @@ export function validateEmail(email) {
   const regex =
     /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   return !!email.match(regex);
+}
+
+export function formatPrice(price) {
+  return price.toFixed(2);
 }

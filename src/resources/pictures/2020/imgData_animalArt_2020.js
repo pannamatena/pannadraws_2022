@@ -532,7 +532,7 @@ const imgData_2020 = {
     description:
       'Ink and watercolour on watercolour paper. 508 x 405 mm (20 x 16 in), 2020.',
     price: 200,
-    original: 'HAMBLY',
+    original: 'MSG',
     prints: 'SOLD',
     buyUrl: 'https://www.etsy.com/ie/listing/877615323/',
     printUrl: 'https://www.etsy.com/ie/listing/896392438/',
@@ -561,7 +561,7 @@ const imgData_2020 = {
     description:
       'Ink and watercolour on watercolour paper. 297 x 420 mm (11.69 x 16.53 in), 2020. Framed.',
     price: 130,
-    original: 'HAMBLY',
+    original: 'MSG',
     prints: 'SOLD',
     printPrice: 22.5,
     buyUrl: 'https://www.etsy.com/ie/listing/871888495/',
@@ -618,7 +618,7 @@ const imgData_2020 = {
     description:
       'Ink and watercolour on watercolour paper. 405 x 508 mm (16 x 20 in), 2020. Framed.',
     price: 230,
-    original: 'HAMBLY',
+    original: 'MSG',
     prints: 'SOLD',
     printPrice: 26.95,
     buyUrl: 'https://www.etsy.com/ie/listing/864105935/',
@@ -778,7 +778,7 @@ const imgData_2020 = {
     description:
       'Ink and watercolour on acrylic paper. 405 x 508 mm (20 x 16 in), 2020.',
     price: 250,
-    original: 'HAMBLY',
+    original: 'MSG',
     prints: 'AVAILABLE',
     printPrice: 24.95,
     buyUrl: 'https://www.etsy.com/ie/listing/834290581/',
@@ -807,7 +807,7 @@ const imgData_2020 = {
     description:
       'Coloured pencils and pen on paper. 420 x 594 mm (16.53 x 23.39 in), 2020.',
     price: 300,
-    original: 'HAMBLY',
+    original: 'MSG',
     prints: 'NOTYET',
     buyUrl: 'https://www.etsy.com/ie/listing/825365941/',
     printUrl: '',
@@ -835,7 +835,7 @@ const imgData_2020 = {
     description:
       'Ink and watercolour on watercolour paper. 420 x 594 mm (16.53 x 23.39 in), 2020.',
     price: 300,
-    original: 'HAMBLY',
+    original: 'MSG',
     prints: 'AVAILABLE',
     buyUrl: 'https://www.etsy.com/ie/listing/803980602/',
     printUrl: 'https://www.etsy.com/ie/listing/804085940/',
@@ -864,7 +864,7 @@ const imgData_2020 = {
     description:
       'Ink and watercolour on watercolour paper. 420 x 594 mm (16.53 x 23.39 in), 2020.',
     price: 300,
-    original: 'HAMBLY',
+    original: 'MSG',
     prints: 'AVAILABLE',
     printPrice: 28.5,
     buyUrl: 'https://www.etsy.com/ie/listing/795163346/',
@@ -922,7 +922,7 @@ const imgData_2020 = {
     description:
       'Ink and coloured pencil on cartridge paper. 420 x 594 mm (16.53 x 23.39 in), 2020.',
     price: 300,
-    original: 'HAMBLY',
+    original: 'MSG',
     prints: 'SOLD',
     printPrice: 28.5,
     buyUrl: 'https://www.etsy.com/ie/listing/813749085/',
@@ -951,7 +951,7 @@ const imgData_2020 = {
     description:
       'Coloured pencil on cartridge paper. 420 x 594 mm (16.53 x 23.39 in), 2020.',
     price: 300,
-    original: 'HAMBLY',
+    original: 'MSG',
     prints: 'SOLD',
     buyUrl: 'https://www.etsy.com/ie/listing/795396470/',
     printUrl: 'https://www.etsy.com/ie/listing/819493137/',
@@ -979,7 +979,7 @@ const imgData_2020 = {
     description:
       'Ink and watercolour on cold pressed watercolour paper. 297 x 420 mm (16.53 x 11.69 in), 2020.',
     price: 150,
-    original: 'HAMBLY',
+    original: 'MSG',
     prints: 'AVAILABLE',
     buyUrl: 'https://www.etsy.com/ie/listing/813717687/',
     printUrl: 'https://www.etsy.com/ie/listing/804170108/',

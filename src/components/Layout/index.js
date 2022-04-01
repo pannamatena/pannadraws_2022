@@ -249,7 +249,6 @@ export default function Layout() {
           <span>
             <Link to="/privacy_policy">Privacy policy</Link>
           </span>
-          {/*<span><Link to="/faq">FAQ</Link></span>*/}
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@ import React from 'react';
 import { css } from '@emotion/react';
 import { Link } from 'react-router-dom';
 import { arrow } from '../../resources/icons';
+import { formatPrice } from '../../resources/utils';
 import style from './style';
 
 function getPriceTag(imgData, mediaType) {
@@ -13,8 +14,8 @@ function getPriceTag(imgData, mediaType) {
         <span css={style.originalPrice}>
           €
           {mediaType === 'DIGITAL'
-            ? imgData.digitalPrice.toFixed(2)
-            : imgData.printedPrice.toFixed(2)}
+            ? formatPrice(imgData.digitalPrice)
+            : formatPrice(imgData.printedPrice)}
         </span>
       </span>
     );
@@ -127,7 +128,7 @@ function getPrintActionLink(imgData) {
           rel="noopener noreferrer"
           css={style.secondaryActionLink}
         >
-          {`Buy prints (from €${imgData.printPrice} + shipping)`}
+          {`Buy prints (from €${formatPrice(imgData.printPrice)} + shipping)`}
           <span>{arrow()}</span>
         </a>
       );
@@ -153,7 +154,7 @@ function getMerchItems(merchItems) {
         >
           {item.name} {arrow()}
         </a>
-        <span>(from € {item.price} + shipping)</span>
+        <span>(from € {formatPrice(item.price)} + shipping)</span>
       </div>
     );
   });
