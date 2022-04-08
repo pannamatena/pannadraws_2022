@@ -15,7 +15,7 @@ export function CommissionArt() {
           challenge and a privilege for me, knowing you trust me and my skills
           to create something unique. Let it be a gift for someone else, or a
           treat for yourself, one thing is sure: a custom made artwork will be a
-          valuable, one of a kind ornament that will keep its value through the
+          valuable, one of a kind treasure that will keep its value through the
           years to come.
           <div className="callToActionContainer callToActionContainer--center">
             <a className="btnCallToAction" href="#contact_form">

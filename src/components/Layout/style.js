@@ -135,6 +135,10 @@ const style = {
         }
       }
     }
+
+    video {
+      width: 100%;
+    }
   `,
   header: css`
     background: ${colours.c3};
