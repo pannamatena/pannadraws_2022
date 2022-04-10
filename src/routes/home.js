@@ -18,7 +18,18 @@ export function Home() {
       {ReactPixel.pageView()}
       <Banner />
       <SegmentedLayout
-        contentLeft={<NewsletterDescription />}
+        contentLeft={
+          <div
+            css={css`
+              padding-bottom: 40px;
+              @media ${breakPoints.tabletLandscape} {
+                padding-bottom: 0;
+              }
+            `}
+          >
+            <NewsletterDescription />
+          </div>
+        }
         contentRight={<Newsletter />}
         rightBackground={colours.c5}
       />
@@ -26,8 +37,10 @@ export function Home() {
         contentLeft={
           <div
             css={css`
-              max-width: 50%;
               float: right;
+              @media ${breakPoints.desktopLarge} {
+                max-width: 50%;
+              }
             `}
           >
             <h2>Commission your artwork!</h2>
@@ -70,7 +83,6 @@ export function Home() {
         contentLeft={
           <div
             css={css`
-              max-width: 100%;
               margin: -10px;
               @media ${breakPoints.desktopSmall} {
                 margin: -15px;
@@ -82,6 +94,9 @@ export function Home() {
           >
             <Img
               src={OriginalArtworks}
+              css={css`
+                max-width: 100%;
+              `}
               alt="Panna working on a large Old Irish goat watercolour portrait"
             />
           </div>
@@ -89,7 +104,9 @@ export function Home() {
         contentRight={
           <div
             css={css`
-              max-width: 50%;
+              @media ${breakPoints.desktopLarge} {
+                max-width: 50%;
+              }
             `}
           >
             <h2>Shop original artworks</h2>

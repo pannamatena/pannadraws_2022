@@ -6,13 +6,18 @@ import { colours } from '../../resources/colors';
 const style = {
   segmentedLayout: css`
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
 
-    margin: 0 -10px 0;
+    margin: 0 0 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     @media ${breakPoints.tabletPortrait} {
-      margin: 0 -15px 0;
+      margin: 0 0 15px;
+    }
+    @media ${breakPoints.tabletLandscape} {
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: center;
     }
     @media ${breakPoints.desktopSmall} {
       margin: 0 -20px 0;
@@ -68,11 +73,13 @@ const style = {
   `,
   leftSide: css`
     flex: 1;
-    max-width: 50%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-end;
+    @media ${breakPoints.tabletLandscape} {
+      max-width: 50%;
+    }
   `,
   leftSideInner: css`
     height: 100%;
@@ -86,11 +93,14 @@ const style = {
   `,
   rightSide: css`
     flex: 1;
-    max-width: 50%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
+
+    @media ${breakPoints.tabletLandscape} {
+      max-width: 50%;
+    }
   `,
   rightSideInner: css`
     padding: 10px;
