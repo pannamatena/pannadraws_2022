@@ -71,7 +71,7 @@ export function Home() {
               }
             `}
           >
-            <video loop autoplay="autoplay" width="250" muted>
+            <video loop autoplay="autoplay" muted>
               <source src={PaintingVideo_1} type="video/mp4" />
               Sorry, your browser doesn't support embedded videos.
             </video>

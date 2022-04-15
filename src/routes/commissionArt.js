@@ -3,6 +3,13 @@ import ReactPixel from 'react-facebook-pixel';
 import TextPage from '../components/TextPage';
 import ContactForm from '../components/ContactForm';
 import Faq from '../components/Faq';
+import PictureCard from '../components/pictureCard';
+import Commission_BirdPortrait from '../resources/images/commission_bird_portrait.jpg';
+import Commission_AnimalPortrait from '../resources/images/commission_animal_portrait.jpg';
+import Commission_Colouring from '../resources/images/commission_colouring.jpg';
+import Commission_FantasyArt from '../resources/images/commission_fantasy_art.mp4';
+import Commission_InkArtwork from '../resources/images/commission_ink_artwork.jpg';
+import Commission_Tattoo from '../resources/images/commission_tattoo.jpg';
 
 export function CommissionArt() {
   return (
@@ -18,7 +25,11 @@ export function CommissionArt() {
           valuable, one of a kind treasure that will keep its value through the
           years to come.
           <div className="callToActionContainer callToActionContainer--center">
-            <a className="btnCallToAction" href="#contact_form">
+            <a
+              className="btnCallToAction"
+              href="#contact_form"
+              title="Contact Panna about Commissions"
+            >
               Get in touch!
             </a>
           </div>
@@ -33,10 +44,55 @@ export function CommissionArt() {
         </p>
         <p>
           These are common concerns but I'd like to answer every question you
-          might have. Have a look at the Frequently Asked Questions below!
+          might have. Have a look at the{' '}
+          <a
+            href="#faq_container"
+            title="Frequently Asked Questions about commissioning artwork from PannaDraws"
+          >
+            Frequently Asked Questions
+          </a>{' '}
+          below!
         </p>
-        <h3>What to Know about Commissioning Artwork?</h3>
-        <div className="faqContainer">
+        <div className="exampleContainer">
+          <h3>So what can you commission?</h3>
+          <PictureCard
+            imgSrc={Commission_BirdPortrait}
+            imgAlt="Irish Bird Art Commission from PannaDraws"
+            title="Bird Portraits"
+            rotation={-5}
+          />
+          <PictureCard
+            imgSrc={Commission_AnimalPortrait}
+            imgAlt="Farm animal portraits and wildlife art Commission from PannaDraws"
+            title="Animal Portraits"
+            rotation={2}
+          />
+          <PictureCard
+            imgSrc={Commission_Colouring}
+            imgAlt="Custom colouring pages from PannaDraws"
+            title="Colouring Page"
+            rotation={-7}
+          />
+          <PictureCard
+            imgSrc={Commission_Tattoo}
+            imgAlt="Tattoo commissions from PannaDraws"
+            title="Tattoo Designs"
+            rotation={5}
+          />
+          <PictureCard
+            videoSrc={Commission_FantasyArt}
+            imgAlt="Fantasy art commissions from PannaDraws"
+            title="Fantasy Art"
+          />
+          <PictureCard
+            imgSrc={Commission_InkArtwork}
+            imgAlt="Ink art commissions from PannaDraws"
+            title="Ink Drawings"
+            rotation={-2}
+          />
+        </div>
+        <div id="faq_container" className="faqContainer" className="anchor">
+          <h3>What to Know about Commissioning Artwork?</h3>
           <Faq />
         </div>
         <p>
