@@ -29,6 +29,11 @@ export function CommissionArt() {
               className="btnCallToAction"
               href="#contact_form"
               title="Contact Panna about Commissions"
+              onClick={() => {
+                ReactPixel.trackCustom('ContactClick', {
+                  source: 'CommissionPage',
+                });
+              }}
             >
               Get in touch!
             </a>

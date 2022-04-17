@@ -53,6 +53,11 @@ export function Home() {
               <Link
                 className="btnCallToAction"
                 to="/commissionArt#contact_form"
+                onClick={() => {
+                  ReactPixel.trackCustom('ContactClick', {
+                    source: 'mainPage',
+                  });
+                }}
               >
                 Message me
               </Link>
@@ -116,7 +121,15 @@ export function Home() {
               ones, but make sure to check out the rest!
             </p>
             <div className="btnContainer">
-              <Link className="btnCallToAction" to="/shop/originalArtShop">
+              <Link
+                className="btnCallToAction"
+                to="/shop/originalArtShop"
+                onClick={() => {
+                  ReactPixel.trackCustom('ShopOriginalArtClick', {
+                    source: 'mainPage',
+                  });
+                }}
+              >
                 Shop original art
               </Link>
             </div>

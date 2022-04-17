@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import style from './style';
 import { facebook, instagram, close } from '../../resources/icons';
 import { breakPoints } from '../../resources/breakpoints';
+import ReactPixel from 'react-facebook-pixel';
 
 export default function MobileMenu(props) {
   const [openSubmenu, setOpenSubmenu] = useState(null);
@@ -132,6 +133,11 @@ export default function MobileMenu(props) {
                 target="_blank"
                 rel="noopener noreferrer"
                 title="PannaDraws on Facebook"
+                onClick={() => {
+                  ReactPixel.trackCustom('GoToFacebookPageClick', {
+                    source: 'mobileMenu',
+                  });
+                }}
               >
                 {facebook()}
               </a>
@@ -142,6 +148,11 @@ export default function MobileMenu(props) {
                 target="_blank"
                 rel="noopener noreferrer"
                 title="PannaDraws on Instagram"
+                onClick={() => {
+                  ReactPixel.trackCustom('GoToInstagramClick', {
+                    source: 'mobileMenu',
+                  });
+                }}
               >
                 {instagram()}
               </a>

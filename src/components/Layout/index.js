@@ -23,6 +23,7 @@ import style from './style';
 import DesktopMenu from '../DesktopMenu';
 import MobileMenu from '../MobileMenu';
 import NewsletterModal from '../NewsletterModal';
+import ReactPixel from 'react-facebook-pixel';
 
 export default function Layout() {
   const [isModalDismissed] = useLocalStorage('newsLetterModalDismissed');
@@ -76,8 +77,9 @@ export default function Layout() {
           textTransform: 'uppercase',
         }}
       >
-        This site uses cookies to enhance user experience. To learn more about
-        how PannaDraws uses cookies please read my{' '}
+        This site uses cookies to enhance user experience. By using this website
+        you consent to the use of these cookies. To learn more about how
+        PannaDraws uses cookies please read my{' '}
         <Link css={style.cookiePP} to="/privacy_policy">
           Privacy Policy
         </Link>
@@ -151,6 +153,11 @@ export default function Layout() {
                   target="_blank"
                   rel="noopener noreferrer"
                   title="PannaDraws on Facebook"
+                  onClick={() => {
+                    ReactPixel.trackCustom('GoToFacebookPageClick', {
+                      source: 'desktopMenu',
+                    });
+                  }}
                 >
                   {facebook()}
                 </a>
@@ -161,6 +168,11 @@ export default function Layout() {
                   target="_blank"
                   rel="noopener noreferrer"
                   title="PannaDraws on Instagram"
+                  onClick={() => {
+                    ReactPixel.trackCustom('GoToInstagramClick', {
+                      source: 'desktopMenu',
+                    });
+                  }}
                 >
                   {instagram()}
                 </a>
@@ -229,6 +241,11 @@ export default function Layout() {
               target="_blank"
               rel="noopener noreferrer"
               title="PannaDraws on Facebook"
+              onClick={() => {
+                ReactPixel.trackCustom('GoToFacebookPageClick', {
+                  source: 'footer',
+                });
+              }}
             >
               Facebook
             </a>
@@ -239,6 +256,11 @@ export default function Layout() {
               target="_blank"
               rel="noopener noreferrer"
               title="PannaDraws on Instagram"
+              onClick={() => {
+                ReactPixel.trackCustom('GoToInstagramClick', {
+                  source: 'footer',
+                });
+              }}
             >
               Instagram
             </a>

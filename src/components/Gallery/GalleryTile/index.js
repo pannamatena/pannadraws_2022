@@ -1,6 +1,7 @@
 import React from 'react';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import ReactPixel from 'react-facebook-pixel';
 import Img from 'react-cool-img';
 import { Link } from 'react-router-dom';
 import galleryStyle from '../style';
@@ -121,10 +122,15 @@ export default function GalleryTile({
           </span>
           <a
             href={currentImgData.buyUrl}
-            title={`Buy "${imgData.title}" by PannaDraws`}
+            title={`Buy "${currentImgData.title}" by PannaDraws`}
             target="_blank"
             rel="noopener noreferrer"
             css={galleryStyle.mainActionLink}
+            onClick={() => {
+              ReactPixel.trackCustom('BuyOnEtsyClick', {
+                artwork: `${currentImgData.title}, ${currentImgData.year}`,
+              });
+            }}
           >
             Buy on Etsy
             <span>{arrow()}</span>
@@ -140,6 +146,11 @@ export default function GalleryTile({
         ${isInfoType ? galleryStyle.galleryInfoTile : ''};
         width: ${style?.width};
       `}
+      onClick={() => {
+        ReactPixel.trackCustom('GalleryTileClick', {
+          artworkURL: `/${imgRoot}/${imgType}/${imgYear}/${imgTitle}`,
+        });
+      }}
     >
       <div className="hoverContainer">
         <h3 css={galleryStyle.hoverContainerImgTitle}>

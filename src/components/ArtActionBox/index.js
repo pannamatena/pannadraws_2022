@@ -1,6 +1,7 @@
 import React from 'react';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import ReactPixel from 'react-facebook-pixel';
 import { Link } from 'react-router-dom';
 import { arrow } from '../../resources/icons';
 import { formatPrice } from '../../resources/utils';
@@ -47,6 +48,11 @@ function getOriginalActionLink(imgData) {
               target="_blank"
               rel="noopener noreferrer"
               css={style.mainActionLink}
+              onClick={() => {
+                ReactPixel.trackCustom('BuyOnEtsyClick', {
+                  artwork: `${imgData.title}, ${imgData.year}`,
+                });
+              }}
             >
               Buy it on Etsy
               <span>{arrow()}</span>
@@ -63,6 +69,11 @@ function getOriginalActionLink(imgData) {
               target="_blank"
               rel="noopener noreferrer"
               css={style.mainActionLink}
+              onClick={() => {
+                ReactPixel.trackCustom('BuyOnEtsyClick', {
+                  artwork: `${imgData.title}, ${imgData.year}`,
+                });
+              }}
             >
               Buy it on Etsy
               <span>{arrow()}</span>
@@ -84,6 +95,11 @@ function getOriginalActionLink(imgData) {
             target="_blank"
             rel="noopener noreferrer"
             css={style.mainActionLink}
+            onClick={() => {
+              ReactPixel.trackCustom('BuyOnEtsyClick', {
+                artwork: `${imgData.title}, ${imgData.year}`,
+              });
+            }}
           >
             Buy original on Etsy
             <span>{arrow()}</span>
@@ -103,6 +119,11 @@ function getOriginalActionLink(imgData) {
             to="/contact/"
             state={{
               msgSubj: `Purchase inquiry: ${imgData.title}, ${imgData.year}`,
+            }}
+            onClick={() => {
+              ReactPixel.trackCustom('ContactClick', {
+                source: 'BuyArtworkInquiry',
+              });
             }}
           >
             Message me to buy
@@ -127,6 +148,11 @@ function getPrintActionLink(imgData) {
           target="_blank"
           rel="noopener noreferrer"
           css={style.secondaryActionLink}
+          onClick={() => {
+            ReactPixel.trackCustom('BuyPrintsClick', {
+              artwork: `${imgData.title}, ${imgData.year}`,
+            });
+          }}
         >
           {`Buy prints (from €${formatPrice(imgData.printPrice)} + shipping)`}
           <span>{arrow()}</span>
@@ -151,6 +177,11 @@ function getMerchItems(merchItems) {
           target="_blank"
           rel="noopener noreferrer"
           title={`${item.name} by PannaDraws on Etsy`}
+          onClick={() => {
+            ReactPixel.trackCustom('BuyMerchClick', {
+              artwork: `${item.title}, ${item.year}`,
+            });
+          }}
         >
           {item.name} {arrow()}
         </a>
