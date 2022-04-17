@@ -96,7 +96,7 @@ export function CommissionArt() {
             rotation={-2}
           />
         </div>
-        <div id="faq_container" className="faqContainer" className="anchor">
+        <div id="faq_container" className="faqContainer anchor">
           <h3>What to Know about Commissioning Artwork?</h3>
           <Faq />
         </div>
