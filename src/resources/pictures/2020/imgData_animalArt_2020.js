@@ -159,8 +159,8 @@ const imgData_2020 = {
     year: '2020',
     description:
       'Ink and watercolour on cold-pressed watercolour paper. 297 x 420 mm, 2020.',
-    price: 120,
-    original: 'HAMBLY',
+    price: 126,
+    original: 'MSG',
     prints: 'NOTYET',
     printPrice: 0,
     buyUrl: 'https://www.etsy.com/ie/listing/932337371/',
@@ -531,7 +531,7 @@ const imgData_2020 = {
     year: '2020',
     description:
       'Ink and watercolour on watercolour paper. 508 x 405 mm (20 x 16 in), 2020.',
-    price: 200,
+    price: 206,
     original: 'MSG',
     prints: 'SOLD',
     buyUrl: 'https://www.etsy.com/ie/listing/877615323/',
@@ -560,7 +560,7 @@ const imgData_2020 = {
     year: '2020',
     description:
       'Ink and watercolour on watercolour paper. 297 x 420 mm (11.69 x 16.53 in), 2020. Framed.',
-    price: 130,
+    price: 126,
     original: 'MSG',
     prints: 'SOLD',
     printPrice: 22.5,
@@ -617,7 +617,7 @@ const imgData_2020 = {
     year: '2020',
     description:
       'Ink and watercolour on watercolour paper. 405 x 508 mm (16 x 20 in), 2020. Framed.',
-    price: 230,
+    price: 250,
     original: 'MSG',
     prints: 'SOLD',
     printPrice: 26.95,
@@ -777,7 +777,7 @@ const imgData_2020 = {
     year: '2020',
     description:
       'Ink and watercolour on acrylic paper. 405 x 508 mm (20 x 16 in), 2020.',
-    price: 250,
+    price: 206,
     original: 'MSG',
     prints: 'AVAILABLE',
     printPrice: 24.95,
@@ -806,7 +806,7 @@ const imgData_2020 = {
     year: '2020',
     description:
       'Coloured pencils and pen on paper. 420 x 594 mm (16.53 x 23.39 in), 2020.',
-    price: 300,
+    price: 337,
     original: 'MSG',
     prints: 'NOTYET',
     buyUrl: 'https://www.etsy.com/ie/listing/825365941/',
@@ -834,7 +834,7 @@ const imgData_2020 = {
     year: '2020',
     description:
       'Ink and watercolour on watercolour paper. 420 x 594 mm (16.53 x 23.39 in), 2020.',
-    price: 300,
+    price: 337,
     original: 'MSG',
     prints: 'AVAILABLE',
     buyUrl: 'https://www.etsy.com/ie/listing/803980602/',
@@ -863,8 +863,8 @@ const imgData_2020 = {
     year: '2020',
     description:
       'Ink and watercolour on watercolour paper. 420 x 594 mm (16.53 x 23.39 in), 2020.',
-    price: 300,
-    original: 'MSG',
+    price: 405,
+    original: 'SOLD',
     prints: 'AVAILABLE',
     printPrice: 28.5,
     buyUrl: 'https://www.etsy.com/ie/listing/795163346/',
@@ -921,7 +921,7 @@ const imgData_2020 = {
     year: '2020',
     description:
       'Ink and coloured pencil on cartridge paper. 420 x 594 mm (16.53 x 23.39 in), 2020.',
-    price: 300,
+    price: 337,
     original: 'MSG',
     prints: 'SOLD',
     printPrice: 28.5,
@@ -950,7 +950,7 @@ const imgData_2020 = {
     year: '2020',
     description:
       'Coloured pencil on cartridge paper. 420 x 594 mm (16.53 x 23.39 in), 2020.',
-    price: 300,
+    price: 337,
     original: 'MSG',
     prints: 'SOLD',
     buyUrl: 'https://www.etsy.com/ie/listing/795396470/',
@@ -978,7 +978,7 @@ const imgData_2020 = {
     year: '2020',
     description:
       'Ink and watercolour on cold pressed watercolour paper. 297 x 420 mm (16.53 x 11.69 in), 2020.',
-    price: 150,
+    price: 175,
     original: 'MSG',
     prints: 'AVAILABLE',
     buyUrl: 'https://www.etsy.com/ie/listing/813717687/',
