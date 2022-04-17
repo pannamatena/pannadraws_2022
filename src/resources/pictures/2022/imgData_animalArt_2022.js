@@ -1,4 +1,34 @@
 const imgData_2022 = {
+  curls: {
+    title: 'Curls - a study',
+    imgs: {
+      full: {
+        src: require('./curls_2022_web.jpg'),
+        width: 1500,
+        height: 1061,
+      },
+      thumb: {
+        src: require('./curls_2022_thumb.jpg'),
+        width: 600,
+        height: 424,
+      },
+    },
+    year: '2022',
+    description:
+      'Ink and watercolour on Saunders Waterford watercolour paper. 194 x 139 mm, 2022.',
+    price: 90,
+    original: 'MSG',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'animal_watercolour_painting',
+    story:
+      "I took a series of photos of this magnificent ram in Wicklow and among the pictures there was this one from the side, highlighting those curly horns. It was too good not to paint it!<br /><br />What a majestic animal, I'm in love with him! Sheep is overlooked. On the Irish fields you can walk among them without barriers, and once you stop to look you'll see they are much more than just livestock. The pride and endurance of their wild ancestry is still there and they thrive comfortably among the mountains of Wicklow, in rain, wind or hail.",
+  },
   dollymount: {
     title: 'Dollymount',
     imgs: {
