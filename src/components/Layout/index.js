@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import ReactPixel from 'react-facebook-pixel';
+import ReactGA from 'react-ga';
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
@@ -23,7 +25,6 @@ import style from './style';
 import DesktopMenu from '../DesktopMenu';
 import MobileMenu from '../MobileMenu';
 import NewsletterModal from '../NewsletterModal';
-import ReactPixel from 'react-facebook-pixel';
 
 export default function Layout() {
   const [isModalDismissed] = useLocalStorage('newsLetterModalDismissed');
@@ -99,7 +100,15 @@ export default function Layout() {
       >
         <div css={style.headerLeft}>
           <div css={style.logoContainer}>
-            <Link to="/">
+            <Link
+              to="/"
+              onClick={() => {
+                ReactGA.event({
+                  category: 'MainMenu',
+                  action: 'Clicked Logo',
+                });
+              }}
+            >
               <div css={style.logo}>
                 <div
                   css={css`
@@ -157,6 +166,10 @@ export default function Layout() {
                     ReactPixel.trackCustom('GoToFacebookPageClick', {
                       source: 'desktopMenu',
                     });
+                    ReactGA.event({
+                      category: 'MainMenu',
+                      action: 'Clicked Facebook',
+                    });
                   }}
                 >
                   {facebook()}
@@ -171,6 +184,10 @@ export default function Layout() {
                   onClick={() => {
                     ReactPixel.trackCustom('GoToInstagramClick', {
                       source: 'desktopMenu',
+                    });
+                    ReactGA.event({
+                      category: 'MainMenu',
+                      action: 'Clicked Instagram',
                     });
                   }}
                 >
@@ -245,6 +262,10 @@ export default function Layout() {
                 ReactPixel.trackCustom('GoToFacebookPageClick', {
                   source: 'footer',
                 });
+                ReactGA.event({
+                  category: 'Footer',
+                  action: 'Clicked Facebook',
+                });
               }}
             >
               Facebook
@@ -259,6 +280,10 @@ export default function Layout() {
               onClick={() => {
                 ReactPixel.trackCustom('GoToInstagramClick', {
                   source: 'footer',
+                });
+                ReactGA.event({
+                  category: 'Footer',
+                  action: 'Clicked Instagram',
                 });
               }}
             >

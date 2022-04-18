@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 /** @jsxImportSource @emotion/react */
+import ReactGA from 'react-ga';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import { css } from '@emotion/react';
 import { Link } from 'react-router-dom';
@@ -9,7 +10,7 @@ import { validateEmail } from '../../resources/utils';
 import { close, check } from '../../resources/icons';
 import { colours } from '../../resources/colors';
 
-function NewsletterForm({ status, message, onValidated }) {
+function NewsletterForm({ status, message, onValidated, source }) {
   const [consentVal, setConsentVal] = useState('');
   const [emailIsWrong, setEmailIsWrong] = useState(false);
   let email, firstName, lastName;
@@ -24,6 +25,11 @@ function NewsletterForm({ status, message, onValidated }) {
     if (!validateEmail(email.value)) {
       setEmailIsWrong(true);
     }
+    ReactGA.event({
+      category: 'Newsletter',
+      action: 'Clicked Submit',
+      label: source,
+    });
     return (
       email &&
       firstName &&
@@ -157,7 +163,7 @@ export function NewsletterDescription() {
   );
 }
 
-export default function Newsletter() {
+export default function Newsletter({ source }) {
   return (
     <MailchimpSubscribe
       url={process.env.REACT_APP_MAILCHIMP_KEY}
@@ -168,6 +174,7 @@ export default function Newsletter() {
           onValidated={(formData) => {
             subscribe(formData);
           }}
+          source={source}
         />
       )}
     />

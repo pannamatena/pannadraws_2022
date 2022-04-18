@@ -2,6 +2,7 @@ import React from 'react';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import ReactPixel from 'react-facebook-pixel';
+import ReactGA from 'react-ga';
 import Img from 'react-cool-img';
 import { Link } from 'react-router-dom';
 import galleryStyle from '../style';
@@ -130,6 +131,10 @@ export default function GalleryTile({
               ReactPixel.trackCustom('BuyOnEtsyClick', {
                 artwork: `${currentImgData.title}, ${currentImgData.year}`,
               });
+              ReactGA.event({
+                category: 'GalleryTile',
+                action: 'Clicked Buy on Etsy',
+              });
             }}
           >
             Buy on Etsy
@@ -149,6 +154,10 @@ export default function GalleryTile({
       onClick={() => {
         ReactPixel.trackCustom('GalleryTileClick', {
           artworkURL: `/${imgRoot}/${imgType}/${imgYear}/${imgTitle}`,
+        });
+        ReactGA.event({
+          category: 'GalleryTile',
+          action: 'Clicked the tile',
         });
       }}
     >

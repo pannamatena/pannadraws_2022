@@ -44,7 +44,7 @@ export default function App() {
       <ScrollToTop />
       {ReactPixel.init('3024697907551904', advancedMatching, options)}
       {ReactGA.initialize('UA-222723169-1', {
-        debug: true,
+        debug: false,
         titleCase: false,
       })}
       <div className="appContainer">

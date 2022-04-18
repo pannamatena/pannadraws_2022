@@ -10,7 +10,7 @@ export default function NewsletterModal({ isOpen, onClose }) {
     <Modal isOpen={isOpen} onClose={onClose}>
       <div css={style.newsletterModal}>
         <div css={style.form}>
-          <Newsletter />
+          <Newsletter source="modal" />
         </div>
 
         <div css={style.details}>

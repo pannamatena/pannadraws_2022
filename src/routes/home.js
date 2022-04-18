@@ -2,6 +2,7 @@ import * as React from 'react';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import ReactPixel from 'react-facebook-pixel';
+import ReactGA from 'react-ga';
 import { Link } from 'react-router-dom';
 import Img from 'react-cool-img';
 import Banner from '../components/Banner';
@@ -30,7 +31,7 @@ export function Home() {
             <NewsletterDescription />
           </div>
         }
-        contentRight={<Newsletter />}
+        contentRight={<Newsletter source="home" />}
         rightBackground={colours.c5}
       />
       <SegmentedLayout
@@ -56,6 +57,11 @@ export function Home() {
                 onClick={() => {
                   ReactPixel.trackCustom('ContactClick', {
                     source: 'mainPage',
+                  });
+                  ReactGA.event({
+                    category: 'Home',
+                    action: 'Clicked Contact',
+                    label: 'segmentedLayout',
                   });
                 }}
               >
@@ -127,6 +133,11 @@ export function Home() {
                 onClick={() => {
                   ReactPixel.trackCustom('ShopOriginalArtClick', {
                     source: 'mainPage',
+                  });
+                  ReactGA.event({
+                    category: 'Home',
+                    action: 'Clicked ShopOriginalArt',
+                    label: 'segmentedLayout',
                   });
                 }}
               >

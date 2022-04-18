@@ -2,6 +2,7 @@ import React from 'react';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import ReactPixel from 'react-facebook-pixel';
+import ReactGA from 'react-ga';
 import { Link } from 'react-router-dom';
 import { arrow } from '../../resources/icons';
 import { formatPrice } from '../../resources/utils';
@@ -52,6 +53,11 @@ function getOriginalActionLink(imgData) {
                 ReactPixel.trackCustom('BuyOnEtsyClick', {
                   artwork: `${imgData.title}, ${imgData.year}`,
                 });
+                ReactGA.event({
+                  category: 'ArtActionBox',
+                  action: 'Clicked Buy on Etsy',
+                  label: `${imgData.title}, ${imgData.year}`,
+                });
               }}
             >
               Buy it on Etsy
@@ -72,6 +78,11 @@ function getOriginalActionLink(imgData) {
               onClick={() => {
                 ReactPixel.trackCustom('BuyOnEtsyClick', {
                   artwork: `${imgData.title}, ${imgData.year}`,
+                });
+                ReactGA.event({
+                  category: 'ArtActionBox',
+                  action: 'Clicked Buy on Etsy',
+                  label: `${imgData.title}, ${imgData.year}`,
                 });
               }}
             >
@@ -99,6 +110,11 @@ function getOriginalActionLink(imgData) {
               ReactPixel.trackCustom('BuyOnEtsyClick', {
                 artwork: `${imgData.title}, ${imgData.year}`,
               });
+              ReactGA.event({
+                category: 'ArtActionBox',
+                action: 'Clicked Buy on Etsy',
+                label: `${imgData.title}, ${imgData.year}`,
+              });
             }}
           >
             Buy original on Etsy
@@ -123,6 +139,11 @@ function getOriginalActionLink(imgData) {
             onClick={() => {
               ReactPixel.trackCustom('ContactClick', {
                 source: 'BuyArtworkInquiry',
+              });
+              ReactGA.event({
+                category: 'ArtActionBox',
+                action: 'Clicked Message me',
+                label: `${imgData.title}, ${imgData.year}`,
               });
             }}
           >
@@ -152,6 +173,11 @@ function getPrintActionLink(imgData) {
             ReactPixel.trackCustom('BuyPrintsClick', {
               artwork: `${imgData.title}, ${imgData.year}`,
             });
+            ReactGA.event({
+              category: 'ArtActionBox',
+              action: 'Clicked Buy Print',
+              label: `${imgData.title}, ${imgData.year}`,
+            });
           }}
         >
           {`Buy prints (from €${formatPrice(imgData.printPrice)} + shipping)`}
@@ -180,6 +206,11 @@ function getMerchItems(merchItems) {
           onClick={() => {
             ReactPixel.trackCustom('BuyMerchClick', {
               artwork: `${item.title}, ${item.year}`,
+            });
+            ReactGA.event({
+              category: 'ArtActionBox',
+              action: 'Clicked Buy Merch',
+              label: `${item.title}, ${item.year}`,
             });
           }}
         >

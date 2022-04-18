@@ -1,5 +1,6 @@
 import * as React from 'react';
 import ReactPixel from 'react-facebook-pixel';
+import ReactGA from 'react-ga';
 import TextPage from '../components/TextPage';
 import ContactForm from '../components/ContactForm';
 import Faq from '../components/Faq';
@@ -32,6 +33,10 @@ export function CommissionArt() {
               onClick={() => {
                 ReactPixel.trackCustom('ContactClick', {
                   source: 'CommissionPage',
+                });
+                ReactGA.event({
+                  category: 'CommissionPage',
+                  action: 'Clicked Contact',
                 });
               }}
             >

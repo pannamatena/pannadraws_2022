@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ReactGA from 'react-ga';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import style from './style';
@@ -23,7 +24,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_1' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_1')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_1');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_1',
+            });
+          }}
+        >
           I like your art, how do I start?
         </h5>
         <p>
@@ -58,7 +69,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_17' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_17')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_17');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_17',
+            });
+          }}
+        >
           Can I give you a photo to paint from?
         </h5>
         <p>
@@ -77,7 +98,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_18' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_18')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_18');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_18',
+            });
+          }}
+        >
           I don't have photos of the thing I want, can you still paint it?
         </h5>
         <p>
@@ -96,7 +127,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_2' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_2')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_2');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_2',
+            });
+          }}
+        >
           I'd like a painting of a thing you don't usually paint, is that
           possible?
         </h5>
@@ -112,7 +153,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_3' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_3')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_3');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_3',
+            });
+          }}
+        >
           I like one of your sold artworks, can you remake it?
         </h5>
         <p>
@@ -132,7 +183,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_16' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_16')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_16');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_16',
+            });
+          }}
+        >
           How much does it cost?
         </h5>
         <p>
@@ -160,7 +221,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_4' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_4')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_4');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_4',
+            });
+          }}
+        >
           Do you take an advance payment? Or do I pay in full?
         </h5>
         <p>
@@ -194,7 +265,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_5' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_5')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_5');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_5',
+            });
+          }}
+        >
           Can I pay by Paypal/Card/etc?
         </h5>
         <p>
@@ -223,7 +304,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_6' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_6')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_6');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_6',
+            });
+          }}
+        >
           Can I see how the final artwork will look like?
         </h5>
         <p>
@@ -241,7 +332,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_7' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_7')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_7');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_7',
+            });
+          }}
+        >
           Can I make changes if I don't like something?
         </h5>
         <p>
@@ -261,7 +362,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_8' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_8')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_8');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_8',
+            });
+          }}
+        >
           Can I see your progress?
         </h5>
         <p>
@@ -274,7 +385,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_9' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_9')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_9');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_9',
+            });
+          }}
+        >
           I want to make changes while the final painting is in progress.
         </h5>
         <p>
@@ -296,7 +417,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_10' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_10')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_10');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_10',
+            });
+          }}
+        >
           I would like to have my painting framed.
         </h5>
         <p>
@@ -323,7 +454,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_19' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_19')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_19');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_19',
+            });
+          }}
+        >
           Which countries do you ship to?
         </h5>
         <p>
@@ -336,7 +477,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_11' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_11')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_11');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_11',
+            });
+          }}
+        >
           How do you ship artworks?
         </h5>
         <p>
@@ -355,7 +506,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_12' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_12')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_12');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_12',
+            });
+          }}
+        >
           I live outside of Ireland. Do you ship here, too?
         </h5>
         <p>
@@ -368,7 +529,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_13' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_13')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_13');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_13',
+            });
+          }}
+        >
           How is the artwork packed?
         </h5>
         <p>
@@ -383,7 +554,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_14' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_14')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_14');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_14',
+            });
+          }}
+        >
           Can I return the painting?
         </h5>
         <p>
@@ -402,7 +583,17 @@ export default function Faq() {
         css={style.faqQuestion}
         className={openQuestionId === 'q_15' ? 'open' : ''}
       >
-        <h5 css={style.faqTitle} onClick={() => handleFaqTitleClick('q_15')}>
+        <h5
+          css={style.faqTitle}
+          onClick={() => {
+            handleFaqTitleClick('q_15');
+            ReactGA.event({
+              category: 'FAQ',
+              action: 'Clicked a question',
+              label: 'q_15',
+            });
+          }}
+        >
           The painting was damaged when I received it!
         </h5>
         <p>
