@@ -1,4 +1,34 @@
 const imgData_2022 = {
+  gyrflacon: {
+    title: 'Gyrfalcon',
+    imgs: {
+      full: {
+        src: require('./gyrfalcon_2022_web.jpg'),
+        width: 1074,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./gyrfalcon_2022_thumb.jpg'),
+        width: 430,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description:
+      'Ink and liquid pencil paint on 400gsm board. 136 x 190 mm, 2022.',
+    price: 86,
+    original: 'MSG',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'animal_watercolour_painting',
+    story:
+      "Ever since I could hold a pencil, if you put a blank sheet of paper, or just _anything_ white in front of me, I eventually drew something on it. Maybe that's the reason why I started saving scraps of paper... I have a folder full of leftover pieces I just find too valuable to throw away.<br /><br />When I mounted <i>Curls</i> I had this nice leftover piece of heavy mounting board that I cut from the inside of the mount. It's an inverse, so it felt like some plaque... and it was pure white. Of course I had to save it!<br /><br />This gyrfalcon I encountered in Sligo at a birds of prey centre. Being such a majestic bird I thought he would fit this 'plaque' and the colours of the reference photos I took were also perfect for an experiment with liquid pencils. I mixed these with traditional watercolours to give some depth at some places, and also mixed a special shade of dark blue for the ink lines.",
+  },
   curls: {
     title: 'Curls - a study',
     imgs: {
@@ -17,10 +47,10 @@ const imgData_2022 = {
     description:
       'Ink and watercolour on Saunders Waterford watercolour paper. 194 x 139 mm, 2022.',
     price: 90,
-    original: 'MSG',
+    original: 'AVAILABLE',
     prints: 'NOTYET',
     printPrice: 0,
-    buyUrl: '',
+    buyUrl: 'https://www.etsy.com/ie/listing/1204809778/',
     ship: 'FREE_IRL',
     printUrl: '',
     discount: 0,
