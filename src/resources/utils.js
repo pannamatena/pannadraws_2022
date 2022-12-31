@@ -1,3 +1,4 @@
+import imgDataFantasyArt_2022 from './pictures/2022/imgData_fantasyArt_2022';
 import imgDataAnimalArt_2022 from './pictures/2022/imgData_animalArt_2022';
 import imgDataAnimalArt_2021 from './pictures/2021/imgData_animalArt_2021';
 import imgData_adultColoring_2021 from './pictures/adult_coloring/imgData_adultColoring_2021';
@@ -36,6 +37,9 @@ export function getDataSource(params) {
     case '2022': {
       if (params.imgType === 'animal_watercolour_painting') {
         return imgDataAnimalArt_2022;
+      }
+      if (params.imgType === 'fantasy_watercolour_painting') {
+        return imgDataFantasyArt_2022;
       }
       //params.imgType === 'adult_colouring'
       return imgData_adultColoring_2021;

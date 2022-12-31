@@ -1,0 +1,208 @@
+const imgData_2022 = {
+  the_wish: {
+    title: 'The Wish',
+    imgs: {
+      full: {
+        src: require('./the_wish_2022_web.jpg'),
+        width: 1061,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./the_wish_2022_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description:
+      'Pen, markers and coloured pencils on paper. 297 x 420 mm, 2022.',
+    price: 90,
+    original: 'SOLD',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'fantasy_watercolour_painting',
+    story:
+      'How can you picture it when you really desire something, every day you have this only wish in your heart, you can almost touch it is so vivid. That picture, the desire of getting hold of it makes the subject of that desire comes to life. The wish gives it life.<br /><br />This drawing became so personal to me I decided to keep it.',
+  },
+  llamacorn: {
+    title: 'Llamacorn',
+    imgs: {
+      full: {
+        src: require('./llamacorn_2022_web.jpg'),
+        width: 1061,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./llamacorn_2022_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description: 'Pens and metallic watercolour on paper. 148 x 210 mm, 2022.',
+    price: 76,
+    original: 'AVAILABLE',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: 'https://www.etsy.com/ie/listing/1345945305/',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'fantasy_watercolour_painting',
+    story:
+      'The idea of this painting comes from a toy shop product magazine dropped in my mailbox as junk mail. I used coloured pens for making the artwork so it gives a fresh, happy feeling to the picture.',
+  },
+  fighting_the_green_dragon: {
+    title: 'Fighting the Green Dragon',
+    imgs: {
+      full: {
+        src: require('./fighting_the_green_dragon_2022_web.jpg'),
+        width: 1500,
+        height: 1061,
+      },
+      thumb: {
+        src: require('./fighting_the_green_dragon_2022_thumb.jpg'),
+        width: 600,
+        height: 424,
+      },
+    },
+    year: '2022',
+    description: 'Ink and Watercolour on paper. 420 x 594 mm, 2022.',
+    price: 86,
+    original: 'SOLD',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'fantasy_watercolour_painting',
+    story:
+      "The planning for the composition of this commissioned painting included a lot of research on costumes, postures and of course the Dungeons & Dragons universe. I'm fairly familiar with these fantasy worlds, even had my share in the adventures back in the days, but I'm far from an expert and this piece was made as a surprise for a storyteller so I really had to get my stuff together.",
+  },
+  green_fingers: {
+    title: 'Green Fingers',
+    imgs: {
+      full: {
+        src: require('./green_finger_2022_web.jpg'),
+        width: 1061,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./green_finger_2022_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description: 'Ink and Watercolour on paper. 297 x 420 mm, 2022.',
+    price: 86,
+    original: 'SOLD',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'fantasy_watercolour_painting',
+    story:
+      'A dragon commission. The request was to make the dragon purple so I picked some good contrasting colours and to tell the truth this colour combo is now one of my favourites. Orange with this deep blue/purple is awesome.',
+  },
+  the_fox_and_the_unicorn: {
+    title: 'The Fox & The Unicorn',
+    imgs: {
+      full: {
+        src: require('./the_fox_and_the_unicorn_2022_web.jpg'),
+        width: 1061,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./the_fox_and_the_unicorn_2022_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description: 'Ink and Watercolour on paper. 297 x 420 mm, 2022.',
+    price: 86,
+    original: 'SOLD',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'fantasy_watercolour_painting',
+    story:
+      'A magical, mysterious creature, a cunning but loved furry friend, and my (now we could say) signature floral elements of roses and brambles. And a pair of swallows for good measure.<br /><br />And the weirdest thing is that I was doing my morning exercise on my spinning bike, and while spinning that wheel I usually contemplate on the meaning of life, relive my awkward memories, or just think when this torture will be over. But this time something else popped in my head: the image you see here. So I jumped off the bike and quickly sketched it with sweaty and trembling hands!',
+  },
+  the_dragon_castle: {
+    title: 'The Dragon Castle',
+    imgs: {
+      full: {
+        src: require('./the_dragon_castle_2022_web.jpg'),
+        width: 1061,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./the_dragon_castle_2022_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description: 'Markers on paper. 148 x 210 mm, 2022.',
+    price: 86,
+    original: 'AVAILABLE',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: 'https://www.etsy.com/ie/listing/1267633505/',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'fantasy_watercolour_painting',
+    story:
+      "I'm all about traditional methods and mostly use liquid ink and dip pens, but it's hard to get fine details in such a small size! That's when these micron pens come handy with the super fine tips. And I have to admit even though I knew this wouldn't be coloured as my usual paintings, I enjoyed making it a lot, fiddling with the small bits.",
+  },
+  ride_in_the_forest: {
+    title: 'Ride in The Forest',
+    imgs: {
+      full: {
+        src: require('./ride_in_the_forest_2022_web.jpg'),
+        width: 1061,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./ride_in_the_forest_2022_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description: 'Ink and watercolour on paper. 210 x 297 mm, 2022.',
+    price: 96,
+    original: 'SOLD',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'fantasy_watercolour_painting',
+    story:
+      "The whole artwork was commissioned to be light and fun as it's meant to be in a child's bedroom. So this is not a dark, gloomy forest at all!<br /><br />Maybe here I should tell a terrible secret: I find forests quite intimidating! They are beautiful, especially native, ancient forests, but they give me the creeps. I much prefer open land (got lucky with that in Ireland) Maybe that's why I don't really paint forest backgrounds on my own... but this one turned out lovely and bright, not scary at all.",
+  },
+};
+
+export default imgData_2022;

@@ -1,4 +1,152 @@
 const imgData_2022 = {
+  red_deer: {
+    title: 'Red Deer',
+    imgs: {
+      full: {
+        src: require('./red_deer_2022_web.jpg'),
+        width: 1061,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./red_deer_2022_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description:
+      'Pen, markers and coloured pencils on paper. 210 x 297 mm, 2022.',
+    price: 90,
+    original: 'AVAILABLE',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: 'https://www.etsy.com/ie/listing/1331985676/',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'animal_watercolour_painting',
+    story:
+      "I used markers and coloured pencils this time instead of my usual watercolours so the result is this really vivid piece. Available unframed, but can be mounted optionally.<br /><br />This is a true Irish concept: the Red Deer is Ireland's only native deer species, and the evergreens around are also native plants of the island: holly, juniper, ivy and scots pine.",
+  },
+  blue_tits: {
+    title: 'Blue Tits',
+    imgs: {
+      full: {
+        src: require('./blue_tits_2022_all_web.jpg'),
+        width: 1473,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./blue_tits_2022_all_thumb.jpg'),
+        width: 589,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description:
+      'Watercolour, acrylics and gauche on paper. 73 x 250 mm each, 2022.',
+    price: 96,
+    original: 'SOLD',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'animal_watercolour_painting',
+    story:
+      "I used only 4 colours to paint them: yellow, blue, black and white. My usual ink outlines were replaced by thin gauche lines and all the colours were mixed from these bases. Thanks to this limited palette the 3 mini paintings really go well together, that's why I decided to sell them as a set. They need to stay together like siblings!",
+  },
+  the_fairy_fox: {
+    title: 'The Fairy Fox',
+    imgs: {
+      full: {
+        src: require('./the_fairy_fox_2022_web.jpg'),
+        width: 1106,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./the_fairy_fox_2022_thumb.jpg'),
+        width: 442,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description: 'Ink and watercolour on paper. 148 x 210 mm, 2022.',
+    price: 96,
+    original: 'AVAILABLE',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: 'https://www.etsy.com/ie/listing/1252442778/',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'animal_watercolour_painting',
+    story:
+      "For a change instead of black ink the lines are done with scarlet ink. This goes really well with the colours! I usually prefer tubed watercolours (easier to mix) but I was happy with these ones after all. You can see how small they are, and such a little sample goes a long way!<br /><br />Originally the fern and foxgloves weren't planned but I misplaced the fox and once I noticed I was too far in the process... So I improvised.",
+  },
+  rooster_iii: {
+    title: 'Rooster III',
+    imgs: {
+      full: {
+        src: require('./rooster_iii_2022_web.jpg'),
+        width: 1061,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./rooster_iii_2022_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2022',
+    description: 'Watercolour on paper. 148 x 210 mm, 2022.',
+    price: 96,
+    original: 'AVAILABLE',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: 'https://www.etsy.com/ie/listing/1253620064/',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'animal_watercolour_painting',
+    story:
+      "No ink here! Although that's a fundamental tool of my style I'm quite happy with how things turned out. Instead an ink outline I used the darkest shade of the watercolours with very little water (so the pigment concentration would be high) and added the outlines at the end of the painting process.",
+  },
+  not_today_but_one_day: {
+    title: 'Not Today, but One Day',
+    imgs: {
+      full: {
+        src: require('./not_today_one_day_2022_web.jpg'),
+        width: 1500,
+        height: 888,
+      },
+      thumb: {
+        src: require('./not_today_one_day_2022_thumb.jpg'),
+        width: 600,
+        height: 355,
+      },
+    },
+    year: '2022',
+    description:
+      'Ink and watercolour on Arches HP 300gsm paper. 560 x 380 mm, 2022.',
+    price: 356,
+    original: 'AVAILABLE',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: 'https://www.etsy.com/ie/listing/1273867919/',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'animal_watercolour_painting',
+    story:
+      'One adventurous fox and a flock of geese with earthy colours and Irish forest undergrowth.',
+  },
   gyrflacon: {
     title: 'Gyrfalcon',
     imgs: {

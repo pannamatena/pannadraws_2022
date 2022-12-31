@@ -6,6 +6,7 @@ import Gallery from '../components/Gallery';
 import ArtPageComp from '../components/ArtPage';
 import { getAvailableItems, getMerchTypeItems } from '../resources/utils';
 import imgDataAnimalArt_2022 from '../resources/pictures/2022/imgData_animalArt_2022';
+import imgDataFantasyArt_2022 from '../resources/pictures/2022/imgData_fantasyArt_2022';
 import imgDataAnimalArt_2021 from '../resources/pictures/2021/imgData_animalArt_2021';
 import imgDataAnimalArt_2020 from '../resources/pictures/2020/imgData_animalArt_2020';
 import imgDataFantasyArt_2020 from '../resources/pictures/2020/imgData_fantasyArt_2020';
@@ -17,6 +18,7 @@ export function OriginalArtShop() {
   const availableOriginals = getAvailableItems(
     Object.assign(
       {},
+      imgDataFantasyArt_2022,
       imgDataAnimalArt_2022,
       imgDataAnimalArt_2021,
       imgDataAnimalArt_2020,
@@ -49,6 +51,8 @@ export function ArtPrintShop() {
   const availablePrints = getAvailableItems(
     Object.assign(
       {},
+      imgDataAnimalArt_2022,
+      imgDataFantasyArt_2022,
       imgDataAnimalArt_2021,
       imgDataAnimalArt_2020,
       imgDataFantasyArt_2020
