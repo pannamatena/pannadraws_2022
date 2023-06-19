@@ -4,6 +4,8 @@ import { getDataSource } from '../resources/utils';
 import Gallery from '../components/Gallery';
 import ListGallery from '../components/ListGallery';
 import ArtPageComp from '../components/ArtPage';
+import imgDataFantasyArt_2023 from '../resources/pictures/2023/imgData_fantasyArt_2023';
+import imgDataAnimalArt_2023 from '../resources/pictures/2023/imgData_animalArt_2023';
 import imgDataFantasyArt_2022 from '../resources/pictures/2022/imgData_fantasyArt_2022';
 import imgDataAnimalArt_2022 from '../resources/pictures/2022/imgData_animalArt_2022';
 import imgDataAnimalArt_2021 from '../resources/pictures/2021/imgData_animalArt_2021';
@@ -21,6 +23,8 @@ export function AnimalArt() {
         <>
           {ReactPixel.pageView()}
           <h1>All Birds & Wildlife Art</h1>
+          <h3 className="galleryTitle">2023</h3>
+          <Gallery imgData={imgDataAnimalArt_2023} imgRoot="art/animalArt" />
           <h3 className="galleryTitle">2022</h3>
           <Gallery imgData={imgDataAnimalArt_2022} imgRoot="art/animalArt" />
           <h3 className="galleryTitle">2021</h3>
@@ -72,6 +76,8 @@ export function FantasyArt() {
         <>
           {ReactPixel.pageView()}
           <h1>Fantasy Art</h1>
+          <h3 className="galleryTitle">2023</h3>
+          <Gallery imgData={imgDataFantasyArt_2023} imgRoot="art/fantasyArt" />
           <h3 className="galleryTitle">2022</h3>
           <Gallery imgData={imgDataFantasyArt_2022} imgRoot="art/fantasyArt" />
           <h3 className="galleryTitle">2020</h3>
