@@ -1,4 +1,93 @@
 const imgData_2023 = {
+  doodle_monsters: {
+    title: 'Doodle Monsters',
+    imgs: {
+      full: {
+        src: require('./doodle_monsters_2023_web.jpg'),
+        width: 1061,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./doodle_monsters_2023_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2023',
+    description:
+      'Coloured pencils and watercolour on paper. 149 x 200 mm, 2023.',
+    price: 0,
+    original: 'SOLD',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'fantasy_watercolour_painting',
+    story:
+      "Another piece made with a set materials from a subscription art box. This time I had coloured pencils and watercolours with beautiful shades of blue and red. A circular shape can represent an enclosed area, a zone, but it can also stand for infinity. That's my wreath, a symbol of continuity and spirits breaking out from its enclosed space.",
+  },
+  batwatching: {
+    title: 'Batwatching',
+    imgs: {
+      full: {
+        src: require('./batwatching_2023_web.jpg'),
+        width: 1500,
+        height: 1061,
+      },
+      thumb: {
+        src: require('./batwatching_2023_thumb.jpg'),
+        width: 600,
+        height: 424,
+      },
+    },
+    year: '2023',
+    description: 'Pen and watercolour on paper. 420 x 297 mm, 2023.',
+    price: 0,
+    original: 'SOLD',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'fantasy_watercolour_painting',
+    story:
+      'A commissioned piece of a couple doing their favourite activity: watching the bats fly when the sun starts to set. I really enjoyed painting these characters based on the commissioner and her wife and bringing a wonderful moment in the day to life.',
+  },
+  raven_wreath: {
+    title: 'Raven Wreath',
+    imgs: {
+      full: {
+        src: require('./raven_wreath_2023_web.jpg'),
+        width: 1066,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./raven_wreath_2023_thumb.jpg'),
+        width: 426,
+        height: 600,
+      },
+    },
+    year: '2023',
+    description:
+      'Coloured pencils and watercolour on paper. 149 x 200 mm, 2023.',
+    price: 76,
+    original: 'MSG',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'fantasy_watercolour_painting',
+    story:
+      "Another piece made with a set materials from a subscription art box. This time I had coloured pencils and watercolours with beautiful shades of blue and red. A circular shape can represent an enclosed area, a zone, but it can also stand for infinity. That's my wreath, a symbol of continuity and spirits breaking out from its enclosed space.",
+  },
   green_and_red_2: {
     title: 'Green and Red II',
     imgs: {

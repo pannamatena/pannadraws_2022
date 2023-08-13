@@ -255,9 +255,9 @@ const imgData_2022 = {
       'Ink and watercolour on 400gsm watercolour paper. 156 x 166 mm, 2022.',
     price: 90,
     original: 'SOLD',
-    prints: 'NOTYET',
-    printPrice: 0,
-    buyUrl: '',
+    prints: 'AVAILABLE',
+    printPrice: 24,
+    buyUrl: 'https://www.etsy.com/ie/listing/1420432745/',
     ship: 'FREE_IRL',
     printUrl: '',
     discount: 0,
@@ -324,9 +324,9 @@ const imgData_2022 = {
       'Ink and watercolour on 250gsm watercolour paper. 148 x 210 mm, 2022.',
     price: 120,
     original: 'SOLD',
-    prints: 'NOTYET',
-    printPrice: 0,
-    buyUrl: '',
+    prints: 'AVAILABLE',
+    printPrice: 23.5,
+    buyUrl: 'https://www.etsy.com/ie/listing/1419570413/',
     merch: [
       {
         name: 'Colouring Page - Printed',
@@ -371,9 +371,9 @@ const imgData_2022 = {
       'Ink and watercolour on 300gsm watercolour paper. 297 x 420 mm, 2022.',
     price: 120,
     original: 'SOLD',
-    prints: 'NOTYET',
-    printPrice: 0,
-    buyUrl: '',
+    prints: 'AVAILABLE',
+    printPrice: 25.5,
+    buyUrl: 'https://www.etsy.com/ie/listing/1397110214/',
     merch: [
       {
         name: 'Greeting Cards',
