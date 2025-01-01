@@ -1,4 +1,63 @@
 const imgData_2023 = {
+  late_into_the_night: {
+    title: 'Late Into The Night',
+    imgs: {
+      full: {
+        src: require('./late_into_the_night_2023_web.jpg'),
+        width: 1500,
+        height: 1061,
+      },
+      thumb: {
+        src: require('./late_into_the_night_2023_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2023',
+    description: 'Ink and watercolour on paper. 210 x 297 mm, 2023.',
+    price: 0,
+    original: 'SOLD',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'animal_watercolour_painting',
+    story:
+      'An interesting commissioned piece depicting a young boy getting lost in the night sky. This was a painting made as a gift for an astronomer, specifically made using only black and white paint.',
+  },
+  is_that_food: {
+    title: 'Is That Food?',
+    imgs: {
+      full: {
+        src: require('./is_that_food_2023_web.jpg'),
+        width: 1500,
+        height: 1061,
+      },
+      thumb: {
+        src: require('./is_that_food_2023_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2023',
+    description:
+      'Ink, markers, and coloured pencils on paper. 297 x 420 mm, 2023.',
+    price: 0,
+    original: 'SOLD',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'animal_watercolour_painting',
+    story:
+      'A portrait of three pups being curious if you have anything edible in your hands.',
+  },
   meeko: {
     title: 'Meeko',
     imgs: {

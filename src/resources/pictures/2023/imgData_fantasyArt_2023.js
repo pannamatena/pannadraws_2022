@@ -1,4 +1,63 @@
 const imgData_2023 = {
+  shadow_dragon: {
+    title: 'Shadow Dragon',
+    imgs: {
+      full: {
+        src: require('./shadow_dragon_2023_web.jpg'),
+        width: 1061,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./shadow_dragon_2023_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2023',
+    description: 'Pen and watercolour on paper. 210 x 297 mm, 2023.',
+    price: 0,
+    original: 'SOLD',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: '',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'fantasy_watercolour_painting',
+    story:
+      'A commissioned painting of a dragon character, with a body of a panther and the scales black as the night. The mane is flaming and this dragon can stretch its fingers when it controls the shadows of the shadow world.',
+  },
+  apologies: {
+    title: 'Apologies',
+    imgs: {
+      full: {
+        src: require('./apologies_2023_web.jpg'),
+        width: 1061,
+        height: 1500,
+      },
+      thumb: {
+        src: require('./apologies_2023_thumb.jpg'),
+        width: 424,
+        height: 600,
+      },
+    },
+    year: '2023',
+    description:
+      'Pen, markers, coloured pencils and watercolour on paper. 191 x 281 mm, 2023.',
+    price: 126,
+    original: 'AVAILABLE',
+    prints: 'NOTYET',
+    printPrice: 0,
+    buyUrl: 'https://www.etsy.com/ie/listing/1617658522/',
+    ship: 'FREE_IRL',
+    printUrl: '',
+    discount: 0,
+    discountPrint: 0,
+    type: 'fantasy_watercolour_painting',
+    story:
+      "This painting symbolises apologising: the white doves and the lilies are symbols of forgiving, embracing yet evading the claws of the dragon. When you're too bold apologies can just fly like ghosts around you, and no matter how much you grab you won't hold any of the forgiveness.",
+  },
   doodle_monsters: {
     title: 'Doodle Monsters',
     imgs: {
@@ -27,7 +86,7 @@ const imgData_2023 = {
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
     story:
-      "Another piece made with a set materials from a subscription art box. This time I had coloured pencils and watercolours with beautiful shades of blue and red. A circular shape can represent an enclosed area, a zone, but it can also stand for infinity. That's my wreath, a symbol of continuity and spirits breaking out from its enclosed space.",
+      'A commissioned painting made as a gift for a fellow artist :) The figures are based on the doodles she made.',
   },
   batwatching: {
     title: 'Batwatching',
