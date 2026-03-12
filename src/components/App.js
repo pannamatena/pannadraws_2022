@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation, useNavigationType } from 'react-router-dom';
 import ReactPixel from 'react-facebook-pixel';
 import ReactGA from 'react-ga';
 import Layout from './Layout';
@@ -25,8 +25,17 @@ import {
 
 function ScrollToTop() {
   const { pathname } = useLocation();
+  const navType = useNavigationType();
 
   useEffect(() => {
+    if (navType === 'POP') {
+      const savedY = sessionStorage.getItem('galleryScrollY');
+      if (savedY) {
+        sessionStorage.removeItem('galleryScrollY');
+        requestAnimationFrame(() => window.scrollTo(0, parseInt(savedY)));
+      }
+      return;
+    }
     window.scrollTo(0, 0);
   }, [pathname]);
 

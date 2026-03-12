@@ -20,7 +20,7 @@ export default function ArtPage({ imgId, dataSource }) {
 
   return (
     <div className="artPage">
-      <button css={style.backBtn} onClick={() => navigate(prevLocation)}>
+      <button css={style.backBtn} onClick={() => navigate(-1)}>
         Back
       </button>
       <div css={style.layout}>

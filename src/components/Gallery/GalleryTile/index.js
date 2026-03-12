@@ -152,6 +152,7 @@ export default function GalleryTile({
         width: ${style?.width};
       `}
       onClick={() => {
+        sessionStorage.setItem('galleryScrollY', window.scrollY);
         ReactPixel.trackCustom('GalleryTileClick', {
           artworkURL: `/${imgRoot}/${imgType}/${imgYear}/${imgTitle}`,
         });
