@@ -618,7 +618,7 @@ const imgData_2020 = {
     description:
       'Ink and watercolour on watercolour paper. 405 x 508 mm (16 x 20 in), 2020. Framed.',
     price: 250,
-    original: 'MSG',
+    original: 'SOLD',
     prints: 'SOLD',
     printPrice: 26.95,
     buyUrl: 'https://www.etsy.com/ie/listing/864105935/',

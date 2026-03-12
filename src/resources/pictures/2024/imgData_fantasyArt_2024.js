@@ -305,7 +305,7 @@ const imgData_2024 = {
     year: '2024',
     description: 'Pen and watercolour on paper. 285 x 380 mm, 2024.',
     price: 0,
-    original: 'AVAILABLE',
+    original: 'SOLD',
     prints: 'NOTYET',
     printPrice: 0,
     buyUrl: 'https://www.etsy.com/ie/listing/1711613402/',

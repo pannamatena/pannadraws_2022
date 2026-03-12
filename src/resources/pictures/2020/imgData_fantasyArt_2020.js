@@ -132,7 +132,7 @@ const imgData_2020 = {
     description:
       'Ink and watercolour on cold pressed watercolour paper. 210 x 297 mm ( 8.27 x 11.69 in), 2020.',
     price: 92,
-    original: 'AVAILABLE',
+    original: 'SOLD',
     prints: 'NOTYET',
     ship: 'FREE_IRL',
     buyUrl: 'https://www.etsy.com/ie/listing/799874088/',
@@ -276,7 +276,7 @@ const imgData_2020 = {
     description:
       'Ink and watercolour on cold pressed watercolour paper. 420 x 297 mm ( 11.69 x 16.53 in), 2020.',
     price: 126,
-    original: 'MSG',
+    original: 'SOLD',
     prints: 'NOTYET',
     buyUrl: 'https://www.etsy.com/ie/listing/795402030/',
     printUrl: 'https://www.etsy.com/ie/listing/818583103/',

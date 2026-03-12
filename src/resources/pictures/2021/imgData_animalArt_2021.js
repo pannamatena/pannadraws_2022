@@ -506,7 +506,7 @@ const imgData_2021 = {
     year: '2021',
     description: 'Ink and watercolour on paper. 420 x 594 mm, 2021.',
     price: 250,
-    original: 'AVAILABLE',
+    original: 'SOLD',
     prints: 'NOTYET',
     printPrice: 0,
     buyUrl: 'https://www.etsy.com/ie/listing/1003113817/',
