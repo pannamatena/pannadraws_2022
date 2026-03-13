@@ -11,14 +11,11 @@ export default function DesktopMenu() {
         <li>
           <span className="fakeLink">Art</span>
           <div className="artMenu" css={style.subMenu}>
-            <NavLink className="subMenuLink" to="/art/animalArt">
-              Birds & Wildlife
+            <NavLink className="subMenuLink" to="/art/fantasyArt">
+              Fantasy & Wildlife Art
             </NavLink>
             <NavLink className="subMenuLink" to="/art/adultColoring">
               Adult Colouring
-            </NavLink>
-            <NavLink className="subMenuLink" to="/art/fantasyArt">
-              Fantasy Art
             </NavLink>
           </div>
         </li>

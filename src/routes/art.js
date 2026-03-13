@@ -79,15 +79,17 @@ export function FantasyArt() {
       ) : (
         <>
           {ReactPixel.pageView()}
-          <h1>Fantasy Art</h1>
+          <h1>Fantasy & Wildlife Art</h1>
           <h3 className="galleryTitle">2024</h3>
-          <Gallery imgData={imgDataFantasyArt_2024} imgRoot="art/fantasyArt" />
+          <Gallery imgData={{ ...imgDataFantasyArt_2024, ...imgDataAnimalArt_2024 }} imgRoot="art/fantasyArt" />
           <h3 className="galleryTitle">2023</h3>
-          <Gallery imgData={imgDataFantasyArt_2023} imgRoot="art/fantasyArt" />
+          <Gallery imgData={{ ...imgDataFantasyArt_2023, ...imgDataAnimalArt_2023 }} imgRoot="art/fantasyArt" />
           <h3 className="galleryTitle">2022</h3>
-          <Gallery imgData={imgDataFantasyArt_2022} imgRoot="art/fantasyArt" />
+          <Gallery imgData={{ ...imgDataFantasyArt_2022, ...imgDataAnimalArt_2022 }} imgRoot="art/fantasyArt" />
+          <h3 className="galleryTitle">2021</h3>
+          <Gallery imgData={imgDataAnimalArt_2021} imgRoot="art/fantasyArt" />
           <h3 className="galleryTitle">2020</h3>
-          <Gallery imgData={imgDataFantasyArt_2020} imgRoot="art/fantasyArt" />
+          <Gallery imgData={{ ...imgDataFantasyArt_2020, ...imgDataAnimalArt_2020 }} imgRoot="art/fantasyArt" />
         </>
       )}
     </>

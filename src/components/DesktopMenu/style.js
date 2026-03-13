@@ -62,7 +62,7 @@ const style = {
           & > div {
             padding: 5px 0 2px;
             &.artMenu {
-              height: 110px;
+              height: 73px;
               @media ${breakPoints.desktopLarge} {
                 height: 120px;
               }

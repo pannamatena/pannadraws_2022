@@ -58,24 +58,21 @@ export default function MobileMenu(props) {
                 css={css`
                   ${style.subMenu};
                   padding-top: ${openSubmenu === 'subMenu_art' ? '5px' : '0'};
-                  height: ${openSubmenu === 'subMenu_art' ? '110px' : '0'};
+                  height: ${openSubmenu === 'subMenu_art' ? '75px' : '0'};
                   @media ${breakPoints.tabletPortrait} {
-                    height: ${openSubmenu === 'subMenu_art' ? '130px' : '0'};
+                    height: ${openSubmenu === 'subMenu_art' ? '90px' : '0'};
                   }
                 `}
                 onClick={() => props.onClose()}
               >
-                <NavLink to="/art/animalArt" onClick={() => props.onClose()}>
-                  Birds & Wildlife
+                <NavLink to="/art/fantasyArt" onClick={() => props.onClose()}>
+                  Fantasy & Wildlife Art
                 </NavLink>
                 <NavLink
                   to="/art/adultColoring"
                   onClick={() => props.onClose()}
                 >
                   Adult Colouring
-                </NavLink>
-                <NavLink to="/art/fantasyArt" onClick={() => props.onClose()}>
-                  Fantasy Art
                 </NavLink>
               </div>
             </li>
