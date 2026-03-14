@@ -1,3 +1,5 @@
+import imgDataFantasyArt_2025 from './pictures/2025/imgData_fantasyArt_2025';
+import imgDataAnimalArt_2025 from './pictures/2025/imgData_animalArt_2025';
 import imgDataFantasyArt_2024 from './pictures/2024/imgData_fantasyArt_2024';
 import imgDataAnimalArt_2024 from './pictures/2024/imgData_animalArt_2024';
 import imgDataFantasyArt_2023 from './pictures/2023/imgData_fantasyArt_2023';
@@ -38,6 +40,13 @@ export function getMerchTypeItems(source, merchType) {
 
 export function getDataSource(params) {
   switch (params.imgYear) {
+    case '2025': {
+      if (params.imgType === 'animal_watercolour_painting') {
+        return imgDataAnimalArt_2025;
+      }
+      //params.imgType === 'fantasy_watercolour_painting'
+      return imgDataFantasyArt_2025;
+    }
     case '2024': {
       if (params.imgType === 'animal_watercolour_painting') {
         return imgDataAnimalArt_2024;

@@ -100,7 +100,7 @@ export default function MobileMenu(props) {
                 <NavLink to="/shop/cardsAndBookmarksShop">
                   Cards & Bookmarks
                 </NavLink>
-                <NavLink to="/shop/clothingShop">Clothing</NavLink>
+                {/*<NavLink to="/shop/clothingShop">Clothing</NavLink>*/}
                 <NavLink to="/shop/stickersShop">Stickers & Magnets</NavLink>
                 <NavLink to="/shop/notebooksShop">Notebooks</NavLink>
               </div>

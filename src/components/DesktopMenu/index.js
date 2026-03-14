@@ -34,9 +34,9 @@ export default function DesktopMenu() {
             <NavLink className="subMenuLink" to="/shop/cardsAndBookmarksShop">
               Cards & Bookmarks
             </NavLink>
-            <NavLink className="subMenuLink" to="/shop/clothingShop">
+            {/*<NavLink className="subMenuLink" to="/shop/clothingShop">
               Clothing
-            </NavLink>
+            </NavLink>*/}
             <NavLink className="subMenuLink" to="/shop/stickersShop">
               Stickers & Magnets
             </NavLink>
