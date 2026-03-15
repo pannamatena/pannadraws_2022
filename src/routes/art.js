@@ -4,6 +4,7 @@ import { getDataSource } from '../resources/utils';
 import Gallery from '../components/Gallery';
 import ListGallery from '../components/ListGallery';
 import ArtPageComp from '../components/ArtPage';
+import imgDataFantasyArt_2026 from '../resources/pictures/2026/imgData_fantasyArt_2026';
 import imgDataFantasyArt_2025 from '../resources/pictures/2025/imgData_fantasyArt_2025';
 import imgDataAnimalArt_2025 from '../resources/pictures/2025/imgData_animalArt_2025';
 import imgDataFantasyArt_2024 from '../resources/pictures/2024/imgData_fantasyArt_2024';
@@ -84,6 +85,8 @@ export function FantasyArt() {
         <>
           {ReactPixel.pageView()}
           <h1>Fantasy & Wildlife Art</h1>
+          <h3 className="galleryTitle">2026</h3>
+          <Gallery imgData={imgDataFantasyArt_2026} imgRoot="art/fantasyArt" />
           <h3 className="galleryTitle">2025</h3>
           <Gallery imgData={{ ...imgDataFantasyArt_2025, ...imgDataAnimalArt_2025 }} imgRoot="art/fantasyArt" />
           <h3 className="galleryTitle">2024</h3>

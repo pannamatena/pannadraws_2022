@@ -1,3 +1,4 @@
+import imgDataFantasyArt_2026 from './pictures/2026/imgData_fantasyArt_2026';
 import imgDataFantasyArt_2025 from './pictures/2025/imgData_fantasyArt_2025';
 import imgDataAnimalArt_2025 from './pictures/2025/imgData_animalArt_2025';
 import imgDataFantasyArt_2024 from './pictures/2024/imgData_fantasyArt_2024';
@@ -40,6 +41,9 @@ export function getMerchTypeItems(source, merchType) {
 
 export function getDataSource(params) {
   switch (params.imgYear) {
+    case '2026': {
+      return imgDataFantasyArt_2026;
+    }
     case '2025': {
       if (params.imgType === 'animal_watercolour_painting') {
         return imgDataAnimalArt_2025;
