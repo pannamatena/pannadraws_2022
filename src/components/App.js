@@ -12,6 +12,7 @@ import { FormSuccess, FormError } from '../routes/formResponses';
 import { NoMatch } from '../routes/noMatch';
 import { CommissionArt } from '../routes/commissionArt';
 import { AnimalArt, ArtPage, AdultColoring, FantasyArt } from '../routes/art';
+import { Illustrations, CharacterCreatureDesign } from '../routes/services';
 import {
   OriginalArtShop,
   ArtPrintShop,
@@ -77,6 +78,8 @@ export default function App() {
               </Route>
               <Route path="*" element={<NoMatch />} />
             </Route>
+            <Route path="illustrations" element={<Illustrations />} />
+            <Route path="characterCreatureDesign" element={<CharacterCreatureDesign />} />
             <Route path="commissionArt" element={<CommissionArt />} />
             <Route path="shop">
               <Route index element={<NoMatch />} />

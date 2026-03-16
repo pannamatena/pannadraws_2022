@@ -47,6 +47,11 @@ export default function MobileMenu(props) {
         <nav css={style.mainMenu}>
           <ul>
             <li>
+              <NavLink to="/art/fantasyArt" onClick={() => props.onClose()}>
+                Art
+              </NavLink>
+            </li>
+            {/*<li>
               <span
                 className="fakeLink"
                 onClick={() => triggerSubmenu('subMenu_art')}
@@ -75,35 +80,16 @@ export default function MobileMenu(props) {
                   Adult Colouring
                 </NavLink>
               </div>
+            </li>*/}
+            <li>
+              <NavLink to="/illustrations" onClick={() => props.onClose()}>
+                Illustrations
+              </NavLink>
             </li>
             <li>
-              <span
-                className="fakeLink"
-                onClick={() => triggerSubmenu('subMenu_shop')}
-              >
-                Shop
-              </span>
-              <div
-                id="subMenu_shop"
-                css={css`
-                  ${style.subMenu};
-                  padding-top: ${openSubmenu === 'subMenu_shop' ? '5px' : '0'};
-                  height: ${openSubmenu === 'subMenu_shop' ? '203px' : '0'};
-                  @media ${breakPoints.tabletPortrait} {
-                    height: ${openSubmenu === 'subMenu_shop' ? '245px' : '0'};
-                  }
-                `}
-              >
-                <NavLink to="/shop/originalArtShop">Original Art</NavLink>
-                <NavLink to="/shop/artPrintShop">Art Prints</NavLink>
-                <NavLink to="/shop/colouringShop">Colouring Pages</NavLink>
-                <NavLink to="/shop/cardsAndBookmarksShop">
-                  Cards & Bookmarks
-                </NavLink>
-                {/*<NavLink to="/shop/clothingShop">Clothing</NavLink>*/}
-                <NavLink to="/shop/stickersShop">Stickers & Magnets</NavLink>
-                <NavLink to="/shop/notebooksShop">Notebooks</NavLink>
-              </div>
+              <NavLink to="/characterCreatureDesign" onClick={() => props.onClose()}>
+                Character & Creature Design
+              </NavLink>
             </li>
             <li>
               <NavLink to="/commissionArt" onClick={() => props.onClose()}>

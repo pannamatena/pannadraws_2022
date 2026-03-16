@@ -9,6 +9,9 @@ export default function DesktopMenu() {
     <nav css={style.mainMenu}>
       <ul>
         <li>
+          <NavLink to="/art/fantasyArt">Art</NavLink>
+        </li>
+        {/*<li>
           <span className="fakeLink">Art</span>
           <div className="artMenu" css={style.subMenu}>
             <NavLink className="subMenuLink" to="/art/fantasyArt">
@@ -18,32 +21,12 @@ export default function DesktopMenu() {
               Adult Colouring
             </NavLink>
           </div>
+        </li>*/}
+        <li>
+          <NavLink to="/illustrations">Illustrations</NavLink>
         </li>
         <li>
-          <span className="fakeLink">Shop</span>
-          <div className="shopMenu" css={style.subMenu}>
-            <NavLink className="subMenuLink" to="/shop/originalArtShop">
-              Original Art
-            </NavLink>
-            <NavLink className="subMenuLink" to="/shop/artPrintShop">
-              Art Prints
-            </NavLink>
-            <NavLink className="subMenuLink" to="/shop/colouringShop">
-              Coloring Pages
-            </NavLink>
-            <NavLink className="subMenuLink" to="/shop/cardsAndBookmarksShop">
-              Cards & Bookmarks
-            </NavLink>
-            {/*<NavLink className="subMenuLink" to="/shop/clothingShop">
-              Clothing
-            </NavLink>*/}
-            <NavLink className="subMenuLink" to="/shop/stickersShop">
-              Stickers & Magnets
-            </NavLink>
-            <NavLink className="subMenuLink" to="/shop/notebooksShop">
-              Notebooks
-            </NavLink>
-          </div>
+          <NavLink to="/characterCreatureDesign">Character & Creature Design</NavLink>
         </li>
         <li>
           <NavLink to="/commissionArt">Commission Art</NavLink>

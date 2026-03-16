@@ -247,7 +247,7 @@ export default function Layout() {
       </div>
 
       <div css={style.footerContainer}>
-        <p>All prices are indicated in EUR. Shipping costs are not included.</p>
+        <p>All prices are indicated in EUR. Local taxes may apply at checkout. Shipping costs are not included.</p>
         <p>
           Artwork and content &copy; {new Date().getFullYear()} Panna Zsamba
         </p>
