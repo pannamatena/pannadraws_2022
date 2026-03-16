@@ -13,4 +13,6 @@ export const colours = {
   c3_transparent: 'rgba(255,255,255,.8)',
   c_promo_1: '#f5f0eb',
   c_promo_2: '#ede8f5',
+  c_button_promo_2: '#5c3d8f',
+  c_button_promo_2_h: '#7755af',
 };

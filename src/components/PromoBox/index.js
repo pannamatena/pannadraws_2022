@@ -6,6 +6,7 @@ import style from './style';
 
 export default function PromoBox() {
   return (
+    <>
     <div css={style.promoBoxContainer}>
       <div css={css`${style.promoBox}; background: #f5f0eb;`}>
         <h2>For Writers & Authors</h2>
@@ -26,11 +27,23 @@ export default function PromoBox() {
           illustrations for your table.
         </p>
         <div className="btnContainer">
-          <Link className="btnCallToAction" to="/characterCreatureDesign">
+          <Link className="btnCallToAction btnCallToAction--promo" to="/characterCreatureDesign">
             Commission me
           </Link>
         </div>
       </div>
     </div>
+    <div css={style.etsyStrip}>
+      <p>Original paintings available to own — browse the full collection on Etsy.</p>
+      <a
+        className="btnCallToAction--outline"
+        href="https://pannadraws.etsy.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Visit my Etsy shop
+      </a>
+    </div>
+    </>
   );
 }

@@ -29,6 +29,59 @@ const style = {
       max-width: 1400px;
     }
   `,
+  etsyStrip: css`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto 10px;
+
+    @media ${breakPoints.tabletPortrait} {
+      flex-direction: row;
+      gap: 15px;
+      margin: 0 auto 15px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      max-width: 1100px;
+      gap: 20px;
+      margin: 0 auto 20px;
+    }
+    @media ${breakPoints.desktopLarge} {
+      max-width: 1400px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a.btnCallToAction--outline {
+      ${textSize};
+      display: inline-block;
+      white-space: nowrap;
+      background: ${colours.c3};
+      color: ${colours.c1} !important;
+      border: 2px solid ${colours.c1};
+      font-family: ${fonts.f1};
+      text-transform: uppercase;
+      text-decoration: none;
+
+      padding: 10px;
+      @media ${breakPoints.tabletPortrait} {
+        padding: 15px;
+      }
+      @media ${breakPoints.desktopSmall} {
+        padding: 20px;
+      }
+
+      &:hover,
+      &:active {
+        background: ${colours.c5};
+        cursor: pointer;
+      }
+    }
+  `,
   promoBox: css`
     flex: 1;
     padding: 10px;
@@ -67,6 +120,16 @@ const style = {
       &:active {
         background: ${colours.c1_h};
         cursor: pointer;
+      }
+        
+      &.btnCallToAction--promo {
+        background: ${colours.c_button_promo_2};
+
+        &:hover,
+        &:active {
+            background: ${colours.c_button_promo_2_h};
+            cursor: pointer;
+        }
       }
     }
   `,

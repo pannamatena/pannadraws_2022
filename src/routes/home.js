@@ -124,14 +124,14 @@ export function Home() {
           >
             <h2>Shop original artworks</h2>
             <p>
-              There is only one available in the whole world of every original
-              painting... Once they're gone they're gone. Here are the latest
-              ones, but make sure to check out the rest!
+              My original artworks are available in my Etsy shop along with bookmarks, cards, prints, stickers and other goodies made from my art.
             </p>
             <div className="btnContainer">
-              <Link
+              <a
                 className="btnCallToAction"
-                to="/shop/originalArtShop"
+                href="https://pannadraws.etsy.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => {
                   ReactPixel.trackCustom('ShopOriginalArtClick', {
                     source: 'mainPage',
@@ -144,7 +144,7 @@ export function Home() {
                 }}
               >
                 Shop original art
-              </Link>
+              </a>
             </div>
           </div>
         }
