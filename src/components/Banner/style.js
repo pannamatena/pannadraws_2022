@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts, smallHeadFontSize } from '../../resources/fonts';
+import { fonts, smallHeadFontSize, xSmallHeadFontSize } from '../../resources/fonts';
 import { colours } from '../../resources/colors';
 
 const style = {
@@ -66,6 +66,9 @@ const style = {
       @media ${breakPoints.tabletPortrait} {
         text-align: right;
       }
+      &--xs {
+        ${xSmallHeadFontSize};
+      }
     }
 
     h2.headline {
@@ -113,7 +116,7 @@ const style = {
     align-items: center;
 
     top: 15%;
-    left: 15%;
+    left: 10%;
     width: 100%;
     background: ${colours.c3_transparent};
     padding: 10px 0;

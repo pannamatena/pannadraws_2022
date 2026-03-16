@@ -45,6 +45,19 @@ export const smallHeadFontSize = css`
   }
 `;
 
+export const xSmallHeadFontSize = css`
+  font-size: 16px;
+  @media ${breakPoints.tabletPortrait} {
+    font-size: 16px;
+  }
+  @media ${breakPoints.desktopSmall} {
+    font-size: 20px;
+  }
+  @media ${breakPoints.desktopLarge} {
+    font-size: 22px;
+  }
+`;
+
 export const textSize = css`
   font-size: 14px;
   @media ${breakPoints.desktopSmall} {
