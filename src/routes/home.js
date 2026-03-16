@@ -6,6 +6,7 @@ import ReactGA from 'react-ga';
 import { Link } from 'react-router-dom';
 import Img from 'react-cool-img';
 import Banner from '../components/Banner';
+import PromoBox from '../components/PromoBox';
 import SegmentedLayout from '../components/SegmentedLayout';
 import Newsletter, { NewsletterDescription } from '../components/Newsletter';
 import { colours } from '../resources/colors';
@@ -18,6 +19,7 @@ export function Home() {
     <div>
       {ReactPixel.pageView()}
       <Banner />
+      <PromoBox />
       <SegmentedLayout
         contentLeft={
           <div
