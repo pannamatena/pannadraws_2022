@@ -181,6 +181,46 @@ const style = {
       margin-top: 20px;
     }
   `,
+
+  // DARK theme overrides
+  contactFormRowDark: css`
+    label {
+      color: ${colours.c3};
+    }
+
+    input[type='text'],
+    input[type='email'] {
+      background: ${colours.c3};
+      color: ${colours.c2};
+      border-bottom-color: ${colours.c3};
+
+      &:focus {
+        border-color: ${colours.c1};
+      }
+    }
+
+    textarea {
+      background: ${colours.c3};
+      color: ${colours.c2};
+      border-bottom-color: ${colours.c3};
+
+      &:focus {
+        border-color: ${colours.c1};
+      }
+    }
+  `,
+  checkboxDark: css`
+    span {
+      color: ${colours.c3};
+    }
+  `,
+  infoTextDark: css`
+    color: ${colours.c4};
+
+    a {
+      color: ${colours.c1};
+    }
+  `,
 };
 
 export default style;

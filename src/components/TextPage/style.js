@@ -1,7 +1,8 @@
 import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts, textSize } from '../../resources/fonts';
+import { fonts } from '../../resources/fonts';
+import { btnPrimary } from '../../resources/buttons';
 
 const style = {
   layout: css`
@@ -111,31 +112,7 @@ const style = {
     }
 
     .btnCallToAction {
-      ${textSize};
-      display: inline-block;
-      background: ${colours.c1};
-      color: ${colours.c3} !important;
-      font-family: ${fonts.f1};
-      text-transform: uppercase;
-
-      padding: 10px;
-      @media ${breakPoints.tabletPortrait} {
-        padding: 15px;
-      }
-      @media ${breakPoints.desktopSmall} {
-        padding: 20px;
-      }
-
-      &:hover,
-      &:active {
-        background: ${colours.c1_h};
-        cursor: pointer;
-      }
-
-      &:disabled {
-        cursor: default;
-        background: ${colours.c4};
-      }
+      ${btnPrimary};
     }
 
     .anchor {

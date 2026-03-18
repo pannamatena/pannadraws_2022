@@ -4,6 +4,8 @@ import { breakPoints } from './breakpoints';
 export const fonts = {
   f1: 'patrick_hand_scregular',
   f2: 'robotoregular',
+  f3: 'cormorant_garamond',   // variable font, supports font-weight 100–900 and font-style italic
+  f4: 'playfair_display',     // variable font, supports font-weight 100–900 and font-style italic
 };
 
 export const largeHeadFontSize = css`

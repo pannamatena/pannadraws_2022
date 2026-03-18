@@ -7,14 +7,16 @@ import style from './style';
 
 export default function ContactForm(props) {
   let location = useLocation();
+  const [nameVal, setNameVal] = useState('');
+  const [emailVal, setEmailVal] = useState('');
   const [subjectVal, setSubjectVal] = useState(
     location.state?.msgSubj || props.msgSubj || ''
   );
+  const [messageVal, setMessageVal] = useState('');
   const [consentVal, setConsentVal] = useState(false);
+  const isDark = props.theme === 'DARK';
 
-  const handleSubjectChange = (event) => {
-    setSubjectVal(event.target.value);
-  };
+  const isSubmittable = consentVal && nameVal.trim() && emailVal.trim() && subjectVal.trim() && messageVal.trim();
 
   const handleCheckboxChange = (event) => {
     setConsentVal(event.target.checked);
@@ -32,21 +34,18 @@ export default function ContactForm(props) {
       >
         <input type="hidden" name="form-name" value="contact" />
         <div
-          css={css`
-            ${style.contactFormRow};
-            ${style.contactFormRowFlex}
-          `}
+          css={[style.contactFormRow, style.contactFormRowFlex, isDark && style.contactFormRowDark]}
         >
           <div>
             <label htmlFor="name">Name</label>
-            <input type="text" name="name" id="name" required />
+            <input type="text" name="name" id="name" required value={nameVal} onChange={(e) => setNameVal(e.target.value)} />
           </div>
           <div>
             <label htmlFor="email">Email</label>
-            <input type="email" name="email" id="email" required />
+            <input type="email" name="email" id="email" required value={emailVal} onChange={(e) => setEmailVal(e.target.value)} />
           </div>
         </div>
-        <div css={style.contactFormRow}>
+        <div css={[style.contactFormRow, isDark && style.contactFormRowDark]}>
           <label htmlFor="subject">Subject</label>
           <input
             type="text"
@@ -54,22 +53,22 @@ export default function ContactForm(props) {
             id="subject"
             required
             value={subjectVal}
-            onChange={(e) => handleSubjectChange(e)}
+            onChange={(e) => setSubjectVal(e.target.value)}
           />
         </div>
-        <div css={style.contactFormRow}>
+        <div css={[style.contactFormRow, isDark && style.contactFormRowDark]}>
           <label htmlFor="message">Message</label>
-          <textarea name="message" id="message" rows="6" required />
+          <textarea name="message" id="message" rows="6" required value={messageVal} onChange={(e) => setMessageVal(e.target.value)} />
         </div>
-        <div css={style.contactFormRow}>
-          <label css={style.checkbox}>
-            <Checkbox checked={consentVal} onChange={handleCheckboxChange} />
+        <div css={[style.contactFormRow, isDark && style.contactFormRowDark]}>
+          <label css={[style.checkbox, isDark && style.checkboxDark]}>
+            <Checkbox checked={consentVal} onChange={handleCheckboxChange} theme={props.theme} />
             <span>
               I agree that my email address and name can be used to enable
               replying to my message.
             </span>
           </label>
-          <p css={style.infoText}>
+          <p css={[style.infoText, isDark && style.infoTextDark]}>
             All personal data is handled according to the{' '}
             <Link to="/privacy_policy">Privacy Policy</Link>.
           </p>
@@ -79,7 +78,7 @@ export default function ContactForm(props) {
             css={style.submitBtn}
             type="submit"
             value="Send Message"
-            disabled={!consentVal}
+            disabled={!isSubmittable}
           />
         </div>
       </form>

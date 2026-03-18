@@ -1,7 +1,8 @@
 import { css } from '@emotion/react';
 import { breakPoints } from '../../resources/breakpoints';
 import { colours } from '../../resources/colors';
-import { fonts, textSize } from '../../resources/fonts';
+import { fonts } from '../../resources/fonts';
+import { btnPrimary, btnOutlineRed } from '../../resources/buttons';
 
 const style = {
   promoBoxContainer: css`
@@ -57,29 +58,7 @@ const style = {
     }
 
     a.btnCallToAction--outline {
-      ${textSize};
-      display: inline-block;
-      white-space: nowrap;
-      background: ${colours.c3};
-      color: ${colours.c1} !important;
-      border: 2px solid ${colours.c1};
-      font-family: ${fonts.f1};
-      text-transform: uppercase;
-      text-decoration: none;
-
-      padding: 10px;
-      @media ${breakPoints.tabletPortrait} {
-        padding: 15px;
-      }
-      @media ${breakPoints.desktopSmall} {
-        padding: 20px;
-      }
-
-      &:hover,
-      &:active {
-        background: ${colours.c5};
-        cursor: pointer;
-      }
+      ${btnOutlineRed};
     }
   `,
   promoBox: css`
@@ -100,35 +79,15 @@ const style = {
     }
 
     a.btnCallToAction {
-      ${textSize};
-      display: inline-block;
-      background: ${colours.c1};
-      color: ${colours.c3} !important;
-      font-family: ${fonts.f1};
-      text-transform: uppercase;
-      text-decoration: none;
+      ${btnPrimary};
 
-      padding: 10px;
-      @media ${breakPoints.tabletPortrait} {
-        padding: 15px;
-      }
-      @media ${breakPoints.desktopSmall} {
-        padding: 20px;
-      }
-
-      &:hover,
-      &:active {
-        background: ${colours.c1_h};
-        cursor: pointer;
-      }
-        
       &.btnCallToAction--promo {
         background: ${colours.c_button_promo_2};
 
         &:hover,
         &:active {
-            background: ${colours.c_button_promo_2_h};
-            cursor: pointer;
+          background: ${colours.c_button_promo_2_h};
+          cursor: pointer;
         }
       }
     }

@@ -4,7 +4,11 @@ import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
 import { check } from '../../resources/icons';
 
-const Checkbox = ({ checked, ...props }) => {
+const Checkbox = ({ checked, theme, ...props }) => {
+  const isDark = theme === 'DARK';
+  const bgColour = isDark ? colours.c3 : colours.c2;
+  const uncheckedIconColour = isDark ? colours.c3 : colours.c2;
+
   const style = {
     checkboxContainer: css`
       display: inline-block;
@@ -30,7 +34,7 @@ const Checkbox = ({ checked, ...props }) => {
       border-bottom: 3px solid transparent;
       width: 30px;
       height: 30px;
-      background: ${colours.c2};
+      background: ${bgColour};
       transition: all 0.3s ease-out;
       position: relative;
 
@@ -39,7 +43,7 @@ const Checkbox = ({ checked, ...props }) => {
       }
 
       svg {
-        fill: ${checked ? colours.c1 : colours.c2};
+        fill: ${checked ? colours.c1 : uncheckedIconColour};
         width: 25px;
         height: 25px;
         position: absolute;
