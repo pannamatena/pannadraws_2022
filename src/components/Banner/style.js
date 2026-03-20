@@ -66,13 +66,28 @@ const style = {
       @media ${breakPoints.tabletPortrait} {
         text-align: right;
       }
+      @media ${breakPoints.desktopLarge} {
+          margin-right: 130px;
+      }
+      @media ${breakPoints.desktopXLarge} {
+          margin-right: 0;
+      }
       &--xs {
         font-family: ${fonts.f2};
-        ${textSize};
         text-transform: uppercase;
         margin: 8px 0;
+        font-size: 12px;
         @media ${breakPoints.desktopSmall} {
           margin: 12px 0;
+          font-size: 16px;
+        }
+        @media ${breakPoints.desktopLarge} {
+            margin: 18px 80px;
+            font-size: 18px;
+        }
+        @media ${breakPoints.desktopXLarge} {
+            margin: 22px 0;
+            font-size: 22px;
         }
       }
     }
@@ -84,7 +99,7 @@ const style = {
       line-height: 1;
       white-space: nowrap;
 
-      font-size: 22px;
+      font-size: 18px;
       @media ${breakPoints.tabletPortrait} {
         font-size: 24px;
       }
@@ -92,7 +107,7 @@ const style = {
         font-size: 38px;
       }
       @media ${breakPoints.desktopLarge} {
-        font-size: 50px;
+        font-size: 48px;
       }
       @media ${breakPoints.desktopXLarge} {
         font-size: 54px;
@@ -125,7 +140,7 @@ const style = {
     align-items: center;
 
     top: 15%;
-    left: 10%;
+    left: 0;
     width: 100%;
     background: ${colours.c3_transparent};
     padding: 10px 0;
@@ -144,7 +159,7 @@ const style = {
     }
     @media ${breakPoints.desktopSmall} {
       top: 26%;
-      left: 0;
+      left: 1%;
     }
     @media ${breakPoints.desktopLarge} {
       top: 30%;
