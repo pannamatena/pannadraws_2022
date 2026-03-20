@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts, largeHeadFontSize } from '../../resources/fonts';
+import {fonts, largeHeadFontSize, uppercaseSansDisplay, textSize, textSizeCursive} from '../../resources/fonts';
 
 const style = {
   layout: css`
@@ -20,17 +20,20 @@ const style = {
     @media ${breakPoints.desktopSmall} {
       margin-top: 20px;
     }
+      
+      p {
+          font-family: ${fonts.f3};
+          ${textSizeCursive};
+      }
   `,
   backBtn: css`
     display: inline-block;
     background: ${colours.c2};
     color: ${colours.c3};
-    font-family: ${fonts.f1};
-    font-weight: normal;
-    text-transform: uppercase;
+    ${uppercaseSansDisplay};
+    ${textSize};
     clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
 
-    ${largeHeadFontSize};
     padding: 5px 10px 5px 20px;
     @media ${breakPoints.tabletPortrait} {
       padding: 5px 15px 5px 25px;
@@ -69,6 +72,12 @@ const style = {
 
     h1 {
       margin-bottom: 0;
+      @media ${breakPoints.tabletPortrait} {
+        margin-bottom: 0;
+      }
+      @media ${breakPoints.desktopSmall} {
+        margin-bottom: 0;
+      }
     }
   `,
   year: css`

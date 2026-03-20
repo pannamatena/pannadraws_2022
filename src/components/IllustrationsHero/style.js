@@ -47,8 +47,6 @@ const style = {
     padding: 36px;
   `,
   heading: css`
-    font-family: ${fonts.f1};
-    text-transform: uppercase;
     line-height: 1.1;
     margin-bottom: 16px;
 

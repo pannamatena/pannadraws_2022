@@ -5,7 +5,7 @@ import {
   largeHeadFontSize,
   mediumHeadFontSize,
   smallHeadFontSize,
-  textSize,
+  textSize, uppercaseSansDisplay,
 } from '../../resources/fonts';
 import { breakPoints } from '../../resources/breakpoints';
 
@@ -31,8 +31,11 @@ const style = {
     }
 
     h1 {
-      font-family: ${fonts.f1};
-      text-transform: uppercase;
+      font-family: ${fonts.f4};
+      font-weight: 700;
+      font-style: normal;
+      text-transform: none;
+      letter-spacing: 0.01em;
 
       ${largeHeadFontSize};
       margin-bottom: 10px;
@@ -45,8 +48,9 @@ const style = {
     }
 
     h2 {
-      font-family: ${fonts.f1};
+      font-family: ${fonts.f2};
       text-transform: uppercase;
+      letter-spacing: 0.08em;
 
       ${mediumHeadFontSize};
       margin-bottom: 10px;
@@ -61,6 +65,7 @@ const style = {
     h3 {
       font-family: ${fonts.f2};
       text-transform: uppercase;
+      letter-spacing: 0.08em;
       border-bottom: 2px solid ${colours.c1};
 
       ${smallHeadFontSize};
@@ -78,9 +83,7 @@ const style = {
     }
 
     h4 {
-      font-family: ${fonts.f2};
-      text-transform: uppercase;
-
+      ${uppercaseSansDisplay};
       ${textSize};
       margin-bottom: 10px;
       @media ${breakPoints.desktopSmall} {
@@ -158,7 +161,7 @@ const style = {
     flex: 1;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
 
     display: none;
     @media ${breakPoints.desktopSmall} {

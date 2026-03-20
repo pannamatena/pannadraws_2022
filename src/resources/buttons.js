@@ -1,15 +1,14 @@
 import { css } from '@emotion/react';
 import { colours } from './colors';
-import { fonts, textSize } from './fonts';
+import { textSize, uppercaseSansDisplay } from './fonts';
 import { breakPoints } from './breakpoints';
 
 export const btnPrimary = css`
   ${textSize};
+  ${uppercaseSansDisplay};
   display: inline-block;
   background: ${colours.c1};
   color: ${colours.c3} !important;
-  font-family: ${fonts.f1};
-  text-transform: uppercase;
   text-decoration: none;
 
   padding: 10px;
@@ -34,12 +33,11 @@ export const btnPrimary = css`
 
 export const btnOutlineRed = css`
   ${textSize};
+  ${uppercaseSansDisplay};
   display: inline-block;
   background: ${colours.c3};
   color: ${colours.c1} !important;
   border: 2px solid ${colours.c1};
-  font-family: ${fonts.f1};
-  text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
 
@@ -60,12 +58,11 @@ export const btnOutlineRed = css`
 
 export const btnOutlineBlack = css`
   ${textSize};
+  ${uppercaseSansDisplay};
   display: inline-block;
   background: transparent;
   color: ${colours.c2} !important;
   border: 2px solid ${colours.c2};
-  font-family: ${fonts.f1};
-  text-transform: uppercase;
   text-decoration: none;
 
   padding: 8px;

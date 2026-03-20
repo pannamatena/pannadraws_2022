@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts, textSize } from '../../resources/fonts';
+import { fonts, textSize, uppercaseSansDisplay } from '../../resources/fonts';
 
 const style = {
   contactForm: css`
@@ -130,8 +130,7 @@ const style = {
     display: block;
     background: ${colours.c1};
     color: ${colours.c3};
-    font-family: ${fonts.f1};
-    text-transform: uppercase;
+    ${uppercaseSansDisplay};
 
     padding: 10px;
     @media ${breakPoints.tabletPortrait} {

@@ -53,8 +53,15 @@ const style = {
       max-width: 1400px;
     }
 
-    p {
+    && p {
       margin: 0;
+      font-family: ${fonts.f3};
+      font-size: 16px;
+      line-height: 1.5em;
+      font-weight: 400;
+      @media ${breakPoints.desktopSmall} {
+        font-size: 18px;
+      }
     }
 
     a.btnCallToAction--outline {
@@ -76,6 +83,16 @@ const style = {
       flex-direction: row;
       align-items: center;
       justify-content: center;
+    }
+
+    && p {
+      font-family: ${fonts.f3};
+      font-size: 16px;
+      line-height: 1.5em;
+      font-weight: 400;
+      @media ${breakPoints.desktopSmall} {
+        font-size: 18px;
+      }
     }
 
     a.btnCallToAction {

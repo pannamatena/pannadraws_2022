@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts } from '../../resources/fonts';
+import {fonts, largeHeadFontSize, textSizeCursive} from '../../resources/fonts';
 import { btnPrimary } from '../../resources/buttons';
 
 const style = {
@@ -11,6 +11,11 @@ const style = {
     max-width: 800px;
     @media ${breakPoints.desktopSmall} {
       max-width: 1000px;
+    }
+      
+    p {
+        font-family: ${fonts.f3};
+        ${textSizeCursive};
     }
 
     p.highlighted {
@@ -126,8 +131,14 @@ const style = {
     }
 
     .quoteHighlight {
+      font-family: ${fonts.f4};
+      ${largeHeadFontSize};
+      text-transform: none;
+      font-weight: 400;
+      font-style: italic;
       position: relative;
       padding-left: 20px;
+      letter-spacing: normal;
       &:before {
         content: '"';
         display: block;

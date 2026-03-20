@@ -147,7 +147,7 @@ export default function Layout() {
                   }
                 `}
               >
-                fantasy and animal fine art
+                fantasy fine art illustrations
               </h2>
             </Link>
           </div>
@@ -216,25 +216,27 @@ export default function Layout() {
       />
 
       <div
-        css={css`
-          ${style.pageContent};
-          padding-top: ${topPos > 0 ? '59' : '74'}px;
-          padding-bottom: 144px;
-          @media ${breakPoints.tabletPortrait} {
-            padding-top: ${topPos > 0 ? '60' : '85'}px;
+        css={[
+          style.pageContent,
+          css`
+            padding-top: ${topPos > 0 ? '59' : '74'}px;
             padding-bottom: 144px;
-          }
-          @media ${breakPoints.tabletLandscape} {
-            padding-top: ${topPos > 0 ? '60' : '104'}px;
-          }
-          @media ${breakPoints.desktopSmall} {
-            padding-top: ${topPos > 0 ? '76' : '125'}px;
-            padding-bottom: 159px;
-          }
-          @media ${breakPoints.desktopLarge} {
-            padding-bottom: 164px;
-          }
-        `}
+            @media ${breakPoints.tabletPortrait} {
+              padding-top: ${topPos > 0 ? '60' : '85'}px;
+              padding-bottom: 144px;
+            }
+            @media ${breakPoints.tabletLandscape} {
+              padding-top: ${topPos > 0 ? '60' : '104'}px;
+            }
+            @media ${breakPoints.desktopSmall} {
+              padding-top: ${topPos > 0 ? '76' : '125'}px;
+              padding-bottom: 159px;
+            }
+            @media ${breakPoints.desktopLarge} {
+              padding-bottom: 164px;
+            }
+          `,
+        ]}
       >
         <Outlet />
         <NewsletterModal

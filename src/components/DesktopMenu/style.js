@@ -4,12 +4,12 @@ import { breakPoints } from '../../resources/breakpoints';
 import {
   fonts,
   largeHeadFontSize,
-  smallHeadFontSize,
+  smallHeadFontSize, xSmallHeadFontSize,
 } from '../../resources/fonts';
 
 const style = {
   mainMenu: css`
-    font-family: ${fonts.f1};
+    font-family: ${fonts.f2};
 
     ul {
       display: flex;
@@ -34,7 +34,9 @@ const style = {
           text-transform: uppercase;
           display: inline-block;
           white-space: nowrap;
-          ${largeHeadFontSize};
+          font-weight: 500;
+          letter-spacing: 0.1em;
+          ${xSmallHeadFontSize};
 
           :hover,
           :active {

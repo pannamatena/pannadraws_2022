@@ -156,7 +156,7 @@ const imgData_2025 = {
     year: '2025',
     description: 'Pen and watercolour on paper. 420 x 297 mm, 2025.',
     price: 0,
-    original: 'NOTYET',
+    original: 'SOLD',
     prints: 'NOTYET',
     printPrice: 0,
     buyUrl: '',

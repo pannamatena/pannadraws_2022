@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts, smallHeadFontSize, xSmallHeadFontSize } from '../../resources/fonts';
+import {fonts, smallHeadFontSize, textSize, xSmallHeadFontSize} from '../../resources/fonts';
 import { colours } from '../../resources/colors';
 
 const style = {
@@ -59,7 +59,7 @@ const style = {
     }
 
     span.headline {
-      font-family: ${fonts.f2};
+      font-family: ${fonts.f3};
       font-weight: normal;
       display: block;
       ${smallHeadFontSize};
@@ -67,12 +67,19 @@ const style = {
         text-align: right;
       }
       &--xs {
-        ${xSmallHeadFontSize};
+        font-family: ${fonts.f2};
+        ${textSize};
+        text-transform: uppercase;
+        margin: 8px 0;
+        @media ${breakPoints.desktopSmall} {
+          margin: 12px 0;
+        }
       }
     }
 
     h2.headline {
-      font-family: ${fonts.f2};
+      font-family: ${fonts.f4};
+      font-weight: 700;
       margin-bottom: 0;
       line-height: 1;
       white-space: nowrap;
@@ -92,6 +99,7 @@ const style = {
       }
 
       &--second {
+        font-weight: 400;
         text-indent: 5px;
         @media ${breakPoints.tabletLandscape} {
           text-indent: 20px;
@@ -99,6 +107,7 @@ const style = {
       }
 
       &--third {
+        font-weight: 300;
         color: ${colours.c1};
         text-indent: 10px;
         @media ${breakPoints.tabletLandscape} {

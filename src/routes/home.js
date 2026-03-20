@@ -10,6 +10,7 @@ import PromoBox from '../components/PromoBox';
 import SegmentedLayout from '../components/SegmentedLayout';
 import Newsletter, { NewsletterDescription } from '../components/Newsletter';
 import { colours } from '../resources/colors';
+import { fonts } from '../resources/fonts';
 import { breakPoints } from '../resources/breakpoints';
 import PaintingVideo_1 from '../resources/images/curls_progress.mp4';
 import OriginalArtworks from '../resources/images/original_artworks.jpg';
@@ -43,6 +44,15 @@ export function Home() {
               float: right;
               @media ${breakPoints.desktopLarge} {
                 max-width: 50%;
+              }
+              && p {
+                font-family: ${fonts.f3};
+                font-size: 16px;
+                line-height: 1.5em;
+                font-weight: 400;
+                @media ${breakPoints.desktopSmall} {
+                  font-size: 18px;
+                }
               }
             `}
           >
@@ -120,9 +130,18 @@ export function Home() {
               @media ${breakPoints.desktopLarge} {
                 max-width: 50%;
               }
+              && p {
+                font-family: ${fonts.f3};
+                font-size: 16px;
+                line-height: 1.5em;
+                font-weight: 400;
+                @media ${breakPoints.desktopSmall} {
+                  font-size: 18px;
+                }
+              }
             `}
           >
-            <h2>Shop original artworks</h2>
+            <h2>  Shop original artworks</h2>
             <p>
               My original artworks are available in my Etsy shop along with bookmarks, cards, prints, stickers and other goodies made from my art.
             </p>

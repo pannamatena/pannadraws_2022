@@ -12,8 +12,8 @@ export default function IllustrationsHero() {
       <div css={style.contentSide}>
         <h4>Book & Story illustration</h4>
         <h1 css={style.heading}>
-          <span css={style.headingAccent}>Your Story</span>
-          painted.
+          Your story,
+        <span css={style.headingAccent}>painted.</span>
         </h1>
         <p css={style.body}>
           Watercolour fantasy illustrations for authors, publishers and storytellers who want art that feels like it was pulled from the pages.

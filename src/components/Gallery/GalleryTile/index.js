@@ -166,7 +166,7 @@ export default function GalleryTile({
         <h3 css={galleryStyle.hoverContainerImgTitle}>
           {currentImgData.title}
         </h3>
-        <p>{currentImgData.description}</p>
+        <p css={galleryStyle.hoverDescription}>{currentImgData.description}</p>
         <p css={galleryStyle.clickForMore}>Click for more info</p>
       </div>
       {currentImgData.original === 'SOLD' && !isInfoType && (

@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts, largeHeadFontSize, textSize } from '../../resources/fonts';
+import { fonts, largeHeadFontSize, textSize, uppercaseSansDisplay } from '../../resources/fonts';
 
 const style = {
   artActionBox: css`
@@ -16,6 +16,13 @@ const style = {
     }
   `,
   originalContainer: css`
+      margin-bottom: 10px;
+      @media ${breakPoints.tabletPortrait} {
+          margin-bottom: 15px;
+      }
+      @media ${breakPoints.desktopSmall} {
+\          margin-bottom: 20px;
+      }
     a {
       display: block;
       border-bottom: 1px solid ${colours.c2};
@@ -36,20 +43,13 @@ const style = {
         padding-bottom: 0;
       }
     }
-
-    h4 {
-      font-family: ${fonts.f1};
-      text-transform: uppercase;
-      ${textSize};
-    }
   `,
   mainActionLink: css`
     display: block;
     color: ${colours.c1};
     transition: color 0.2s ease;
-    font-family: ${fonts.f1};
-    font-size: 1.2em;
-    text-transform: uppercase;
+    ${uppercaseSansDisplay};
+    ${textSize};
 
     span {
       svg {
@@ -73,9 +73,8 @@ const style = {
     display: block;
     color: ${colours.c2};
     transition: color 0.2s ease;
-    font-family: ${fonts.f1};
-    font-size: 1em;
-    text-transform: uppercase;
+    ${uppercaseSansDisplay};
+    ${textSize};
 
     span {
       svg {
@@ -107,9 +106,7 @@ const style = {
   `,
   sold: css`
     color: ${colours.c4};
-    font-family: ${fonts.f1};
-    text-transform: uppercase;
-    margin-bottom: 0 !important;
+    ${uppercaseSansDisplay};
   `,
   freeShip: css`
     display: inline-block;
@@ -139,8 +136,7 @@ const style = {
       display: block;
       color: ${colours.c2};
       transition: color 0.2s ease;
-      font-family: ${fonts.f1};
-      text-transform: uppercase;
+      ${uppercaseSansDisplay};
       ${textSize}
 
       svg {

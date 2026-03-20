@@ -11,13 +11,13 @@ export const fonts = {
 export const largeHeadFontSize = css`
   font-size: 22px;
   @media ${breakPoints.tabletPortrait} {
-    font-size: 22px;
+    font-size: 26px;
   }
   @media ${breakPoints.desktopSmall} {
-    font-size: 24px;
+    font-size: 36px;
   }
   @media ${breakPoints.desktopLarge} {
-    font-size: 34px;
+    font-size: 42px;
   }
 `;
 
@@ -53,10 +53,10 @@ export const xSmallHeadFontSize = css`
     font-size: 16px;
   }
   @media ${breakPoints.desktopSmall} {
-    font-size: 20px;
+    font-size: 16px;
   }
   @media ${breakPoints.desktopLarge} {
-    font-size: 22px;
+    font-size: 20px;
   }
 `;
 
@@ -65,4 +65,19 @@ export const textSize = css`
   @media ${breakPoints.desktopSmall} {
     font-size: 16px;
   }
+`;
+
+export const textSizeCursive = css`
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400;
+  @media ${breakPoints.desktopSmall} {
+    font-size: 18px;
+  }
+`;
+
+export const uppercaseSansDisplay = css`
+    font-family: ${fonts.f2};
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 `;

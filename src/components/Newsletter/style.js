@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts, smallHeadFontSize, textSize } from '../../resources/fonts';
+import { fonts, smallHeadFontSize, textSize, uppercaseSansDisplay } from '../../resources/fonts';
 import { colours } from '../../resources/colors';
 
 const style = {
@@ -126,8 +126,7 @@ const style = {
     display: block;
     background: ${colours.c1};
     color: ${colours.c3};
-    font-family: ${fonts.f1};
-    text-transform: uppercase;
+    ${uppercaseSansDisplay};
 
     padding: 10px;
     font-size: 1em;

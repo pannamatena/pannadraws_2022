@@ -5,7 +5,7 @@ import { fonts } from '../../resources/fonts';
 
 const style = {
   mobileMenuContent: css`
-    font-family: ${fonts.f1};
+    font-family: ${fonts.f2};
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -59,6 +59,13 @@ const style = {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        margin-bottom: 10px;
+        @media ${breakPoints.tabletPortrait} {
+            margin-bottom: 15px;
+        }
+        @media ${breakPoints.desktopSmall} {
+            margin-bottom: 20px;
+        }
 
         a,
         .fakeLink {
@@ -66,6 +73,7 @@ const style = {
           text-transform: uppercase;
           display: inline-block;
           white-space: nowrap;
+          font-weight: 500;
 
           :hover,
           :active,
@@ -73,9 +81,11 @@ const style = {
             color: ${colours.c1};
           }
 
-          font-size: 36px;
+          font-size: 19px;
+          letter-spacing: 0.1em;
           @media ${breakPoints.tabletPortrait} {
-            font-size: 42px;
+            font-size: 32px;
+            letter-spacing: 0.15em;
           }
         }
 

@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts, largeHeadFontSize, textSize } from '../../resources/fonts';
+import {fonts, largeHeadFontSize, textSize, textSizeCursive, uppercaseSansDisplay} from '../../resources/fonts';
 
 const style = {
   galleryContainer: css`
@@ -92,16 +92,15 @@ const style = {
   `,
 
   hoverContainerImgTitle: css`
-    font-family: ${fonts.f1} !important;
-    font-size: 18px;
-    @media ${breakPoints.desktopSmall} {
-      font-size: 20px;
-    }
+  `,
+  hoverDescription: css`
+    font-family: ${fonts.f3};
+    ${textSizeCursive};
   `,
   clickForMore: css`
-    font-size: 1.2em;
-    font-family: ${fonts.f1};
-    text-transform: uppercase;
+    font-family: ${fonts.f2};
+    ${uppercaseSansDisplay};
+    ${textSize};
     color: ${colours.c1};
 
     &:after {
