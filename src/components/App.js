@@ -8,6 +8,7 @@ import { About } from '../routes/about';
 import { Contact } from '../routes/contact';
 import { PrivacyPolicy } from '../routes/privacyPolicy';
 import { ReturnPolicy } from '../routes/returnPolicy';
+import { TermsAndLicencing } from '../routes/termsAndLicencing';
 import { FormSuccess, FormError } from '../routes/formResponses';
 import { NoMatch } from '../routes/noMatch';
 import { CommissionArt } from '../routes/commissionArt';
@@ -134,6 +135,7 @@ export default function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="return_policy" element={<ReturnPolicy />} />
             <Route path="privacy_policy" element={<PrivacyPolicy />} />
+            <Route path="terms_and_licencing" element={<TermsAndLicencing />} />
             <Route path="form_success" element={<FormSuccess />} />
             <Route path="form_error" element={<FormError />} />
             <Route path="*" element={<NoMatch />} />

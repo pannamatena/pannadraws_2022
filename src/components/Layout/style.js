@@ -5,7 +5,8 @@ import {
   largeHeadFontSize,
   mediumHeadFontSize,
   smallHeadFontSize,
-  textSize, uppercaseSansDisplay,
+  textSize,
+  uppercaseSansDisplay,
 } from '../../resources/fonts';
 import { breakPoints } from '../../resources/breakpoints';
 
@@ -307,10 +308,9 @@ const style = {
     }
 
     a {
-      color: ${colours.c1};
-      font-family: ${fonts.f1};
+      color: ${colours.c3};
+      ${uppercaseSansDisplay};
       font-size: 14px;
-      text-transform: uppercase;
     }
   `,
   footerSocial: css`

@@ -1,5 +1,6 @@
 import React from 'react';
 /** @jsxImportSource @emotion/react */
+import { Link } from 'react-router-dom';
 import style from './style';
 
 const romanNumerals = ['I', 'II', 'III', 'IV'];
@@ -8,7 +9,7 @@ const steps = [
   { title: 'Brief', desc: 'Tell me about your story, characters and vision' },
   { title: 'Sketch', desc: 'I send rough compositions for your approval' },
   { title: 'Paint', desc: 'Final artwork with revision rounds included' },
-  { title: 'Deliver', desc: 'High-res files plus optional original painting' },
+  { title: 'Deliver', desc: 'High-res files plus optional original painting · ', link: { to: '/terms_and_licencing', label: 'See Terms & Licencing' } },
 ];
 
 export default function ProcessStrip() {
@@ -28,7 +29,10 @@ export default function ProcessStrip() {
                 <div css={style.stepDot} />
               </div>
               <p css={style.stepTitle}>{step.title}</p>
-              <p css={style.stepDesc}>{step.desc}</p>
+              <p css={style.stepDesc}>
+                {step.desc}
+                {step.link && <Link css={style.stepDescLink} to={step.link.to}>{step.link.label}</Link>}
+              </p>
             </div>
           ))}
         </div>

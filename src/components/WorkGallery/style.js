@@ -4,7 +4,7 @@ import { breakPoints } from '../../resources/breakpoints';
 const style = {
   grid: css`
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 6px;
 
     @media ${breakPoints.tabletLandscape} {
@@ -21,6 +21,7 @@ const style = {
     aspect-ratio: 3 / 4;
     overflow: hidden;
     border-radius: 2px;
+    grid-column: span 2;
 
     @media ${breakPoints.tabletLandscape} {
       aspect-ratio: unset;
@@ -52,6 +53,7 @@ const style = {
 
     @media ${breakPoints.tabletLandscape} {
       aspect-ratio: unset;
+      grid-column: span 2;
     }
   `,
   img: css`

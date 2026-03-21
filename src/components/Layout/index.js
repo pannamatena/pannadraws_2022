@@ -298,6 +298,9 @@ export default function Layout() {
           <span>
             <Link to="/privacy_policy">Privacy policy</Link>
           </span>
+          <span>
+            <Link to="/terms_and_licencing">Terms &amp; Licencing</Link>
+          </span>
         </div>
       </div>
     </div>

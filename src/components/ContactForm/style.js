@@ -181,6 +181,45 @@ const style = {
     }
   `,
 
+  // Contact section heading block
+  sectionEyebrow: css`
+    && {
+      ${uppercaseSansDisplay};
+      color: ${colours.c1};
+      margin-bottom: 8px;
+    }
+  `,
+  sectionHeading: css`
+    && {
+      font-family: ${fonts.f4};
+      font-weight: 400;
+      font-style: italic;
+      color: ${colours.c5};
+      margin-bottom: 8px;
+      text-transform: none;
+      letter-spacing: normal;
+    }
+  `,
+  sectionSubtext: css`
+    && {
+      font-family: ${fonts.f3};
+      font-style: italic;
+      font-size: 13px;
+      color: ${colours.c4};
+      margin-bottom: 10px;
+      @media ${breakPoints.tabletPortrait} {
+        margin-bottom: 15px;
+      }
+      @media ${breakPoints.desktopSmall} {
+        margin-bottom: 20px;
+      }
+
+      a {
+        color: ${colours.c1};
+      }
+    }
+  `,
+
   // DARK theme overrides
   contactFormRowDark: css`
     label {

@@ -1,7 +1,12 @@
 import { css } from '@emotion/react';
 import { breakPoints } from '../../resources/breakpoints';
 import { colours } from '../../resources/colors';
-import {fonts, textSize, textSizeCursive, uppercaseSansDisplay} from '../../resources/fonts';
+import {
+  fonts,
+  textSize,
+  textSizeCursive,
+  uppercaseSansDisplay,
+} from '../../resources/fonts';
 
 const style = {
   strip: css`
@@ -114,6 +119,14 @@ const style = {
       color: ${colours.c2};
       margin-bottom: 0;
     }
+  `,
+  stepDescLink: css`
+    font-family: ${fonts.f3};
+    font-style: italic;
+    ${textSizeCursive};
+    font-weight: 400;
+    color: ${colours.c4};
+    text-decoration: underline;
   `,
   stepDesc: css`
     && {

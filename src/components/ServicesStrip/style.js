@@ -5,15 +5,20 @@ import { fonts, textSize, uppercaseSansDisplay } from '../../resources/fonts';
 
 const style = {
   strip: css`
-    margin: 0;
-
     border-top: 1px solid ${colours.c4};
     border-bottom: 1px solid ${colours.c4};
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 10px -10px 0;
+    @media ${breakPoints.tabletPortrait} {
+      margin: 15px -15px 0;
+    }
     @media ${breakPoints.tabletLandscape} {
       grid-template-columns: repeat(4, 1fr);
+    }
+    @media ${breakPoints.desktopSmall} {
+      margin: 20px -20px 0;
     }
   `,
   item: css`
@@ -35,6 +40,13 @@ const style = {
       border-right: none;
       @media ${breakPoints.tabletLandscape} {
         border-right: 1px solid ${colours.c4};
+      }
+    }
+    &:nth-child(3n),
+    &:nth-child(4n) {
+      border-top: 1px solid ${colours.c4};
+      @media ${breakPoints.tabletLandscape} {
+        border-top: none;
       }
     }
     &:last-child {
