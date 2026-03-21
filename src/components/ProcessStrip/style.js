@@ -1,13 +1,13 @@
 import { css } from '@emotion/react';
 import { breakPoints } from '../../resources/breakpoints';
 import { colours } from '../../resources/colors';
-import { fonts, textSize } from '../../resources/fonts';
+import {fonts, textSize, textSizeCursive, uppercaseSansDisplay} from '../../resources/fonts';
 
 const style = {
   strip: css`
     /* break out of pageContent padding for full-width background */
     margin: 0 -10px 10px;
-    background: ${colours.c5};
+    background: ${colours.c_light_brown};
     @media ${breakPoints.tabletPortrait} {
       margin: 0 -15px 15px;
     }
@@ -26,6 +26,31 @@ const style = {
       padding: 20px;
     }
   `,
+  heading: css`
+    && {
+      font-family: ${fonts.f4};
+      font-weight: 400;
+      color: ${colours.c2};
+      margin-bottom: 16px;
+      @media ${breakPoints.tabletPortrait} {
+        margin-bottom: 20px;
+      }
+    }
+  `,
+  headingSubtext: css`
+    && {
+      font-family: ${fonts.f3};
+      font-style: italic;
+      text-transform: none;
+      ${textSizeCursive};
+      line-height: 1.5em;
+      font-weight: 400;
+      color: ${colours.c4};
+      @media ${breakPoints.desktopSmall} {
+        font-size: 18px;
+      }
+    }
+  `,
   steps: css`
     display: flex;
     flex-direction: row;
@@ -37,58 +62,68 @@ const style = {
     }
     @media ${breakPoints.tabletLandscape} {
       flex-wrap: nowrap;
-      align-items: center;
-      gap: 0;
+      gap: 20px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      gap: 30px;
     }
   `,
   step: css`
     flex: 1 1 40%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     @media ${breakPoints.tabletLandscape} {
       flex: 1;
     }
   `,
-  circle: css`
-    width: 22px;
-    height: 22px;
+  stepMarker: css`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  `,
+  stepNumeral: css`
+    font-family: ${fonts.f3};
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+    color: ${colours.c1};
+    line-height: 1;
+    margin-right: 10px;
+  `,
+  stepLine: css`
+    flex: 1;
+    height: 1px;
+    background: ${colours.c4};
+  `,
+  stepDot: css`
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background: ${colours.c1};
-    color: ${colours.c3};
-    font-family: ${fonts.f1};
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-shrink: 0;
-    margin-bottom: 8px;
+    margin-left: 10px;
   `,
   stepTitle: css`
-    font-family: ${fonts.f1};
-    text-transform: uppercase;
-    ${textSize};
-    color: ${colours.c2};
-    margin-bottom: 4px;
+    && {
+      ${uppercaseSansDisplay};
+      ${textSize};
+      color: ${colours.c2};
+      margin-bottom: 0;
+    }
   `,
   stepDesc: css`
-    font-family: ${fonts.f2};
-    ${textSize};
-    color: ${colours.c4};
-    line-height: 1.4;
-    margin: 0;
-  `,
-  arrow: css`
-    display: none;
-    @media ${breakPoints.tabletLandscape} {
-      display: block;
+    && {
+      font-family: ${fonts.f3};
+      ${textSizeCursive};
+      line-height: 1.5em;
+      font-weight: 400;
+      font-style: italic;
       color: ${colours.c4};
-      font-size: 22px;
-      line-height: 1;
-      flex-shrink: 0;
-      padding: 0 4px;
-      margin-bottom: 30px; /* visually align with circle row */
+      margin: 0;
     }
   `,
 };

@@ -3,12 +3,12 @@ import { breakPoints } from '../../resources/breakpoints';
 
 const style = {
   outerFlushBottom: css`
-    margin-bottom: -11px;
+    margin-bottom: -21px;
     @media ${breakPoints.tabletPortrait} {
-      margin-bottom: -15px;
+      margin-bottom: -28px;
     }
     @media ${breakPoints.desktopSmall} {
-      margin-bottom: -21px;
+      margin-bottom: -41px;
     }
   `,
   outer: css`
@@ -25,14 +25,14 @@ const style = {
     max-width: 800px;
     margin: 0 auto;
 
-    padding: 10px;
+    padding: 10px 10px 0;
     @media ${breakPoints.tabletPortrait} {
-      padding: 15px;
       max-width: 900px;
+      padding: 15px 15px 0;
     }
     @media ${breakPoints.desktopSmall} {
-      padding: 20px;
       max-width: 1000px;
+      padding: 20px 20px 0;
     }
   `,
 };

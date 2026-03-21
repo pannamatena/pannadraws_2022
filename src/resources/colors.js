@@ -15,4 +15,5 @@ export const colours = {
   c_promo_2: '#ede8f5',
   c_button_promo_2: '#5c3d8f',
   c_button_promo_2_h: '#7755af',
+  c_light_brown: '#e8e4df',
 };

@@ -65,6 +65,9 @@ export const textSize = css`
   @media ${breakPoints.desktopSmall} {
     font-size: 16px;
   }
+    @media ${breakPoints.desktopXLarge} {
+        font-size: 22px;
+    }
 `;
 
 export const textSizeCursive = css`

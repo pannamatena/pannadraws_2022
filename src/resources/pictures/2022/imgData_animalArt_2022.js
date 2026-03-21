@@ -46,7 +46,7 @@ const imgData_2022 = {
     description:
       'Pen, markers and coloured pencils on paper. 210 x 297 mm, 2022.',
     price: 90,
-    original: 'AVAILABLE',
+    original: 'SOLD',
     prints: 'NOTYET',
     printPrice: 0,
     buyUrl: 'https://www.etsy.com/ie/listing/1331985676/',

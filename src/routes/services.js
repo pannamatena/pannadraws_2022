@@ -30,7 +30,7 @@ export function Illustrations() {
         <WorkGallery />
       </PageSection>
       <ProcessStrip />
-      <PageSection background={colours.c2} flushBottom>
+      <PageSection background={colours.c2} flushBottom id="contact_form">
         <h2 css={css`color: ${colours.c5};`}>Ready to bring your story to life?</h2>
         <ContactForm msgSubj="Illustration inquiry" theme="DARK" />
       </PageSection>
