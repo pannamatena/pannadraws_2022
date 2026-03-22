@@ -56,6 +56,30 @@ export const btnOutlineRed = css`
   }
 `;
 
+export const btnOutlineDark = css`
+  ${textSize};
+  ${uppercaseSansDisplay};
+  display: inline-block;
+  background: transparent;
+  color: ${colours.c3} !important;
+  border: 1px solid ${colours.c4};
+  text-decoration: none;
+
+  padding: 9px;
+  @media ${breakPoints.tabletPortrait} {
+    padding: 14px;
+  }
+  @media ${breakPoints.desktopSmall} {
+    padding: 19px;
+  }
+
+  &:hover,
+  &:active {
+    border-color: ${colours.c3};
+    cursor: pointer;
+  }
+`;
+
 export const btnOutlineBlack = css`
   ${textSize};
   ${uppercaseSansDisplay};

@@ -2,10 +2,10 @@ import * as React from 'react';
 /** @jsxImportSource @emotion/react */
 import { Link } from 'react-router-dom';
 import ReactPixel from 'react-facebook-pixel';
-import TextPage from '../components/TextPage';
 import ContactForm from '../components/ContactForm';
 import contactStyle from '../components/ContactForm/style';
 import IllustrationsHero from '../components/IllustrationsHero';
+import CharacterHero from '../components/CharacterHero';
 import ServicesStrip from '../components/ServicesStrip';
 import PageSection from '../components/PageSection';
 import WorkGallery from '../components/WorkGallery';
@@ -31,7 +31,7 @@ export function Illustrations() {
       {ReactPixel.pageView()}
       <IllustrationsHero />
       <ServicesStrip items={illustrationServices} />
-      <PageSection>
+      <PageSection id="previous_work">
         <WorkGallery />
       </PageSection>
       <ProcessStrip />
@@ -54,12 +54,13 @@ export function CharacterCreatureDesign() {
   return (
     <div>
       {ReactPixel.pageView()}
-      <TextPage>
-        <h1>Character & Creature Design</h1>
-        <div className="highlighted">
-          <ContactForm msgSubj="Character and Creature Design inquiry" />
-        </div>
-      </TextPage>
+      <CharacterHero />
+      <PageSection background={colours.c1} flushBottom id="contact_form">
+        <ContactForm
+          msgSubj="Character and Creature Design inquiry"
+          theme="DARK"
+        />
+      </PageSection>
     </div>
   );
 }
