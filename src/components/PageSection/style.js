@@ -34,6 +34,16 @@ const style = {
       max-width: 1000px;
       padding: 20px 20px 0;
     }
+
+    form {
+      padding-bottom: 10px;
+      @media ${breakPoints.tabletPortrait} {
+        padding-bottom: 15px;
+      }
+      @media ${breakPoints.desktopSmall} {
+        padding-bottom: 20px;
+      }
+    }
   `,
 };
 

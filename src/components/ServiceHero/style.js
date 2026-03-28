@@ -48,10 +48,31 @@ const style = {
   contentSide: css`
     flex: 1;
     background: ${colours.c3};
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     padding: 36px;
+
+    @media ${breakPoints.desktopLarge} {
+      padding: 60px;
+    }
+  `,
+  contentInner: css`
+    width: 100%;
+  `,
+  contentInnerAlignLeft: css`
+    @media ${breakPoints.desktopLarge} {
+      max-width: 600px;
+      margin-right: auto;
+    }
+  `,
+  contentInnerAlignRight: css`
+    @media ${breakPoints.desktopLarge} {
+      max-width: 480px;
+      margin-left: auto;
+    }
   `,
   heading: css`
     line-height: 1.1;

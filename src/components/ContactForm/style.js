@@ -35,7 +35,8 @@ const style = {
 
     label {
       display: block;
-      //font-size: 1.2em;
+      font-family: ${fonts.f2};
+      ${uppercaseSansDisplay};
     }
 
     input[type='text'],
@@ -158,6 +159,11 @@ const style = {
     justify-content: flex-start;
 
     span {
+      font-family: ${fonts.f3};
+      ${textSize};
+      font-style: italic;
+      text-transform: none;
+      letter-spacing: normal;
       padding-left: 10px;
       @media ${breakPoints.tabletPortrait} {
         padding-left: 15px;
@@ -172,6 +178,8 @@ const style = {
     }
   `,
   infoText: css`
+    font-family: ${fonts.f3};
+    font-style: italic;
     margin-top: 10px;
     @media ${breakPoints.tabletPortrait} {
       margin-top: 15px;
@@ -217,6 +225,98 @@ const style = {
       a {
         color: ${colours.c1};
       }
+    }
+  `,
+
+  // RED theme overrides
+  sectionEyebrowRed: css`
+    && {
+      color: ${colours.c5};
+    }
+  `,
+  sectionSubtextRed: css`
+    && {
+      color: ${colours.c5};
+
+      a {
+        color: ${colours.c5};
+
+        &:hover {
+          color: ${colours.c3};
+        }
+      }
+    }
+  `,
+  contactFormRowRed: css`
+    label {
+      color: ${colours.c5};
+    }
+
+    input[type='text'],
+    input[type='email'] {
+      background: ${colours.c2};
+      color: ${colours.c3};
+      border-bottom-color: ${colours.c2};
+
+      &:focus {
+        border-color: ${colours.c3};
+      }
+    }
+
+    textarea {
+      background: ${colours.c2};
+      color: ${colours.c3};
+      border-bottom-color: ${colours.c2};
+
+      &:focus {
+        border-color: ${colours.c3};
+      }
+    }
+  `,
+  checkboxRed: css`
+    span {
+      color: ${colours.c5};
+    }
+  `,
+  infoTextRed: css`
+    color: ${colours.c3_transparent};
+
+    a {
+      color: ${colours.c5};
+      text-decoration: underline;
+
+      &:hover {
+        color: ${colours.c3};
+      }
+    }
+  `,
+  submitBtnRed: css`
+    ${textSize};
+    display: block;
+    background: transparent;
+    color: ${colours.c3};
+    border: 2px solid ${colours.c3};
+    ${uppercaseSansDisplay};
+
+    padding: 8px;
+    @media ${breakPoints.tabletPortrait} {
+      padding: 13px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      padding: 18px;
+    }
+
+    &:hover,
+    &:active {
+      border-color: ${colours.c5};
+      color: ${colours.c5};
+      cursor: pointer;
+    }
+
+    &:disabled {
+      cursor: default;
+      border-color: ${colours.c4};
+      color: ${colours.c4};
     }
   `,
 

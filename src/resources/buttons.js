@@ -80,6 +80,32 @@ export const btnOutlineDark = css`
   }
 `;
 
+export const btnOutlineWhite = css`
+  ${textSize};
+  ${uppercaseSansDisplay};
+  display: inline-block;
+  background: transparent;
+  color: ${colours.c3} !important;
+  border: 2px solid ${colours.c3};
+  text-decoration: none;
+  white-space: nowrap;
+
+  padding: 8px;
+  @media ${breakPoints.tabletPortrait} {
+    padding: 13px;
+  }
+  @media ${breakPoints.desktopSmall} {
+    padding: 18px;
+  }
+
+  &:hover,
+  &:active {
+    border-color: ${colours.c4};
+    color: ${colours.c4} !important;
+    cursor: pointer;
+  }
+`;
+
 export const btnOutlineBlack = css`
   ${textSize};
   ${uppercaseSansDisplay};

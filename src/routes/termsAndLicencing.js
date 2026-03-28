@@ -41,7 +41,8 @@ export function TermsAndLicencing() {
         <p>
           <strong>Shipping:</strong> The Client is responsible for all shipping,
           insurance, and tracking costs for the physical artwork. The Artist is
-          not responsible for delays or damages caused by the carrier.
+          not responsible for delays or damages caused by the carrier. The
+          Client is also responsible for any customs charges that may apply.
         </p>
         <h4>3. Intellectual Property & Licensing</h4>
         <p>

@@ -12,7 +12,11 @@ const steps = [
   { title: 'Deliver', desc: 'High-res files plus optional original painting · ', link: { to: '/terms_and_licencing', label: 'See Terms & Licencing' } },
 ];
 
-export default function ProcessStrip() {
+export default function ProcessStrip({ stepOverrides = {} }) {
+  const resolvedSteps = steps.map((step) =>
+    stepOverrides[step.title] ? { ...step, ...stepOverrides[step.title] } : step
+  );
+
   return (
     <div css={style.strip}>
       <div css={style.inner}>
@@ -21,7 +25,7 @@ export default function ProcessStrip() {
           <span css={style.headingSubtext}>from first message to finished painting</span>
         </h2>
         <div css={style.steps}>
-          {steps.map((step, i) => (
+          {resolvedSteps.map((step, i) => (
             <div css={style.step} key={step.title}>
               <div css={style.stepMarker}>
                 <span css={style.stepNumeral}>{romanNumerals[i]}</span>

@@ -10,13 +10,25 @@ export default function CharacterHero() {
       eyebrow="Character & Creature Design"
       title="Your character,"
       accentText="brought to life."
-      body="Portraits, party art, monster design and campaign illustrations — for D&D players, dungeon masters and world-builders. Painted by hand in watercolour and ink."
+      body="Portraits, party art, monster design and campaign illustrations — for D&D players, dungeon masters and world-builders. Handpainted traditional watercolour and mixed media artworks."
       primaryBtn={{ label: 'Commission a piece', href: '#contact_form' }}
       secondaryBtn={{ label: 'See examples', href: '#previous_work' }}
       imageGrid={[
-        { src: ImgLarge, alt: 'Lakeside Rest — fantasy watercolour illustration by PannaDraws' },
-        { src: ImgDetail1, alt: 'Griys — fantasy watercolour illustration by PannaDraws', objectPosition: 'center 15%' },
-        { src: ImgDetail2, alt: 'The Dragonslayer — fantasy watercolour illustration by PannaDraws', scale: 1.5, transformOrigin: 'center 20%' },
+        {
+          src: ImgLarge,
+          alt: 'Lakeside Rest — fantasy watercolour illustration by PannaDraws',
+        },
+        {
+          src: ImgDetail1,
+          alt: 'Griys — fantasy watercolour illustration by PannaDraws',
+          objectPosition: 'center 15%',
+        },
+        {
+          src: ImgDetail2,
+          alt: 'The Dragonslayer — fantasy watercolour illustration by PannaDraws',
+          scale: 1.5,
+          transformOrigin: 'center 20%',
+        },
       ]}
       imageFirst={false}
       theme="DARK"

@@ -220,7 +220,7 @@ export default function Layout() {
           style.pageContent,
           css`
             padding-top: ${topPos > 0 ? '59' : '74'}px;
-            padding-bottom: 144px;
+            padding-bottom: 210px;
             @media ${breakPoints.tabletPortrait} {
               padding-top: ${topPos > 0 ? '60' : '85'}px;
               padding-bottom: 144px;
@@ -249,7 +249,10 @@ export default function Layout() {
       </div>
 
       <div css={style.footerContainer}>
-        <p>All prices are indicated in EUR. Local taxes may apply at checkout. Shipping costs are not included.</p>
+        <p>
+          All prices are indicated in EUR. Local taxes may apply at checkout.
+          Shipping costs customs charges are not included.
+        </p>
         <p>
           Artwork and content &copy; {new Date().getFullYear()} Panna Zsamba
         </p>

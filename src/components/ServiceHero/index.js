@@ -77,19 +77,31 @@ export default function ServiceHero({
 
   const contentSide = (
     <div css={[style.contentSide, isDark && style.darkContentSide]}>
-      <h4 css={isDark && style.darkEyebrow}>{eyebrow}</h4>
-      <h1 css={[style.heading, isDark && style.darkHeading]}>
-        {title}
-        <span css={style.headingAccent}>{accentText}</span>
-      </h1>
-      <p css={[style.body, isDark && style.darkBody]}>{body}</p>
-      <div css={style.buttons}>
-        <a css={style.btnPrimary} href={primaryBtn.href}>
-          {primaryBtn.label}
-        </a>
-        <a css={isDark ? style.btnSecondaryDark : style.btnSecondary} href={secondaryBtn.href}>
-          {secondaryBtn.label}
-        </a>
+      <div
+        css={[
+          style.contentInner,
+          imageFirst
+            ? style.contentInnerAlignLeft
+            : style.contentInnerAlignRight,
+        ]}
+      >
+        <h4 css={isDark && style.darkEyebrow}>{eyebrow}</h4>
+        <h1 css={[style.heading, isDark && style.darkHeading]}>
+          {title}
+          <span css={style.headingAccent}>{accentText}</span>
+        </h1>
+        <p css={[style.body, isDark && style.darkBody]}>{body}</p>
+        <div css={style.buttons}>
+          <a css={style.btnPrimary} href={primaryBtn.href}>
+            {primaryBtn.label}
+          </a>
+          <a
+            css={isDark ? style.btnSecondaryDark : style.btnSecondary}
+            href={secondaryBtn.href}
+          >
+            {secondaryBtn.label}
+          </a>
+        </div>
       </div>
     </div>
   );

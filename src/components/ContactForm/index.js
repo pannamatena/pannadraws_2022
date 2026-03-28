@@ -15,6 +15,7 @@ export default function ContactForm(props) {
   const [messageVal, setMessageVal] = useState('');
   const [consentVal, setConsentVal] = useState(false);
   const isDark = props.theme === 'DARK';
+  const isRed = props.theme === 'RED';
 
   const isSubmittable = consentVal && nameVal.trim() && emailVal.trim() && subjectVal.trim() && messageVal.trim();
 
@@ -34,7 +35,7 @@ export default function ContactForm(props) {
       >
         <input type="hidden" name="form-name" value="contact" />
         <div
-          css={[style.contactFormRow, style.contactFormRowFlex, isDark && style.contactFormRowDark]}
+          css={[style.contactFormRow, style.contactFormRowFlex, isDark && style.contactFormRowDark, isRed && style.contactFormRowRed]}
         >
           <div>
             <label htmlFor="name">Name</label>
@@ -45,7 +46,7 @@ export default function ContactForm(props) {
             <input type="email" name="email" id="email" required value={emailVal} onChange={(e) => setEmailVal(e.target.value)} />
           </div>
         </div>
-        <div css={[style.contactFormRow, isDark && style.contactFormRowDark]}>
+        <div css={[style.contactFormRow, isDark && style.contactFormRowDark, isRed && style.contactFormRowRed]}>
           <label htmlFor="subject">Subject</label>
           <input
             type="text"
@@ -56,26 +57,26 @@ export default function ContactForm(props) {
             onChange={(e) => setSubjectVal(e.target.value)}
           />
         </div>
-        <div css={[style.contactFormRow, isDark && style.contactFormRowDark]}>
+        <div css={[style.contactFormRow, isDark && style.contactFormRowDark, isRed && style.contactFormRowRed]}>
           <label htmlFor="message">Message</label>
           <textarea name="message" id="message" rows="6" required value={messageVal} onChange={(e) => setMessageVal(e.target.value)} />
         </div>
-        <div css={[style.contactFormRow, isDark && style.contactFormRowDark]}>
-          <label css={[style.checkbox, isDark && style.checkboxDark]}>
+        <div css={[style.contactFormRow, isDark && style.contactFormRowDark, isRed && style.contactFormRowRed]}>
+          <label css={[style.checkbox, isDark && style.checkboxDark, isRed && style.checkboxRed]}>
             <Checkbox checked={consentVal} onChange={handleCheckboxChange} theme={props.theme} />
             <span>
               I agree that my email address and name can be used to enable
               replying to my message.
             </span>
           </label>
-          <p css={[style.infoText, isDark && style.infoTextDark]}>
+          <p css={[style.infoText, isDark && style.infoTextDark, isRed && style.infoTextRed]}>
             All personal data is handled according to the{' '}
             <Link to="/privacy_policy">Privacy Policy</Link>.
           </p>
         </div>
         <div css={style.contactFormActions}>
           <input
-            css={style.submitBtn}
+            css={isRed ? style.submitBtnRed : style.submitBtn}
             type="submit"
             value="Send Message"
             disabled={!isSubmittable}
