@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { NoMatch } from '../../routes/noMatch';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import Img from 'react-cool-img';
@@ -17,6 +18,8 @@ export default function ArtPage({ imgId, dataSource }) {
   const prevLocation = `/${locationElements[1]}/${locationElements[2]}`;
 
   const imgData = dataSource[imgId];
+
+  if (!imgData) return <NoMatch />;
 
   return (
     <div className="artPage">

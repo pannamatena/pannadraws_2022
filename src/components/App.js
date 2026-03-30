@@ -69,6 +69,7 @@ export default function App() {
                   path=":imgType/:imgYear/:imgTitle"
                   element={<ArtPage />}
                 />
+                <Route path="*" element={<NoMatch />} />
               </Route>
               <Route path="adultColoring" element={<AdultColoring />} />
               <Route path="fantasyArt" element={<FantasyArt />}>
@@ -76,6 +77,7 @@ export default function App() {
                   path=":imgType/:imgYear/:imgTitle"
                   element={<ArtPage />}
                 />
+                <Route path="*" element={<NoMatch />} />
               </Route>
               <Route path="*" element={<NoMatch />} />
             </Route>
@@ -85,49 +87,32 @@ export default function App() {
             <Route path="shop">
               <Route index element={<NoMatch />} />
               <Route path="originalArtShop" element={<OriginalArtShop />}>
-                <Route
-                  path=":imgType/:imgYear/:imgTitle"
-                  element={<ShopPage />}
-                />
+                <Route path=":imgType/:imgYear/:imgTitle" element={<ShopPage />} />
+                <Route path="*" element={<NoMatch />} />
               </Route>
               <Route path="artPrintShop" element={<ArtPrintShop />}>
-                <Route
-                  path=":imgType/:imgYear/:imgTitle"
-                  element={<ShopPage />}
-                />
+                <Route path=":imgType/:imgYear/:imgTitle" element={<ShopPage />} />
+                <Route path="*" element={<NoMatch />} />
               </Route>
               <Route path="colouringShop" element={<ColouringShop />}>
-                <Route
-                  path=":imgType/:imgYear/:imgTitle"
-                  element={<ShopPage />}
-                />
+                <Route path=":imgType/:imgYear/:imgTitle" element={<ShopPage />} />
+                <Route path="*" element={<NoMatch />} />
               </Route>
-              <Route
-                path="cardsAndBookmarksShop"
-                element={<CardsAndBookmarksShop />}
-              >
-                <Route
-                  path=":imgType/:imgYear/:imgTitle"
-                  element={<ShopPage />}
-                />
+              <Route path="cardsAndBookmarksShop" element={<CardsAndBookmarksShop />}>
+                <Route path=":imgType/:imgYear/:imgTitle" element={<ShopPage />} />
+                <Route path="*" element={<NoMatch />} />
               </Route>
               <Route path="clothingShop" element={<ClothingShop />}>
-                <Route
-                  path=":imgType/:imgYear/:imgTitle"
-                  element={<ShopPage />}
-                />
+                <Route path=":imgType/:imgYear/:imgTitle" element={<ShopPage />} />
+                <Route path="*" element={<NoMatch />} />
               </Route>
               <Route path="stickersShop" element={<StickersShop />}>
-                <Route
-                  path=":imgType/:imgYear/:imgTitle"
-                  element={<ShopPage />}
-                />
+                <Route path=":imgType/:imgYear/:imgTitle" element={<ShopPage />} />
+                <Route path="*" element={<NoMatch />} />
               </Route>
               <Route path="notebooksShop" element={<NotebooksShop />}>
-                <Route
-                  path=":imgType/:imgYear/:imgTitle"
-                  element={<ShopPage />}
-                />
+                <Route path=":imgType/:imgYear/:imgTitle" element={<ShopPage />} />
+                <Route path="*" element={<NoMatch />} />
               </Route>
               <Route path="*" element={<NoMatch />} />
             </Route>

@@ -1,5 +1,9 @@
 import * as React from 'react';
+/** @jsxImportSource @emotion/react */
 import ReactPixel from 'react-facebook-pixel';
+import ServiceHero from '../components/ServiceHero';
+
+/*
 import ReactGA from 'react-ga';
 import TextPage from '../components/TextPage';
 import ContactForm from '../components/ContactForm';
@@ -11,6 +15,8 @@ import Commission_Colouring from '../resources/images/commission_colouring.jpg';
 import Commission_FantasyArt from '../resources/images/commission_fantasy_art.mp4';
 import Commission_InkArtwork from '../resources/images/commission_ink_artwork.jpg';
 import Commission_Tattoo from '../resources/images/commission_tattoo.jpg';
+
+OLD PAGE CONTENT:
 
 export function CommissionArt() {
   return (
@@ -116,6 +122,24 @@ export function CommissionArt() {
           </div>
         </div>
       </TextPage>
+    </div>
+  );
+}
+*/
+
+export function CommissionArt() {
+  return (
+    <div>
+      {ReactPixel.pageView()}
+      <ServiceHero
+        eyebrow="Commission Artwork"
+        title="Every painting starts with"
+        accentText="your idea."
+        body="Whether you have a detailed brief or just a feeling — I work with you from first sketch to finished painting. Here's everything you need to know before we get started."
+        primaryBtn={{ label: 'Order on Etsy', href: 'https://www.etsy.com/ie/listing/1199705464', external: true }}
+        secondaryBtn={{ label: 'Send a message', href: '#' }}
+        imageFirst={true}
+      />
     </div>
   );
 }

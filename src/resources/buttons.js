@@ -1,7 +1,26 @@
+import React from 'react';
 import { css } from '@emotion/react';
 import { colours } from './colors';
 import { textSize, uppercaseSansDisplay } from './fonts';
 import { breakPoints } from './breakpoints';
+
+export const ExternalArrow = () => (
+  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+    <path
+      d="M1 9L9 1M9 1H3M9 1V7"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const btnExternalLabel = css`
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+`;
 
 export const btnPrimary = css`
   ${textSize};

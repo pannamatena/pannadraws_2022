@@ -91,11 +91,6 @@ const style = {
     flex-shrink: 0;
   `,
   button: (variant) => buttonVariants[variant] || btnPrimary,
-  buttonInner: css`
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-  `,
 };
 
 export default style;

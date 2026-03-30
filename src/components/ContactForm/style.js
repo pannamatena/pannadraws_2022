@@ -231,12 +231,12 @@ const style = {
   // RED theme overrides
   sectionEyebrowRed: css`
     && {
-      color: ${colours.c5};
+      color: ${colours.c3_transparent};
     }
   `,
   sectionSubtextRed: css`
     && {
-      color: ${colours.c5};
+      color: ${colours.c3_transparent};
 
       a {
         color: ${colours.c5};
