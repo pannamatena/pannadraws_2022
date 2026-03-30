@@ -2,6 +2,9 @@ import * as React from 'react';
 /** @jsxImportSource @emotion/react */
 import ReactPixel from 'react-facebook-pixel';
 import ServiceHero from '../components/ServiceHero';
+import PageSection from '../components/PageSection';
+import CommissionTracks from '../components/CommissionTracks';
+import HeroImage from '../resources/pictures/2025/rosehips_2025_web.jpg';
 
 /*
 import ReactGA from 'react-ga';
@@ -138,8 +141,14 @@ export function CommissionArt() {
         body="Whether you have a detailed brief or just a feeling — I work with you from first sketch to finished painting. Here's everything you need to know before we get started."
         primaryBtn={{ label: 'Order on Etsy', href: 'https://www.etsy.com/ie/listing/1199705464', external: true }}
         secondaryBtn={{ label: 'Send a message', href: '#' }}
+        image={HeroImage}
+        imageAlt="Rosehips — fantasy watercolour illustration by PannaDraws"
+        imagePosition="center 40%"
         imageFirst={true}
       />
+      <PageSection>
+        <CommissionTracks />
+      </PageSection>
     </div>
   );
 }
