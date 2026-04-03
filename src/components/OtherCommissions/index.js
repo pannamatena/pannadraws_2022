@@ -41,7 +41,7 @@ export default function OtherCommissions() {
         <div css={style.buttons}>
           <a
             css={style.btnPrimary}
-            href="https://www.etsy.com/ie/listing/1199705464/"
+            href="https://www.etsy.com/shop/pannadraws/?etsrc=sdt&section_id=32291570"
             target="_blank"
             rel="noopener noreferrer"
           >
