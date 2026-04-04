@@ -20,8 +20,6 @@ function NewsletterForm({ status, message, onValidated, source }) {
   };
 
   const onSubmitClick = () => {
-    console.log('onSubmitClick');
-    console.log(validateEmail(email.value));
     if (!validateEmail(email.value)) {
       setEmailIsWrong(true);
     }

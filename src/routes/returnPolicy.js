@@ -2,7 +2,6 @@ import * as React from 'react';
 import ReactPixel from 'react-facebook-pixel';
 import { Link } from 'react-router-dom';
 import TextPage from '../components/TextPage';
-import style from '../components/ArtActionBox/style';
 
 export function ReturnPolicy() {
   return (

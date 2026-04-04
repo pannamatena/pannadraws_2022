@@ -5,6 +5,7 @@ import {
   fonts,
   mediumHeadFontSize,
   textSize,
+  textSizeCursive,
   uppercaseSansDisplay,
 } from '../../resources/fonts';
 import { btnPrimary, btnOutlineBlack } from '../../resources/buttons';
@@ -56,15 +57,11 @@ const style = {
     && {
       font-family: ${fonts.f3};
       font-style: italic;
-      font-size: 16px;
+      ${textSizeCursive};
       line-height: 1.5em;
       font-weight: 400;
       color: ${colours.c4};
       margin: 0;
-
-      @media ${breakPoints.desktopSmall} {
-        font-size: 18px;
-      }
     }
   `,
   right: css`
@@ -99,15 +96,11 @@ const style = {
     && {
       font-family: ${fonts.f3};
       font-style: italic;
-      font-size: 16px;
+      ${textSizeCursive};
       line-height: 1.5em;
       font-weight: 400;
       color: ${colours.c4};
       margin: 0;
-
-      @media ${breakPoints.desktopSmall} {
-        font-size: 18px;
-      }
     }
   `,
   buttons: css`

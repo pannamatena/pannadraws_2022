@@ -1,18 +1,8 @@
 import React from 'react';
 /** @jsxImportSource @emotion/react */
 import Img from 'react-cool-img';
-import { ExternalArrow, btnExternalLabel } from '../../resources/buttons';
+import { BtnLabel } from '../../resources/buttons';
 import style from './style';
-
-function BtnLabel({ label, external }) {
-  if (!external) return label;
-  return (
-    <span css={btnExternalLabel}>
-      <ExternalArrow />
-      {label}
-    </span>
-  );
-}
 
 /**
  * Generic hero for service pages.
@@ -106,16 +96,25 @@ export default function ServiceHero({
           <a
             css={style.btnPrimary}
             href={primaryBtn.href}
-            {...(primaryBtn.external && { target: '_blank', rel: 'noopener noreferrer' })}
+            {...(primaryBtn.external && {
+              target: '_blank',
+              rel: 'noopener noreferrer',
+            })}
           >
             <BtnLabel label={primaryBtn.label} external={primaryBtn.external} />
           </a>
           <a
             css={isDark ? style.btnSecondaryDark : style.btnSecondary}
             href={secondaryBtn.href}
-            {...(secondaryBtn.external && { target: '_blank', rel: 'noopener noreferrer' })}
+            {...(secondaryBtn.external && {
+              target: '_blank',
+              rel: 'noopener noreferrer',
+            })}
           >
-            <BtnLabel label={secondaryBtn.label} external={secondaryBtn.external} />
+            <BtnLabel
+              label={secondaryBtn.label}
+              external={secondaryBtn.external}
+            />
           </a>
         </div>
       </div>

@@ -15,7 +15,7 @@ import imgDataAnimalArt_2021 from '../resources/pictures/2021/imgData_animalArt_
 import imgDataAnimalArt_2020 from '../resources/pictures/2020/imgData_animalArt_2020';
 import imgDataFantasyArt_2020 from '../resources/pictures/2020/imgData_fantasyArt_2020';
 import imgData_adultColoring_2021 from '../resources/pictures/adult_coloring/imgData_adultColoring_2021';
-import imgData_merchandinse from '../resources/pictures/merchandise/imgData_merchandise';
+import imgData_merchandise from '../resources/pictures/merchandise/imgData_merchandise';
 
 export function OriginalArtShop() {
   let params = useParams();
@@ -115,8 +115,8 @@ export function ColouringShop() {
 
 export function CardsAndBookmarksShop() {
   let params = useParams();
-  const cards = getMerchTypeItems(imgData_merchandinse, 'greeting_cards');
-  const bookmarks = getMerchTypeItems(imgData_merchandinse, 'bookmark_set');
+  const cards = getMerchTypeItems(imgData_merchandise, 'greeting_cards');
+  const bookmarks = getMerchTypeItems(imgData_merchandise, 'bookmark_set');
   return (
     <>
       {params.imgTitle ? (
@@ -139,7 +139,7 @@ export function CardsAndBookmarksShop() {
 
 export function ClothingShop() {
   let params = useParams();
-  const clothing = getMerchTypeItems(imgData_merchandinse, 'clothing');
+  const clothing = getMerchTypeItems(imgData_merchandise, 'clothing');
   return (
     <>
       {params.imgTitle ? (
@@ -162,8 +162,8 @@ export function ClothingShop() {
 
 export function StickersShop() {
   let params = useParams();
-  const stickers = getMerchTypeItems(imgData_merchandinse, 'stickers');
-  const magnets = getMerchTypeItems(imgData_merchandinse, 'magnets');
+  const stickers = getMerchTypeItems(imgData_merchandise, 'stickers');
+  const magnets = getMerchTypeItems(imgData_merchandise, 'magnets');
   return (
     <>
       {params.imgTitle ? (
@@ -186,7 +186,7 @@ export function StickersShop() {
 
 export function NotebooksShop() {
   let params = useParams();
-  const notebooks = getMerchTypeItems(imgData_merchandinse, 'notebooks');
+  const notebooks = getMerchTypeItems(imgData_merchandise, 'notebooks');
   return (
     <>
       {params.imgTitle ? (

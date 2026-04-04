@@ -4,6 +4,7 @@ import { colours } from '../../resources/colors';
 import {
   fonts,
   textSize,
+  textSizeCursive,
   xSmallHeadFontSize,
   mediumHeadFontSize,
   uppercaseSansDisplay,
@@ -46,12 +47,8 @@ const style = {
   subtitle: css`
     font-family: ${fonts.f3};
     font-style: italic;
-    font-size: 16px;
+    ${textSizeCursive};
     color: ${colours.c4};
-
-    @media ${breakPoints.desktopSmall} {
-      font-size: 18px;
-    }
   `,
   section: css`
     display: flex;
@@ -112,27 +109,25 @@ const style = {
     && {
       font-family: ${fonts.f3};
       font-style: italic;
-      font-size: 16px;
+      ${textSizeCursive};
       line-height: 1.5em;
       font-weight: 400;
       color: ${colours.c4};
       margin: 0;
-
-      @media ${breakPoints.desktopSmall} {
-        font-size: 18px;
-      }
     }
   `,
   answerLink: css`
-    font-family: ${fonts.f3};
-    font-style: italic;
-    color: ${colours.c4};
-    text-decoration: underline;
-    margin-left: 4px;
+    && {
+      font-family: ${fonts.f3};
+      font-style: italic;
+      color: ${colours.c4};
+      text-decoration: underline;
+      margin-left: 4px;
 
-    &:hover,
-    &:active {
-      color: ${colours.c2};
+      &:hover,
+      &:active {
+        color: ${colours.c2};
+      }
     }
   `,
 };

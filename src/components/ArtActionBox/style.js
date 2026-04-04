@@ -1,7 +1,12 @@
 import { css } from '@emotion/react';
 import { colours } from '../../resources/colors';
 import { breakPoints } from '../../resources/breakpoints';
-import { fonts, largeHeadFontSize, textSize, uppercaseSansDisplay } from '../../resources/fonts';
+import {
+  fonts,
+  largeHeadFontSize,
+  textSize,
+  uppercaseSansDisplay,
+} from '../../resources/fonts';
 
 const style = {
   artActionBox: css`
@@ -106,7 +111,6 @@ const style = {
   `,
   sold: css`
     color: ${colours.c4};
-    ${uppercaseSansDisplay};
   `,
   freeShip: css`
     display: inline-block;

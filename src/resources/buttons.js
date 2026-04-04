@@ -1,4 +1,5 @@
 import React from 'react';
+/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import { colours } from './colors';
 import { textSize, uppercaseSansDisplay } from './fonts';
@@ -21,6 +22,16 @@ export const btnExternalLabel = css`
   align-items: center;
   gap: 6px;
 `;
+
+export function BtnLabel({ label, external }) {
+  if (!external) return label;
+  return (
+    <span css={btnExternalLabel}>
+      <ExternalArrow />
+      {label}
+    </span>
+  );
+}
 
 export const btnPrimary = css`
   ${textSize};

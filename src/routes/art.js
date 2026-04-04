@@ -43,8 +43,6 @@ export function AnimalArt() {
         </>
       )}
 
-      {/*<Link to="/irish_raptors/">Irish Raptors</Link>
-      <Link to="/feathers_of_tales/">Feathers of Tales</Link>*/}
     </>
   );
 }
@@ -84,7 +82,6 @@ export function FantasyArt() {
       ) : (
         <>
           {ReactPixel.pageView()}
-          {/*<h1>Fantasy & Wildlife Art</h1>*/}
           <h3 className="galleryTitle">2026</h3>
           <Gallery imgData={imgDataFantasyArt_2026} imgRoot="art/fantasyArt" />
           <h3 className="galleryTitle">2025</h3>

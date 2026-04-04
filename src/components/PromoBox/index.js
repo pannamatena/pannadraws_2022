@@ -2,6 +2,7 @@ import React from 'react';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import { Link } from 'react-router-dom';
+import { ExternalArrow, btnExternalLabel } from '../../resources/buttons';
 import style from './style';
 
 export default function PromoBox() {
@@ -41,7 +42,10 @@ export default function PromoBox() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Visit my Etsy shop
+        <span css={btnExternalLabel}>
+          <ExternalArrow />
+          Visit my Etsy shop
+        </span>
       </a>
     </div>
     </>

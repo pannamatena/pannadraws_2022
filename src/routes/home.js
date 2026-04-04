@@ -5,6 +5,7 @@ import ReactPixel from 'react-facebook-pixel';
 import ReactGA from 'react-ga';
 import { Link } from 'react-router-dom';
 import Img from 'react-cool-img';
+import { ExternalArrow, btnExternalLabel } from '../resources/buttons';
 import Banner from '../components/Banner';
 import PromoBox from '../components/PromoBox';
 import SegmentedLayout from '../components/SegmentedLayout';
@@ -65,7 +66,7 @@ export function Home() {
             <div className="btnContainer">
               <Link
                 className="btnCallToAction"
-                to="/commissionArt#contact_form"
+                to="/contact"
                 onClick={() => {
                   ReactPixel.trackCustom('ContactClick', {
                     source: 'mainPage',
@@ -148,7 +149,7 @@ export function Home() {
             <div className="btnContainer">
               <a
                 className="btnCallToAction"
-                href="https://pannadraws.etsy.com"
+                href="https://www.etsy.com/shop/pannadraws/?etsrc=sdt&section_id=28846472"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => {
@@ -162,7 +163,10 @@ export function Home() {
                   });
                 }}
               >
-                Shop original art
+                <span css={btnExternalLabel}>
+                  <ExternalArrow />
+                  Shop original art
+                </span>
               </a>
             </div>
           </div>
