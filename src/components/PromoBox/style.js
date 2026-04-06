@@ -15,12 +15,12 @@ const divider = '1px solid rgba(255,255,255,0.12)';
 const style = {
   outer: css`
     background: ${colours.c2};
-    margin: 0 -10px 10px;
+    margin: 0 -10px 0;
     @media ${breakPoints.tabletPortrait} {
-      margin: 0 -15px 15px;
+      margin: 0 -15px 0;
     }
     @media ${breakPoints.desktopSmall} {
-      margin: 0 -20px 20px;
+      margin: 0 -20px 0;
     }
   `,
   inner: css`

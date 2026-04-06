@@ -40,7 +40,7 @@ export default function PromoBox() {
                 </span>
                 <h3 css={style.cardTitle}>Book &amp; Story Illustrations</h3>
                 <p css={style.cardDesc}>
-                  Covers, chapter art, character portraits, world maps
+                  Covers, chapter art, character portraits, world concept art
                 </p>
               </div>
               <span css={style.cardArrow}>→</span>
@@ -48,7 +48,7 @@ export default function PromoBox() {
             <Link css={style.serviceCard} to="/characterCreatureDesign">
               <div css={style.serviceCardContent}>
                 <span css={style.cardEyebrow}>
-                  For D&amp;D players &amp; GMs
+                  For D&amp;D players &amp; DMs
                 </span>
                 <h3 css={style.cardTitle}>Character &amp; Creature Design</h3>
                 <p css={style.cardDesc}>
