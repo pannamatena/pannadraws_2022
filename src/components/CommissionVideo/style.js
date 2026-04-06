@@ -157,6 +157,7 @@ const style = {
     height: 100%;
     object-fit: cover;
     display: block;
+    pointer-events: none;
   `,
   videoOverlay: css`
     position: absolute;

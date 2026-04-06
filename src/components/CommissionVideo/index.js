@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 /** @jsxImportSource @emotion/react */
 import { Link } from 'react-router-dom';
 import ReactPixel from 'react-facebook-pixel';
@@ -8,6 +8,18 @@ import PaintingVideo from '../../resources/images/curls_progress.mp4';
 import style from './style';
 
 export default function CommissionVideo() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const el = videoRef.current;
+    if (!el) return;
+    // React doesn't reliably set muted/playsinline as DOM attributes on iOS,
+    // so we force them directly to prevent fullscreen autoplay on Safari.
+    el.muted = true;
+    el.setAttribute('playsinline', '');
+    el.setAttribute('webkit-playsinline', '');
+  }, []);
+
   return (
     <div css={style.outer}>
       <div css={style.layout}>
@@ -66,7 +78,7 @@ export default function CommissionVideo() {
 
         <div css={style.right}>
           <div css={style.videoWrapper}>
-            <video css={style.video} loop autoPlay muted playsInline>
+            <video ref={videoRef} css={style.video} loop autoPlay muted playsInline>
               <source src={PaintingVideo} type="video/mp4" />
             </video>
             {/*<div css={style.videoOverlay} aria-hidden="true">

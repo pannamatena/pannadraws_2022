@@ -25,23 +25,6 @@ export function Home() {
         contentLeft={
           <div
             css={css`
-              padding-bottom: 40px;
-              @media ${breakPoints.tabletLandscape} {
-                padding-bottom: 0;
-              }
-            `}
-          >
-            <NewsletterDescription />
-          </div>
-        }
-        contentRight={<Newsletter source="home" />}
-        rightBackground={colours.c5}
-      />
-      <CommissionVideo />
-      <SegmentedLayout
-        contentLeft={
-          <div
-            css={css`
               margin: -10px;
               @media ${breakPoints.desktopSmall} {
                 margin: -15px;
@@ -106,6 +89,23 @@ export function Home() {
             </div>
           </div>
         }
+        rightBackground={colours.c5}
+      />
+      <CommissionVideo />
+      <SegmentedLayout
+        contentLeft={
+          <div
+            css={css`
+              padding-bottom: 40px;
+              @media ${breakPoints.tabletLandscape} {
+                padding-bottom: 0;
+              }
+            `}
+          >
+            <NewsletterDescription />
+          </div>
+        }
+        contentRight={<Newsletter source="home" />}
         rightBackground={colours.c5}
       />
     </div>
