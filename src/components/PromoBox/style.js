@@ -1,113 +1,237 @@
 import { css } from '@emotion/react';
 import { breakPoints } from '../../resources/breakpoints';
 import { colours } from '../../resources/colors';
-import { fonts } from '../../resources/fonts';
-import { btnPrimary, btnOutlineRed } from '../../resources/buttons';
+import {
+  fonts,
+  textSize,
+  textSizeCursive,
+  smallHeadFontSize,
+  uppercaseSansDisplay,
+} from '../../resources/fonts';
+import { btnPrimary, btnOutlineDark } from '../../resources/buttons';
+
+const divider = '1px solid rgba(255,255,255,0.12)';
 
 const style = {
-  promoBoxContainer: css`
+  outer: css`
+    background: ${colours.c2};
+    margin: 0 -10px 10px;
+    @media ${breakPoints.tabletPortrait} {
+      margin: 0 -15px 15px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      margin: 0 -20px 20px;
+    }
+  `,
+  inner: css`
+    max-width: 900px;
+    margin: 0 auto;
+    @media ${breakPoints.desktopSmall} {
+      max-width: 1100px;
+    }
+    @media ${breakPoints.desktopLarge} {
+      max-width: 1400px;
+    }
+  `,
+
+  statsBar: css`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: ${divider};
+  `,
+  statItem: css`
     display: flex;
     flex-direction: column;
-    align-self: center;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto 10px;
-
-    gap: 10px;
+    gap: 4px;
+    padding: 16px 10px;
     @media ${breakPoints.tabletPortrait} {
-      margin: 0 auto 15px;
-      gap: 15px;
+      padding: 20px 15px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      padding: 24px 20px;
+    }
+    &:not(:last-child) {
+      border-right: ${divider};
+    }
+  `,
+  statNumber: css`
+    font-family: ${fonts.f3};
+    font-style: italic;
+    color: ${colours.c1};
+    line-height: 1;
+    /* intentional display size: hero stat numerals */
+    font-size: 28px;
+    @media ${breakPoints.tabletPortrait} {
+      font-size: 36px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      font-size: 44px;
+    }
+  `,
+  statLabel: css`
+    ${uppercaseSansDisplay};
+    ${textSize};
+    color: ${colours.c4};
+  `,
+
+  mainPanel: css`
+    display: grid;
+    grid-template-columns: 1fr;
+    @media ${breakPoints.tabletLandscape} {
+      grid-template-columns: 1fr 1fr;
+    }
+  `,
+  leftSide: css`
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 10px;
+    border-bottom: ${divider};
+    @media ${breakPoints.tabletPortrait} {
+      padding: 28px 15px;
     }
     @media ${breakPoints.tabletLandscape} {
-      flex-direction: row;
+      border-bottom: none;
+      border-right: ${divider};
+      padding: 32px 20px;
     }
     @media ${breakPoints.desktopSmall} {
-      max-width: 1100px;
-      margin: 0 auto 20px;
-      gap: 20px;
-    }
-    @media ${breakPoints.desktopLarge} {
-      max-width: 1400px;
+      padding: 40px 20px;
     }
   `,
-  etsyStrip: css`
+  commissionsEyebrow: css`
+    ${uppercaseSansDisplay};
+    ${textSize};
+    color: ${colours.c1};
+  `,
+  heading: css`
+    && {
+      font-family: ${fonts.f3};
+      font-style: italic;
+      font-weight: 400;
+      color: ${colours.c3};
+      text-transform: none;
+      letter-spacing: normal;
+      margin: 0;
+      line-height: 1.15;
+      /* intentional display size: hero commission heading */
+      font-size: 32px;
+      @media ${breakPoints.tabletPortrait} {
+        font-size: 36px;
+      }
+      @media ${breakPoints.desktopSmall} {
+        font-size: 44px;
+      }
+    }
+  `,
+  body: css`
+    && {
+      font-family: ${fonts.f3};
+      font-style: italic;
+      ${textSizeCursive};
+      color: ${colours.c4};
+      margin: 0;
+    }
+  `,
+
+  rightSide: css`
     display: flex;
     flex-direction: column;
+  `,
+  serviceCard: css`
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    max-width: 900px;
-    margin: 0 auto 10px;
-
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px 10px;
+    text-decoration: none;
+    transition: background 0.15s ease;
+    &:not(:last-child) {
+      border-bottom: ${divider};
+    }
     @media ${breakPoints.tabletPortrait} {
-      flex-direction: row;
-      gap: 15px;
-      margin: 0 auto 15px;
+      padding: 28px 15px;
     }
     @media ${breakPoints.desktopSmall} {
-      max-width: 1100px;
-      gap: 20px;
-      margin: 0 auto 20px;
+      padding: 32px 20px;
     }
-    @media ${breakPoints.desktopLarge} {
-      max-width: 1400px;
-    }
-
-    && p {
-      margin: 0;
-      font-family: ${fonts.f3};
-      font-size: 16px;
-      line-height: 1.5em;
-      font-weight: 400;
-      @media ${breakPoints.desktopSmall} {
-        font-size: 18px;
-      }
-    }
-
-    a.btnCallToAction--outline {
-      ${btnOutlineRed};
+    &:hover {
+      background: rgba(255, 255, 255, 0.04);
     }
   `,
-  promoBox: css`
-    flex: 1;
-    padding: 10px;
-    @media ${breakPoints.desktopSmall} {
-      padding: 15px;
+  serviceCardContent: css`
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  `,
+  cardEyebrow: css`
+    ${uppercaseSansDisplay};
+    ${textSize};
+    color: ${colours.c4};
+  `,
+  cardTitle: css`
+    && {
+      font-family: ${fonts.f4};
+      font-weight: 700;
+      ${smallHeadFontSize};
+      color: ${colours.c3};
+      text-transform: none;
+      letter-spacing: normal;
+      margin: 0;
     }
-    @media ${breakPoints.desktopLarge} {
-      padding: 20px;
+  `,
+  cardDesc: css`
+    && {
+      font-family: ${fonts.f3};
+      font-style: italic;
+      ${textSizeCursive};
+      color: ${colours.c4};
+      margin: 0;
     }
+  `,
+  cardArrow: css`
+    color: ${colours.c1};
+    font-size: 20px;
+    flex-shrink: 0;
+  `,
 
-    .btnContainer {
-      display: flex;
+  bottomBar: css`
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 10px;
+    border-top: ${divider};
+    @media ${breakPoints.tabletPortrait} {
       flex-direction: row;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      padding: 20px 15px;
     }
-
-    && p {
+    @media ${breakPoints.desktopSmall} {
+      padding: 24px 20px;
+    }
+  `,
+  bottomText: css`
+    && {
       font-family: ${fonts.f3};
-      font-size: 16px;
-      line-height: 1.5em;
-      font-weight: 400;
-      @media ${breakPoints.desktopSmall} {
-        font-size: 18px;
-      }
+      font-style: italic;
+      ${textSizeCursive};
+      color: ${colours.c4};
+      margin: 0;
     }
-
-    a.btnCallToAction {
-      ${btnPrimary};
-
-      &.btnCallToAction--promo {
-        background: ${colours.c_button_promo_2};
-
-        &:hover,
-        &:active {
-          background: ${colours.c_button_promo_2_h};
-          cursor: pointer;
-        }
-      }
-    }
+  `,
+  bottomButtons: css`
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-shrink: 0;
+  `,
+  btnEtsy: css`
+    ${btnPrimary};
+  `,
+  btnMessage: css`
+    ${btnOutlineDark};
   `,
 };
 
