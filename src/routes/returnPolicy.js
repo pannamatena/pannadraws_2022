@@ -8,27 +8,96 @@ export function ReturnPolicy() {
     <div>
       {ReactPixel.pageView()}
       <TextPage>
-        <h1>Return Policy</h1>
-        <p>Last updated: March 13, 2022</p>
+        <h1>Return Policy — PannaDraws</h1>
+        <p>Last updated: April 2026</p>
+
+        <h2>Made-to-Order &amp; Commissioned Artwork</h2>
         <p>
-          For complete details on returns please refer to my Etsy shop:{' '}
+          All commissioned and made-to-order paintings are created specifically
+          to your specifications. As such, they are exempt from the 14-day right
+          of withdrawal under EU consumer law (Article 16(c), Directive
+          2011/83/EU). By placing a commission order, you acknowledge and agree
+          that you cannot return it simply because you changed your mind. This
+          does not affect your rights if the item arrives damaged or is
+          significantly not as described.
+        </p>
+
+        <h2>Ready-Made Original Artworks, Prints, Bookmarks &amp; Stickers</h2>
+        <p>
+          If you are an EU buyer, you have the right to withdraw from your
+          purchase within 14 days of receiving your item, for any reason and
+          with no penalty. To exercise this right, contact me within 14 days of
+          delivery via Etsy messages or by{' '}
+          <Link
+            to="/contact/"
+            state={{
+              msgSubj: 'Return item',
+            }}
+          >
+            email
+          </Link>
+          . You may use the standard EU withdrawal form, available here:{' '}
+          <a
+            href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32011L0083"
+            target="_blank"
+            title="EU Model Withdrawal Form"
+            rel="noopener noreferrer"
+          >
+            EU Model Withdrawal Form
+          </a>
+          .
+        </p>
+        <p>
+          You must return the item within 14 days of notifying me of your
+          withdrawal. Return shipping costs are the buyer's responsibility unless
+          otherwise agreed. Items must be returned in their original condition. I
+          will issue a full refund (including the original standard shipping
+          cost) within 14 days of receiving the returned item or proof of
+          postage.
+        </p>
+
+        <h2>Damaged or Faulty Items</h2>
+        <p>
+          If your item arrives damaged or is significantly not as described,
+          please contact me within a reasonable time with photos of the damage.
+          Under EU law, you are entitled to a remedy (repair, replacement, or
+          refund) for up to two years from delivery. Return shipping for damaged
+          or faulty items will be covered by me.
+        </p>
+
+        <h2>How to Initiate a Return</h2>
+        <p>
+          Contact me via{' '}
           <a
             href="https://www.etsy.com/ie/shop/PannaDraws"
             target="_blank"
             title="PannaDraws on Etsy"
             rel="noopener noreferrer"
           >
-            https://www.etsy.com/ie/shop/PannaDraws
-          </a>
-          .
+            Etsy messages
+          </a>{' '}
+          or by{' '}
+          <Link
+            to="/contact/"
+            state={{
+              msgSubj: 'Return item',
+            }}
+          >
+            email
+          </Link>{' '}
+          with the following information:
         </p>
+        <ul>
+          <li>Your name</li>
+          <li>The item name</li>
+          <li>Date of purchase</li>
+          <li>Purchase price</li>
+          <li>Reason for return</li>
+          <li>If the item arrived damaged, please include photos of the damage.</li>
+        </ul>
         <p>
-          PannaDraws accepts returns within 14 days of delivery, except for
-          custom items made to order.
-        </p>
-        <p>
-          If you purchased your item through my Etsy shop and would like to
-          initiate a return, please see the following link:{' '}
+          Alternatively, if you purchased through my Etsy shop, you can initiate
+          a return directly through Etsy:{' '}
           <a
             href="https://help.etsy.com/hc/en-us/articles/115015440807-How-to-Return-or-Exchange-an-Item-on-Etsy?segment=shopping"
             target="_blank"
@@ -37,52 +106,15 @@ export function ReturnPolicy() {
           >
             How to initiate a return on Etsy
           </a>
-          . Alternatively you can send me a{' '}
-          <Link
-            to="/contact/"
-            state={{
-              msgSubj: 'Return item',
-            }}
-          >
-            message
-          </Link>{' '}
-          about your request. Please provide the following information:
-        </p>
-        <ul>
-          <li>Your name</li>
-          <li>The title/name of the artwork/item</li>
-          <li>The date of purchase</li>
-          <li>
-            The purchase price (please include a screenshot or photo of the
-            receipt if applicable)
-          </li>
-          <li>The reason for requesting a return</li>
-          <li>
-            If the art arrived damaged, please include a photo of the damage.
-          </li>
-        </ul>
-
-        <h2>Accepted payment methods</h2>
-        <p>The accepted payment methods are:</p>
-        <ul>
-          <li>Credit cards</li>
-          <li>Debit cards</li>
-          <li>Etsy Gift Cards and Etsy Credits</li>
-          <li>Apple Pay</li>
-          <li>Google Pay</li>
-          <li>Paypal</li>
-        </ul>
-        <p>
-          For more info see{' '}
-          <a
-            href="https://help.etsy.com/hc/en-us/articles/360026831353-What-Payment-Methods-Can-I-Use-to-Check-Out-on-Etsy-?segment=shopping"
-            target="_blank"
-            title="Payment methods on Etsy"
-            rel="noopener noreferrer"
-          >
-            this link
-          </a>
           .
+        </p>
+
+        <h2>Accepted Payment Methods</h2>
+        <p>
+          Credit cards, debit cards, Etsy Gift Cards and Etsy Credits, Apple
+          Pay, Google Pay, and PayPal. All prices are listed in EUR. Local taxes
+          may apply at checkout. Shipping costs and customs charges are not
+          included in item prices.
         </p>
       </TextPage>
     </div>

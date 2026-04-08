@@ -8,475 +8,341 @@ export function PrivacyPolicy() {
       {ReactPixel.pageView()}
       <TextPage>
         <h1>PannaDraws Privacy Policy</h1>
-        <p>Last updated: March 12, 2022</p>
-        <p>
-          This Privacy Policy describes Our policies and procedures on the
-          collection, use and disclosure of Your information when You use the
-          Service and tells You about Your privacy rights and how the law
-          protects You.
-        </p>
-        <p>
-          We use Your Personal data to provide and improve the Service. By using
-          the Service, You agree to the collection and use of information in
-          accordance with this Privacy Policy.
-        </p>
-        <h3>Interpretation and Definitions</h3>
-        <h2>Interpretation</h2>
-        <p>
-          The words of which the initial letter is capitalized have meanings
-          defined under the following conditions.
-        </p>
-        <p>
-          The following definitions shall have the same meaning regardless of
-          whether they appear in singular or in plural.
-        </p>
+        <p>Last updated: April 2026</p>
 
-        <h2>Definitions</h2>
-        <p>For the purposes of this Privacy Policy:</p>
+        <h2>1. Who I Am</h2>
+        <p>
+          PannaDraws is operated by Panna Zsamba, based in Ireland. For the
+          purposes of data protection law, I am the data controller in respect
+          of your personal data.
+        </p>
         <ul>
           <li>
-            <strong>You</strong> means the individual accessing or using the
-            Service, or the company, or other legal entity on behalf of which
-            such individual is accessing or using the Service, as applicable.
+            Email:{' '}
+            <a href="mailto:panna@pannadraws.com">panna@pannadraws.com</a>
           </li>
           <li>
-            <strong>Company</strong> (referred to as either "the Company", "We",
-            "Us" or "Our" in this Agreement) refers to PannaDraws.
+            Website:{' '}
+            <a
+              href="https://pannadraws.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://pannadraws.com
+            </a>
+          </li>
+        </ul>
+        <p>
+          Ireland's data protection supervisory authority is the Data Protection
+          Commission (DPC):{' '}
+          <a
+            href="https://www.dataprotection.ie"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            dataprotection.ie
+          </a>
+        </p>
+
+        <h2>2. What Data I Collect and Why</h2>
+        <p>I collect and use personal data in the following ways:</p>
+
+        <h3>a) When you contact me or place a commission enquiry</h3>
+        <ul>
+          <li>
+            <strong>Data collected:</strong> your name, email address, and any
+            information you include in your message.
           </li>
           <li>
-            <strong>Affiliate</strong> means an entity that controls, is
-            controlled by or is under common control with a party, where
-            "control" means ownership of 50% or more of the shares, equity
-            interest or other securities entitled to vote for election of
-            directors or other managing authority.
+            <strong>Purpose:</strong> to respond to your enquiry and manage your
+            commission request.
           </li>
           <li>
-            <strong>Account</strong> means a unique account created for You to
-            access our Service or parts of our Service.
-          </li>
-          <li>
-            <strong>Website</strong> refers to PannaDraws, accessible from
-            https://pannadraws.com
-          </li>
-          <li>
-            <strong>Service</strong> refers to the Website.
-          </li>
-          <li>
-            <strong>Country</strong> refers to: Ireland
-          </li>
-          <li>
-            <strong>Service Provider</strong> means any natural or legal person
-            who processes the data on behalf of the Company. It refers to
-            third-party companies or individuals employed by the Company to
-            facilitate the Service, to provide the Service on behalf of the
-            Company, to perform services related to the Service or to assist the
-            Company in analyzing how the Service is used.
-          </li>
-          <li>
-            <strong>Third-party Social Media Service</strong> refers to any
-            website or any social network website through which a User can log
-            in or create an account to use the Service.
-          </li>
-          <li>
-            <strong>Personal Data</strong> is any information that relates to an
-            identified or identifiable individual.
-          </li>
-          <li>
-            <strong>Cookies</strong> are small files that are placed on Your
-            computer, mobile device or any other device by a website, containing
-            the details of Your browsing history on that website among its many
-            uses.
-          </li>
-          <li>
-            <strong>Usage Data</strong> refers to data collected automatically,
-            either generated by the use of the Service or from the Service
-            infrastructure itself (for example, the duration of a page visit).
+            <strong>Lawful basis:</strong> performance of a contract (or steps
+            taken at your request prior to entering a contract).
           </li>
         </ul>
 
-        <h3>Collecting and Using Your Personal Data</h3>
-        <h2>Types of Data Collected</h2>
-        <h4>Personal Data</h4>
+        <h3>b) When you make a purchase through Etsy</h3>
         <p>
-          While using Our Service, We may ask You to provide Us with certain
-          personally identifiable information that can be used to contact or
-          identify You. Personally identifiable information may include, but is
-          not limited to:
+          Purchases are processed through Etsy. Etsy handles payment and order
+          data directly. I receive your name, shipping address, and order
+          details from Etsy in order to fulfil your order.
+        </p>
+        <p>
+          For international orders, I may contact you through Etsy messaging to
+          request your phone number and email address. This is necessary so that
+          the courier can reach you to arrange delivery, and so that customs
+          authorities can notify you of any customs charges payable before or
+          upon delivery.
         </p>
         <ul>
-          <li>Email address</li>
-          <li>First name and last name</li>
-          <li>Usage Data</li>
+          <li>
+            <strong>Purpose:</strong> to fulfil your order and comply with my
+            legal obligations (e.g. tax records).
+          </li>
+          <li>
+            Your phone number and email address for international orders are
+            shared only with the courier and, where required, with the relevant
+            customs authority.
+          </li>
+          <li>
+            <strong>Lawful basis:</strong> performance of a contract and
+            compliance with a legal obligation.
+          </li>
         </ul>
 
-        <h4>Usage Data</h4>
-        <p>Usage Data is collected automatically when using the Service.</p>
+        <h3>c) When you visit my website</h3>
         <p>
-          Usage Data may include information such as Your Device's Internet
-          Protocol address (e.g. IP address), browser type, browser version, the
-          pages of our Service that You visit, the time and date of Your visit,
-          the time spent on those pages, unique device identifiers and other
-          diagnostic data.
+          I collect usage data automatically, including your IP address, browser
+          type and version, the pages you visit, and the time and duration of
+          your visit.
+        </p>
+        <ul>
+          <li>
+            <strong>Purpose:</strong> to monitor website performance and improve
+            my service.
+          </li>
+          <li>
+            <strong>Lawful basis:</strong> legitimate interests (understanding
+            how my site is used, in a way that does not override your rights).
+          </li>
+        </ul>
+
+        <h3>d) Marketing communications</h3>
+        <p>
+          If you have opted in to receive news or updates from me, I may contact
+          you by email about new artwork, offers, or events.
+        </p>
+        <ul>
+          <li>
+            <strong>Purpose:</strong> direct marketing.
+          </li>
+          <li>
+            <strong>Lawful basis:</strong> consent. You can withdraw your
+            consent at any time by contacting me at{' '}
+            <a href="mailto:panna@pannadraws.com">panna@pannadraws.com</a> or
+            unsubscribing from any marketing email.
+          </li>
+        </ul>
+
+        <h2>3. Cookies and Tracking Technologies</h2>
+        <p>
+          My website uses cookies and similar tracking technologies. Cookies are
+          small files placed on your device that help me understand how the site
+          is used.
+        </p>
+        <p>I use the following types of cookies:</p>
+        <ul>
+          <li>
+            <strong>Essential cookies</strong> — necessary for the website to
+            function. These cannot be disabled.
+          </li>
+          <li>
+            <strong>Analytics cookies</strong> — used to understand how visitors
+            use my site (e.g. Google Analytics). These are only set with your
+            consent.
+          </li>
+          <li>
+            <strong>Advertising/tracking cookies</strong> — used to measure the
+            effectiveness of advertising (e.g. Facebook Pixel). These are only
+            set with your consent.
+          </li>
+        </ul>
+        <p>
+          You will be asked for your consent before any non-essential cookies
+          are placed on your device. You can change your cookie preferences at
+          any time via the cookie settings on my site, or by adjusting your
+          browser settings.
         </p>
         <p>
-          When You access the Service by or through a mobile device, We may
-          collect certain information automatically, including, but not limited
-          to, the type of mobile device You use, Your mobile device unique ID,
-          the IP address of Your mobile device, Your mobile operating system,
-          the type of mobile Internet browser You use, unique device identifiers
-          and other diagnostic data.
+          <strong>Google Analytics:</strong> Data is processed by Google LLC.
+          For more information, see{' '}
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google's privacy policy
+          </a>
+          .
         </p>
         <p>
-          We may also collect information that Your browser sends whenever You
-          visit our Service or when You access the Service by or through a
-          mobile device.
+          <strong>Facebook Pixel:</strong> Data is processed by Meta Platforms,
+          Inc. This tool may transfer data to the United States. Such transfers
+          are covered by Meta's participation in the EU–US Data Privacy
+          Framework. For more information, see{' '}
+          <a
+            href="https://www.facebook.com/privacy/policy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Meta's privacy policy
+          </a>
+          .
         </p>
 
-        <h4>Tracking Technologies and Cookies</h4>
+        <h2>4. Who I Share Your Data With</h2>
         <p>
-          We use Cookies and similar tracking technologies to track the activity
-          on Our Service and store certain information. Tracking technologies
-          used are beacons, tags, and scripts to collect and track information
-          and to improve and analyze Our Service.
+          I do not sell your personal data. I may share it in the following
+          limited circumstances:
+        </p>
+        <ul>
+          <li>
+            <strong>Service providers</strong> — third parties who help me
+            operate my website or business (e.g. analytics providers), who are
+            bound by data processing agreements and may only use your data on my
+            behalf.
+          </li>
+          <li>
+            <strong>Etsy</strong> — if you purchase through my Etsy shop, Etsy's
+            own privacy policy applies to the data they process. See{' '}
+            <a
+              href="https://www.etsy.com/ie/legal/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Etsy's privacy policy
+            </a>
+            .
+          </li>
+          <li>
+            <strong>Legal obligations</strong> — if required to do so by law or
+            by a public authority (e.g. a court or government agency).
+          </li>
+          <li>
+            <strong>Business transfers</strong> — in the event of a merger,
+            sale, or acquisition, your data may be transferred. I will notify
+            you before this happens.
+          </li>
+        </ul>
+
+        <h2>5. International Data Transfers</h2>
+        <p>
+          Some of my service providers (including Google and Meta) are based
+          outside the European Economic Area (EEA). Where personal data is
+          transferred outside the EEA, I ensure appropriate safeguards are in
+          place, such as the EU–US Data Privacy Framework or standard
+          contractual clauses approved by the European Commission.
+        </p>
+
+        <h2>6. How Long I Keep Your Data</h2>
+        <p>I keep your personal data only for as long as necessary:</p>
+        <ul>
+          <li>
+            <strong>Enquiry and commission correspondence:</strong> up to 2
+            years after the last contact, unless a longer period is required for
+            legal reasons.
+          </li>
+          <li>
+            <strong>Order records:</strong> up to 7 years, to comply with Irish
+            tax and accounting obligations.
+          </li>
+          <li>
+            <strong>Website analytics data:</strong> typically up to 26 months,
+            in line with standard analytics retention periods.
+          </li>
+          <li>
+            <strong>Marketing:</strong> until you withdraw your consent.
+          </li>
+        </ul>
+
+        <h2>7. Your Rights Under GDPR</h2>
+        <p>As a data subject under GDPR, you have the following rights:</p>
+        <ul>
+          <li>
+            <strong>Right of access</strong> — you can request a copy of the
+            personal data I hold about you.
+          </li>
+          <li>
+            <strong>Right to rectification</strong> — you can ask me to correct
+            inaccurate data.
+          </li>
+          <li>
+            <strong>Right to erasure</strong> — you can ask me to delete your
+            data in certain circumstances.
+          </li>
+          <li>
+            <strong>Right to restrict processing</strong> — you can ask me to
+            limit how I use your data.
+          </li>
+          <li>
+            <strong>Right to data portability</strong> — you can request your
+            data in a machine-readable format.
+          </li>
+          <li>
+            <strong>Right to object</strong> — you can object to processing
+            based on legitimate interests or for direct marketing purposes.
+          </li>
+          <li>
+            <strong>Right to withdraw consent</strong> — where I rely on
+            consent, you can withdraw it at any time without affecting the
+            lawfulness of prior processing.
+          </li>
+        </ul>
+        <p>
+          To exercise any of these rights, contact me at{' '}
+          <a href="mailto:panna@pannadraws.com">panna@pannadraws.com</a>. I will
+          respond within one month.
         </p>
         <p>
-          You can instruct Your browser to refuse all Cookies or to indicate
-          when a Cookie is being sent. However, if You do not accept Cookies,
-          You may not be able to use some parts of our Service.
-        </p>
-        <p>
-          Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies
-          remain on your personal computer or mobile device when You go offline,
-          while Session Cookies are deleted as soon as You close your web
-          browser. Learn more about cookies in the{' '}
-          <a href="https://www.privacypolicies.com/blog/cookies/">
-            "What Are Cookies"
+          You also have the right to lodge a complaint with the Data Protection
+          Commission (DPC) at any time:{' '}
+          <a
+            href="https://www.dataprotection.ie"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            dataprotection.ie
           </a>{' '}
-          article.
+          / 01 765 0100.
         </p>
+
+        <h2>8. Children's Privacy</h2>
         <p>
-          We use both session and persistent Cookies for the purposes set out
-          below:
+          My website is not directed at children. In Ireland, the age of digital
+          consent is 16. I do not knowingly collect personal data from anyone
+          under 16. If you believe a child under 16 has provided me with
+          personal data, please contact me at{' '}
+          <a href="mailto:panna@pannadraws.com">panna@pannadraws.com</a> and I
+          will delete it promptly.
+        </p>
+
+        <h2>9. Links to Other Websites</h2>
+        <p>
+          My website may contain links to third-party sites. I am not
+          responsible for the privacy practices of those sites and recommend you
+          review their privacy policies before sharing any personal data with
+          them.
+        </p>
+
+        <h2>10. Changes to This Policy</h2>
+        <p>
+          I may update this policy from time to time. I will notify you of
+          significant changes by posting a notice on my website and updating the
+          "Last updated" date above. I encourage you to review this policy
+          periodically.
+        </p>
+
+        <h2>11. Contact</h2>
+        <p>
+          For any questions about this privacy policy or how I handle your data:
         </p>
         <ul>
           <li>
-            <strong>Necessary / Essential Cookies</strong>
-            <p>Type: Session Cookies</p>
-            <p>Administered by: Us</p>
-            <p>
-              Purpose: These Cookies are essential to provide You with services
-              available through the Website and to enable You to use some of its
-              features. They help to authenticate users and prevent fraudulent
-              use of user accounts. Without these Cookies, the services that You
-              have asked for cannot be provided, and We only use these Cookies
-              to provide You with those services.
-            </p>
+            Email:{' '}
+            <a href="mailto:panna@pannadraws.com">panna@pannadraws.com</a>
           </li>
           <li>
-            <strong>Cookies Policy / Notice Acceptance Cookies</strong>
-            <p>Type: Persistent Cookies</p>
-            <p>Administered by: Us</p>
-            <p>
-              Purpose: These Cookies identify if users have accepted the use of
-              cookies on the Website.
-            </p>
+            Website:{' '}
+            <a
+              href="https://pannadraws.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://pannadraws.com
+            </a>
           </li>
-          {/*<li>
-            <strong>Functionality Cookies</strong>
-            <p>Type: Persistent Cookies</p>
-            <p>Administered by: Us</p>
-            <p>
-              Purpose: These Cookies allow us to remember choices You make when
-              You use the Website, such as remembering your login details or
-              language preference. The purpose of these Cookies is to provide
-              You with a more personal experience and to avoid You having to
-              re-enter your preferences every time You use the Website.
-            </p>
-          </li>*/}
-          <li>
-            <strong>Tracking and Performance Cookies</strong>
-            <p>Type: Persistent Cookies</p>
-            <p>Administered by: Third-Parties</p>
-            <p>
-              Purpose: These Cookies are used to track information about traffic
-              to the Website and how users use the Website. The information
-              gathered via these Cookies may directly or indirectly identify you
-              as an individual visitor. This is because the information
-              collected is typically linked to a pseudonymous identifier
-              associated with the device you use to access the Website. We may
-              also use these Cookies to test new advertisements, pages, features
-              or new functionality of the Website to see how our users react to
-              them.
-            </p>
-          </li>
-        </ul>
-        {/*<p>For more information about the cookies we use and your choices regarding
-          cookies, please visit our Cookies Policy.</p>*/}
-
-        <h2>Use of Your Personal Data</h2>
-        <p>The Company may use Personal Data for the following purposes:</p>
-        <ul>
-          <li>
-            <strong>To provide and maintain our Service</strong>, including to
-            monitor the usage of our Service.
-          </li>
-          {/*<li>
-            <strong>To manage Your Account:</strong> to manage Your registration
-            as a user of the Service. The Personal Data You provide can give You
-            access to different functionalities of the Service that are
-            available to You as a registered user.
-          </li>*/}
-          {/*<li>
-            <strong>For the performance of a contract:</strong> the development,
-            compliance and undertaking of the purchase contract for the
-            products, items or services You have purchased or of any other
-            contract with Us through the Service.
-          </li>*/}
-          <li>
-            <strong>To contact You:</strong> To contact You by email, telephone
-            calls, SMS, or other equivalent forms of electronic communication,
-            such as a mobile application's push notifications regarding updates
-            or informative communications related to the functionalities,
-            products or contracted services, including the security updates,
-            when necessary or reasonable for their implementation.
-          </li>
-          <li>
-            <strong>To provide You</strong> with news, special offers and
-            general information about other goods, services and events which we
-            offer that are similar to those that you have already purchased or
-            enquired about unless You have opted not to receive such
-            information.
-          </li>
-          <li>
-            <strong>To manage Your requests:</strong> To attend and manage Your
-            requests to Us.
-          </li>
-        </ul>
-
-        <p>
-          We may share your personal information in the following situations:
-        </p>
-
-        <ul>
-          <li>
-            <strong>With Service Providers:</strong> We may share Your personal
-            information with Service Providers to monitor and analyze the use of
-            our Service, to show advertisements to You to help support and
-            maintain Our Service, to contact You, to advertise on third party
-            websites to You after You visited our Service or for payment
-            processing.
-          </li>
-          <li>
-            <strong>For Business transfers:</strong> We may share or transfer
-            Your personal information in connection with, or during negotiations
-            of, any merger, sale of Company assets, financing, or acquisition of
-            all or a portion of our business to another company.
-          </li>
-          <li>
-            <strong>With Affiliates:</strong> We may share Your information with
-            Our affiliates, in which case we will require those affiliates to
-            honor this Privacy Policy. Affiliates include Our parent company and
-            any other subsidiaries, joint venture partners or other companies
-            that We control or that are under common control with Us.
-          </li>
-          {/*<li>
-            <strong>With Business partners:</strong> We may share Your
-            information with Our business partners to offer You certain
-            products, services or promotions.
-          </li>*/}
-          <li>
-            <strong>With other users:</strong> when You share personal
-            information or otherwise interact in the public areas with other
-            users, such information may be viewed by all users and may be
-            publicly distributed outside. If You interact with other users or
-            register through a Third-Party Social Media Service, Your contacts
-            on the Third-Party Social Media Service may see You name, profile,
-            pictures and description of Your activity. Similarly, other users
-            will be able to view descriptions of Your activity, communicate with
-            You and view Your profile.
-          </li>
-        </ul>
-
-        <h2>Retention of Your Personal Data</h2>
-        <p>
-          The Company will retain Your Personal Data only for as long as is
-          necessary for the purposes set out in this Privacy Policy. We will
-          retain and use Your Personal Data to the extent necessary to comply
-          with our legal obligations (for example, if we are required to retain
-          your data to comply with applicable laws), resolve disputes, and
-          enforce our legal agreements and policies.
-        </p>
-        <p>
-          The Company will also retain Usage Data for internal analysis
-          purposes. Usage Data is generally retained for a shorter period of
-          time, except when this data is used to strengthen the security or to
-          improve the functionality of Our Service, or We are legally obligated
-          to retain this data for longer time periods.
-        </p>
-
-        <h2>Transfer of Your Personal Data</h2>
-        <p>
-          Your information, including Personal Data, is processed at the
-          Company's operating offices and in any other places where the parties
-          involved in the processing are located. It means that this information
-          may be transferred to — and maintained on — computers located outside
-          of Your state, province, country or other governmental jurisdiction
-          where the data protection laws may differ than those from Your
-          jurisdiction.
-        </p>
-        <p>
-          Your consent to this Privacy Policy followed by Your submission of
-          such information represents Your agreement to that transfer.
-        </p>
-        <p>
-          The Company will take all steps reasonably necessary to ensure that
-          Your data is treated securely and in accordance with this Privacy
-          Policy and no transfer of Your Personal Data will take place to an
-          organization or a country unless there are adequate controls in place
-          including the security of Your data and other personal information.
-        </p>
-
-        <h3>Disclosure of Your Personal Data</h3>
-        <h2>Business Transactions</h2>
-        <p>
-          If the Company is involved in a merger, acquisition or asset sale,
-          Your Personal Data may be transferred. We will provide notice before
-          Your Personal Data is transferred and becomes subject to a different
-          Privacy Policy.
-        </p>
-        <h2>Law enforcement</h2>
-        <p>
-          Under certain circumstances, the Company may be required to disclose
-          Your Personal Data if required to do so by law or in response to valid
-          requests by public authorities (e.g. a court or a government agency).
-        </p>
-        <h2>Other legal requirements</h2>
-        <p>
-          The Company may disclose Your Personal Data in the good faith belief
-          that such action is necessary to:
-        </p>
-        <ul>
-          <li>Comply with a legal obligation</li>
-          <li>Protect and defend the rights or property of the Company</li>
-          <li>
-            Prevent or investigate possible wrongdoing in connection with the
-            Service
-          </li>
-          <li>
-            Protect the personal safety of Users of the Service or the public
-          </li>
-          <li>Protect against legal liability</li>
-        </ul>
-
-        <h3>Security of Your Personal Data</h3>
-        <p>
-          The security of Your Personal Data is important to Us, but remember
-          that no method of transmission over the Internet, or method of
-          electronic storage is 100% secure. While We strive to use commercially
-          acceptable means to protect Your Personal Data, We cannot guarantee
-          its absolute security.
-        </p>
-
-        <h1>Detailed Information on the Processing of Your Personal Data</h1>
-        <p>
-          Service Providers have access to Your Personal Data only to perform
-          their tasks on Our behalf and are obligated not to disclose or use it
-          for any other purpose.
-        </p>
-
-        <h3>Analytics</h3>
-        <p>
-          We may use third-party Service providers to monitor and analyze the
-          use of our Service.
-        </p>
-        <ul>
-          <li>
-            <p>
-              <strong>Facebook Pixel</strong>
-            </p>
-            <p>
-              The Facebook pixel is an analytics tool that allows you to measure
-              the effectiveness of your advertising by understanding the actions
-              people take on your website. Read their privacy policy here:{' '}
-              <a href="https://www.facebook.com/policy.php">
-                https://www.facebook.com/policy.php
-              </a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>Google Analytics</strong>
-            </p>
-            <p>
-              The Google Analytics is an analytics tool that allows you to
-              measure the effectiveness of your advertising and the Service by
-              understanding the actions people take on your website. Read their
-              privacy policy here:{' '}
-              <a href="https://support.google.com/analytics/answer/4597324?hl=en">
-                https://support.google.com/analytics/answer/4597324?hl=en
-              </a>
-            </p>
-          </li>
-        </ul>
-
-        <h3>Children's Privacy</h3>
-        <p>
-          Our Service does not address anyone under the age of 13. We do not
-          knowingly collect personally identifiable information from anyone
-          under the age of 13. If You are a parent or guardian and You are aware
-          that Your child has provided Us with Personal Data, please contact Us.
-          If We become aware that We have collected Personal Data from anyone
-          under the age of 13 without verification of parental consent, We take
-          steps to remove that information from Our servers.
-        </p>
-        <p>
-          We also may limit how We collect, use, and store some of the
-          information of Users between 13 and 18 years old. In some cases, this
-          means We will be unable to provide certain functionality of the
-          Service to these users.
-        </p>
-        <p>
-          If We need to rely on consent as a legal basis for processing Your
-          information and Your country requires consent from a parent, We may
-          require Your parent's consent before We collect and use that
-          information.
-        </p>
-
-        <h3>Links to Other Websites</h3>
-        <p>
-          Our Service may contain links to other websites that are not operated
-          by Us. If You click on a third party link, You will be directed to
-          that third party's site. We strongly advise You to review the Privacy
-          Policy of every site You visit.
-        </p>
-        <p>
-          We have no control over and assume no responsibility for the content,
-          privacy policies or practices of any third party sites or services.
-        </p>
-
-        <h3>Changes to this Privacy Policy</h3>
-        <p>
-          We may update our Privacy Policy from time to time. We will notify You
-          of any changes by posting the new Privacy Policy on this page.
-        </p>
-        <p>
-          We will let You know via email and/or a prominent notice on Our
-          Service, prior to the change becoming effective and update the "Last
-          updated" date at the top of this Privacy Policy.
-        </p>
-        <p>
-          You are advised to review this Privacy Policy periodically for any
-          changes. Changes to this Privacy Policy are effective when they are
-          posted on this page.
-        </p>
-
-        <h3>Contact Us</h3>
-        <p>
-          If you have any questions about this Privacy Policy, You can contact
-          us:
-        </p>
-        <ul>
-          <li>By email: panna@pannadraws.com</li>
         </ul>
       </TextPage>
     </div>

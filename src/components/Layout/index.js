@@ -251,7 +251,8 @@ export default function Layout() {
       <div css={style.footerContainer}>
         <p>
           All prices are indicated in EUR. Local taxes may apply at checkout.
-          Shipping costs customs charges are not included.
+          Shipping costs and customs charges are not included unless stated
+          otherwise.
         </p>
         <p>
           Artwork and content &copy; {new Date().getFullYear()} Panna Zsamba
