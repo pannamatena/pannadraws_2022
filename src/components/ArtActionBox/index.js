@@ -26,7 +26,10 @@ function getPriceTag(imgData, mediaType) {
   return (
     (imgData.original === 'AVAILABLE' || imgData.original !== 'MSG') &&
     imgData.original !== 'SOLD' && (
-      <span css={style.originalPrice}>€{imgData.price}</span>
+      <span css={style.priceTag}>
+        <span css={style.priceFrom}>from</span>
+        <span css={style.originalPrice}>€{imgData.price}</span>
+      </span>
     )
   );
 }
@@ -217,8 +220,8 @@ function getMerchItems(merchItems) {
           {item.name} {arrow()}
         </a>
         <span>
-          (from € {formatPrice(item.price)}
-          {!item.digital && ' + shipping'})
+          (from € {formatPrice(item.price)})
+          {/*{item.digital && ' + local taxes'})*/}
         </span>
       </div>
     );
@@ -242,6 +245,10 @@ export default function ArtActionBox({ imgData }) {
       </div>
       {getPrintActionLink(imgData)}
       {getMerch(imgData)}
+      <span css={style.disclaimer}>
+        Prices shown exclude local taxes applicable at checkout and any customs
+        charges that may apply for international orders.
+      </span>
     </div>
   );
 }

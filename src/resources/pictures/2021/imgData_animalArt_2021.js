@@ -447,15 +447,6 @@ const imgData_2021 = {
     printUrl: '',
     discount: 0,
     discountPrint: 0,
-    merch: [
-      {
-        name: "Women's short sleeved tee",
-        url: 'https://www.etsy.com/ie/listing/1007951583/',
-        price: 30.5,
-        discount: 0,
-        shop: 'clothingShop',
-      },
-    ],
     type: 'animal_watercolour_painting',
     story:
       "I promised I would paint more blackbirds, and I was constantly reminded of that promise thanks to the beautiful song they perform every day in the garden. This painting was made as a t-shirt print, and once I made the t-shirt available I asked people if they would have liked to see more background. Well, they wouldn't have!<br /><br />I picked the ivy as the floral part of the image. It's a common plant, yet it has a real character: I immediately associate it with woodland ground. And to add a little spice to it, why not include some fairy mushrooms?",
@@ -712,15 +703,6 @@ const imgData_2021 = {
     printUrl: 'https://www.etsy.com/ie/listing/992037141/',
     discount: 0,
     discountPrint: 0,
-    merch: [
-      {
-        name: "Women's short sleeved tee",
-        url: 'https://www.etsy.com/ie/listing/995282674/',
-        price: 32.5,
-        discount: 0,
-        shop: 'clothingShop',
-      },
-    ],
     type: 'animal_watercolour_painting',
     story:
       "I had some uneasiness with rooks. Like most corvids in their groups they give a quite haunted feeling to any place, and the rook's face resembles the plague masks used in middle ages, so it's quite a scary bird. Or rather it was a scary one, as I painted this fluffy one (reference photo taken on a windy day) I saw the intelligence in his eyes and I can't really see them as frightening any more.<br /><br />Yes the rook's face is not a cuddly one, but the beautiful irridescence in the black feathers and the elegance as they glide and land makes them outstanding. Once a rook landed just beside me on a fence, and didn't get scared when I looked him straight in the eyes. What I saw was an intimidating cunning, maybe with some curiosity. It's said corvids can recognise human faces! This is a remarkable bird who deserves the credit on a large, A2 sized painting.",
@@ -908,13 +890,6 @@ const imgData_2021 = {
     buyUrl: 'https://www.etsy.com/ie/listing/947459543/',
     printUrl: '',
     merch: [
-      {
-        name: 'Unisex t-shirt',
-        url: 'https://www.etsy.com/ie/listing/941546699/',
-        price: 32,
-        discount: 0,
-        shop: 'clothingShop',
-      },
       {
         name: 'Greeting cards',
         url: 'https://www.etsy.com/ie/listing/943508801/',

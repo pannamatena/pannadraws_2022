@@ -25,13 +25,6 @@ const imgData_2020 = {
     printUrl: '',
     merch: [
       {
-        name: 'Unisex t-shirt',
-        url: 'https://www.etsy.com/ie/listing/941546297/',
-        price: 32.5,
-        discount: 0,
-        shop: 'clothingShop',
-      },
-      {
         name: 'Greeting cards',
         url: 'https://www.etsy.com/ie/listing/943508801/',
         price: 3.5,
@@ -77,13 +70,6 @@ const imgData_2020 = {
     buyUrl: 'https://www.etsy.com/ie/listing/933499334/',
     printUrl: '',
     merch: [
-      {
-        name: 'Unisex t-shirt',
-        url: 'https://www.etsy.com/ie/listing/941545811/',
-        price: 34.5,
-        discount: 0,
-        shop: 'clothingShop',
-      },
       {
         name: 'Greeting cards',
         url: 'https://www.etsy.com/ie/listing/943508801/',
@@ -251,15 +237,6 @@ const imgData_2020 = {
     prints: 'NOTYET',
     buyUrl: '',
     printUrl: '',
-    merch: [
-      {
-        name: "Women's t-shirt",
-        url: 'https://www.etsy.com/ie/listing/906857911/',
-        price: 32,
-        discount: 0,
-        shop: 'clothingShop',
-      },
-    ],
     discount: 0,
     discountPrint: 0,
     type: 'animal_watercolour_painting',
@@ -486,20 +463,6 @@ const imgData_2020 = {
     buyUrl: '',
     printUrl: 'https://www.etsy.com/ie/listing/870127742/',
     merch: [
-      {
-        name: "Women's t-shirt",
-        url: 'https://www.etsy.com/ie/listing/864817848/',
-        price: 28,
-        discount: 0,
-        shop: 'clothingShop',
-      },
-      {
-        name: "Men's t-shirt",
-        url: 'https://www.etsy.com/ie/listing/875079870/',
-        price: 28.5,
-        discount: 0,
-        shop: 'clothingShop',
-      },
       {
         name: 'Notebook',
         url: 'https://www.etsy.com/ie/listing/895826951/',

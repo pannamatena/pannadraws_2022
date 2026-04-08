@@ -310,6 +310,15 @@ const imgData_2024 = {
     printPrice: 0,
     buyUrl: 'https://www.etsy.com/ie/listing/1711613402/',
     ship: 'FREE_IRL',
+    merch: [
+      {
+        name: 'Colouring Page - Printed',
+        url: 'https://www.etsy.com/ie/listing/1676373570/',
+        /* prettier-ignore */
+        price: 6.50,
+        discount: 0,
+      },
+    ],
     printUrl: '',
     discount: 0,
     discountPrint: 0,

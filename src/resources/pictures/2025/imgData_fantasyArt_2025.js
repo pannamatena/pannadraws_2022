@@ -25,7 +25,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'A Dungeons & Dragons character commission. Griys is half elf, half human and much prefers the company of animals to humans.<br /><br />This picture was commissioned as a gift, and the gifted person\'s cat also made it into the picture as a cameo.',
+    story:
+      "A Dungeons & Dragons character commission. Griys is half elf, half human and much prefers the company of animals to humans.<br /><br />This picture was commissioned as a gift, and the gifted person's cat also made it into the picture as a cameo.",
   },
   rocs_and_brynrfel: {
     title: 'Rocs and Brynrfel',
@@ -53,7 +54,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'Brynrfel, the son of the great oak has an uninvited visitor. This book cover illustration was commissioned for a book still in progress at the time of creation.',
+    story:
+      'Brynrfel, the son of the great oak has an uninvited visitor. This book cover illustration was commissioned for a book still in progress at the time of creation.',
   },
   lakeside_rest: {
     title: 'Lakeside Rest',
@@ -81,7 +83,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'Another fun commission from 2025. The client\'s sister loves dragons, but also loves their two cats. So I was to paint these two feline dragons at an idyllic lakeside.',
+    story:
+      "Another fun commission from 2025. The client's sister loves dragons, but also loves their two cats. So I was to paint these two feline dragons at an idyllic lakeside.",
   },
   rona: {
     title: 'Rona',
@@ -109,7 +112,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'Rona is a girl who is a huge fan of the Wings of Fire series and this unique piece was commissioned by her mom to represent her own, powerful feminine character, inspired by bats.',
+    story:
+      'Rona is a girl who is a huge fan of the Wings of Fire series and this unique piece was commissioned by her mom to represent her own, powerful feminine character, inspired by bats.',
   },
   what_seemed_to_happen: {
     title: 'What Seemed to Happen',
@@ -137,7 +141,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'The first part of a painting pair commissioned to celebrate a fun moment of a pup\'s life.<br /><br />Here the scene looks like any ordinary life snippet... But is it really all what was happening?',
+    story:
+      "The first part of a painting pair commissioned to celebrate a fun moment of a pup's life.<br /><br />Here the scene looks like any ordinary life snippet... But is it really all what was happening?",
   },
   what_really_happened: {
     title: 'What Really Happened',
@@ -165,7 +170,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'The second part of a painting pair commissioned to celebrate a fun moment from a pup\'s life. All set in a D&D world.<br /><br />This painting shows the reality of the moment... A fierce stand-off between two mighty creatures, a battle of the era!',
+    story:
+      "The second part of a painting pair commissioned to celebrate a fun moment from a pup's life. All set in a D&D world.<br /><br />This painting shows the reality of the moment... A fierce stand-off between two mighty creatures, a battle of the era!",
   },
   rainbow_llama_unicorn: {
     title: 'Rainbow Llama Unicorn',
@@ -221,7 +227,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'Another D&D character commission. I love painting characters from this world! And The Keeper of The Gates is one hell of a character. This ancient dragon was killed in an explosion, but came back from the dead as powerful as ever. In the background there is molten wealth and radioactive volcanoes. Epic.',
+    story:
+      'Another D&D character commission. I love painting characters from this world! And The Keeper of The Gates is one hell of a character. This ancient dragon was killed in an explosion, but came back from the dead as powerful as ever. In the background there is molten wealth and radioactive volcanoes. Epic.',
   },
   the_lovers: {
     title: 'The Lovers',
@@ -249,7 +256,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'A tattoo design commission inspired by the tarot card "Lovers" and the Titanosaurus pair from Jurassic Park.',
+    story:
+      'A tattoo design commission inspired by the tarot card "Lovers" and the Titanosaurus pair from Jurassic Park.',
   },
   snake_bear: {
     title: 'Snake Bear',
@@ -277,7 +285,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'I was commissioned to paint a half-snake, half-bear creature. These two animals are not the closest in appearance so it took me some time to come up with the concept. But the result is a truly unique creature!',
+    story:
+      'I was commissioned to paint a half-snake, half-bear creature. These two animals are not the closest in appearance so it took me some time to come up with the concept. But the result is a truly unique creature!',
   },
   six_stars: {
     title: 'Six Stars',
@@ -305,7 +314,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'A very special tattoo commission. This was made for a university professor who wanted to get his first ever tattoo on his 70th birthday.',
+    story:
+      'A very special tattoo commission. This was made for a university professor who wanted to get his first ever tattoo on his 70th birthday.',
   },
   rosehips: {
     title: 'Rosehips',
@@ -329,11 +339,21 @@ const imgData_2025 = {
     printPrice: 0,
     buyUrl: 'https://www.etsy.com/ie/listing/1898455801/',
     ship: 'FREE_IRL',
+    merch: [
+      {
+        name: 'Colouring Page - Printed',
+        url: 'https://www.etsy.com/ie/listing/1898439055/',
+        /* prettier-ignore */
+        price: 6.50,
+        discount: 0,
+      },
+    ],
     printUrl: '',
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'I was further exploring the different marker shades for pen drawings. This technique requires much more time to finish than watercolour or mixed media, but it makes it an interesting challenge that I only have greyscale to work with instead of colours.<br /><br />The picture itself is inspired by yin and yang and the constant battle between sides.',
+    story:
+      'I was further exploring the different marker shades for pen drawings. This technique requires much more time to finish than watercolour or mixed media, but it makes it an interesting challenge that I only have greyscale to work with instead of colours.<br /><br />The picture itself is inspired by yin and yang and the constant battle between sides.',
   },
   together_in_the_storm: {
     title: 'Together in the Storm',
@@ -361,7 +381,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'A commissioned painting for a couple. The great black dragon stands protectively over the angel while their little island is battered by stormy seas.',
+    story:
+      'A commissioned painting for a couple. The great black dragon stands protectively over the angel while their little island is battered by stormy seas.',
   },
   there_is_no_up_or_down: {
     title: 'There Is No Up or Down',
@@ -378,7 +399,8 @@ const imgData_2025 = {
       },
     },
     year: '2025',
-    description: 'Pen, markers and coloured pencils on paper. 250 x 350 mm, 2025.',
+    description:
+      'Pen, markers and coloured pencils on paper. 250 x 350 mm, 2025.',
     price: 106,
     original: 'MSG',
     prints: 'NOTYET',
@@ -389,7 +411,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'I drew a digital picture back when I was still in highschool that pictured two dragons flying together with the ground "above" them. I wanted to recreate this concept with Eastern dragons this time.',
+    story:
+      'I drew a digital picture back when I was still in highschool that pictured two dragons flying together with the ground "above" them. I wanted to recreate this concept with Eastern dragons this time.',
   },
   in_the_boars_realm: {
     title: 'In the Boars Realm',
@@ -417,7 +440,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'A commissioned piece to illustrate a tarot reading business website. I was so excited to draw a boar, as this was the first time I was commissioned to paint one.',
+    story:
+      'A commissioned piece to illustrate a tarot reading business website. I was so excited to draw a boar, as this was the first time I was commissioned to paint one.',
   },
   the_dragonslayer: {
     title: 'The Dragonslayer',
@@ -445,7 +469,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'This commission was a gift to a professor of psychology. The dragon here represents the mental demons she helps defeat.',
+    story:
+      'This commission was a gift to a professor of psychology. The dragon here represents the mental demons she helps defeat.',
   },
   cathorah: {
     title: 'Cathorah',
@@ -462,7 +487,8 @@ const imgData_2025 = {
       },
     },
     year: '2025',
-    description: 'Pen, markers, coloured pencils and watercolour on paper, 210 x 297 mm, 2025.',
+    description:
+      'Pen, markers, coloured pencils and watercolour on paper, 210 x 297 mm, 2025.',
     price: 0,
     original: 'SOLD',
     prints: 'NOTYET',
@@ -501,7 +527,8 @@ const imgData_2025 = {
     discount: 0,
     discountPrint: 0,
     type: 'fantasy_watercolour_painting',
-    story: 'A large commission, this painting is inspired by a little dragon fan\'s favourite dragons. I was asked to bring their sketches to life. In fairness the sketches were really imaginative and the variety of the dragons made the making of this piece really enjoyable.',
+    story:
+      "A large commission, this painting is inspired by a little dragon fan's favourite dragons. I was asked to bring their sketches to life. In fairness the sketches were really imaginative and the variety of the dragons made the making of this piece really enjoyable.",
   },
 };
 

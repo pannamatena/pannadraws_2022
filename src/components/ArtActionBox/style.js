@@ -100,6 +100,18 @@ const style = {
       }
     }
   `,
+  priceTag: css`
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+  `,
+  priceFrom: css`
+    font-family: ${fonts.f2};
+    font-size: 0.75em;
+    color: ${colours.c2};
+    letter-spacing: 0.03em;
+    text-transform: lowercase;
+  `,
   originalPrice: css`
     display: inline-block;
     ${largeHeadFontSize};
@@ -131,6 +143,20 @@ const style = {
     @media ${breakPoints.desktopSmall} {
       margin-top: 20px;
       padding-top: 15px;
+    }
+  `,
+  disclaimer: css`
+    display: block;
+    margin-top: 10px;
+    font-family: ${fonts.f2};
+    font-size: 0.7em;
+    color: ${colours.c4};
+    line-height: 1.4;
+    @media ${breakPoints.tabletPortrait} {
+      margin-top: 15px;
+    }
+    @media ${breakPoints.desktopSmall} {
+      margin-top: 20px;
     }
   `,
   merchItem: css`

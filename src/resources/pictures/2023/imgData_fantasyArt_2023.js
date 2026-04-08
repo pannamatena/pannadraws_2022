@@ -51,6 +51,16 @@ const imgData_2023 = {
     printPrice: 0,
     buyUrl: 'https://www.etsy.com/ie/listing/1617658522/',
     ship: 'FREE_IRL',
+    merch: [
+      {
+        name: 'Colouring Page - Digital',
+        url: 'https://www.etsy.com/ie/listing/1598207916/',
+        /* prettier-ignore */
+        price: 5.60,
+        discount: 0,
+        digital: true,
+      },
+    ],
     printUrl: '',
     discount: 0,
     discountPrint: 0,
@@ -230,6 +240,15 @@ const imgData_2023 = {
     printPrice: 0,
     buyUrl: '',
     ship: 'FREE_IRL',
+    merch: [
+      {
+        name: 'Colouring Page - Digital',
+        url: 'https://www.etsy.com/ie/listing/1457555934/',
+        /* prettier-ignore */
+        price: 5.50,
+        discount: 0,
+      },
+    ],
     printUrl: '',
     discount: 0,
     discountPrint: 0,
@@ -260,6 +279,15 @@ const imgData_2023 = {
     printPrice: 0,
     buyUrl: 'https://www.etsy.com/ie/listing/1462645451/',
     ship: 'FREE_IRL',
+    merch: [
+      {
+        name: 'Colouring Page - Printed',
+        url: 'https://www.etsy.com/ie/listing/1428894428/',
+        /* prettier-ignore */
+        price: 6,
+        discount: 0,
+      },
+    ],
     printUrl: '',
     discount: 0,
     discountPrint: 0,
@@ -289,6 +317,23 @@ const imgData_2023 = {
     printPrice: 0,
     buyUrl: 'https://www.etsy.com/ie/listing/1443608524/',
     ship: 'FREE_IRL',
+    merch: [
+      {
+        name: 'Colouring Page - Printed',
+        url: 'https://www.etsy.com/ie/listing/1457823237/',
+        /* prettier-ignore */
+        price: 4,
+        discount: 0,
+      },
+      {
+        name: 'Colouring Page - Digital',
+        url: 'https://www.etsy.com/ie/listing/1461566010/',
+        /* prettier-ignore */
+        price: 5.50,
+        discount: 0,
+        digital: true,
+      },
+    ],
     printUrl: '',
     discount: 0,
     discountPrint: 0,
@@ -319,6 +364,15 @@ const imgData_2023 = {
     printPrice: 0,
     buyUrl: 'https://www.etsy.com/ie/listing/1411542073/',
     ship: 'FREE_IRL',
+    merch: [
+      {
+        name: 'Colouring Page - Printed',
+        url: 'https://www.etsy.com/ie/listing/1393626597/',
+        /* prettier-ignore */
+        price: 6.50,
+        discount: 0,
+      },
+    ],
     printUrl: '',
     discount: 0,
     discountPrint: 0,
