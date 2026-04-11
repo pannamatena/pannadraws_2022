@@ -21,6 +21,16 @@ const imgData_2025 = {
     prints: 'NOTYET',
     printPrice: 0,
     buyUrl: 'https://www.etsy.com/ie/listing/4480036272/',
+    merch: [
+      {
+        name: 'Colouring Page - Digital printable',
+        url: 'https://www.etsy.com/ie/listing/4486663827/',
+        /* prettier-ignore */
+        price: 5.50,
+        discount: 0,
+        isDigital: true,
+      },
+    ],
     ship: 'FREE_IRL',
     printUrl: '',
     discount: 0,

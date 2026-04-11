@@ -49,20 +49,21 @@ export function ReturnPolicy() {
         </p>
         <p>
           You must return the item within 14 days of notifying me of your
-          withdrawal. Return shipping costs are the buyer's responsibility unless
-          otherwise agreed. Items must be returned in their original condition. I
-          will issue a full refund (including the original standard shipping
-          cost) within 14 days of receiving the returned item or proof of
-          postage.
+          withdrawal. Return shipping costs are the buyer's responsibility
+          unless otherwise agreed. Items must be returned in their original
+          condition. I will issue a full refund (including the original standard
+          shipping cost) within 14 days of receiving the returned item or proof
+          of postage.
         </p>
 
         <h2>Damaged or Faulty Items</h2>
         <p>
           If your item arrives damaged or is significantly not as described,
-          please contact me within a reasonable time with photos of the damage.
-          Under EU law, you are entitled to a remedy (repair, replacement, or
-          refund) for up to two years from delivery. Return shipping for damaged
-          or faulty items will be covered by me.
+          please contact me within 14 days of delivery with photos. Under EU
+          law, you are also entitled to a legal guarantee of conformity for up
+          to two years from delivery, covering defects that existed at the time
+          of delivery. Return shipping for items confirmed as damaged or faulty
+          will be covered by me.
         </p>
 
         <h2>How to Initiate a Return</h2>
@@ -93,7 +94,9 @@ export function ReturnPolicy() {
           <li>Date of purchase</li>
           <li>Purchase price</li>
           <li>Reason for return</li>
-          <li>If the item arrived damaged, please include photos of the damage.</li>
+          <li>
+            If the item arrived damaged, please include photos of the damage.
+          </li>
         </ul>
         <p>
           Alternatively, if you purchased through my Etsy shop, you can initiate
